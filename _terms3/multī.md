@@ -4,7 +4,7 @@ meaning: many
 ch: 3
 pos: totadjective
 femstem: mult
-femend: ī
+femend: ae
 neutstem: mult
-neutend: ae
+neutend: a
 ---
