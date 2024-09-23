@@ -1,6 +1,6 @@
 ---
 title: clāmor
-meaning: ruckuss, hubbub
+meaning: ruckus, hubbub
 ch: 5
 pos: nounthird
 genitive: clāmoris
