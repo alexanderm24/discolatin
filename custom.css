@@ -64,8 +64,8 @@ margin: 1rem;
 .card {
   position: relative;
   background-color: black;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   cursor: pointer;
   transform-style: preserve-3d;
   transform-origin: center right;
@@ -80,8 +80,8 @@ margin: 1rem;
 
 .card__face {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
   line-height: 275px;
   color: black;
   text-align: center;
