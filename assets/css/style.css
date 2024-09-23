@@ -1,0 +1,235 @@
+body {
+    background-color: black;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.homecontainer {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vocabcontainer {
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+h1, h2, h3, h4, h5, p {
+  color: white;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+}
+
+h1, h4, .home {
+  text-align: center;
+}
+
+.home {
+  margin-bottom: 3rem;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar-brand {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+.container-fluid > a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+button {
+  margin: .5rem;
+  width: 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.scene {
+  display: inline-block;
+  width: 375px;
+  height: 275px;
+/*   border: 1px solid #CCC; */
+margin: 1rem;
+  perspective: 600px;
+}
+
+.card {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1s;
+  border-radius: 16px;
+  outline-color: black;
+}
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 275px;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  backface-visibility: hidden;
+  border-radius: 16px;
+}
+
+.card__face--front--verb {
+    background: #ffb01f;
+}
+
+.di-v {
+    background: #ffb01f;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+.def {
+    width: 100%;
+    height: 75%; 
+    line-height: 200px;
+}
+
+.card__face--front--noun {
+    background: #ffe433;
+}
+
+.di-n {
+    background: #ffe433;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+
+.card__face--front--preposition {
+    background: #6dd978;
+}
+
+.di-prep {
+    background: #6dd978;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+.card__face--front--adjective {
+    background: #6ed1ff;
+}
+
+.di-adj {
+    background: #6ed1ff;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+
+.card__face--front--adverb {
+    background: #b395da;
+}
+
+.def-only {
+    width: 100%;
+    height: 100%; 
+    line-height: 275px;
+}
+
+.card__face--front--conjunction {
+    background: #b39680;
+}
+
+.card__face--front--prepphrase {
+    background: repeating-linear-gradient(
+  135deg,
+  #6dd978,
+  #6dd978 10px,
+  #7dea88 10px,
+  #7dea88 20px
+);
+}
+
+.di-prepphrase {
+    background: #7dea88;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+.def-prepphrase {
+  font-size: 34px;
+  line-height: 180px;
+}
+
+.card__face--front--infverb {
+    background: repeating-linear-gradient(
+  135deg,
+  #ffb01f,
+  #ffb01f 10px,
+  #FFC65C 10px,
+  #FFC65C 20px
+);
+}
+
+.di-infconj {
+    background: #FFC65C;
+    font-size: 28px;
+    width: 100%;
+    height: 25%;
+    line-height: 80px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom: 4px dotted black;
+}
+
+.card__face--front--phrase {
+  background: white;
+}
+
+.card__face--back {
+  background: white;
+  color: black;
+  transform: rotateY(180deg);
+}
