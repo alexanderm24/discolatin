@@ -152,7 +152,7 @@ layout: base
   {% if pos == "prepphrase" %}
   <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--prepphrase">{{ terms2.title }}</div>
+      <div class="card__face card__face--front--prepprep"><span style="background-color: #6dd978;">{{ terms2.preposition }}</span> <span style="background-color:#ffe433">{{ terms2.noun }}</span></div>
       <div class="card__face card__face--back">
           <div class="di-prepphrase">{{ terms2.di }}</div>
           <div class="def-prepphrase">{{ terms2.meaning }}</div>
@@ -161,6 +161,7 @@ layout: base
   </div>
   {% endif %}
   {% endfor %}
+
 
 <h2>Infinitive Conjugations</h2>
 {% for infinitives2 in site.infinitives2 %}

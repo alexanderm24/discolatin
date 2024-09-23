@@ -209,13 +209,7 @@ margin: 1rem;
 }
 
 .card__face--front--prepphrase {
-    background: repeating-linear-gradient(
-  135deg,
-  #6dd978,
-  #6dd978 10px,
-  #7dea88 10px,
-  #7dea88 20px
-);
+    background: white;
 }
 
 .di-prepphrase {

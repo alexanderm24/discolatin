@@ -170,21 +170,21 @@ layout: base
 {% endfor %}
 
 
-  <h2>Prepositional Phrases</h2>
-  {% for terms5 in site.terms5 %}
-  {% assign pos = terms5.pos %}
-  {% if pos == "prepphrase" %}
-  <div class="scene scene--card">
-    <div class="card">
-      <div class="card__face card__face--front--prepphrase">{{ terms5.title }}</div>
-      <div class="card__face card__face--back">
-          <div class="di-prepphrase">{{ terms5.di }}</div>
-          <div class="def-prepphrase">{{ terms5.meaning }}</div>
-      </div>
+<h2>Prepositional Phrases</h2>
+{% for terms5 in site.terms5 %}
+{% assign pos = terms5.pos %}
+{% if pos == "prepphrase" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--prepprep"><span style="background-color: #6dd978;">{{ terms5.preposition }}</span> <span style="background-color:#ffe433">{{ terms5.noun }}</span></div>
+    <div class="card__face card__face--back">
+        <div class="di-prepphrase">{{ terms5.di }}</div>
+        <div class="def-prepphrase">{{ terms5.meaning }}</div>
     </div>
   </div>
-  {% endif %}
-  {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
 
 <h2>Infinitive Conjugations</h2>
 {% for infinitives5 in site.infinitives5 %}
