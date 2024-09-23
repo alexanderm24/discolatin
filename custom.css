@@ -54,12 +54,14 @@ a {
 
 .scene {
   display: inline-block;
-  width: 375px;
+  width: 350px;
   height: 275px;
 /*   border: 1px solid #CCC; */
 margin: 1rem;
   perspective: 600px;
 }
+
+
 
 .card {
   position: relative;
