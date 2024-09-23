@@ -1,0 +1,209 @@
+---
+layout: base
+---
+
+{%- include custom-nav.html -%}
+
+
+<container class="vocabcontainer container-fluid">
+  <div class="row text-center">
+    <div class="col">
+    
+<h1> {{ page.title }} </h1>
+  
+  
+{% for terms5 in site.terms5 %}
+
+
+{% assign pos = terms5.pos %}
+{% if pos == "verb" %}
+<!--verbs-->
+<div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--verb">{{ terms5.title }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-v">{{ terms5.secondppstem }}<u>{{ terms5.infend }}</u></div>
+        <div class="def">{{ terms5.meaning }}</div>
+      </div>
+    </div>
+</div>
+{% endif %}
+
+{% if pos == "noun" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms5.stem }}<u>{{ terms5.genend }}</u>   {{ terms5.abbgender }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "nounthird" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms5.abbgender }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "pronoun" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms5.genitive }}   {{ terms5.abbgender }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "perspronoun" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "totadjective" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-adj"> {{ terms5.femstem }}<u>{{ terms5.femend }}</u>, {{ terms5.neutstem}}<u>{{ terms5.neutend}}</u></div>
+      <div class="def-adj">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "altadjective" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-adj">{{ terms5.adjforms }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "adverb" %}
+<!--adverbs-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adverb">{{ terms5.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ terms5.meaning }}</div></div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "preposition" %}
+<!--preposition-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--preposition">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-prep">{{ terms5.di }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "prepdual" %}
+<!--preposition-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--preposition">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-prep-one">{{ terms5.dione }}</div>
+      <div class="prep-meaning-one">{{ terms5.meaningone }}</div>
+      <div class="di-prep-two">{{ terms5.ditwo }}</div>
+      <div class="prep-meaning-two">{{ terms5.meaningtwo }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!--conjunction-->
+{% if pos == "conjunction" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--conjunction">{{ terms5.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ terms5.meaning }}</div></div>
+  </div>
+</div>
+{% endif %}
+
+<!--conjugated verb-->
+{% if pos == "conjverb" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--verb">{{ terms5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-v">{{ terms5.di }}</div>
+      <div class="def">{{ terms5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% endfor %}
+
+
+  <h2>Prepositional Phrases</h2>
+  {% for terms5 in site.terms5 %}
+  {% assign pos = terms5.pos %}
+  {% if pos == "prepphrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--prepphrase">{{ terms5.title }}</div>
+      <div class="card__face card__face--back">
+          <div class="di-prepphrase">{{ terms5.di }}</div>
+          <div class="def-prepphrase">{{ terms5.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+<h2>Infinitive Conjugations</h2>
+{% for infinitives5 in site.infinitives5 %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb">{{ infinitives5.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj"> {{ infinitives5.conj }}</div>
+      <div class="def">{{ infinitives5.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+    </div>
+  </div>
+</container>
+
+
+
+<script src="script/code.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

@@ -1,0 +1,183 @@
+---
+layout: base
+---
+{%- include custom-nav.html -%}
+
+
+<container class="vocabcontainer container-fluid">
+  <div class="row text-center">
+    <div class="col">
+    
+<h1> {{ page.title }} </h1>
+  
+  
+{% for terms6 in site.terms6 %}
+
+
+{% assign pos = terms6.pos %}
+{% if pos == "verb" %}
+<!--verbs-->
+<div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--verb">{{ terms6.title }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-v">{{ terms6.secondppstem }}<u>{{ terms6.infend }}</u></div>
+        <div class="def">{{ terms6.meaning }}</div>
+      </div>
+    </div>
+</div>
+{% endif %}
+
+{% if pos == "noun" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms6.stem }}<u>{{ terms6.genend }}</u>   {{ terms6.abbgender }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "nounthird" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms6.genitive }}   {{ terms6.abbgender }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "totadjective" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-adj"> {{ terms6.femstem }}<u>{{ terms6.femend }}</u>, {{ terms6.neutstem}}<u>{{ terms6.neutend}}</u></div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "altadjective" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-adj">{{ terms6.adjforms }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "adverb" %}
+<!--adverbs-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adverb">{{ terms6.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ terms6.meaning }}</div></div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "preposition" %}
+<!--preposition-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--preposition">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-prep">{{ terms6.di }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!--conjunction-->
+{% if pos == "conjunction" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--conjunction">{{ terms6.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ terms6.meaning }}</div></div>
+  </div>
+</div>
+{% endif %}
+
+<!--conjugated verb-->
+{% if pos == "conjverb" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--verb">{{ terms6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-v">{{ terms6.di }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% endfor %}
+
+<h2>Phrases</h2>
+  <!--phrase-->
+  {% for terms6 in site.terms6 %}
+  {% assign pos = terms6.pos %}
+  {% if pos == "phrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase"><span style="background-color: #6ed1ff">{{ terms6.adjective }}</span> <span style="background-color:#ffb01f">{{ terms6.verb }}</span></div>
+      <div class="card__face card__face--back">
+        <div class="def-only">{{ terms6.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  <h2>Prepositional Phrases</h2>
+  {% for terms6 in site.terms6 %}
+  {% assign pos = terms6.pos %}
+  {% if pos == "prepphrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--prepphrase">{{ terms6.title }}</div>
+      <div class="card__face card__face--back">
+          <div class="di-prepphrase">{{ terms6.di }}</div>
+          <div class="def-prepphrase">{{ terms6.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+<h2>Infinitive Conjugations</h2>
+{% for infinitives6 in site.infinitives6 %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb">{{ infinitives6.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj"> {{ infinitives6.conj }}</div>
+      <div class="def">{{ infinitives6.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+    </div>
+  </div>
+</container>
+
+
+
+<script src="script/code.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
