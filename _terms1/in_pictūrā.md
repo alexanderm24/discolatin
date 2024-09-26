@@ -5,5 +5,5 @@ ch: 1
 di: (ablative singular)
 pos: prepphrase
 preposition: in
-noun: pictūra
+noun: pictūrā
 ---
