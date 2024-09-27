@@ -1,6 +1,6 @@
 ---
 title: arripiō
-meaning: to arrive
+meaning: to grab
 ch: 5
 pos: verb
 secondppstem: arrip
