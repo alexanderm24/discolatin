@@ -129,21 +129,7 @@ layout: base
 
   {% endfor %}
 
-  <h2>Phrases</h2>
-  <!--phrase-->
-  {% for terms2 in site.terms2 %}
-  {% assign pos = terms2.pos %}
-  {% if pos == "phrase" %}
-  <div class="scene scene--card">
-    <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6ed1ff">{{ terms2.adjective }}</span> <span style="background-color:#ffe433">{{ terms2.noun }}</span></div>
-      <div class="card__face card__face--back">
-        <div class="def-only">{{ terms2.meaning }}</div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% endfor %}
+  
 
 
   <h2>Prepositional Phrases</h2>
@@ -156,6 +142,22 @@ layout: base
       <div class="card__face card__face--back">
           <div class="di-prepphrase">{{ terms2.di }}</div>
           <div class="def-prepphrase">{{ terms2.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  <h2>Other Phrases</h2>
+  <!--phrase-->
+  {% for terms2 in site.terms2 %}
+  {% assign pos = terms2.pos %}
+  {% if pos == "phrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase"><span style="background-color: #6ed1ff">{{ terms2.adjective }}</span> <span style="background-color:#ffe433">{{ terms2.noun }}</span></div>
+      <div class="card__face card__face--back">
+        <div class="def-only">{{ terms2.meaning }}</div>
       </div>
     </div>
   </div>
