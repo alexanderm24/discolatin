@@ -1,9 +1,9 @@
 ---
-title: ramus
+title: rāmus
 meaning: branch
 ch: 4
 pos: noun
-stem: ram
+stem: rām
 genend: ī
 genhyph: -ī
 abbgender: m.
