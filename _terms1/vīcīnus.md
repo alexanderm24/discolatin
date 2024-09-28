@@ -1,10 +1,10 @@
 ---
-title: vicinus
+title: vīcīnus
 meaning: neighboring, nearby
 ch: 1
 pos: totadjective
-femstem: vicin
+femstem: vīcīn
 femend: a
-neutstem: vicin
+neutstem: vīcīn
 neutend: um
 ---

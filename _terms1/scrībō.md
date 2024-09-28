@@ -1,9 +1,9 @@
 ---
-title: scribō
+title: scrībō
 meaning: to write
 ch: 1
 pos: verb
-secondppstem: scrib
+secondppstem: scrīb
 infend: ere
 infhyph: -ere
 conjugation: third
