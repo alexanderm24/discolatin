@@ -1,5 +1,6 @@
 ---
 title: Mars
-anglicized: Mars
-greek: Ares
+romanang: Mars
+greekang: Ares
+greek: Αρης
 ---

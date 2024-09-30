@@ -1,5 +1,6 @@
 ---
 title: Apollo
-anglicized: Apollo
-greek: Apollo
+romanang: Apollo
+greekang: Apollo
+greek: Απολλων
 ---

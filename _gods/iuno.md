@@ -1,5 +1,6 @@
 ---
 title: Iūnō
-anglicized: Juno
-greek: Hera
+romanang: Juno
+greekang: Hera
+greek: Ἡρη
 ---

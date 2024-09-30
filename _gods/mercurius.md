@@ -1,5 +1,6 @@
 ---
 title: Mercurius
-anglicized: Mercury
-greek: Hermes
+romanang: Mercury
+greekang: Hermes
+greek: Ἑρμης
 ---

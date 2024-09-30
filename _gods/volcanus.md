@@ -1,5 +1,6 @@
 ---
 title: Volcanus
-anglicized: Vulcan
-greek: Hephaestus
+romanang: Vulcan
+greekang: Hephaestus
+greek: Ἡφαιστος
 ---

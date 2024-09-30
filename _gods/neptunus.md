@@ -1,5 +1,6 @@
 ---
 title: Neptunus
-anglicized: Neptune
-greek: Poseidon
+romanang: Neptune
+greekang: Poseidon
+greek: Ποσειδων
 ---

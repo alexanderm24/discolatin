@@ -1,5 +1,6 @@
 ---
 title: Ceres
-anglicized: Ceres
-greek: Demeter
+romanang: Ceres
+greekang: Demeter
+greek: Δημητηρ
 ---

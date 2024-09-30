@@ -1,5 +1,6 @@
 ---
 title: Venus
-anglicized: Venus
-greek: Aphrodite
+romanang: Venus
+greekang: Aphrodite
+greek: Αφροδιτη
 ---

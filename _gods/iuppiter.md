@@ -1,5 +1,6 @@
 ---
 title: Iūppiter
-anglicized: Jupiter
-greek: Zeus
+romanang: Jupiter
+greekang: Zeus
+greek: Ζευς
 ---

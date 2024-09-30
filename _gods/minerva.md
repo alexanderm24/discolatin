@@ -1,5 +1,6 @@
 ---
 title: Minerva
-anglicized: Minerva
-greek: Athena
+romanang: Minerva
+greekang: Athena
+greek: Αθηνη
 ---

@@ -1,5 +1,6 @@
 ---
 title: Pluto
-anglicized: Pluto
-greek: Hades
+romanang: Pluto
+greekang: Hades
+greek: Ἁιδης
 ---

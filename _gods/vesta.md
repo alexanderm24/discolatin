@@ -1,5 +1,6 @@
 ---
 title: Vesta
-anglicized: Vesta
-greek: Hestia
+romanang: Vesta
+greekang: Hestia
+greek: Ἑστια
 ---
