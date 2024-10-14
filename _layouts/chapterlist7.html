@@ -113,6 +113,16 @@ layout: base
 </div>
 {% endif %}
 
+<!--interjection-->
+{% if pos == "interjection" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--phrase">{{ terms7.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ terms7.meaning }}</div></div>
+  </div>
+</div>
+{% endif %}
+
 <!--conjugated verb-->
 {% if pos == "conjverb" %}
 <div class="scene scene--card">
