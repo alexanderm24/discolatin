@@ -11,7 +11,7 @@ layout: base
   <h1> {{ page.title }} </h1>
     
     
-  {% for weekdays in site.weekdays %}
+  {% for weekdays in site.weekdays | sort: "order" %}
 
 
 <div class="scene scene--card">
