@@ -9,12 +9,12 @@ layout: base
       <div class="col">
       
   <h1> {{ page.title }} </h1>
-    
-
-  {% assign weekdays = site.weekdays | sort: "order" %}
-    
+  
+ 
   {% for weekdays in site.weekdays %}
 
+  {% assign weekdaystitle = weekdays.title | sort: "order" %}
+{% for title in weekdaystitle %}
 
 <div class="scene scene--card">
     <div class="card">
