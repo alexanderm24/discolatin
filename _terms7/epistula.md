@@ -3,7 +3,7 @@ title: epistula
 meaning: letter
 ch: 7
 pos: noun
-stem: epitul
+stem: epistul
 genend: ae
 genhyph: -ae
 abbgender: f.
