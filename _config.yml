@@ -54,6 +54,8 @@ collections:
 
   gods:
     output: true
+  weekdays:
+    output: true
 
 
 plugins:
