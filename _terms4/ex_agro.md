@@ -1,5 +1,5 @@
 ---
-title: ex agro
+title: ex agrō
 meaning: out of the field
 ch: 4
 di: (ablative singular)
