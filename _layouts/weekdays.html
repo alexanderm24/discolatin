@@ -10,15 +10,15 @@ layout: base
       
   <h1> {{ page.title }} </h1>
   
-  {% assign sorted_weekdays = site.weekdays | sort:"order" %}
-  {% for node in sorted_weekdays %}
+ 
+  {% for weekdays in site.weekdays %}
 
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--noun">{{ sorted_weekdays.title }}</div>
+      <div class="card__face card__face--front--noun">{{ weekdays.title }}</div>
       <div class="card__face card__face--back">
-        <div class="def-split1">{{ sorted_weekdays.litmeaning }}</div>
-        <div class="def-split2">{{ sorted_weekdays.meaning }}</div>
+        <div class="def-split1">{{ weekdays.litmeaning }}</div>
+        <div class="def-split2">{{ weekdays.meaning }}</div>
       </div>
     </div>
 </div>
