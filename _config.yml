@@ -56,6 +56,8 @@ collections:
     output: true
   weekdays:
     output: true
+  hw:
+    output: true
 
 
 plugins:
