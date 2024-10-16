@@ -58,6 +58,8 @@ collections:
     output: true
   hw:
     output: true
+  questionwords:
+    output: true
 
 
 plugins:
