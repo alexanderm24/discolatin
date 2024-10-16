@@ -12,18 +12,18 @@ layout: base
 <h1> {{ page.title }} </h1>
   
   
-{% for terms4 in site.terms4 %}
+{% for questionwords in site.questionwords %}
 
 
-{% assign pos = terms4.pos %}
+{% assign pos = questionwords.pos %}
 {% if pos == "verb" %}
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">{{ terms4.title }}</div>
+      <div class="card__face card__face--front--verb">{{ questionwords.title }}</div>
       <div class="card__face card__face--back">
-        <div class="di-v">{{ terms4.secondppstem }}<u>{{ terms4.infend }}</u></div>
-        <div class="def">{{ terms4.meaning }}</div>
+        <div class="di-v">{{ questionwords.secondppstem }}<u>{{ questionwords.infend }}</u></div>
+        <div class="def">{{ questionwords.meaning }}</div>
       </div>
     </div>
 </div>
@@ -33,10 +33,10 @@ layout: base
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--noun">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-n">{{ terms4.stem }}<u>{{ terms4.genend }}</u>   {{ terms4.abbgender }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-n">{{ questionwords.stem }}<u>{{ questionwords.genend }}</u>   {{ questionwords.abbgender }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -46,10 +46,10 @@ layout: base
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--noun">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-n">{{ terms4.genitive }}   {{ terms4.abbgender }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-n">{{ questionwords.genitive }}   {{ questionwords.abbgender }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -59,10 +59,10 @@ layout: base
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--noun">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-n">{{ terms4.abbgender }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-n">{{ questionwords.abbgender }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -72,9 +72,9 @@ layout: base
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--noun">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ terms4.meaning }}</div>
+      <div class="def-only">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -84,10 +84,10 @@ layout: base
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--adjective">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> {{ terms4.femstem }}<u>{{ terms4.femend }}</u>, {{ terms4.neutstem}}<u>{{ terms4.neutend}}</u></div>
-      <div class="def-adj">{{ terms4.meaning }}</div>
+      <div class="di-adj"> {{ questionwords.femstem }}<u>{{ questionwords.femend }}</u>, {{ questionwords.neutstem}}<u>{{ questionwords.neutend}}</u></div>
+      <div class="def-adj">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -97,10 +97,10 @@ layout: base
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--adjective">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-adj">{{ terms4.adjforms }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-adj">{{ questionwords.adjforms }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -110,8 +110,8 @@ layout: base
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">{{ terms4.title }}</div>
-    <div class="card__face card__face--back"><div class="def-only">{{ terms4.meaning }}</div></div>
+    <div class="card__face card__face--front--adverb">{{ questionwords.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ questionwords.meaning }}</div></div>
   </div>
 </div>
 {% endif %}
@@ -120,10 +120,10 @@ layout: base
 <!--preposition-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--preposition">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--preposition">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-prep">{{ terms4.di }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-prep">{{ questionwords.di }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -133,8 +133,8 @@ layout: base
 {% if pos == "conjunction" %}
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--conjunction">{{ terms4.title }}</div>
-    <div class="card__face card__face--back"><div class="def-only">{{ terms4.meaning }}</div></div>
+    <div class="card__face card__face--front--conjunction">{{ questionwords.title }}</div>
+    <div class="card__face card__face--back"><div class="def-only">{{ questionwords.meaning }}</div></div>
   </div>
 </div>
 {% endif %}
@@ -143,10 +143,10 @@ layout: base
 {% if pos == "conjverb" %}
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--verb">{{ terms4.title }}</div>
+    <div class="card__face card__face--front--verb">{{ questionwords.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-v">{{ terms4.di }}</div>
-      <div class="def">{{ terms4.meaning }}</div>
+      <div class="di-v">{{ questionwords.di }}</div>
+      <div class="def">{{ questionwords.meaning }}</div>
     </div>
   </div>
 </div>
@@ -157,15 +157,15 @@ layout: base
 
 
   <h2>Prepositional Phrases</h2>
-  {% for terms4 in site.terms4 %}
-  {% assign pos = terms4.pos %}
+  {% for questionwords in site.questionwords %}
+  {% assign pos = questionwords.pos %}
   {% if pos == "prepphrase" %}
   <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">{{ terms4.preposition }}</span> <span style="background-color:#ffe433">{{ terms4.noun }}</span></div>
+      <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">{{ questionwords.preposition }}</span> <span style="background-color:#ffe433">{{ questionwords.noun }}</span></div>
       <div class="card__face card__face--back">
-          <div class="di-prepphrase">{{ terms4.di }}</div>
-          <div class="def-prepphrase">{{ terms4.meaning }}</div>
+          <div class="di-prepphrase">{{ questionwords.di }}</div>
+          <div class="def-prepphrase">{{ questionwords.meaning }}</div>
       </div>
     </div>
   </div>
@@ -173,35 +173,6 @@ layout: base
   {% endfor %}
 
 
-  <h2>Other Phrases</h2>
-  <!--phrase-->
-  {% for terms4 in site.terms4 %}
-  {% assign pos = terms4.pos %}
-  {% if pos == "phrase" %}
-  <div class="scene scene--card">
-    <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6ed1ff">{{ terms4.adjective }}</span> <span style="background-color:#ffe433">{{ terms4.noun }}</span></div>
-      <div class="card__face card__face--back">
-        <div class="def-only">{{ terms4.meaning }}</div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% endfor %}
-
-
-<h2>Infinitive Conjugations</h2>
-{% for infinitives4 in site.infinitives4 %}
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--infverb">{{ infinitives4.title }}</div>
-    <div class="card__face card__face--back">
-      <div class="di-infconj"> {{ infinitives4.conj }}</div>
-      <div class="def">{{ infinitives4.meaning }}</div>
-    </div>
-  </div>
-</div>
-{% endfor %}
 
     </div>
   </div>
