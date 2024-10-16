@@ -263,3 +263,8 @@ margin: 1rem;
   color: black;
   transform: rotateY(180deg);
 }
+
+.hw {
+  text-align: left;
+  color: black;
+}
