@@ -1,5 +1,5 @@
 ---
 title: cur?
-meaning: why
+meaning: why?
 pos: adverb
 ---

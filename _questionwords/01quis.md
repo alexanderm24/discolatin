@@ -1,5 +1,5 @@
 ---
 title: quis?
-meaning: who
+meaning: who?
 pos: noun
 ---

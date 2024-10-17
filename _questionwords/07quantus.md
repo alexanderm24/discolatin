@@ -1,5 +1,5 @@
 ---
 title: quantus?
-meaning: how many? how great?
+meaning: how great?
 pos: adverb
 ---
