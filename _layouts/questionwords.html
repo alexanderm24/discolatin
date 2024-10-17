@@ -13,8 +13,9 @@ layout: base
   
   
 {% for questionwords in site.questionwords %}
+{% assign qtitle for questionwords.title}
 
-{% if title == "quis?" %}
+{% if qtitle == "quis?" %}
 <!--quis-->
 <div class="scene scene--card">
     <div class="card">
@@ -29,7 +30,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if title == "quid?" %}
+{% if qtitle == "quid?" %}
 <!--quid-->
 <div class="scene scene--card">
     <div class="card">
@@ -66,7 +67,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if title == "cur?" %}
+{% if qtitle == "cur?" %}
 <!--cur?-->
 <div class="scene scene--card">
     <div class="card">
@@ -82,7 +83,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if title == "qualis?" %}
+{% if qtitle == "qualis?" %}
 <!--qualis?-->
 <div class="scene scene--card">
     <div class="card">
@@ -99,7 +100,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if title == "quot?" %}
+{% if qtitle == "quot?" %}
 <!--quot?-->
 <div class="scene scene--card">
     <div class="card">
@@ -115,7 +116,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if title == "quantus?" %}
+{% if qtitle == "quantus?" %}
 <!--quantis?-->
 <div class="scene scene--card">
     <div class="card">
