@@ -156,21 +156,7 @@ layout: base
 
 
 
-  <h2>Prepositional Phrases</h2>
-  {% for questionwords in site.questionwords %}
-  {% assign pos = questionwords.pos %}
-  {% if pos == "prepphrase" %}
-  <div class="scene scene--card">
-    <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">{{ questionwords.preposition }}</span> <span style="background-color:#ffe433">{{ questionwords.noun }}</span></div>
-      <div class="card__face card__face--back">
-          <div class="di-prepphrase">{{ questionwords.di }}</div>
-          <div class="def-prepphrase">{{ questionwords.meaning }}</div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% endfor %}
+
 
 
 
