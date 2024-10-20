@@ -1,6 +1,6 @@
 ---
 title: quae
-meaning: who
+meaning: who (statement)
 ch: 1
 pos: noun
 abbgender: f.
