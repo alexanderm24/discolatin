@@ -1,5 +1,5 @@
 ---
-title: volō (alone)
+title: vōlō (alone)
 meaning: I want
 ch: 5
 pos: conjverb
