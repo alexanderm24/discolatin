@@ -95,9 +95,6 @@ margin: 1rem;
   border-radius: 16px;
 }
 
-.card__face--frontq {
-  background: white;
-}
 
 .card__face--front--verb {
     background: #ffb01f;
@@ -178,6 +175,7 @@ margin: 1rem;
     line-height: 75px;
 }
 
+
 .card__face--front--conjunction {
     background: #b39680;
 }
@@ -238,3 +236,20 @@ margin: 1rem;
   color: black;
   transform: rotateY(180deg);
 }
+
+.def-spliteven1 {
+  width: 100%;
+  height: 50%; 
+  line-height: 75px;
+  font-size: 35px;
+}
+
+.def-spliteven2 {
+  width: 100%;
+  height: 50%; 
+  line-height: 75px;
+  font-size: 35px;
+}
+
+
+

@@ -1,5 +1,6 @@
 ---
 title: ubi?
-meaning: where? when?
+meaning1: where?
+meaning2: when?
 pos: adverb
 ---
