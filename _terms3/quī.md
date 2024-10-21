@@ -1,6 +1,6 @@
 ---
 title: qui
-meaning: who
+meaning: who (statement)
 ch: 3
 pos: noun
 abbgender: m.
