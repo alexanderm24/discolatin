@@ -240,6 +240,7 @@ margin: 1rem;
 .def-spliteven1 {
   width: 100%;
   height: 50%; 
+  line-height: 120px;
   font-size: 35px;
 }
 
