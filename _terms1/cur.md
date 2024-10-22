@@ -1,6 +1,6 @@
 ---
 title: cūr?
-meaning: why
+meaning: why?
 ch: 1
 pos: adverb
 ---
