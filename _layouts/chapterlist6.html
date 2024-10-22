@@ -41,7 +41,7 @@ layout: base
 </div>
 {% endif %}
 
-{% if pos == "noun_note" %}
+{% if pos == "nounnote" %}
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
@@ -49,6 +49,7 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-n">{{ terms6.stem }}<u>{{ terms6.genend }}</u>   {{ terms6.abbgender }}</div>
       <div class="def">{{ terms6.meaning }}</div>
+      <div class="def-note-small">{{ terms6.note }}</div>
     </div>
   </div>
 </div>
@@ -62,7 +63,6 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-n">{{ terms6.genitive }}   {{ terms6.abbgender }}</div>
       <div class="def">{{ terms6.meaning }}</div>
-      <div class="def-note-small">{{ terms6.note }}</div>
     </div>
   </div>
 </div>
