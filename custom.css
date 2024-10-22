@@ -290,3 +290,11 @@ margin: 1rem;
   line-height: 20px;
   text-align: left;
 }
+
+.def-only-tempspacesolution {
+  padding: 1.5rem;
+  height: 100%;
+  font-size: 35px;
+  line-height: 38px;
+  text-align: center;
+}

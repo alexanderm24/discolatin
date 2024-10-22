@@ -1,6 +1,6 @@
 ---
 title: quis?
-meaning: who?/what? (question)
+meaning: who? (question)
 ch: 1
 pos: pronoun
 abbgender: m./f.
