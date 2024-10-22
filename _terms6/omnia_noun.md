@@ -2,7 +2,7 @@
 title: omnia
 meaning: everything
 ch: 6
-pos: nounnote
+pos: nounnoted
 abbgender: n.
 abbgender2: neut.
 gender: neuter
