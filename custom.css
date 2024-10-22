@@ -275,9 +275,15 @@ margin: 1rem;
   line-height: 20px;
 }
 
+
 .def-note-small {
   width: 100%;
-  height: 75%; 
+  height: 50%; 
   font-size: 20px;
-  line-height: 200px;
+}
+
+.def-main {
+  width: 100%;
+  height: 25%; 
+  font-size: 20px;
 }
