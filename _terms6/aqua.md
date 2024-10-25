@@ -1,5 +1,6 @@
 ---
 title: aqua
+nmtitle: aqua
 meaning: water
 ch: 6
 pos: noun

@@ -1,5 +1,6 @@
 ---
 title: ancilla
+nmtitle: ancilla
 meaning: slave-woman
 ch: 6
 pos: noun

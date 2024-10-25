@@ -1,5 +1,6 @@
 ---
 title: lūcet
+nmtitle: lucet
 meaning: it is light/day
 ch: 6
 pos: conjverb

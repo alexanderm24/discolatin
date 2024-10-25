@@ -1,9 +1,9 @@
 ---
-title: princeps
+title: prīnceps
 meaning: emperor
 ch: 7
 pos: nounthird
-genitive: principis
+genitive: prīncipis
 abbgender: m.
 abbgender2: masc.
 gender: masculine
