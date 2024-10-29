@@ -2,10 +2,8 @@
 title: ager
 meaning: field
 ch: 2
-pos: noun
-stem: agr
-genend: ī
-genhyph: -ī
+pos: exnounsecond
+genitive: agrī
 abbgender: m.
 abbgender2: masc.
 gender: masculine

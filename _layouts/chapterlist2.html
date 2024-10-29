@@ -55,6 +55,19 @@ layout: base
 </div>
 {% endif %}
 
+{% if pos == "exnounsecond" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n"><u>{{ terms2.genitive }}</u>   <u>{{ terms2.abbgender }}</u></div>
+      <div class="def">{{ terms2.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {% if pos == "totadjective" %}
 <!--adjectives-->
 <div class="scene scene--card">
