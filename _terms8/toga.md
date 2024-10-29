@@ -1,13 +1,10 @@
 ---
-title: pictūra
-nmtitle: pictura
-meaning: picture
-ch: 1
+title: toga
+meaning: toga
+ch: 8
 pos: noun
-stem: pictūr
-nmstem: pictur
+stem: tog
 genend: ae
-nmgenend: ae
 genhyph: -ae
 abbgender: f.
 abbgender2: fem.
