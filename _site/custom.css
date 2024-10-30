@@ -197,10 +197,12 @@ margin: 1rem;
 
 .def-only {
     padding: 1.6rem;
-    width: 100%;
-    height: 100%; 
     font-size: 38px;
-    line-height: 227px;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 277px;
 }
 
 .def-split1 {

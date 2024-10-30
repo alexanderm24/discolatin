@@ -105,6 +105,18 @@ layout: base
 </div>
 {% endif %}
 
+{% if pos == "altadjective2" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms8.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms8.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
 {% if pos == "adverb" %}
 <!--adverbs-->
 <div class="scene scene--card">
