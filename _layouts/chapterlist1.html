@@ -55,13 +55,26 @@ layout: base
 {% endif %}
 
 {% if pos == "pronoun" %}
-<!--nouns-->
+<!--pronoun-->
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front--noun">{{ terms1.title }}</div>
     <div class="card__face card__face--back">
       <div class="di-n">{{ terms1.genitive }}   {{ terms1.abbgender }}</div>
-      <div class="def-adj">{{ terms1.meaning }}</div>
+      <div class="def-only">{{ terms1.meaning }}</div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "pronounthird" %}
+<!--pronoun-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms1.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms1.genitive }}   {{ terms1.abbgender }}</div>
+      <div class="def">{{ terms1.meaning }}</div>
     </div>
   </div>
 </div>
@@ -74,7 +87,7 @@ layout: base
     <div class="card__face card__face--front--adjective">{{ terms1.title }}</div>
     <div class="card__face card__face--back">
       <div class="di-adj"> {{ terms1.femstem }}<u>{{ terms1.femend }}</u>, {{ terms1.neutstem}}<u>{{ terms1.neutend}}</u></div>
-      <div class="def-adj">{{ terms1.meaning }}</div>
+      <div class="def">{{ terms1.meaning }}</div>
     </div>
   </div>
 </div>

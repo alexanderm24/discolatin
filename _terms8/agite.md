@@ -1,6 +1,7 @@
 ---
 title: agite
-meaning: hurry up!/come on! (to multiple people)
+di: (to multiple people)
+meaning: hurry up!/come on!
 ch: 8
 pos: impverb
 ---

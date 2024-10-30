@@ -1,6 +1,7 @@
 ---
 title: age
-meaning: hurry up!/come on! (to one person)
+di: (to one person)
+meaning: hurry up!/come on!
 ch: 8
 pos: impverb
 ---
