@@ -1,6 +1,7 @@
 ---
 title: nōs
-meaning: we/us (nom. or acc.)
+meaning: we/us
 ch: 8
 pos: perspronoun
+note: can be nominative or accusative
 ---

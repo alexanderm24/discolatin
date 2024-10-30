@@ -34,21 +34,8 @@ layout: base
   <div class="card">
     <div class="card__face card__face--front--noun">{{ terms6.title }}</div>
     <div class="card__face card__face--back">
-      <div class="di-n">{{ terms6.stem }}<u>{{ terms6.genend }}</u>   {{ terms6.abbgender }}</div>
-      <div class="def">{{ terms6.meaning }}</div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if pos == "nounnoted" %}
-<!--nouns-->
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms6.title }}</div>
-    <div class="card__face card__face--back">
       <div class="di-n">{{ terms6.stem }}<u>{{ terms6.genend }}</u>   <u>{{ terms6.abbgender }}</u></div>
-      <div class="def-main">{{ terms6.meaning }}</div>
+      <div class="def">{{ terms6.meaning }}</div>
       <div class="def-note-small">{{ terms6.note }}</div>
     </div>
   </div>

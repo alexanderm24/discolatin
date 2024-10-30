@@ -2,7 +2,7 @@
 title: nihil
 meaning: nothing
 ch: 4
-pos: nounnoted
+pos: noun
 abbgender: n.
 abbgender2: neut.
 gender: neuter

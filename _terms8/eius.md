@@ -1,6 +1,7 @@
 ---
 title: eius
-meaning: his/her/its (of him/her/it)
+meaning: his/her/its
 ch: 8
 pos: altadjective2
+note: (of him/her/it)
 ---

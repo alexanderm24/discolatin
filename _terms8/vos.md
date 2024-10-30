@@ -1,6 +1,7 @@
 ---
 title: vōs
-meaning: you all (nom. or acc.)
+meaning: you all
 ch: 8
 pos: perspronoun
+note: can be nominative or accusative
 ---
