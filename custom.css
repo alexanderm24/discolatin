@@ -93,6 +93,17 @@ margin: 1rem;
   border-radius: 16px;
 }
 
+.term {
+  height: 50%;
+  line-height: 135px;
+}
+
+.rightcorner {
+  text-align: right;
+  height: 25%;
+  line-height: 58px;
+}
+
 .card__face--front--verb {
     background: #ffb01f;
 }
@@ -287,3 +298,4 @@ margin: 1rem;
   line-height: 20px;
   text-align: left;
 }
+
