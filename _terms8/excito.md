@@ -10,4 +10,5 @@ infhyph: -āre
 nminfend: are
 nminfhyph: -are
 conjugation: first
+derivative: excitatory
 ---

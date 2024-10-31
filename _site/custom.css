@@ -138,6 +138,19 @@ margin: 1rem;
   align-items: center;
 }
 
+.derivative {
+  width: 100%;
+  font-style: italic;
+  color: darkgray;
+  height: 25%; 
+  padding: 0.25rem;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card__face--front--noun {
     background: #ffe433;
 }
