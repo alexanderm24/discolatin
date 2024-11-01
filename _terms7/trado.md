@@ -7,4 +7,5 @@ secondppstem: trād
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: traitor, tradition
 ---

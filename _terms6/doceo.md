@@ -10,4 +10,5 @@ infhyph: -ēre
 nminfend: ēre
 nminfhyph: -ēre
 conjugation: second
+derivative: docile, doctrine
 ---

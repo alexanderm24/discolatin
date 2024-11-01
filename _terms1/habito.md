@@ -11,4 +11,5 @@ nminfend: are
 infhyph: -āre
 nminfhyp: -are
 conjugation: first
+derivative: uninhabitable
 ---

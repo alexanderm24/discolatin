@@ -7,4 +7,5 @@ secondppstem: vid
 infend: ēre
 infhyph: -ēre
 conjugation: second
+derivative: vision, evidence
 ---

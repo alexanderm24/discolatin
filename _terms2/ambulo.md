@@ -7,4 +7,5 @@ secondppstem: ambul
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: amble, ambulatory
 ---

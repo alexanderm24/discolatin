@@ -7,4 +7,5 @@ secondppstem: spect
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: specter, inspector
 ---

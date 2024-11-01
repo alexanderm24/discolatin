@@ -7,4 +7,5 @@ secondppstem: curr
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: occur, current, course
 ---

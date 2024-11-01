@@ -7,4 +7,5 @@ femstem: mult
 femend: ae
 neutstem: mult
 neutend: a
+derivative: multitude, multiply
 ---

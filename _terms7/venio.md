@@ -7,4 +7,5 @@ secondppstem: ven
 infend: īre
 infhyph: -īre
 conjugation: third
+derivative: intervention, convenient
 ---

@@ -317,7 +317,7 @@ layout: base
 {% endfor %}
 
 
-  <!--<h2>Prepositional Phrases</h2>-->
+  <h2>Prepositional Phrases</h2>
   {% for terms6 in site.terms6 %}
   {% assign pos = terms6.pos %}
   {% if pos == "prepphrase" %}
@@ -326,14 +326,14 @@ layout: base
       <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">{{ terms6.preposition }}</span> <span style="background-color:#ffe433">{{ terms6.noun }}</span></div>
       <div class="card__face card__face--back">
           <div class="di-prepphrase">{{ terms6.di }}</div>
-          <div class="def-prepphrase">{{ terms6.meaning }}</div>
+          <div class="def">{{ terms6.meaning }}</div>
       </div>
     </div>
   </div>
   {% endif %}
   {% endfor %}
 
-  <!--<h2>Other Phrases</h2>-->
+  <h2>Other Phrases</h2>
   <!--phrase-->
   {% for terms6 in site.terms6 %}
   {% assign pos = terms6.pos %}

@@ -7,4 +7,5 @@ secondppstem: surg
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: insurgency, resurrection
 ---

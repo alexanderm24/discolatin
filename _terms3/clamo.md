@@ -7,4 +7,5 @@ secondppstem: clam
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: exclamatory
 ---

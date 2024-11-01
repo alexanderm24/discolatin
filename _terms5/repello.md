@@ -7,4 +7,5 @@ secondppstem: repell
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: repulsive
 ---

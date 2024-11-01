@@ -1,12 +1,12 @@
 ---
-title: urbs
-meaning: city
-ch: 7
+title: vox
+meaning: voice
+ch: 5
 pos: nounthird
-genitive: urbis
+genitive: vocis
 abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: third
-derivative: urbane, suburb
+derivative: vocalize
 ---

@@ -7,4 +7,5 @@ secondppstem: reprehend
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: reprehensible
 ---

@@ -7,4 +7,5 @@ secondppstem: duc
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: conductor, induce
 ---

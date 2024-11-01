@@ -7,4 +7,5 @@ secondppstem: sed
 infend: ēre
 infhyph: -ēre
 conjugation: second
+derivative: sedentary, session, sessile
 ---

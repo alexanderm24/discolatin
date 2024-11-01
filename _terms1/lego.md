@@ -11,4 +11,5 @@ nminfend: ere
 infhyph: -ere
 mninfend: -ere
 conjugation: third
+derivative: illegible, lecture
 ---

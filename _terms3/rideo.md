@@ -7,4 +7,5 @@ secondppstem: rīd
 infend: ēre
 infhyph: -ēre
 conjugation: second
+derivative: derision, ridiculous
 ---

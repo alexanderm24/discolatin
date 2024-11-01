@@ -7,4 +7,5 @@ secondppstem: labōr
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: elaborate
 ---

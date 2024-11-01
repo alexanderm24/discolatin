@@ -7,4 +7,5 @@ femstem: magn
 femend: a
 neutstem: magn
 neutend: um
+derivative: magnanimous
 ---

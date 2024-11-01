@@ -7,4 +7,5 @@ secondppstem: aud
 infend: īre
 infhyph: -īre
 conjugation: fourth
+derivative: audition, audience
 ---

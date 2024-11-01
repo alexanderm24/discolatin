@@ -7,4 +7,5 @@ secondppstem: par
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: preparatory
 ---

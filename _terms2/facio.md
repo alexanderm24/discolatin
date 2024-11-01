@@ -7,4 +7,5 @@ secondppstem: fac
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: manufacture, effect, confection
 ---

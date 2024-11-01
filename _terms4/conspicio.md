@@ -7,4 +7,5 @@ secondppstem: cōnspic
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: conspicuous
 ---

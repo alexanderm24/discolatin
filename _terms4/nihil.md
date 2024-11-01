@@ -8,4 +8,5 @@ abbgender2: neut.
 gender: neuter
 declension: third
 note: can be nominative or accusative
+derivative: annihilate, nihilist
 ---

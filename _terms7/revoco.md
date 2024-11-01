@@ -7,4 +7,5 @@ secondppstem: revoc
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: irrevocable
 ---

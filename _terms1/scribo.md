@@ -7,4 +7,5 @@ secondppstem: scrīb
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: scribe, scribble, script
 ---

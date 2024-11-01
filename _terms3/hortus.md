@@ -1,15 +1,14 @@
 ---
-title: rivus
-meaning: stream
-ch: 5
+title: hortus
+meaning: garden
+ch: 3
 pos: noun
-stem: riv
+stem: hort
 genend: ī
 genhyph: -ī
 abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: second
-note: not river
-derivative: rivulet
+derivative: horticulture
 ---

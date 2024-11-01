@@ -11,4 +11,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: first
+derivative: ancillary
 ---

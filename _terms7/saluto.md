@@ -7,4 +7,5 @@ secondppstem: salūt
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: salutation, salutatorian
 ---

@@ -7,4 +7,5 @@ secondppstem: port
 infend: āre
 infhyph: -āre
 conjugation: first
+derivative: teleportation, comportment
 ---

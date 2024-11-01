@@ -7,4 +7,5 @@ secondppstem: cad
 infend: ere
 infhyph: -ere
 conjugation: third
+derivative: decadent, cadence, cascade
 ---

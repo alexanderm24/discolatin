@@ -7,4 +7,5 @@ femstem: sol
 femend: a
 neutstem: sol
 neutend: um
+derivative: solitude, solitary
 ---

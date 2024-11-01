@@ -6,5 +6,6 @@ pos: verb
 secondppstem: vex
 infend: āre
 infhyph: -āre
-conjugation: 
+conjugation: first
+derivative: vexatious, vexation
 ---
