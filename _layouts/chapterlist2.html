@@ -24,6 +24,14 @@ layout: base
       <div class="card__face card__face--back">
         <div class="di-v">{{ terms2.secondppstem }}<u>{{ terms2.infend }}</u></div>
         <div class="def">{{ terms2.meaning }}</div>
+        {% assign note = terms2.note %}
+        {% if note %}
+        <div class="def-note-small">{{ terms2.note }}</div>
+        {% endif %}
+        {% assign derivative = terms2.derivative %}
+        {% if derivative %}
+        <div class="derivative">derivative: {{ terms2.derivative }}</div>
+        {% endif %}
       </div>
     </div>
 </div>
@@ -37,19 +45,14 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-n">{{ terms2.stem }}<u>{{ terms2.genend }}</u>   <u>{{ terms2.abbgender }}</u></div>
       <div class="def">{{ terms2.meaning }}</div>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-{% if pos == "nounthird" %}
-<!--nouns-->
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--noun">{{ terms2.title }}</div>
-    <div class="card__face card__face--back">
-      <div class="di-n"><u>{{ terms2.genitive }}</u>   <u>{{ terms2.abbgender }}</u></div>
-      <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -63,6 +66,77 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-n"><u>{{ terms2.genitive }}</u>   <u>{{ terms2.abbgender }}</u></div>
       <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+{% if pos == "nounthird" %}
+<!--nouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n"><u>{{ terms2.genitive }}</u>   <u>{{ terms2.abbgender }}</u></div>
+      <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "pronoun" %}
+<!--pronouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-n">{{ terms2.genitive }}   {{ terms2.abbgender }}</div>
+      <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "perspronoun" %}
+<!--personal pronouns-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--noun">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -76,6 +150,14 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-adj"> {{ terms2.femstem }}<u>{{ terms2.femend }}</u>, {{ terms2.neutstem}}<u>{{ terms2.neutend}}</u></div>
       <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -89,6 +171,34 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-adj">{{ terms2.adjforms }}</div>
       <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if pos == "altadjective2" %}
+<!--adjectives-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--adjective">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">{{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
@@ -98,8 +208,28 @@ layout: base
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">{{ terms2.title }}</div>
-    <div class="card__face card__face--back"><div class="def-only">{{ terms2.meaning }}</div></div>
+    <div class="card__face card__face--front--adverb">
+      <div class="rightcorner">
+        {% assign repeat = terms2.repeat %}
+        {% if repeat == "yep" %}
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+        </svg>
+        {% endif %}
+      </div>
+    <div class="term">{{ terms2.title }}</div>
+    </div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endif %}
@@ -112,6 +242,30 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-prep">{{ terms2.di }}</div>
       <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+
+{% if pos == "prepdual" %}
+<!--preposition-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--preposition">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-prep-one">{{ terms2.dione }}</div>
+      <div class="prep-meaning-one">{{ terms2.meaningone }}</div>
+      <div class="di-prep-two">{{ terms2.ditwo }}</div>
+      <div class="prep-meaning-two">{{ terms2.meaningtwo }}</div>
     </div>
   </div>
 </div>
@@ -122,7 +276,37 @@ layout: base
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front--conjunction">{{ terms2.title }}</div>
-    <div class="card__face card__face--back"><div class="def-only">{{ terms2.meaning }}</div></div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<!--interjection-->
+{% if pos == "interjection" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--phrase">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+      <div class="def-only">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">note: {{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
   </div>
 </div>
 {% endif %}
@@ -135,14 +319,41 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-v">{{ terms2.di }}</div>
       <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note %}
+      <div class="def-note-small">{{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
 {% endif %}
 
-  {% endfor %}
+<!--imperative verb-->
+{% if pos == "impverb" %}
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--verb">{{ terms2.title }}</div>
+    <div class="card__face card__face--back">
+        <div class="di-v">{{ terms2.di }}</div>
+      <div class="def">{{ terms2.meaning }}</div>
+      {% assign note = terms2.note %}
+      {% if note  %}
+      <div class="def-note-small">{{ terms2.note }}</div>
+      {% endif %}
+      {% assign derivative = terms2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ terms2.derivative }}</div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endif %}
 
-  
+{% endfor %}
 
 
   <h2>Prepositional Phrases</h2>
@@ -154,14 +365,14 @@ layout: base
       <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">{{ terms2.preposition }}</span> <span style="background-color:#ffe433">{{ terms2.noun }}</span></div>
       <div class="card__face card__face--back">
           <div class="di-prepphrase">{{ terms2.di }}</div>
-          <div class="def-prepphrase">{{ terms2.meaning }}</div>
+          <div class="def">{{ terms2.meaning }}</div>
       </div>
     </div>
   </div>
   {% endif %}
   {% endfor %}
 
-  <h2>Other Phrases</h2>
+<h2>Other Phrases</h2>
   <!--phrase-->
   {% for terms2 in site.terms2 %}
   {% assign pos = terms2.pos %}
@@ -177,7 +388,6 @@ layout: base
   {% endif %}
   {% endfor %}
 
-
 <h2>Infinitive Conjugations</h2>
 {% for infinitives2 in site.infinitives2 %}
 <div class="scene scene--card">
@@ -186,6 +396,14 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-infconj"> {{ infinitives2.conj }}</div>
       <div class="def">{{ infinitives2.meaning }}</div>
+      {% assign note = infinitives2.note %}
+      {% if note %}
+      <div class="def-note-small">{{ infinitives2.note }}</div>
+      {% endif %}
+      {% assign derivative = infinitives2.derivative %}
+      {% if derivative %}
+      <div class="derivative">derivative: {{ infinitives2.derivative }}</div>
+      {% endif %}
     </div>
   </div>
 </div>
