@@ -87,7 +87,7 @@ layout: base
     <div class="card__face card__face--back">
       <div class="di-n">{{ terms8.genitive }}   {{ terms8.abbgender }}</div>
       <div class="def">{{ terms8.meaning }}</div>
-      <div class="def-note-small">{{ terms8.note }}</div>
+      <div class="def-note-small">note: {{ terms8.note }}</div>
     </div>
   </div>
 </div>
@@ -102,7 +102,7 @@ layout: base
       <div class="def-only">{{ terms8.meaning }}</div>
       {% assign note = terms8.note %}
       {% if note  %}
-      <div class="def-note-small">{{ terms8.note }}</div>
+      <div class="def-note-small">note: {{ terms8.note }}</div>
       {% endif %}
       {% assign derivative = terms8.derivative %}
       {% if derivative %}
