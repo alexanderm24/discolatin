@@ -236,7 +236,9 @@ margin: 1rem;
 
 .def-only {
     padding-top: 68.75px;
-    font-size: 38px;
+    padding-left: 40px;
+    padding-right:40px;
+    font-size: 35px;
     line-height: 45px;
     display: flex;
     justify-content: center;

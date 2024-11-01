@@ -1,6 +1,6 @@
 ---
 title: rivus
-meaning: stream (not river)
+meaning: stream
 ch: 5
 pos: noun
 stem: riv
@@ -10,4 +10,5 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: second
+note: not river
 ---

@@ -1,6 +1,6 @@
 ---
 title: ad vīllas
-meaning: towards the houses
+meaning: to the houses
 ch: 4
 di: (accusative plural)
 pos: prepphrase
