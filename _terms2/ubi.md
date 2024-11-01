@@ -1,6 +1,6 @@
 ---
 title: ubi
-meaning: where
+meaning: where/when
 ch: 2
 pos: adverb
 repeat: yep
