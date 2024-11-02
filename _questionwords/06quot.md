@@ -1,5 +1,5 @@
 ---
 title: quot?
-meaning: how many?
+meaning: how many? 
 pos: adjective
 ---
