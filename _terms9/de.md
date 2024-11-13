@@ -1,5 +1,5 @@
 ---
-title: de
+title: dē
 meaning: down from
 ch: 9
 pos: preposition
