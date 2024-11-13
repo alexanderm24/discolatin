@@ -3,7 +3,7 @@ title: discēdō
 meaning: to depart
 ch: 9
 pos: verb
-secondppstem: disced
+secondppstem: discēd
 infend: ere
 infhyph: -ere
 nminfend: ere
