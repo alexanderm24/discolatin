@@ -1,6 +1,6 @@
 ---
 title: prōmittō
-meaning: to send
+meaning: to promise
 ch: 9
 pos: verb
 secondppstem: prōmitt
