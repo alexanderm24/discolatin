@@ -1,5 +1,7 @@
 ---
 title: mēcum
+noun: mē
+prep: cum
 meaning: with me
 ch: 9
 pos: composite
