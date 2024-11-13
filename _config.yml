@@ -37,6 +37,8 @@ collections:
     output: true
   terms8:
     output: true
+  terms9:
+    output: true
     
   infinitives1:
     output: true
@@ -53,6 +55,8 @@ collections:
   infinitives7:
     output: true
   infinitives8:
+    output: true
+  infinitives9:
     output: true
 
 

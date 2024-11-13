@@ -42,8 +42,44 @@
         </svg>
         ad vīllam
       </a>
+
+      <button class="btn settings" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="grey" class="bi bi-gear-fill" viewBox="0 0 16 16" >
+        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+      </svg></button>
+      
     </div>
-  </nav><container class="vocabcontainer container-fluid">
+  </nav><div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" data-bs-theme="dark" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Settings</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      Sort:
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortalph" checked>
+      <label class="form-check-label" for="flexRadioDefault1">
+        Alphabetically
+      </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortpos">
+        <label class="form-check-label" for="flexRadioDefault2">
+          By Parts of Speech
+        </label>
+      </div>
+    <hr>
+    <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="toggleSwitchColor" checked>
+        <label class="form-check-label" for="flexSwitchCheckChecked">Color-code Parts of Speech</label>
+      </div>
+      <!--
+      <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
+        <label class="form-check-label" for="flexSwitchCheckChecked">Abbreviate Dictionary Info</label>
+      </div>-->
+  </div>
+  </div>
+<container id="alph" class="vocabcontainer">
   <div class="row text-center">
     <div class="col">
     
@@ -76,7 +112,7 @@
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">
+    <div class="card__face card__face--front--adverb la-text">
       <div class="rightcorner">
         
         
@@ -121,9 +157,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">adveniō</div>
+      <div class="card__face card__face--front--verb la-text">adveniō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">adven<u>īre</u></div>
+        <div class="di-v la-text">adven<u>īre</u></div>
         <div class="def">to arrive</div>
         <div class="def-note-small">
           
@@ -179,9 +215,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">appropinquō</div>
+      <div class="card__face card__face--front--verb la-text">appropinquō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">appropinq<u>āre</u></div>
+        <div class="di-v la-text">appropinq<u>āre</u></div>
         <div class="def">to approach</div>
         <div class="def-note-small">
           
@@ -237,9 +273,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">arripiō</div>
+      <div class="card__face card__face--front--verb la-text">arripiō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">arrip<u>ere</u></div>
+        <div class="di-v la-text">arrip<u>ere</u></div>
         <div class="def">to grab</div>
         <div class="def-note-small">
           
@@ -307,9 +343,9 @@
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">calidus</div>
+    <div class="card__face card__face--front--adjective la-text">calidus</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> calid<u>a</u>, calid<u>um</u></div>
+      <div class="di-adj la-text"> calid<u>a</u>, calid<u>um</u></div>
       <div class="def">warm</div>
       <div class="def-note-small">
         
@@ -357,9 +393,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">canis</div>
+    <div class="card__face card__face--front--noun la-text">canis</div>
     <div class="card__face card__face--back">
-      <div class="di-n"><u>canis</u>   <u>m./f.</u></div>
+      <div class="di-n la-text"><u>canis</u>   <u>m./f.</u></div>
       <div class="def">dog</div>
       <div class="def-note-small">
         
@@ -415,9 +451,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">clāmor</div>
+    <div class="card__face card__face--front--noun la-text">clāmor</div>
     <div class="card__face card__face--back">
-      <div class="di-n"><u>clāmoris</u>   <u>m.</u></div>
+      <div class="di-n la-text"><u>clāmoris</u>   <u>m.</u></div>
       <div class="def">ruckus, hubbub</div>
       <div class="def-note-small">
         
@@ -475,9 +511,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">diēs</div>
+    <div class="card__face card__face--front--noun la-text">diēs</div>
     <div class="card__face card__face--back">
-      <div class="di-n"><u>diēī</u>   <u>m.</u></div>
+      <div class="di-n la-text"><u>diēī</u>   <u>m.</u></div>
       <div class="def">day</div>
       <div class="def-note-small">
         
@@ -537,9 +573,9 @@
 <!--pronouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">eam</div>
+    <div class="card__face card__face--front--noun la-text">eam</div>
     <div class="card__face card__face--back">
-      <div class="di-n">   f.</div>
+      <div class="di-n la-text">   f.</div>
       <div class="def">her (accusative)</div>
       <div class="def-note-small">
         
@@ -595,9 +631,9 @@
 <!--pronouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">eās</div>
+    <div class="card__face card__face--front--noun la-text">eās</div>
     <div class="card__face card__face--back">
-      <div class="di-n">   f.</div>
+      <div class="di-n la-text">   f.</div>
       <div class="def">them (accusative)</div>
       <div class="def-note-small">
         
@@ -655,7 +691,7 @@
 <!--personal pronouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">ego</div>
+    <div class="card__face card__face--front--noun la-text">ego</div>
     <div class="card__face card__face--back">
       <div class="def-only">I</div>
       <div class="def-note-small">
@@ -710,9 +746,9 @@
 <!--pronouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">eōs</div>
+    <div class="card__face card__face--front--noun la-text">eōs</div>
     <div class="card__face card__face--back">
-      <div class="di-n">   m.</div>
+      <div class="di-n la-text">   m.</div>
       <div class="def">them (accusative)</div>
       <div class="def-note-small">
         
@@ -760,9 +796,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">errō</div>
+      <div class="card__face card__face--front--verb la-text">errō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">erra<u>āre</u></div>
+        <div class="di-v la-text">erra<u>āre</u></div>
         <div class="def">to wander</div>
         <div class="def-note-small">
           
@@ -828,9 +864,9 @@
 <!--pronouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">eum</div>
+    <div class="card__face card__face--front--noun la-text">eum</div>
     <div class="card__face card__face--back">
-      <div class="di-n">   m.</div>
+      <div class="di-n la-text">   m.</div>
       <div class="def">him (accusative)</div>
       <div class="def-note-small">
         
@@ -882,9 +918,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">felēs</div>
+    <div class="card__face card__face--front--noun la-text">felēs</div>
     <div class="card__face card__face--back">
-      <div class="di-n"><u>felis</u>   <u>m./f.</u></div>
+      <div class="di-n la-text"><u>felis</u>   <u>m./f.</u></div>
       <div class="def">cat</div>
       <div class="def-note-small">
         
@@ -948,9 +984,9 @@
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">frigidus</div>
+    <div class="card__face card__face--front--adjective la-text">frigidus</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> frigid<u>a</u>, frigid<u>um</u></div>
+      <div class="di-adj la-text"> frigid<u>a</u>, frigid<u>um</u></div>
       <div class="def">cool</div>
       <div class="def-note-small">
         
@@ -1012,7 +1048,7 @@
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">
+    <div class="card__face card__face--front--adverb la-text">
       <div class="rightcorner">
         
         
@@ -1069,9 +1105,9 @@
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">ignāvus</div>
+    <div class="card__face card__face--front--adjective la-text">ignāvus</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> ignāv<u>a</u>, ignāv<u>um</u></div>
+      <div class="di-adj la-text"> ignāv<u>a</u>, ignāv<u>um</u></div>
       <div class="def">cowardly, lazy</div>
       <div class="def-note-small">
         
@@ -1138,11 +1174,11 @@
 <!--preposition-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--preposition">in</div>
+    <div class="card__face card__face--front--preposition la-text">in</div>
     <div class="card__face card__face--back">
-      <div class="di-prep-one">(with ablative)</div>
+      <div class="di-prep-one la-text">(with ablative)</div>
       <div class="prep-meaning-one">in</div>
-      <div class="di-prep-two">(with accusative)</div>
+      <div class="di-prep-two la-text">(with accusative)</div>
       <div class="prep-meaning-two">into</div>
     </div>
   </div>
@@ -1253,9 +1289,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">lupus</div>
+    <div class="card__face card__face--front--noun la-text">lupus</div>
     <div class="card__face card__face--back">
-      <div class="di-n">lup<u>ī</u>   <u>m.</u></div>
+      <div class="di-n la-text">lup<u>ī</u>   <u>m.</u></div>
       <div class="def">wolf</div>
       <div class="def-note-small">
         
@@ -1334,7 +1370,7 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--conjunction">neque...neque</div>
+    <div class="card__face card__face--front--conjunction la-text">neque...neque</div>
     <div class="card__face card__face--back">
       <div class="def-only">neither...nor</div>
       <div class="def-note-small">
@@ -1365,9 +1401,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">nōlō</div>
+      <div class="card__face card__face--front--verb la-text">nōlō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">nolle<u></u></div>
+        <div class="di-v la-text">nolle<u></u></div>
         <div class="def">to not want</div>
         <div class="def-note-small">
           
@@ -1454,9 +1490,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--verb">nōlō (alone)</div>
+    <div class="card__face card__face--front--verb la-text">nōlō (alone)</div>
     <div class="card__face card__face--back">
-      <div class="di-v">(1st person singular)</div>
+      <div class="di-v la-text">(1st person singular)</div>
       <div class="def">I don't want</div>
       <div class="def-note-small">
         
@@ -1480,9 +1516,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">parō</div>
+      <div class="card__face card__face--front--verb la-text">parō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">par<u>āre</u></div>
+        <div class="di-v la-text">par<u>āre</u></div>
         <div class="def">to prepare</div>
         <div class="def-note-small">
           
@@ -1552,9 +1588,9 @@
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">perterritus</div>
+    <div class="card__face card__face--front--adjective la-text">perterritus</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> perterrit<u>a</u>, perterrit<u>um</u></div>
+      <div class="di-adj la-text"> perterrit<u>a</u>, perterrit<u>um</u></div>
       <div class="def">frightened</div>
       <div class="def-note-small">
         
@@ -1598,9 +1634,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">petō</div>
+      <div class="card__face card__face--front--verb la-text">petō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">pet<u>ere</u></div>
+        <div class="di-v la-text">pet<u>ere</u></div>
         <div class="def">to look for/ head for</div>
         <div class="def-note-small">
           
@@ -1689,9 +1725,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--verb">potest</div>
+    <div class="card__face card__face--front--verb la-text">potest</div>
     <div class="card__face card__face--back">
-      <div class="di-v">(3rd person singular)</div>
+      <div class="di-v la-text">(3rd person singular)</div>
       <div class="def">he/she/it can</div>
       <div class="def-note-small">
         
@@ -1715,9 +1751,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">repellō</div>
+      <div class="card__face card__face--front--verb la-text">repellō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">repell<u>ere</u></div>
+        <div class="di-v la-text">repell<u>ere</u></div>
         <div class="def">to drive away</div>
         <div class="def-note-small">
           
@@ -1775,9 +1811,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">respondeō</div>
+      <div class="card__face card__face--front--verb la-text">respondeō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">respond<u>ēre</u></div>
+        <div class="di-v la-text">respond<u>ēre</u></div>
         <div class="def">to reply</div>
         <div class="def-note-small">
           
@@ -1835,9 +1871,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">rivus</div>
+    <div class="card__face card__face--front--noun la-text">rivus</div>
     <div class="card__face card__face--back">
-      <div class="di-n">riv<u>ī</u>   <u>m.</u></div>
+      <div class="di-n la-text">riv<u>ī</u>   <u>m.</u></div>
       <div class="def">stream</div>
       <div class="def-note-small">
         
@@ -1920,7 +1956,7 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--conjunction">sī</div>
+    <div class="card__face card__face--front--conjunction la-text">sī</div>
     <div class="card__face card__face--back">
       <div class="def-only">if</div>
       <div class="def-note-small">
@@ -1953,9 +1989,9 @@
 <!--nouns-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun">silva</div>
+    <div class="card__face card__face--front--noun la-text">silva</div>
     <div class="card__face card__face--back">
-      <div class="di-n">silv<u>ae</u>   <u>f.</u></div>
+      <div class="di-n la-text">silv<u>ae</u>   <u>f.</u></div>
       <div class="def">woods, forest</div>
       <div class="def-note-small">
         
@@ -2029,7 +2065,7 @@
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">
+    <div class="card__face card__face--front--adverb la-text">
       <div class="rightcorner">
         
         
@@ -2086,9 +2122,9 @@
 <!--adjectives-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adjective">temerārius</div>
+    <div class="card__face card__face--front--adjective la-text">temerārius</div>
     <div class="card__face card__face--back">
-      <div class="di-adj"> temerāri<u>a</u>, temerāri<u>um</u></div>
+      <div class="di-adj la-text"> temerāri<u>a</u>, temerāri<u>um</u></div>
       <div class="def">reckless</div>
       <div class="def-note-small">
         
@@ -2152,7 +2188,7 @@
 <!--adverbs-->
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--adverb">
+    <div class="card__face card__face--front--adverb la-text">
       <div class="rightcorner">
         
         
@@ -2201,9 +2237,9 @@
 <!--verbs-->
 <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--verb">vōlō</div>
+      <div class="card__face card__face--front--verb la-text">vōlō</div>
       <div class="card__face card__face--back">
-        <div class="di-v">velle<u></u></div>
+        <div class="di-v la-text">velle<u></u></div>
         <div class="def">to want</div>
         <div class="def-note-small">
           
@@ -2290,9 +2326,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--verb">vōlō (alone)</div>
+    <div class="card__face card__face--front--verb la-text">vōlō (alone)</div>
     <div class="card__face card__face--back">
-      <div class="di-v">(1st person singular)</div>
+      <div class="di-v la-text">(1st person singular)</div>
       <div class="def">I want</div>
       <div class="def-note-small">
         
@@ -2347,9 +2383,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--verb">vult</div>
+    <div class="card__face card__face--front--verb la-text">vult</div>
     <div class="card__face card__face--back">
-      <div class="di-v">(3rd person singular)</div>
+      <div class="di-v la-text">(3rd person singular)</div>
       <div class="def">he/she/it wants</div>
       <div class="def-note-small">
         
@@ -2431,9 +2467,9 @@
   
   <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">in</span> <span style="background-color:#ffe433">piscinā</span></div>
+      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">in</span> <span class="noun la-text">piscinā</span></div>
       <div class="card__face card__face--back">
-          <div class="di-prepphrase">(ablative singular)</div>
+          <div class="di-prepphrase la-text">(ablative singular)</div>
           <div class="def-prepphrase">in the fishpond</div>
       </div>
     </div>
@@ -2444,9 +2480,9 @@
   
   <div class="scene scene--card">
     <div class="card">
-      <div class="card__face card__face--front--phrase"><span style="background-color: #6dd978;">in</span> <span style="background-color:#ffe433">piscinam</span></div>
+      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">in</span> <span class="noun la-text">piscinam</span></div>
       <div class="card__face card__face--back">
-          <div class="di-prepphrase">(accusative singular)</div>
+          <div class="di-prepphrase la-text">(accusative singular)</div>
           <div class="def-prepphrase">into the fishpond</div>
       </div>
     </div>
@@ -2639,9 +2675,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">advenīre</div>
+    <div class="card__face card__face--front--infverb la-text">advenīre</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 4th Conjugation</div>
+      <div class="di-infconj la-text"> 4th Conjugation</div>
       <div class="def">to arrive</div>
     </div>
   </div>
@@ -2649,9 +2685,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">arripere</div>
+    <div class="card__face card__face--front--infverb la-text">arripere</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 3rd Conjugation</div>
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
       <div class="def">to grab</div>
     </div>
   </div>
@@ -2659,9 +2695,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">errāre</div>
+    <div class="card__face card__face--front--infverb la-text">errāre</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 1st Conjugation</div>
+      <div class="di-infconj la-text"> 1st Conjugation</div>
       <div class="def">to wander</div>
     </div>
   </div>
@@ -2669,9 +2705,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">ludere</div>
+    <div class="card__face card__face--front--infverb la-text">ludere</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 3rd Conjugation</div>
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
       <div class="def">to play</div>
     </div>
   </div>
@@ -2679,9 +2715,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">nolle</div>
+    <div class="card__face card__face--front--infverb la-text">nolle</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> irregular</div>
+      <div class="di-infconj la-text"> irregular</div>
       <div class="def">to not want</div>
     </div>
   </div>
@@ -2689,9 +2725,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">parāre</div>
+    <div class="card__face card__face--front--infverb la-text">parāre</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 1st Conjugation</div>
+      <div class="di-infconj la-text"> 1st Conjugation</div>
       <div class="def">to prepare</div>
     </div>
   </div>
@@ -2699,9 +2735,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">petere</div>
+    <div class="card__face card__face--front--infverb la-text">petere</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 3rd Conjugation</div>
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
       <div class="def">to look for</div>
     </div>
   </div>
@@ -2709,9 +2745,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">posse</div>
+    <div class="card__face card__face--front--infverb la-text">posse</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> irregular</div>
+      <div class="di-infconj la-text"> irregular</div>
       <div class="def">to be able</div>
     </div>
   </div>
@@ -2719,9 +2755,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">repellere</div>
+    <div class="card__face card__face--front--infverb la-text">repellere</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 3rd Conjugation</div>
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
       <div class="def">to drive off</div>
     </div>
   </div>
@@ -2729,9 +2765,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">respondēre</div>
+    <div class="card__face card__face--front--infverb la-text">respondēre</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 2nd Conjugation</div>
+      <div class="di-infconj la-text"> 2nd Conjugation</div>
       <div class="def">to reply</div>
     </div>
   </div>
@@ -2739,9 +2775,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">timēre</div>
+    <div class="card__face card__face--front--infverb la-text">timēre</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> 2nd Conjugation</div>
+      <div class="di-infconj la-text"> 2nd Conjugation</div>
       <div class="def">to fear</div>
     </div>
   </div>
@@ -2749,9 +2785,9 @@
 
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--infverb">velle</div>
+    <div class="card__face card__face--front--infverb la-text">velle</div>
     <div class="card__face card__face--back">
-      <div class="di-infconj"> irregular</div>
+      <div class="di-infconj la-text"> irregular</div>
       <div class="def">to want</div>
     </div>
   </div>
@@ -2762,10 +2798,2423 @@
   </div>
 </container>
 
+<!--Organize by Parts of Speech-->
+<container id="pos" class="vocabcontainer">
+  <div class="row text-center">
+    <div class="col">
+    
+  <h1> Chapter 5 </h1>
+  
+  
+  
+  
+  <h2>Verbs
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="A verb shows what a noun is doing or tells what the noun is, was, or will be. In Latin, verbs have three qualities: person, number, and tense.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+  </h2>
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">adveniō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">adven<u>īre</u></div>
+          <div class="def">to arrive</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">appropinquō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">appropinq<u>āre</u></div>
+          <div class="def">to approach</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">arripiō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">arrip<u>ere</u></div>
+          <div class="def">to grab</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">errō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">erra<u>āre</u></div>
+          <div class="def">to wander</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+          <div class="derivative">derivative(s): erroneous</div>
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">nōlō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">nolle<u></u></div>
+          <div class="def">to not want</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">parō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">par<u>āre</u></div>
+          <div class="def">to prepare</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+          <div class="derivative">derivative(s): preparatory</div>
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">petō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">pet<u>ere</u></div>
+          <div class="def">to look for/ head for</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+          <div class="derivative">derivative(s): petition, appetite</div>
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">repellō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">repell<u>ere</u></div>
+          <div class="def">to drive away</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+          <div class="derivative">derivative(s): repulsive</div>
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">respondeō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">respond<u>ēre</u></div>
+          <div class="def">to reply</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--verbs-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">vōlō</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">velle<u></u></div>
+          <div class="def">to want</div>
+          <div class="def-note-small">
+            
+            
+          </div>
+          
+          
+        </div>
+      </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Nouns 
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Nouns" data-bs-content="A noun names people, places, things, or ideas. In Latin, nouns have three qualities: gender, case, and number.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">canis</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text"><u>canis</u>   <u>m./f.</u></div>
+        <div class="def">dog</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">clāmor</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text"><u>clāmoris</u>   <u>m.</u></div>
+        <div class="def">ruckus, hubbub</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">felēs</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text"><u>felis</u>   <u>m./f.</u></div>
+        <div class="def">cat</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">lupus</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">lup<u>ī</u>   <u>m.</u></div>
+        <div class="def">wolf</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">rivus</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">riv<u>ī</u>   <u>m.</u></div>
+        <div class="def">stream</div>
+        <div class="def-note-small">
+          
+          
+          note: not river
+          
+        </div>
+        
+        
+        <div class="derivative">derivative(s): rivulet</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--nouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">silva</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">silv<u>ae</u>   <u>f.</u></div>
+        <div class="def">woods, forest</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+        <div class="derivative">derivative(s): sylvan</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Pronouns
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Pronouns" data-bs-content="Pronouns take the place of nouns. They refer to people, places, things, or ideas. There are personal, relative, and interrogative pronouns.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--pronouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">eam</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">   f.</div>
+        <div class="def">her (accusative)</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--pronouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">eās</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">   f.</div>
+        <div class="def">them (accusative)</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--personal pronouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">ego</div>
+      <div class="card__face card__face--back">
+        <div class="def-only">I</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--pronouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">eōs</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">   m.</div>
+        <div class="def">them (accusative)</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--pronouns-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--noun la-text">eum</div>
+      <div class="card__face card__face--back">
+        <div class="di-n la-text">   m.</div>
+        <div class="def">him (accusative)</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Adjectives
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adjectives" data-bs-content="Adjectives modify or describe nouns and pronouns.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adjectives-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adjective la-text">calidus</div>
+      <div class="card__face card__face--back">
+        <div class="di-adj la-text"> calid<u>a</u>, calid<u>um</u></div>
+        <div class="def">warm</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adjectives-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adjective la-text">frigidus</div>
+      <div class="card__face card__face--back">
+        <div class="di-adj la-text"> frigid<u>a</u>, frigid<u>um</u></div>
+        <div class="def">cool</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adjectives-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adjective la-text">ignāvus</div>
+      <div class="card__face card__face--back">
+        <div class="di-adj la-text"> ignāv<u>a</u>, ignāv<u>um</u></div>
+        <div class="def">cowardly, lazy</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adjectives-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adjective la-text">perterritus</div>
+      <div class="card__face card__face--back">
+        <div class="di-adj la-text"> perterrit<u>a</u>, perterrit<u>um</u></div>
+        <div class="def">frightened</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adjectives-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adjective la-text">temerārius</div>
+      <div class="card__face card__face--back">
+        <div class="di-adj la-text"> temerāri<u>a</u>, temerāri<u>um</u></div>
+        <div class="def">reckless</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+        <div class="derivative">derivative(s): temerity</div>
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Adverbs
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adverbs" data-bs-content="Adverbs modify or describe verbs, adjectives, and other adverbs.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  
+  
+  
+  <!--adverbs-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adverb la-text">
+        <div class="rightcorner">
+          
+          
+        </div>
+      <div class="term">adhūc</div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="def-only">still</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adverbs-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adverb la-text">
+        <div class="rightcorner">
+          
+          
+        </div>
+      <div class="term">ibi</div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="def-only">there</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--adverbs-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adverb la-text">
+        <div class="rightcorner">
+          
+          
+        </div>
+      <div class="term">statim</div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="def-only">immediately</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  <!--adverbs-->
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--adverb la-text">
+        <div class="rightcorner">
+          
+          
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+          <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+          
+        </div>
+      <div class="term">ubi</div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="def-only">where, when</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Prepositions
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositions" data-bs-content="Prepositions show the position or relationship of one noun to another. In Latin, prepositions take on nouns in the accusative and/or ablative cases. See examples in 'prepositional phrases.' ">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+<!--preposition-->
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--preposition la-text">in</div>
+    <div class="card__face card__face--back">
+      <div class="di-prep-one la-text">(with ablative)</div>
+      <div class="prep-meaning-one">in</div>
+      <div class="di-prep-two la-text">(with accusative)</div>
+      <div class="prep-meaning-two">into</div>
+    </div>
+  </div>
+</div>
+
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <h2>Conjunctions
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Conjunctions" data-bs-content="Conjunctions join words, phrases, or clauses together.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--conjunction la-text">neque...neque</div>
+      <div class="card__face card__face--back">
+        <div class="def-only">neither...nor</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--conjunction la-text">sī</div>
+      <div class="card__face card__face--back">
+        <div class="def-only">if</div>
+        <div class="def-note-small">
+          
+          
+        </div>
+        
+        
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--<h2>Interjections
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Interjections" data-bs-content="Interjections show emotion. They stand alone and are not part of the subject or the predicate.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>-->
+  <!--interjection-->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--conjugated verb-->
+  <!--
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--verb la-text"></div>
+    <div class="card__face card__face--back">
+      <div class="di-v la-text"></div>
+      <div class="def"></div>
+    </div>
+  </div>
+  </div>
+  -->
+  
+  
+  
+  
+  <h2>Prepositional Phrases</h2>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">in</span> <span class="noun la-text">piscinā</span></div>
+      <div class="card__face card__face--back">
+          <div class="di-prepphrase la-text">(ablative singular)</div>
+          <div class="def-prepphrase">in the fishpond</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">in</span> <span class="noun la-text">piscinam</span></div>
+      <div class="card__face card__face--back">
+          <div class="di-prepphrase la-text">(accusative singular)</div>
+          <div class="def-prepphrase">into the fishpond</div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h2>Infinitive Conjugations</h2>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">advenīre</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 4th Conjugation</div>
+      <div class="def">to arrive</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">arripere</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
+      <div class="def">to grab</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">errāre</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 1st Conjugation</div>
+      <div class="def">to wander</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">ludere</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
+      <div class="def">to play</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">nolle</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> irregular</div>
+      <div class="def">to not want</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">parāre</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 1st Conjugation</div>
+      <div class="def">to prepare</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">petere</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
+      <div class="def">to look for</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">posse</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> irregular</div>
+      <div class="def">to be able</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">repellere</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 3rd Conjugation</div>
+      <div class="def">to drive off</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">respondēre</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 2nd Conjugation</div>
+      <div class="def">to reply</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">timēre</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> 2nd Conjugation</div>
+      <div class="def">to fear</div>
+    </div>
+  </div>
+  </div>
+  
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">velle</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> irregular</div>
+      <div class="def">to want</div>
+    </div>
+  </div>
+  </div>
+  
+  
+    </div>
+  </div>
+  </container>
+
 
 
 <script src="script/code.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    });
+  </script>
       </div>
     </main>
 
