@@ -1,6 +1,6 @@
 ---
 title: maneō
-meaning: to stay/remain
+meaning: to stay/ remain
 ch: 9
 pos: verb
 secondppstem: man
