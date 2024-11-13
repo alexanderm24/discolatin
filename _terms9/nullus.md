@@ -3,9 +3,9 @@ title: nūllus
 meaning: "no"
 ch: 9
 pos: totadjective
-femstem: "null"
+femstem: "nūll"
 femend: a
-neutstem: "null"
+neutstem: "nūll"
 neutend: um
 derivative: nullify
 ---
