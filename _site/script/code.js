@@ -61,3 +61,11 @@ abbToggle.addEventListener("change", function() {
       element.style.display = 'block'});
     }
 });
+
+var audio = $(".audio")[0];
+audio.play();
+
+var audio = $(".audio")[0];
+$("nav a").mouseenter(function() {
+  audio.play();
+});
