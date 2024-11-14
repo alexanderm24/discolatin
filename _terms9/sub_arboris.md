@@ -1,6 +1,6 @@
 ---
 title: sub arboribus
-meaning: under the tree
+meaning: under the trees
 ch: 6
 di: (ablative plural)
 pos: prepphrase
