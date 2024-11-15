@@ -868,26 +868,6 @@ layout: base
   </div>
   </div>
   {% endif %}
-  
-  
-  
-  
-  <h2>Prepositional Phrases</h2>
-  <p>For learning grammar concepts. These are not part of the Vocabulary Quiz!</p>
-  {% for terms9 in site.terms9 %}
-  {% assign pos = terms9.pos %}
-  {% if pos == "prepphrase" %}
-  <div class="scene scene--card">
-    <div class="card">
-      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">{{ terms9.preposition }}</span> <span class="noun la-text">{{ terms9.noun }}</span></div>
-      <div class="card__face card__face--back">
-          <div class="di-prepphrase la-text">{{ terms9.di }}</div>
-          <div class="def-prepphrase">{{ terms9.meaning }}</div>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% endfor %}
 
   <h2>Composite</h2>
   <!--composite-->
@@ -914,6 +894,28 @@ layout: base
 </div>
 {% endif %}
 {% endfor %}
+  
+  
+  
+  
+  <h2>Prepositional Phrases</h2>
+  <p>For learning grammar concepts. These are not part of the Vocabulary Quiz!</p>
+  {% for terms9 in site.terms9 %}
+  {% assign pos = terms9.pos %}
+  {% if pos == "prepphrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">{{ terms9.preposition }}</span> <span class="noun la-text">{{ terms9.noun }}</span></div>
+      <div class="card__face card__face--back">
+          <div class="di-prepphrase la-text">{{ terms9.di }}</div>
+          <div class="def-prepphrase">{{ terms9.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+
+  
   
   
   <h2>Infinitive Conjugations</h2>
