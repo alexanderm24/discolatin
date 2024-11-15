@@ -70,6 +70,8 @@ collections:
     output: true
   prepositions:
     output: true
+  conjunctions:
+    output: true
 
 
 plugins:
