@@ -1,9 +1,9 @@
 ---
-title: ad urbem
+title: ad urbes
 meaning: to the cities
 ch: 9
-di: (ablative plural)
+di: (accusative plural)
 pos: prepphrase
 preposition: ad
-noun: urbibus
+noun: urbes
 ---
