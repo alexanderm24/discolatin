@@ -1,0 +1,4 @@
+---
+layout: cumulative
+title: Cumulative!
+---

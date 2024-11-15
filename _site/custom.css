@@ -357,3 +357,8 @@ z-index: 1000;
   padding-left: 500px;
   padding-right: 500px;
 }
+
+.cumulative {
+  width: 275px;
+  height: 100px;
+}

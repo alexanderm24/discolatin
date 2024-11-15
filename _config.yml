@@ -68,6 +68,8 @@ collections:
     output: true
   questionwords:
     output: true
+  prepositions:
+    output: true
 
 
 plugins:
