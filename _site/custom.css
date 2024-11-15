@@ -358,7 +358,7 @@ z-index: 1000;
   padding-right: 500px;
 }
 
-.cumulative {
+.btn.cumulative {
   width: 275px;
   height: 100px;
 }
