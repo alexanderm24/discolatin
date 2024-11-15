@@ -1,6 +1,6 @@
 ---
 title: nūllus
-meaning: "no"
+meaning: "no, not any"
 ch: 9
 pos: totadjective
 femstem: "nūll"
