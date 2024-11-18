@@ -5,5 +5,5 @@ ch: 9
 di: (ablative singular)
 pos: prepphrase
 preposition: e
-noun: cubiculo
+noun: cubiculō
 ---
