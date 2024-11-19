@@ -11,4 +11,5 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: January
+audio: ianua
 ---

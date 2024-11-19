@@ -124,6 +124,7 @@ layout: base
 
   {% assign pos = prepositions.pos %}
 {% if pos == "preposition" %}
+
   <div class="scene scene--card">
     <div class="card">
       <div class="card__face card__face--front--preposition la-text">{{ prepositions.title }}</div>
@@ -144,6 +145,7 @@ layout: base
     </div>
   </div>
   {% endif %}
+
 
   {% if pos == "prepdual" %}
   <div class="scene scene--card">
@@ -170,6 +172,7 @@ layout: base
     </div>
   </div>
   {% endif %}
+  
 
   {% endfor %}
 

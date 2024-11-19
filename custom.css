@@ -362,3 +362,9 @@ z-index: 1000;
   width: 275px;
   height: 100px;
 }
+
+.pdf {
+  text-align: right;
+  cursor: pointer;
+  padding-right: 16px
+}
