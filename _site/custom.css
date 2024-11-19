@@ -364,7 +364,10 @@ z-index: 1000;
 }
 
 .pdf {
-  text-align: right;
+  text-align: left;
   cursor: pointer;
-  padding-right: 16px
+}
+
+.pdf > a {
+  color:lightskyblue;
 }
