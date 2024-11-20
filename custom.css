@@ -168,6 +168,10 @@ align-items: center;
 justify-content: center;
 }
 
+.card__face--front--phrase {
+  background: white;
+}
+
 .card__face--front--noun, .noun {
   background: #ffe433;
 }
