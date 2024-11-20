@@ -203,7 +203,7 @@ line-height: 70px;
 font-size: 28px;
 }
 
-.di-prep-one {
+.di-prep, .di-prep-one {
 background: #6dd978;
 border-top-left-radius: 16px;
 border-top-right-radius: 16px;
