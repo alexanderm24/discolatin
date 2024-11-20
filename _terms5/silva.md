@@ -10,5 +10,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: first
-derivative: sylvan
+derivative: sylvan, Pennsylvania
 ---

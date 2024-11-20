@@ -7,4 +7,5 @@ secondppstem: respond
 infend: ēre
 infhyph: -ēre
 conjugation: fourth
+derivative: responsive
 ---
