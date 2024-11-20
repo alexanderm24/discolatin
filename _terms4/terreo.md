@@ -8,4 +8,5 @@ infend: ēre
 infhyph: -ēre
 conjugation: second
 note: (something else)
+derivative: terrify
 ---
