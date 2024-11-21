@@ -1,6 +1,6 @@
 ---
 title: ex
-meaning: out of, away from
+meaning: out of
 ch: 9
 pos: preposition
 di: (takes ablative)
