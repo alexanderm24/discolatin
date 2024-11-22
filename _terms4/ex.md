@@ -1,5 +1,5 @@
 ---
-title: ex/e
+title: ex/ē
 meaning: out of
 ch: 4
 pos: preposition
