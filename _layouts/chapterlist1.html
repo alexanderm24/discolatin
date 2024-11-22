@@ -471,6 +471,8 @@ layout: base
   </div>
 </div>
 {% endif %}
+
+
 {% if pos == "nounthird" %}
 <!--nouns-->
 <div class="scene scene--card">
@@ -629,6 +631,7 @@ layout: base
   </div>
 </div>
 {% endif %}
+{% endfor %}
 
 
 <h2>Adverbs
@@ -759,6 +762,8 @@ layout: base
 
 
 <!--conjugated verb-->
+{% for terms1 in site.terms1 %}
+{% assign pos = terms1.pos %}
 {% if pos == "conjverb" %}
 <div class="scene scene--card">
 <div class="card">
@@ -770,6 +775,7 @@ layout: base
 </div>
 </div>
 {% endif %}
+{% endfor %}
 
 
 
