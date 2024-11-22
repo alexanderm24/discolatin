@@ -630,28 +630,6 @@ layout: base
 </div>
 {% endif %}
 
-{% if pos == "altadjective2" %}
-<!--adjectives-->
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--adjective la-text">{{ terms1.title }}</div>
-    <div class="card__face card__face--back">
-      <div class="def-only">{{ terms1.meaning }}</div>
-      <div class="def-note-small">
-        {% assign note = terms1.note %}
-        {% if note %}
-        note: {{ terms1.note }}
-        {% endif %}
-      </div>
-      {% assign derivative = terms1.derivative %}
-      {% if derivative %}
-      <div class="derivative">derivative(s): {{ terms1.derivative }}</div>
-      {% endif %}
-    </div>
-  </div>
-</div>
-{% endif %}
-{% endfor %}
 
 <h2>Adverbs
   <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adverbs" data-bs-content="Adverbs modify or describe verbs, adjectives, and other adverbs.">
