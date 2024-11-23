@@ -3,6 +3,6 @@ title: eō
 meaning: to go
 ch: 7
 pos: verb
-secondppstem: īre
+infend: īre
 conjugation: irregular
 ---

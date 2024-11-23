@@ -3,6 +3,6 @@ title: redeō
 meaning: to return
 ch: 7
 pos: verb
-secondppstem: redīre
+infend: redīre
 conjugation: irregular
 ---

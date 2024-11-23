@@ -3,6 +3,6 @@ title: nōlō
 meaning: to not want
 ch: 5
 pos: verb
-secondppstem: nolle
+infend: nolle
 conjugation: irregular
 ---

@@ -407,18 +407,24 @@ layout: base
   {% endif %}
   {% endfor %}
 
-<h2>Infinitive Conjugations</h2>
-{% for infinitives9 in site.infinitives9 %}
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--infverb la-text">{{ infinitives9.title }}</div>
-    <div class="card__face card__face--back">
-      <div class="di-infconj la-text"> {{ infinitives9.conj }}</div>
-      <div class="def">{{ infinitives9.meaning }}</div>
+  <h2>Infinitives 
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Infinitives" data-bs-content="Regular verbs belong to one of four conjugations, or groups. You can tell what conjugation a verb belongs to based on its infinitive, which is the second principal part in a dictionary entry of a verb. While you will not be quizzed on infinitives in isolation, practice these to remember that infinitives are translated as 'to [verb]'.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+    </h2>
+    {% for infinitives9 in site.infinitives9 %}
+    <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--infverb la-text">{{ infinitives9.title }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-infconj la-text"> {{ infinitives9.conj }}</div>
+        <div class="def">{{ infinitives9.meaning }}</div>
+      </div>
     </div>
-  </div>
-</div>
-{% endfor %}
+    </div>
+    {% endfor %}
 
     </div>
   </div>
@@ -929,19 +935,24 @@ layout: base
   
   
   
-  <h2>Infinitive Conjugations</h2>
-  {% for infinitives9 in site.infinitives9 %}
-  <div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--infverb la-text">{{ infinitives9.title }}</div>
-    <div class="card__face card__face--back">
-      <div class="di-infconj la-text"> {{ infinitives9.conj }}</div>
-      <div class="def">{{ infinitives9.meaning }}</div>
+  <h2>Infinitives 
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Infinitives" data-bs-content="Regular verbs belong to one of four conjugations, or groups. You can tell what conjugation a verb belongs to based on its infinitive, which is the second principal part in a dictionary entry of a verb. While you will not be quizzed on infinitives in isolation, practice these to remember that infinitives are translated as 'to [verb]'.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+    </h2>
+    {% for infinitives9 in site.infinitives9 %}
+    <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--infverb la-text">{{ infinitives9.title }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-infconj la-text"> {{ infinitives9.conj }}</div>
+        <div class="def">{{ infinitives9.meaning }}</div>
+      </div>
     </div>
-  </div>
-  </div>
-  {% endfor %}
-  
+    </div>
+    {% endfor %}
     </div>
   </div>
 </container>

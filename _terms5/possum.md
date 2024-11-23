@@ -3,7 +3,7 @@ title: possum
 meaning: to be able
 ch: 5
 pos: verb
-secondppstem: posse
+infend: posse
 conjugation: irregular
 derivative: possible
 ---

@@ -3,6 +3,6 @@ title: sum
 meaning: to be
 ch: 1
 pos: verb
-secondppstem: esse
+infend: esse
 conjugation: irregular
 ---
