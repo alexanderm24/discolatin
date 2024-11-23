@@ -1,4 +1,4 @@
 ---
 layout: cumulative
-title: Cumulative!
+title: Cumulative Vocabulary
 ---

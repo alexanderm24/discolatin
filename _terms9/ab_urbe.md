@@ -5,5 +5,5 @@ ch: 9
 di: (ablative singular)
 pos: prepphrase
 preposition: ab
-noun: urbem
+noun: urbe
 ---

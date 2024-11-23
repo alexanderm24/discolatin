@@ -375,3 +375,7 @@ z-index: 1000;
 .pdf > a {
   color:lightskyblue;
 }
+
+#ticker {
+  padding-bottom: 100px
+}

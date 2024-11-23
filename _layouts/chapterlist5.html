@@ -464,6 +464,39 @@ layout: base
   </div>
   {% endif %}
   {% endfor %}
+
+  <h2>Verbs (Conjugated)
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="These verbs are conjugated, which means that their endings have been changed. You would not be able to find these specific forms in an ordinary dictionary.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+  </h2>
+  {% for terms5 in site.terms5 %}
+  {% assign pos = terms5.pos %}
+  {% if pos == "conjverb" %}
+  <!--verbs conjugated-->
+  <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front--verb la-text">{{ terms5.title }}</div>
+        <div class="card__face card__face--back">
+          <div class="di-v la-text">{{ terms5.di }}</u></div>
+          <div class="def">{{ terms5.meaning }}</div>
+          <div class="def-note-small">
+            {% assign note = terms5.note %}
+            {% if note %}
+            note: {{ terms5.note }}
+            {% endif %}
+          </div>
+          {% assign derivative = terms5.derivative %}
+          {% if derivative %}
+          <div class="derivative">derivative(s): {{ terms5.derivative }}</div>
+          {% endif %}
+        </div>
+      </div>
+  </div>
+  {% endif %}
+  {% endfor %}
   
   
   <h2>Nouns 
