@@ -1,6 +1,6 @@
 ---
 title: neque...neque
 meaning: neither...nor
-ch: 5
+ch: five
 pos: conjunction
 ---

@@ -1,7 +1,7 @@
 ---
-title: pro
-meaning: for
-ch: 9
+title: sub
+meaning: under
+ch: six
 pos: preposition
 di: (takes ablative)
 ---

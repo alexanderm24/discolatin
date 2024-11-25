@@ -1,6 +1,6 @@
 ---
 title: neque
 meaning: and...not
-ch: 6
+ch: six
 pos: conjunction
 ---

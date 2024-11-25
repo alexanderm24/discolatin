@@ -1,7 +1,7 @@
 ---
 title: sine
 meaning: without
-ch: 9
+ch: nine
 pos: preposition
 di: (takes ablative)
 ---

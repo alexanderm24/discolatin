@@ -1,6 +1,6 @@
 ---
 title: in
-ch: 9
+ch: nine
 pos: prepdual
 meaningone: in/on
 dione: (with ablative)

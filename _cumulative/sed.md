@@ -1,6 +1,6 @@
 ---
 title: sed
 meaning: but
-ch: 2
+ch: two
 pos: conjunction
 ---

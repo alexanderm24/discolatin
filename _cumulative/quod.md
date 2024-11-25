@@ -1,6 +1,6 @@
 ---
 title: quod
 meaning: because
-ch: 2
+ch: two
 pos: conjunction
 ---

@@ -1,6 +1,6 @@
 ---
 title: aliī...aliī
 meaning: some...others
-ch: 9
+ch: nine
 pos: conjunction
 ---

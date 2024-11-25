@@ -72,10 +72,7 @@ collections:
     output: true
   questionwords:
     output: true
-  prepositions:
-    output: true
-  conjunctions:
-    output: true
+
 
 
 plugins:

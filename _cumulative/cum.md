@@ -1,7 +1,7 @@
 ---
-title: sub
-meaning: under
-ch: 6
+title: cum
+meaning: with
+ch: nine
 pos: preposition
 di: (takes ablative)
 ---

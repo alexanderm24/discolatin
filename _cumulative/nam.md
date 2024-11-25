@@ -1,6 +1,6 @@
 ---
 title: nam
 meaning: because
-ch: 8
+ch: eight
 pos: conjunction
 ---

@@ -1,7 +1,7 @@
 ---
 title: ex/ē
 meaning: out of
-ch: 2
+ch: two
 pos: preposition
 di: (takes ablative)
 ---

@@ -1,7 +1,7 @@
 ---
-title: per
-meaning: through
-ch: 6
+title: ad
+meaning: to/toward
+ch: two
 pos: preposition
 di: (takes accusative)
 ---

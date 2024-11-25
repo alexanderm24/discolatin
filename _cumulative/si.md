@@ -1,6 +1,6 @@
 ---
 title: sī
 meaning: if
-ch: 5
+ch: five
 pos: conjunction
 ---

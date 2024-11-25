@@ -1,7 +1,7 @@
 ---
-title: ab/a
-meaning: from, away from
-ch: 9
+title: pro
+meaning: for
+ch: nine
 pos: preposition
 di: (takes ablative)
 ---

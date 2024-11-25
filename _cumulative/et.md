@@ -1,6 +1,6 @@
 ---
 title: et
 meaning: and
-ch: 1
+ch: one
 pos: conjunction
 ---
