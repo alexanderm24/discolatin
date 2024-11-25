@@ -1,6 +1,6 @@
 ---
 title: stō
-meaning: to throw
+meaning: to stand
 ch: 10
 pos: verb
 secondppstem: st
