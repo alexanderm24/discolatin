@@ -379,3 +379,18 @@ z-index: 1000;
 #ticker {
   padding-bottom: 100px
 }
+
+#flipall {
+  position: sticky;
+  bottom: 2.5rem;
+  border-radius: 6rem;
+  border-color: black;
+  border-width: 3px;
+  width: 8rem;
+  height: 8rem;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px rgba(223, 223, 248, 0.2);
+  font-size: 1.25rem;
+  float: right;
+  color: black;
+}
