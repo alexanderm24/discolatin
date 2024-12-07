@@ -1,6 +1,6 @@
 ---
 title: Bacchus
-gen: Bacchi
+gen: Bacchī
 gender: m.
 over: Olympian god of wine, vegetation, pleasure, festivity, madness and wild frenzy.
 romanang: Bacchus
