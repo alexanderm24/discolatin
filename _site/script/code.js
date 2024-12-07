@@ -6,6 +6,14 @@ var cards = document.querySelectorAll('.card');
   });
 });
 
+const flipall = document.getElementById('flipall');
+var cards = document.querySelectorAll('.card');
+
+flipall.addEventListener('click', () => {
+  cards.forEach(card => {
+    card.classList.toggle('is-flipped');
+  });
+});
 
 const sortAlph = document.getElementById("sortalph");
 const sortPos = document.getElementById("sortpos");

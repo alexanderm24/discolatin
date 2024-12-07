@@ -1,7 +1,7 @@
 ---
 title: in
 ch: 9
-repeat: yep
+repeat: yes
 pos: prepdual
 meaningone: in/on
 dione: (with ablative)

@@ -1,6 +1,6 @@
 ---
 title: ubi
-meaning: where (statement)
+meaning: where
 ch: 1
 pos: adverb
 ---

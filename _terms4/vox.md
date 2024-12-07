@@ -1,7 +1,7 @@
 ---
 title: vox
 meaning: voice
-ch: 5
+ch: 4
 pos: nounthird
 genitive: vocis
 abbgender: f.

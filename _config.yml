@@ -72,6 +72,8 @@ collections:
     output: true
   questionwords:
     output: true
+  cumulative:
+    output: true
 
 
 
