@@ -6,4 +6,6 @@ pos: verb
 secondppstem: adven
 infend: īre
 conjugation: fourth
+mt: yes
+mt5thru7: yes
 ---

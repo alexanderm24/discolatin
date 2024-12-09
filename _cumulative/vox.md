@@ -9,4 +9,6 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivative: vocalize
+mt: yes
+mt1thru4: yes
 ---

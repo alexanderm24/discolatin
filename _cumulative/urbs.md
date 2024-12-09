@@ -9,4 +9,6 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivative: urbane, suburb
+mt: yes
+mt5thru7: yes
 ---

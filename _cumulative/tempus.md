@@ -9,4 +9,6 @@ abbgender2: meut.
 gender: neuter
 declension: third
 derivative: contemporary
+mt: yes
+mt8thru10: yes
 ---

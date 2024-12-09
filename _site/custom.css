@@ -391,6 +391,25 @@ z-index: 1000;
   height: 100px;
 }
 
+.btn-mt {
+  width: 275px;
+  height: 100px;
+  background-color: #6dd978;
+}
+
+.btn-mt:hover {
+  width: 275px;
+  height: 100px;
+  background-color: #6dd978;
+}
+
+.btn-mt:visited {
+  width: 275px;
+  height: 100px;
+  background-color: #6dd978;
+}
+
+
 .pdf {
   text-align: left;
   cursor: pointer;

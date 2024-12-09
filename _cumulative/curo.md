@@ -7,4 +7,6 @@ secondppstem: cūr
 infend: āre
 conjugation: first
 derivative: curator
+mt: yes
+mt5thru7: yes
 ---

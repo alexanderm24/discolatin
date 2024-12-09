@@ -7,4 +7,6 @@ secondppstem: aud
 infend: īre
 conjugation: fourth
 derivative: audition, audience
+mt: yes
+mt1thru4: yes
 ---

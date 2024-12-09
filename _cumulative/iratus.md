@@ -8,4 +8,6 @@ femend: a
 neutstem: īrāt
 neutend: um
 derivative: irate
+mt: yes
+mt1thru4: yes
 ---

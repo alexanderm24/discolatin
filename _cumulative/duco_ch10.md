@@ -7,4 +7,6 @@ secondppstem: dūc
 infend: ere
 conjugation: third
 derivative: productive, conducive
+mt: yes
+mt5thru7: yes
 ---

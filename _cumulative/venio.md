@@ -7,4 +7,6 @@ secondppstem: ven
 infend: īre
 conjugation: third
 derivative: intervention, convenient
+mt: yes
+mt5thru7: yes
 ---

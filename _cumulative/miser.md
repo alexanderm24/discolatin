@@ -6,4 +6,6 @@ pos: totadjective
 femend: misera
 neutend: miserum
 derivative: immiserate
+mt: yes
+mt8thru10: yes
 ---

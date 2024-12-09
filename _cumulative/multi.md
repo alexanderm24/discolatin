@@ -8,4 +8,6 @@ femend: ae
 neutstem: mult
 neutend: a
 derivative: multitude, multiply
+mt: yes
+mt1thru4: yes
 ---

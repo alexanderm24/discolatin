@@ -8,4 +8,6 @@ femend: a
 neutstem: "nūll"
 neutend: um
 derivative: nullify
+mt: yes
+mt8thru10: yes
 ---
