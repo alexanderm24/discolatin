@@ -4,15 +4,62 @@ body {
 }
 
 .homecontainer {
-margin-top: 10rem;
+margin-top: 0;
 margin-left: auto;
 margin-right: auto;
+padding: 0;
+}
+
+.main-t {
+  width: 25vw;
+  height: 16vw;
+  background-color: #943C1E;
+  border-bottom-right-radius: 9.375vw;
+  align-items: center;
+  display: flex;
+  box-shadow: 0 0 12px black;
+}
+
+.main-t:hover {
+  transform: scale(1.001);
+}
+
+.cursive {
+  font-family: "Sarina", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4.688vw;
+  color: white;
+  text-shadow: 0 0 20px #FFF6D0;
+  align-items: center;
+  display: flex;
+  padding-right: 1.2495vw;
+  padding-bottom: 0.833vw;
+}
+
+
+
+#hometitle {
+  font-family: "Sarina", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 85px;
+  color: white;
+  text-shadow: 0 0 20px #FFF6D0;
+  align-items: center;
+  display: flex;
 }
 
 .vocabcontainer {
 margin-top: 10rem;
 margin-left: auto;
 margin-right: auto; 
+}
+
+.button-group {
+  margin-left: 18vw;
+  margin-right: 18vw;
+  justify-content: center;
 }
 
 .form-check {
@@ -29,6 +76,8 @@ text-align: center;
 h1, h4, .home {
 text-align: center;
 }
+
+
 
 .home {
 margin-bottom: 3rem;
@@ -59,8 +108,13 @@ width: 10rem;
 
 a {
 text-decoration: none;
-color: black;
+color: none;
 }
+
+a:hover > button.btn-mt {
+  text-decoration: none;
+  color: black;
+  }
 
 .scene {
 display: inline-block;
