@@ -27,6 +27,9 @@
         <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
         <label class="form-check-label" for="flexSwitchCheckChecked">Abbreviate Dictionary Info</label>
       </div>-->
+
+
+    {% if page.pdfchl %}
     <hr>
     <h6>Print:</h6>
     <p class="pdf">
@@ -37,7 +40,9 @@
     </svg>
       </a>
     </p>
+    {% endif %}
 
+    {% if page.pdfpq %}
     <p class="pdf">
       <a href="../documents/{{ page.pdfpq }}.pdf" target="_blank">
         Practice Quiz 1
@@ -46,6 +51,7 @@
     </svg>
       </a>
     </p>
+    {% endif %}
 
 
     {% if page.pdfpq2 %}
