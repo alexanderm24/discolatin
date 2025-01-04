@@ -20,10 +20,8 @@ layout: base
   {% assign derivative = terms.derivative %}
   {% assign note = terms.note %}
   {% assign repeat = terms.repeat %}
-  {% assign mt5thru7 = terms.mt5thru7 %}
 
-  {% if mt5thru7 %}
-  {% unless inactive %}
+  {% if ch == page.ch %}
 
 <!--verbs-->
 {% if pos == "verb" %}
@@ -541,11 +539,25 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
+<!--other phrases-->
+{% if pos == "phrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase"><span class="adj la-text">{{ terms.adjective }}</span> <span class="verb la-text">{{ terms.verb }}</span> <span class="noun la-text">{{ terms.noun }}</span> <span class="noun la-text">{{ terms.noun1 }}</span> <span class="verb la-text">{{ terms.verb2 }}</span></div>
+      <div class="card__face card__face--back">
+        <div class="def-only">{{ terms.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
 {% endif %}
 
 
 {% endfor %}
+
+
+
     </div>
   </div>
 </container>
@@ -560,7 +572,7 @@ layout: base
 
       
 
-    
+    {% if page.verbs %}
       <h2>Verbs
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="A verb shows what a subject is doing or tells what the subject is, was, or will be. Usually, subjects are nouns, but in Latin, verbs don't always have a corresponding noun... Remember: subjects are baked into the verb! Verbs have three qualities: person, number, and tense.">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -568,6 +580,7 @@ layout: base
           <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
         </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -577,10 +590,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-    {% if mt5thru7 %}
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
 
       {% if pos == "verb" %}
@@ -614,17 +625,18 @@ layout: base
       </div>
       {% endif %}
 
-      {% endunless %}
 {% endif %}
-{% endfor %}v
+{% endfor %}
 
-      <!--<h2>Verbs (Conjugated)
+      {% if page.conjverbs %}
+      <h2>Verbs (Conjugated)
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="These verbs are conjugated, which means that their endings have been changed. You would not be able to find these specific forms in an ordinary dictionary.">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
           <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
           <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
         </svg></a>
-      </h2>-->
+      </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -634,11 +646,9 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-        {% if mt5thru7 %}
+      {% if ch == page.ch %}
 
-      {% unless inactive %}
 
       {% if pos == "conjverb" %}
       <div class="scene scene--card">
@@ -671,10 +681,49 @@ layout: base
       </div>
       {% endif %}
 
-      {% endunless %}
 {% endif %}
 {% endfor %}
 
+{% if page.verbs %}
+<h2>Verbs: Infinitives 
+  <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Infinitives" data-bs-content="Regular verbs belong to one of four conjugations, or groups. You can tell what conjugation a verb belongs to based on its infinitive, which is the second principal part in a dictionary entry of a verb. While you will not be quizzed on infinitives in isolation, practice these to remember that infinitives are translated as 'to [verb]'.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+  </h2>
+{% endif %}
+
+{% for terms in site.terms %}
+
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+
+      {% if ch == page.ch %}
+
+
+{% if pos == "verb" %}
+  <div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--infverb la-text">{{ terms.inf }}</div>
+    <div class="card__face card__face--back">
+      <div class="di-infconj la-text"> {{ terms.conjugation }} conjugation</div>
+      <div class="def">{{ terms.meaning }}</div>
+    </div>
+  </div>
+  </div>
+{% endif %}
+
+
+{% endif %}
+{% endfor %}
+
+
+      {% if page.nouns %}
       <h2>Nouns 
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Nouns" data-bs-content="A noun names people, places, things, or ideas. In Latin, nouns have three qualities: gender, case, and number.">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -682,6 +731,7 @@ layout: base
           <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
         </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -691,12 +741,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-        {% if mt5thru7 %}
-
-    
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
 
 
@@ -827,12 +873,11 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
 
-
+        {% if page.pronouns %}
       <h2>Pronouns
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Pronouns" data-bs-content="Pronouns take the place of nouns. They refer to people, places, things, or ideas. There are personal, relative, and interrogative pronouns.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -840,6 +885,7 @@ layout: base
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -850,12 +896,7 @@ layout: base
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
 
-      {% assign mt5thru7 = terms.mt5thru7 %}
-
-        {% if mt5thru7 %}
-
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 <!--pronouns-->
 {% if pos == "pronoun" %}
 <div class="scene scene--card">
@@ -940,12 +981,12 @@ layout: base
 </div>
 {% endif %}
 
-<!--personal pronouns?-->
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
+
+        {% if page.adjectives %}
       <h2>Adjectives
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adjectives" data-bs-content="Adjectives modify or describe nouns and pronouns.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -953,6 +994,7 @@ layout: base
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -962,12 +1004,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-        {% if mt5thru7 %}
-
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
       <!--adjectives 212-->
 {% if pos == "totadjective" %}
@@ -1033,10 +1071,10 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
+    {% if page.adverbs %}
       <h2>Adverbs
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adverbs" data-bs-content="Adverbs modify or describe verbs, adjectives, and other adverbs.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -1044,6 +1082,7 @@ layout: base
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
       </h2>
+    {% endif %}
 
       {% for terms in site.terms %}
 
@@ -1053,11 +1092,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-  {% if mt5thru7 %}
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
       {% if pos == "adverb" %}
 <div class="scene scene--card">
@@ -1087,10 +1123,10 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
+        {% if page.prepositions %}
       <h2>Prepositions
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositions" data-bs-content="Prepositions show the position or relationship of one noun to another. In Latin, prepositions take on nouns in the accusative and/or ablative cases. See examples in 'prepositional phrases.' ">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -1098,6 +1134,7 @@ layout: base
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -1107,12 +1144,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-    {% if mt5thru7 %}
-
-    
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
       <!--prepositions-->
 {% if pos == "preposition" %}
@@ -1173,10 +1206,49 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
+{% if page.prepphrases %}
+<h2>Prepositional Phrases
+  <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositional Phrases" data-bs-content="Phrases themselves are not parts of speech, but I have categorized them separately here. These are examples of how prepositions can take the ablative and/or accusative noun cases.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+</h2>
+{% endif %}
+
+{% for prepphrase in site.prepphrase %}
+
+      {% assign pos = prepphrase.pos %}
+      {% assign ch = prepphrase.ch %}
+      {% assign inactive = prepphrase.inactive %}
+      {% assign derivative = prepphrase.derivative %}
+      {% assign note = prepphrase.note %}
+      {% assign repeat = prepphrase.repeat %}
+
+      {% if ch == page.ch %}
+
+      {% if pos == "prepphrase" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--phrase la-text"><span class="prep la-text">{{ prepphrase.preposition }}</span> <span class="noun la-text">{{ prepphrase.noun }}</span></div>
+          <div class="card__face card__face--back">
+              <div class="di-prepphrase la-text">{{ prepphrase.di }}</div>
+              <div class="def">{{ prepphrase.meaning }}</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+{% endif %}
+{% endfor %}
+
+
+
+
+        {% if page.conjunctions %}
       <h2>Conjunctions
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Conjunctions" data-bs-content="Conjunctions join words, phrases, or clauses together. When you come across a conjunction joining two clauses, you should pause and translate the first clause before proceeding.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -1184,6 +1256,7 @@ layout: base
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
       </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -1194,11 +1267,7 @@ layout: base
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
 
-      {% assign mt5thru7 = terms.mt5thru7 %}
-
-        {% if mt5thru7 %}
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
      
 {% if pos == "conjunction" %}
@@ -1231,17 +1300,18 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
-      <!--<h2>Interjections
+        {% if page.interjections %}
+      <h2>Interjections
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Interjections" data-bs-content="Interjections show emotion. They stand alone and are not part of the subject or the predicate.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
           </svg></a>
-      </h2>-->
+      </h2>
+      {% endif %}
 
       {% for terms in site.terms %}
 
@@ -1251,11 +1321,8 @@ layout: base
       {% assign derivative = terms.derivative %}
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
-      {% assign mt5thru7 = terms.mt5thru7 %}
 
-        {% if mt5thru7 %}
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
 
       <!--interjection-->
@@ -1289,11 +1356,19 @@ layout: base
 </div>
 {% endif %}
 
-{% endunless %}
 {% endif %}
 {% endfor %}
 
-<!--<h2>Composite</h2>-->
+{% if page.composite %}
+<h2>Composite
+  <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Composite" data-bs-content="This really is a rare category! All that's happening is two words fused together.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+  </h2>
+</h2>
+{% endif %}
 
 {% for terms in site.terms %}
 
@@ -1304,12 +1379,7 @@ layout: base
       {% assign note = terms.note %}
       {% assign repeat = terms.repeat %}
 
-      {% assign mt5thru7 = terms.mt5thru7 %}
-
-  {% if mt5thru7 %}
-
-
-      {% unless inactive %}
+      {% if ch == page.ch %}
 
 <!--composite-->
 {% if pos == "composite" %}
@@ -1341,8 +1411,43 @@ layout: base
 {% endif %}
 
 
-{% endunless %}
 {% endif %}
+{% endfor %}
+
+<!--other phrases-->
+{% if page.phrases %}
+<h2>Other Phrases
+  <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Other Phrases" data-bs-content="Phrases themselves are not parts of speech, but I have categorized them separately here.">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+      <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+    </svg></a>
+</h2>
+{% endif %}
+
+{% for terms in site.terms %}
+
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+
+      {% if ch == page.ch %}
+
+  {% if pos == "phrase" %}
+  <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--phrase"><span class="adj la-text">{{ terms.adjective }}</span> <span class="verb la-text">{{ terms.verb }}</span> <span class="noun la-text">{{ terms.noun }}</span> <span class="noun la-text">{{ terms.noun1 }}</span> <span class="verb la-text">{{ terms.verb2 }}</span></div>
+      <div class="card__face card__face--back">
+        <div class="def-only">{{ terms.meaning }}</div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endif %}
+
 {% endfor %}
 
 
@@ -1351,13 +1456,7 @@ layout: base
   </div>
 </container>
 
-<button id="flipall" type="button" class="btn btn-primary">
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
-<path fill-rule="evenodd" d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"></path>
-<path d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"></path>
-</svg>
-  flip all
-</button>
+{%- include flip-button.html -%}
 
 
 

@@ -12,15 +12,15 @@ layout: base
 <container id="alph" class="vocabcontainer">
   <div class="row text-center">
     <div class="col">
-  {% for cumulative in site.cumulative %}
+  {% for terms in site.terms %}
 
-  {% assign pos = cumulative.pos %}
-  {% assign ch = cumulative.ch %}
-  {% assign inactive = cumulative.inactive %}
-  {% assign derivative = cumulative.derivative %}
-  {% assign note = cumulative.note %}
-  {% assign repeat = cumulative.repeat %}
-  {% assign mt1thru4 = cumulative.mt1thru4 %}
+  {% assign pos = terms.pos %}
+  {% assign ch = terms.ch %}
+  {% assign inactive = terms.inactive %}
+  {% assign derivative = terms.derivative %}
+  {% assign note = terms.note %}
+  {% assign repeat = terms.repeat %}
+  {% assign mt1thru4 = terms.mt1thru4 %}
 
   {% if mt1thru4 %}
   {% unless inactive %}
@@ -38,19 +38,19 @@ layout: base
           {% endif %}
         </div>
         <div class="term">
-          {{ cumulative.title }}
+          {{ terms.title }}
         </div>
       </div>
       <div class="card__face card__face--back">
-        <div class="di-v la-text">{{ cumulative.secondppstem }}<u>{{ cumulative.infend }}</u></div>
-        <div class="def">{{ cumulative.meaning }}</div>
+        <div class="di-v la-text">{{ terms.secondppstem }}<u>{{ terms.infend }}</u></div>
+        <div class="def">{{ terms.meaning }}</div>
         <div class="def-note-small">
           {% if note %}
-          note: {{ cumulative.note }}
+          note: {{ terms.note }}
           {% endif %}
         </div>
         {% if derivative %}
-        <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+        <div class="derivative">derivative(s): {{ terms.derivative }}</div>
         {% endif %}
       </div>
     </div>
@@ -70,19 +70,19 @@ layout: base
           {% endif %}
         </div>
         <div class="term">
-          {{ cumulative.title }}
+          {{ terms.title }}
         </div>
       </div>
       <div class="card__face card__face--back">
-        <div class="di-v la-text">{{ cumulative.di }}</div>
-        <div class="def">{{ cumulative.meaning }}</div>
+        <div class="di-v la-text">{{ terms.di }}</div>
+        <div class="def">{{ terms.meaning }}</div>
         <div class="def-note-small">
           {% if note %}
-          note: {{ cumulative.note }}
+          note: {{ terms.note }}
           {% endif %}
         </div>
         {% if derivative %}
-        <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+        <div class="derivative">derivative(s): {{ terms.derivative }}</div>
         {% endif %}
       </div>
     </div>
@@ -102,19 +102,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.stem }}<u>{{ cumulative.genend }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.stem }}<u>{{ terms.genend }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -134,19 +134,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -165,19 +165,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ cumulative.title }}
+      {{ terms.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -196,19 +196,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ cumulative.title }}
+      {{ terms.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -228,19 +228,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.genitive }}   {{ cumulative.abbgender }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -251,16 +251,16 @@ layout: base
 {% if pos == "perspronoun" %}
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun la-text">{{ cumulative.title }}</div>
+    <div class="card__face card__face--front--noun la-text">{{ terms.title }}</div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -280,19 +280,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.genitive }}   {{ cumulative.abbgender }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -312,19 +312,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-adj la-text"> {{ cumulative.femstem }}<u>{{ cumulative.femend }}</u>, {{ cumulative.neutstem}}<u>{{ cumulative.neutend}}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-adj la-text"> {{ terms.femstem }}<u>{{ terms.femend }}</u>, {{ terms.neutstem}}<u>{{ terms.neutend}}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -344,19 +344,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-adj la-text">{{ cumulative.adjforms }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-adj la-text">{{ terms.adjforms }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -375,17 +375,17 @@ layout: base
         </svg>
         {% endif %}
       </div>
-    <div class="term">{{ cumulative.title }}</div>
+    <div class="term">{{ terms.title }}</div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -405,19 +405,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-prep la-text">{{ cumulative.di }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-prep la-text">{{ terms.di }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -437,14 +437,14 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-prep-one la-text">{{ cumulative.dione }}</div>
-      <div class="prep-meaning-one">{{ cumulative.meaningone }}</div>
-      <div class="di-prep-two la-text">{{ cumulative.ditwo }}</div>
-      <div class="prep-meaning-two">{{ cumulative.meaningtwo }}</div>
+      <div class="di-prep-one la-text">{{ terms.dione }}</div>
+      <div class="prep-meaning-one">{{ terms.meaningone }}</div>
+      <div class="di-prep-two la-text">{{ terms.ditwo }}</div>
+      <div class="prep-meaning-two">{{ terms.meaningtwo }}</div>
     </div>
   </div>
 </div>
@@ -463,18 +463,18 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -494,18 +494,18 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -524,17 +524,17 @@ layout: base
         </svg>
         {% endif %}
       </div>
-    <div class="term"><span class="noun la-text">{{ cumulative.noun }}</span><span class="prep la-text">{{ cumulative.prep }}</span></div>
+    <div class="term"><span class="noun la-text">{{ terms.noun }}</span><span class="prep la-text">{{ terms.prep }}</span></div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -569,15 +569,15 @@ layout: base
         </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
     {% if mt1thru4 %}
       {% unless inactive %}
@@ -595,19 +595,19 @@ layout: base
                 {% endif %}
               </div>
               <div class="term">
-                {{ cumulative.title }}
+                {{ terms.title }}
               </div>
             </div>
             <div class="card__face card__face--back">
-              <div class="di-v la-text">{{ cumulative.secondppstem }}<u>{{ cumulative.infend }}</u></div>
-              <div class="def">{{ cumulative.meaning }}</div>
+              <div class="di-v la-text">{{ terms.secondppstem }}<u>{{ terms.infend }}</u></div>
+              <div class="def">{{ terms.meaning }}</div>
               <div class="def-note-small">
                 {% if note %}
-                note: {{ cumulative.note }}
+                note: {{ terms.note }}
                 {% endif %}
               </div>
               {% if derivative %}
-              <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+              <div class="derivative">derivative(s): {{ terms.derivative }}</div>
               {% endif %}
             </div>
           </div>
@@ -626,15 +626,15 @@ layout: base
         </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -652,19 +652,19 @@ layout: base
                 {% endif %}
               </div>
               <div class="term">
-                {{ cumulative.title }}
+                {{ terms.title }}
               </div>
             </div>
             <div class="card__face card__face--back">
-              <div class="di-v la-text">{{ cumulative.di }}</div>
-              <div class="def">{{ cumulative.meaning }}</div>
+              <div class="di-v la-text">{{ terms.di }}</div>
+              <div class="def">{{ terms.meaning }}</div>
               <div class="def-note-small">
                 {% if note %}
-                note: {{ cumulative.note }}
+                note: {{ terms.note }}
                 {% endif %}
               </div>
               {% if derivative %}
-              <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+              <div class="derivative">derivative(s): {{ terms.derivative }}</div>
               {% endif %}
             </div>
           </div>
@@ -683,15 +683,15 @@ layout: base
         </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -714,19 +714,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.stem }}<u>{{ cumulative.genend }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.stem }}<u>{{ terms.genend }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -746,19 +746,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -777,19 +777,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ cumulative.title }}
+      {{ terms.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -808,19 +808,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ cumulative.title }}
+      {{ terms.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ cumulative.genitive }}</u>   <u>{{ cumulative.abbgender }}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -841,16 +841,16 @@ layout: base
           </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
 
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -869,19 +869,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.genitive }}   {{ cumulative.abbgender }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -892,16 +892,16 @@ layout: base
 {% if pos == "perspronoun" %}
 <div class="scene scene--card">
   <div class="card">
-    <div class="card__face card__face--front--noun la-text">{{ cumulative.title }}</div>
+    <div class="card__face card__face--front--noun la-text">{{ terms.title }}</div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -921,19 +921,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ cumulative.genitive }}   {{ cumulative.abbgender }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -954,15 +954,15 @@ layout: base
           </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -982,19 +982,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-adj la-text"> {{ cumulative.femstem }}<u>{{ cumulative.femend }}</u>, {{ cumulative.neutstem}}<u>{{ cumulative.neutend}}</u></div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-adj la-text"> {{ terms.femstem }}<u>{{ terms.femend }}</u>, {{ terms.neutstem}}<u>{{ terms.neutend}}</u></div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1014,19 +1014,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-adj la-text">{{ cumulative.adjforms }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-adj la-text">{{ terms.adjforms }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1045,15 +1045,15 @@ layout: base
           </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
   {% if mt1thru4 %}
 
@@ -1070,17 +1070,17 @@ layout: base
         </svg>
         {% endif %}
       </div>
-    <div class="term">{{ cumulative.title }}</div>
+    <div class="term">{{ terms.title }}</div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1099,15 +1099,15 @@ layout: base
           </svg></a>
       </h2>-->
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
     {% if mt1thru4 %}
 
@@ -1127,19 +1127,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-prep la-text">{{ cumulative.di }}</div>
-      <div class="def">{{ cumulative.meaning }}</div>
+      <div class="di-prep la-text">{{ terms.di }}</div>
+      <div class="def">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1160,14 +1160,14 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-prep-one la-text">{{ cumulative.dione }}</div>
-      <div class="prep-meaning-one">{{ cumulative.meaningone }}</div>
-      <div class="di-prep-two la-text">{{ cumulative.ditwo }}</div>
-      <div class="prep-meaning-two">{{ cumulative.meaningtwo }}</div>
+      <div class="di-prep-one la-text">{{ terms.dione }}</div>
+      <div class="prep-meaning-one">{{ terms.meaningone }}</div>
+      <div class="di-prep-two la-text">{{ terms.ditwo }}</div>
+      <div class="prep-meaning-two">{{ terms.meaningtwo }}</div>
     </div>
   </div>
 </div>
@@ -1185,16 +1185,16 @@ layout: base
           </svg></a>
       </h2>
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
 
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -1213,18 +1213,18 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1243,15 +1243,15 @@ layout: base
           </svg></a>
       </h2>-->
 
-      {% for cumulative in site.cumulative %}
+      {% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
         {% if mt1thru4 %}
 
@@ -1271,18 +1271,18 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ cumulative.title }}
+        {{ terms.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -1295,16 +1295,16 @@ layout: base
 
 <!--<h2>Composite</h2>-->
 
-{% for cumulative in site.cumulative %}
+{% for terms in site.terms %}
 
-      {% assign pos = cumulative.pos %}
-      {% assign ch = cumulative.ch %}
-      {% assign inactive = cumulative.inactive %}
-      {% assign derivative = cumulative.derivative %}
-      {% assign note = cumulative.note %}
-      {% assign repeat = cumulative.repeat %}
+      {% assign pos = terms.pos %}
+      {% assign ch = terms.ch %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
 
-      {% assign mt1thru4 = cumulative.mt1thru4 %}
+      {% assign mt1thru4 = terms.mt1thru4 %}
 
   {% if mt1thru4 %}
 
@@ -1323,17 +1323,17 @@ layout: base
         </svg>
         {% endif %}
       </div>
-    <div class="term"><span class="noun la-text">{{ cumulative.noun }}</span><span class="prep la-text">{{ cumulative.prep }}</span></div>
+    <div class="term"><span class="noun la-text">{{ terms.noun }}</span><span class="prep la-text">{{ terms.prep }}</span></div>
     </div>
     <div class="card__face card__face--back">
-      <div class="def-only">{{ cumulative.meaning }}</div>
+      <div class="def-only">{{ terms.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ cumulative.note }}
+        note: {{ terms.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ cumulative.derivative }}</div>
+      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
       {% endif %}
     </div>
   </div>
