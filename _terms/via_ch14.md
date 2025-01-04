@@ -1,11 +1,10 @@
 ---
-title: puella
-meaning: girl
-ch: 1
+title: via
+meaning: road
+ch: fourteen
 pos: noun
-stem: puell
+stem: vi
 genend: ae
-genhyph: -ae
 abbgender: f.
 abbgender2: fem.
 gender: feminine
