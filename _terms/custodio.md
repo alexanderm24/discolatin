@@ -7,7 +7,7 @@ inf: custōdīre
 secondppstem: custōd
 infend: īre
 conjugation: fourth
-derivative: dormant, dormitory
+derivative: custody
 f3: yes
 f: yes
 ---
