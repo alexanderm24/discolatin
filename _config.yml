@@ -1,4 +1,4 @@
-title: MATG Latin Vocab
+title: Discō Latin
 author:
   name: GitHub User
   email: your-email@domain.com
@@ -21,6 +21,10 @@ theme: minima
 #remote_theme: jekyll/minima
 
 collections:
+  terms:
+    output: true
+  prepphrase:
+    output: true
   terms1:
     output: true
   terms2:
@@ -72,8 +76,7 @@ collections:
     output: true
   questionwords:
     output: true
-  cumulative:
-    output: true
+
 
 
 
