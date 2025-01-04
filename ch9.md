@@ -1,6 +1,19 @@
 ---
-layout: chapterlist9
+layout: chlist
 title: Chapter 9
+ch: nine
+verbs: yes
+conjverbs: yes
+nouns: yes
+pronouns: no
+adjectives: yes
+adverbs: yes
+prepositions: yes
+conjunctions: yes
+interjections: no
+composites: yes
+prepphrases: yes
+phrases: no
 pdfchl: ch9
 pdfpq: ch9practice
 pdfpq2: ch9practice2

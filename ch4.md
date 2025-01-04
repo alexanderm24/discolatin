@@ -1,6 +1,19 @@
 ---
-layout: chapterlist4
+layout: chlist
 title: Chapter 4
+ch: four
+verbs: yes
+conjverbs: yes
+nouns: yes
+pronouns: yes
+adjectives: yes
+adverbs: yes
+prepositions: yes
+conjunctions: no
+interjections: no
+composites: no
+prepphrases: yes
+phrases: yes
 pdfchl: ch4
 pdfpq: ch4practice
 pdfpq2: ch4practice2

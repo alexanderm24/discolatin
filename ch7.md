@@ -1,6 +1,19 @@
 ---
-layout: chapterlist7
+layout: chlist
 title: Chapter 7
+ch: seven
+verbs: yes
+conjverbs: no
+nouns: yes
+pronouns: no
+adjectives: yes
+adverbs: no
+prepositions: yes
+conjunctions: no
+interjections: yes
+composites: no
+prepphrases: yes
+phrases: no
 pdfchl: ch7
 pdfpq: ch7practice
 pdfpq2: ch7practice2
