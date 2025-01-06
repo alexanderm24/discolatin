@@ -59,6 +59,7 @@ margin-right: auto;
 .button-group {
   margin-left: 18vw;
   margin-right: 18vw;
+  justify-content: center;
 }
 
 .form-check {
