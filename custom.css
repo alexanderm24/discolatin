@@ -62,6 +62,7 @@ margin-right: auto;
   margin-left: 18vw;
   margin-right: 18vw;
   justify-content: center;
+  display: flex;
 }
 
 .form-check {
