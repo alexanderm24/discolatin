@@ -46,26 +46,6 @@ collections:
   terms10:
     output: true
     
-  infinitives1:
-    output: true
-  infinitives2:
-    output: true
-  infinitives3:
-    output: true
-  infinitives4:
-    output: true
-  infinitives5:
-    output: true
-  infinitives6:
-    output: true
-  infinitives7:
-    output: true
-  infinitives8:
-    output: true
-  infinitives9:
-    output: true
-  infinitives10:
-    output: true
 
 
   gods:
@@ -75,6 +55,8 @@ collections:
   hw:
     output: true
   questionwords:
+    output: true
+  body:
     output: true
 
 
