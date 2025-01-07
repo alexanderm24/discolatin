@@ -10,6 +10,10 @@ layout: base
       
   <h1> {{ page.title }} </h1>
 
+<container class="vocabcontainer container-fluid">
+    <div class="row text-center">
+      <div class="col"> 
+  
   {% for body in site.body %}
 
   {% assign pos = body.pos %}
@@ -150,7 +154,7 @@ layout: base
 {%- include flip-button.html -%}
 
 </div>
-</div>
+    </div>
 </container>
 
 <script src="script/code.js"></script>
