@@ -2,7 +2,7 @@
 title: facies
 meaning: face
 pos: nounfifth
-genitive: diēī
+genitive: faciēī
 abbgender: m.
 abbgender2: masc.
 gender: masculine
