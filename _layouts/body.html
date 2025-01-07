@@ -10,8 +10,11 @@ layout: base
       
   <h1> {{ page.title }} </h1>
 
-  <h2>Dictionary Entries</h2>
   {% for body in site.body %}
+
+  {% assign pos = body.pos %}
+  {% assign derivative = body.derivative %}
+  {% assign note = body.note %}
 
 
 <!--nouns 1&2-->
@@ -27,19 +30,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ terms.title }}
+        {{ body.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">{{ terms.stem }}<u>{{ terms.genend }}</u>   <u>{{ terms.abbgender }}</u></div>
-      <div class="def">{{ terms.meaning }}</div>
+      <div class="di-n la-text">{{ body.stem }}<u>{{ body.genend }}</u>   <u>{{ body.abbgender }}</u></div>
+      <div class="def">{{ body.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ terms.note }}
+        note: {{ body.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
+      <div class="derivative">derivative(s): {{ body.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -59,19 +62,19 @@ layout: base
         {% endif %}
       </div>
       <div class="term">
-        {{ terms.title }}
+        {{ body.title }}
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
-      <div class="def">{{ terms.meaning }}</div>
+      <div class="di-n la-text"><u>{{ body.genitive }}</u>   <u>{{ body.abbgender }}</u></div>
+      <div class="def">{{ body.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ terms.note }}
+        note: {{ body.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
+      <div class="derivative">derivative(s): {{ body.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -90,19 +93,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ terms.title }}
+      {{ body.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
-      <div class="def">{{ terms.meaning }}</div>
+      <div class="di-n la-text"><u>{{ body.genitive }}</u>   <u>{{ body.abbgender }}</u></div>
+      <div class="def">{{ body.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ terms.note }}
+        note: {{ body.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
+      <div class="derivative">derivative(s): {{ body.derivative }}</div>
       {% endif %}
     </div>
   </div>
@@ -121,19 +124,19 @@ layout: base
       {% endif %}
     </div>
     <div class="term">
-      {{ terms.title }}
+      {{ body.title }}
     </div>
   </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text"><u>{{ terms.genitive }}</u>   <u>{{ terms.abbgender }}</u></div>
-      <div class="def">{{ terms.meaning }}</div>
+      <div class="di-n la-text"><u>{{ body.genitive }}</u>   <u>{{ body.abbgender }}</u></div>
+      <div class="def">{{ body.meaning }}</div>
       <div class="def-note-small">
         {% if note %}
-        note: {{ terms.note }}
+        note: {{ body.note }}
         {% endif %}
       </div>
       {% if derivative %}
-      <div class="derivative">derivative(s): {{ terms.derivative }}</div>
+      <div class="derivative">derivative(s): {{ body.derivative }}</div>
       {% endif %}
     </div>
   </div>
