@@ -1,6 +1,6 @@
 ---
 title: suus
-meaning: his/her/its
+meaning: his own, her own, its own
 ch: nine
 pos: totadjective
 femstem: su
