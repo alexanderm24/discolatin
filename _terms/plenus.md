@@ -7,6 +7,7 @@ femstem: plēn
 femend: a
 neutstem: plēn
 neutend: um
+derivative: plenary
 f1: yes
 f: yes
 ---

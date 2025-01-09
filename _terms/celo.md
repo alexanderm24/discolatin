@@ -7,6 +7,7 @@ inf: celāre
 secondppstem: cel
 infend: āre
 conjugation: first
+derivative: conceal
 f1: yes
 f: yes
 ---

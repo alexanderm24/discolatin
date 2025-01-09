@@ -7,4 +7,5 @@ inf: impedīre
 secondppstem: imped
 infend: īre
 conjugation: fourth
+derivative: impediment
 ---
