@@ -58,6 +58,8 @@ collections:
     output: true
   body:
     output: true
+  animalia:
+    output: true
 
 
 
