@@ -7,6 +7,7 @@ inf: trahere
 secondppstem: trah
 infend: ere
 conjugation: third
+derivative: protracted
 f1: yes
 f: yes
 ---

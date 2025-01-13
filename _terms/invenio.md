@@ -7,6 +7,7 @@ inf: invenīre
 secondppstem: inven
 infend: īre
 conjugation: fourth
+derivative: invention
 f1: yes
 f: yes
 ---
