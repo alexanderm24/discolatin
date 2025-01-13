@@ -1,6 +1,6 @@
 ---
 title: īra
-meaning: wrath
+meaning: anger, wrath
 ch: eleven
 pos: noun
 stem: īr
