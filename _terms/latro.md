@@ -1,7 +1,7 @@
 ---
 title: latrō
 meaning: to bark
-ch: thirteen
+ch: twelve
 pos: verb
 inf: latrāre
 secondppstem: latr
