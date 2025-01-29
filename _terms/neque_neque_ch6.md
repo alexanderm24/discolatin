@@ -1,7 +1,7 @@
 ---
 title: neque...neque
 meaning: neither...nor
-ch: five
+ch: six
 pos: conjunction
 mt: yes
 mt5thru7: yes
