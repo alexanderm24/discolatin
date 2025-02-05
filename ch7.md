@@ -5,7 +5,7 @@ ch: seven
 verbs: yes
 conjverbs: no
 nouns: yes
-pronouns: no
+pronouns: yes
 adjectives: yes
 adverbs: no
 prepositions: yes
