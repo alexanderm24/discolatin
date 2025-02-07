@@ -7,4 +7,5 @@ inf: quiescere
 secondppstem: quiesc
 infend: ere
 conjugation: third
+derivative: quiescent
 ---

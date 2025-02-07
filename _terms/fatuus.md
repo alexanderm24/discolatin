@@ -7,4 +7,5 @@ femstem: fatu
 femend: a
 neutstem: fatu
 neutend: um
+derivative: fatuous
 ---
