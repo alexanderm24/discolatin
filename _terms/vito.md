@@ -1,5 +1,5 @@
 ---
-title: vitō
+title: vītō
 meaning: to avoid
 ch: thirteen
 pos: verb
