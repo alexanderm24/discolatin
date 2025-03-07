@@ -1,8 +1,8 @@
 ---
 title: ubi
-meaning: where, when
+meaning: when
 ch: five
-pos: adverb
+pos: conjunction
 repeat: yes
 mt: yes
 mt1thru4: yes
