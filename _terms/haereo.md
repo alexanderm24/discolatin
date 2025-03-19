@@ -7,4 +7,5 @@ inf: haerēre
 secondppstem: haer
 infend: ēre
 conjugation: second
+derivative: adhesive
 ---

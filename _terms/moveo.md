@@ -7,6 +7,7 @@ inf: movēre
 secondppstem: mov
 infend: ēre
 conjugation: second
+derivative: motion
 f2: yes
 f: yes
 ---

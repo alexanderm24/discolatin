@@ -7,6 +7,7 @@ inf: vertere
 secondppstem: vert
 infend: ere
 conjugation: third
+derivative: conversion
 f3: yes
 f: yes
 ---
