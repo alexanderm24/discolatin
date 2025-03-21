@@ -56,10 +56,16 @@ margin-left: auto;
 margin-right: auto; 
 }
 
+.doi {
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .button-group {
   margin-left: 18vw;
   margin-right: 18vw;
   justify-content: center;
+  display: flex;
 }
 
 .form-check {
@@ -431,7 +437,7 @@ display: none;
 }
 
 .offcanvas {
-z-index: 1000;
+z-index: 10000;
 }
 
 

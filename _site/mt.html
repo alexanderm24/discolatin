@@ -42,7 +42,7 @@
       <div class="wrapper">
         <nav class="navbar sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://msalexanderthegreat.com/">
+      <a class="navbar-brand" href="https://discolatin.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-house-door-fill d-inline-block align-text-bottom" viewBox="0 0 16 16">
             <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
         </svg>
@@ -54,7 +54,7 @@
       </svg></button>
       
     </div>
-  </nav><div class="offcanvas offcanvas-end text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" data-bs-theme="dark" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  </nav><div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-theme="dark" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Settings</h5>
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -83,6 +83,27 @@
         <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
         <label class="form-check-label" for="flexSwitchCheckChecked">Abbreviate Dictionary Info</label>
       </div>-->
+
+      <hr>
+      Macrons (ā, ē, ī, ō, ū)
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="macronToggle" id="keepMacrons" value="keep" checked>
+        <label class="form-check-label" for="keepMacrons">
+          All
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="macronToggle" id="essentialMacrons" value="essential">
+        <label class="form-check-label" for="essentialMacrons">
+          Essential (2nd conjugation verbs)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="macronToggle" id="removeMacrons" value="remove">
+        <label class="form-check-label" for="removeMacrons">
+          None
+        </label>
+      </div>
 
 
     
@@ -174,80 +195,6 @@
 
   
   
-
-<!--verbs-->
-
-
-<!--verbs (conjugated)-->
-
-
-<!--nouns 1&2-->
-
-
-<!--exnounsecond (2nd decl. stem exceptions)-->
-
-
-<!--nouns 3-->
-
-
-<!--nouns 5-->
-
-
-<!--pronouns-->
-
-
-<!--personal pronoun-->
-
-
-<!--pronoun third (with gender)-->
-
-
-<!--adjectives 212-->
-
-
-<!--adjectives (alt)-->
-
-
-<!--adverbs-->
-
-
-<!--prepositions-->
-
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--preposition la-text">
-      <div class="rightcorner">
-        
-      </div>
-      <div class="term">
-        ab/ā
-      </div>
-    </div>
-    <div class="card__face card__face--back">
-      <div class="di-prep la-text">(takes ablative)</div>
-      <div class="def">from, away from</div>
-      <div class="def-note-small">
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-<!--prepositions (dual)-->
-
-
-<!--conjunctions-->
-
-
-<!--interjection-->
-
-
-<!--composite-->
-
-
-
 
 
 
@@ -4609,6 +4556,19 @@
   
 
   
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
   
 
 <!--verbs-->
@@ -4812,6 +4772,19 @@
 
 
 
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
 
 
 
@@ -7718,7 +7691,7 @@
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">   f.</div>
+      <div class="di-n la-text">   (f.)</div>
       <div class="def">who (statement)</div>
       <div class="def-note-small">
         
@@ -7755,6 +7728,32 @@
 
 
 
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
 
 
 
@@ -7833,7 +7832,7 @@
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">   m.</div>
+      <div class="di-n la-text">   (m.)</div>
       <div class="def">who (statement)</div>
       <div class="def-note-small">
         
@@ -7870,19 +7869,6 @@
 
 
 
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-
-  
 
 
 
@@ -9632,7 +9618,7 @@
   </div>
     <div class="card__face card__face--back">
       <div class="di-adj la-text"> su<u>a</u>, su<u>um</u></div>
-      <div class="def">his/her/its</div>
+      <div class="def">his own, her own, its own</div>
       <div class="def-note-small">
         
       </div>
@@ -10674,6 +10660,19 @@
   
 
   
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
   
 
 <!--verbs-->
@@ -10711,28 +10710,6 @@
 
 <!--adverbs-->
 
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--adverb la-text">
-      <div class="rightcorner">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
-        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-        </svg>
-        
-      </div>
-    <div class="term">ubi</div>
-    </div>
-    <div class="card__face card__face--back">
-      <div class="def-only">where, when</div>
-      <div class="def-note-small">
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
 
 <!--prepositions-->
 
@@ -10741,6 +10718,30 @@
 
 
 <!--conjunctions-->
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--conjunction la-text">
+      <div class="rightcorner">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+        </svg>
+        
+      </div>
+      <div class="term">
+        ubi
+      </div>
+    </div>
+    <div class="card__face card__face--back">
+      <div class="def-only">when</div>
+      <div class="def-note-small">
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
 
 
 <!--interjection-->
@@ -10958,6 +10959,19 @@
 
 
 
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+
+  
 
 
 
@@ -11420,19 +11434,6 @@
 
 
 
-
-  
-  
-  
-  
-  
-  
-  
-
-  
-
-
-
     </div>
   </div>
 </container>
@@ -11478,11 +11479,6 @@
       
 
     
-      
-
-
-      
-
       
 
 
@@ -13694,6 +13690,17 @@
       
 
     
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
       
 
 
@@ -13752,6 +13759,17 @@
 
       
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
 
 
       
@@ -15013,13 +15031,6 @@
       
 
     
-      
-
-
-      
-
-      
-
 
 
       
@@ -15031,6 +15042,24 @@
       
 
     
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+      
+
+
+      
+
+      
+
 
 
       
@@ -16231,6 +16260,17 @@
       
 
     
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
       
 
 
@@ -16319,6 +16359,17 @@
 
       
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
 
 
       
@@ -16561,17 +16612,6 @@
       
 
     
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
 v
 
       <h2>Verbs (Conjugated)
@@ -16607,10 +16647,6 @@ v
 
       
 
-      
-
-      
-
 
 
       
@@ -18398,8 +18434,19 @@ v
 
       
 
+      
+
+
+
+      
       
+      
+      
+      
+      
+      
 
+        
 
 
       
@@ -18653,9 +18700,20 @@ v
       
 
       
+
+      
+
 
+
+      
+      
+      
       
+      
+      
+      
 
+        
 
 
       
@@ -19826,12 +19884,16 @@ v
 
         
 
-      
 
       
-
+      
+      
+      
+      
       
+      
 
+        
 
 
       
@@ -19843,6 +19905,13 @@ v
       
 
         
+
+      
+
+      
+
+      
+
 
 
       
@@ -20801,8 +20870,19 @@ v
 
       
 
+      
+
+
+
+      
       
+      
+      
+      
+      
+      
 
+        
 
 
       
@@ -20898,9 +20978,20 @@ v
       
 
       
+
+      
+
 
+
+      
+      
+      
       
+      
+      
+      
 
+        
 
 
       
@@ -21102,24 +21193,13 @@ v
       
 
         
-
-      
 
       
 
       
-
 
-
-      
-      
       
-      
-      
-      
-      
 
-        
 
 
       
@@ -21166,23 +21246,6 @@ v
 
     
       
-
-
-
-                  <!--nouns 1&2-->
-
-
-
-<!--exnounsecond (2nd decl. stem exceptions)-->
-
-
-<!--nouns 3-->
-
-
-<!--nouns 5-->
-
-
-
 
 
 
@@ -23616,60 +23679,6 @@ v
 
         
 
-    
-      
-
-
-
-                  <!--nouns 1&2-->
-
-
-
-<!--exnounsecond (2nd decl. stem exceptions)-->
-
-
-<!--nouns 3-->
-
-
-<!--nouns 5-->
-
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
 
       
       
@@ -23701,6 +23710,82 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+    
+      
+
+
+
+                  <!--nouns 1&2-->
+
+
+
+<!--exnounsecond (2nd decl. stem exceptions)-->
+
+
+<!--nouns 3-->
+
+
+<!--nouns 5-->
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
 
 
       
@@ -25274,6 +25359,28 @@ v
 
         
 
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
     
       
 
@@ -25294,17 +25401,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
 
 
       
@@ -26657,6 +26753,17 @@ v
 
         
 
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
     
       
 
@@ -26785,6 +26892,17 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
 
 
       
@@ -27070,17 +27188,6 @@ v
         
 
 
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
 
 
       <h2>Pronouns
@@ -27118,18 +27225,6 @@ v
 
 
       
-<!--pronouns-->
-
-
-<!--personal pronoun-->
-
-
-<!--pronoun third (with gender)-->
-
-
-<!--personal pronouns?-->
-
-
 
 
 
@@ -29668,58 +29763,6 @@ v
 
 
       
-<!--pronouns-->
-
-
-<!--personal pronoun-->
-
-
-<!--pronoun third (with gender)-->
-
-
-<!--personal pronouns?-->
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
       
       
       
@@ -29745,6 +29788,82 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+<!--pronouns-->
+
+
+<!--personal pronoun-->
+
+
+<!--pronoun third (with gender)-->
+
+
+<!--personal pronouns?-->
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
 
 
       
@@ -31245,7 +31364,7 @@ v
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">   f.</div>
+      <div class="di-n la-text">   (f.)</div>
       <div class="def">who (statement)</div>
       <div class="def-note-small">
         
@@ -31260,6 +31379,30 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
 
 
       
@@ -31318,7 +31461,7 @@ v
       </div>
     </div>
     <div class="card__face card__face--back">
-      <div class="di-n la-text">   m.</div>
+      <div class="di-n la-text">   (m.)</div>
       <div class="def">who (statement)</div>
       <div class="def-note-small">
         
@@ -31408,18 +31551,6 @@ v
 
 
       
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
 <!--pronouns-->
 
 
@@ -32632,22 +32763,6 @@ v
 
 
       
-<!--pronouns-->
-
-
-<!--personal pronoun-->
-
-
-<!--pronoun third (with gender)-->
-
-
-<!--personal pronouns?-->
-
-
-
-
-
-      
       
       
       
@@ -32688,6 +32803,34 @@ v
 
 
       
+<!--pronouns-->
+
+
+<!--personal pronoun-->
+
+
+<!--pronoun third (with gender)-->
+
+
+<!--personal pronouns?-->
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
       
       
       
@@ -32725,6 +32868,18 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
 
 
       
@@ -33006,18 +33161,6 @@ v
         
 
 
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
       <h2>Adjectives
         <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adjectives" data-bs-content="Adjectives modify or describe nouns and pronouns.">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
@@ -33051,14 +33194,6 @@ v
 
 
       
-
-      <!--adjectives 212-->
-
-
-<!--adjectives (alt)-->
-
-
-
 
 
 
@@ -35223,6 +35358,17 @@ v
 
 
       
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
 
       <!--adjectives 212-->
 
@@ -35311,6 +35457,17 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
 
 
       
@@ -36693,15 +36850,14 @@ v
 
 
       
+      
+      
+      
+      
+      
+      
 
-      <!--adjectives 212-->
-
-
-<!--adjectives (alt)-->
-
-
-
-
+        
 
 
       
@@ -36713,6 +36869,18 @@ v
       
 
         
+
+
+      
+
+      <!--adjectives 212-->
+
+
+<!--adjectives (alt)-->
+
+
+
+
 
 
       
@@ -37449,7 +37617,7 @@ v
   </div>
     <div class="card__face card__face--back">
       <div class="di-adj la-text"> su<u>a</u>, su<u>um</u></div>
-      <div class="def">his/her/its</div>
+      <div class="def">his own, her own, its own</div>
       <div class="def-note-small">
         
       </div>
@@ -37871,18 +38039,6 @@ v
 
 
       
-
-      <!--adjectives 212-->
-
-
-<!--adjectives (alt)-->
-
-
-
-
-
-
-      
       
       
       
@@ -37917,28 +38073,6 @@ v
 
 
       
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
 
       <!--adjectives 212-->
 
@@ -37948,50 +38082,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
 
 
       
@@ -38128,6 +38218,106 @@ v
 
 
       
+
+      <!--adjectives 212-->
+
+
+<!--adjectives (alt)-->
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+      
+
+        
+
+
+      
       
       
       
@@ -38171,17 +38361,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
 
 
       
@@ -38227,10 +38406,6 @@ v
   
 
       
-
-      
-
-
 
 
 
@@ -40390,6 +40565,17 @@ v
 
   
 
+
+      
+      
+      
+      
+      
+      
+      
+
+  
+
       
 
       
@@ -40465,6 +40651,17 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+  
 
 
       
@@ -41709,12 +41906,16 @@ v
 
   
 
-      
 
       
+      
+      
+      
+      
+      
+      
 
-
-
+  
 
 
       
@@ -41726,6 +41927,13 @@ v
       
 
   
+
+      
+
+      
+
+
+
 
 
       
@@ -42884,31 +43092,20 @@ v
 
   
 
+
+      
+      
+      
+      
+      
+      
+      
+
+  
+
       
 
       
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--adverb la-text">
-      <div class="rightcorner">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
-        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-        </svg>
-        
-      </div>
-    <div class="term">ubi</div>
-    </div>
-    <div class="card__face card__face--back">
-      <div class="def-only">where, when</div>
-      <div class="def-note-small">
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
 
 
 
@@ -43048,12 +43245,34 @@ v
 
   
 
+
+      
+      
+      
+      
+      
+      
+      
+
+  
+
       
 
       
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+  
 
 
       
@@ -43143,17 +43362,6 @@ v
 
   
 
-
-      
-      
-      
-      
-      
-      
-      
-
-  
-
       
 
       
@@ -43178,17 +43386,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-  
 
 
       
@@ -43235,36 +43432,6 @@ v
 
     
       
-
-      <!--prepositions-->
-
-<div class="scene scene--card">
-  <div class="card">
-    <div class="card__face card__face--front--preposition la-text">
-      <div class="rightcorner">
-        
-      </div>
-      <div class="term">
-        ab/ā
-      </div>
-    </div>
-    <div class="card__face card__face--back">
-      <div class="di-prep la-text">(takes ablative)</div>
-      <div class="def">from, away from</div>
-      <div class="def-note-small">
-        
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-
-<!--prepositions (dual)-->
-
-
-
 
 
 
@@ -45478,52 +45645,6 @@ v
 
     
 
-    
-      
-
-      <!--prepositions-->
-
-
-
-<!--prepositions (dual)-->
-
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
 
       
       
@@ -45547,6 +45668,74 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+    
+      
+
+      <!--prepositions-->
+
+
+
+<!--prepositions (dual)-->
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
 
 
       
@@ -46882,6 +47071,28 @@ v
 
     
 
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
     
       
 
@@ -46894,17 +47105,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
 
 
       
@@ -48064,19 +48264,6 @@ v
 
     
 
-    
-      
-
-      <!--prepositions-->
-
-
-
-<!--prepositions (dual)-->
-
-
-
-
-
 
       
       
@@ -48112,28 +48299,6 @@ v
 
     
 
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
     
       
 
@@ -48146,50 +48311,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
 
 
       
@@ -48325,6 +48446,107 @@ v
 
     
 
+    
+      
+
+      <!--prepositions-->
+
+
+
+<!--prepositions (dual)-->
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
+
+      
+      
+      
+      
+      
+      
+      
+
+    
+
 
       
       
@@ -48372,17 +48594,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-    
 
 
       
@@ -48430,11 +48641,6 @@ v
         
 
       
-
-     
-
-
-
 
 
 
@@ -50635,50 +50841,6 @@ v
 
         
 
-      
-
-     
-
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
 
       
       
@@ -50698,6 +50860,74 @@ v
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+      
+
+     
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
 
 
       
@@ -52043,13 +52273,17 @@ v
 
         
 
+
+      
+      
+      
+      
+      
       
 
-     
+      
 
-
-
-
+        
 
 
       
@@ -52062,6 +52296,14 @@ v
       
 
         
+
+      
+
+     
+
+
+
+
 
 
       
@@ -53195,14 +53437,6 @@ v
 
         
 
-      
-
-     
-
-
-
-
-
 
       
       
@@ -53219,33 +53453,33 @@ v
 
      
 
-
-
-
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front--conjunction la-text">
+      <div class="rightcorner">
         
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+        <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+        </svg>
         
+      </div>
+      <div class="term">
+        ubi
+      </div>
+    </div>
+    <div class="card__face card__face--back">
+      <div class="def-only">when</div>
+      <div class="def-note-small">
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
 
 
       
@@ -53266,54 +53500,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
 
 
       
@@ -53455,6 +53641,110 @@ v
 
         
 
+      
+
+     
+
+
+
+
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
+
+      
+      
+      
+      
+      
+      
+
+      
+
+        
+
 
       
       
@@ -53494,18 +53784,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-
-      
-
-        
 
 
       
@@ -53554,13 +53832,7 @@ v
       
 
 
-      <!--interjection-->
-
-
-
-
 
-
       
       
       
@@ -55404,10 +55676,21 @@ v
 
 
       <!--interjection-->
+
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
 
+        
 
 
       
@@ -55664,10 +55947,21 @@ v
 
 
       <!--interjection-->
+
 
 
 
+
+
+      
+      
+      
+      
+      
+      
+      
 
+        
 
 
       
@@ -56885,15 +57179,17 @@ v
       
 
         
-
-      
-
 
-      <!--interjection-->
-
 
-
+      
+      
+      
+      
+      
+      
+      
 
+        
 
 
       
@@ -56906,7 +57202,16 @@ v
 
         
 
+      
+
+
+      <!--interjection-->
+
 
+
+
+
+
       
       
       
@@ -57909,12 +58214,23 @@ v
 
 
       <!--interjection-->
+
 
 
 
 
 
+      
+      
+      
+      
+      
+      
+      
+
+        
 
+
       
       
       
@@ -58013,11 +58329,22 @@ v
 
 
       <!--interjection-->
+
 
 
 
 
 
+      
+      
+      
+      
+      
+      
+      
+
+        
+
 
       
       
@@ -58231,17 +58558,6 @@ v
 
 
 
-
-
-      
-      
-      
-      
-      
-      
-      
-
-        
 
 
       
@@ -58285,14 +58601,8 @@ v
 
       
 
-<!--composite-->
-
-
-
-
 
 
-
       
       
       
@@ -60310,11 +60620,23 @@ v
       
 
 <!--composite-->
+
+
 
 
 
+
+
+      
+      
+      
+      
+      
+      
 
+      
 
+  
 
 
       
@@ -60594,11 +60916,23 @@ v
       
 
 <!--composite-->
+
+
+
+
 
 
 
+      
+      
+      
+      
+      
+      
 
+      
 
+  
 
 
       
@@ -61934,13 +62268,15 @@ v
 
 
       
-
-<!--composite-->
-
-
-
+      
+      
+      
+      
+      
 
+      
 
+  
 
 
       
@@ -61953,8 +62289,18 @@ v
       
 
   
+
+
+      
+
+<!--composite-->
+
+
 
 
+
+
+
       
       
       
@@ -63052,11 +63398,23 @@ v
       
 
 <!--composite-->
+
+
+
 
 
 
 
+      
+      
+      
+      
+      
+      
+
+      
 
+  
 
 
       
@@ -63166,13 +63524,25 @@ v
       
 
 <!--composite-->
+
+
 
 
 
 
 
+      
+      
+      
+      
+      
+      
+
+      
 
+  
 
+
       
       
       
@@ -63400,23 +63770,11 @@ v
       
 
 <!--composite-->
-
 
 
 
 
 
-
-      
-      
-      
-      
-      
-      
-
-      
-
-  
 
 
       

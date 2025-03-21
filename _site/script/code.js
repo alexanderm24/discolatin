@@ -1,3 +1,9 @@
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM loaded and script running!');
+});
+
+
+
 var cards = document.querySelectorAll('.card');
 
 [...cards].forEach((card)=>{
@@ -36,12 +42,8 @@ sortPos.addEventListener("change", function() {
 //Constants
 const colorToggle = document.getElementById("toggleSwitchColor");
 const laText = document.querySelectorAll(".la-text");
-const abbToggle = document.getElementById("toggleAbbreviate");
 const full = document.querySelectorAll(".full");
 const abb = document.querySelectorAll(".abb");
-const emToggle = document.getElementById("essentialMacrons");
-const reg = document.querySelectorAll(".reg");
-const essMac = document.querySelectorAll(".essmac");
 
 // Listen for the toggle switch change event
 colorToggle.addEventListener("change", function() {
@@ -55,25 +57,51 @@ colorToggle.addEventListener("change", function() {
   })}
 });
 
-abbToggle.addEventListener("change", function() {
-  if (this.checked) {
-    abb.forEach(element => {
-      element.style.display = 'block'});
-    full.forEach(element => {
-      element.style.display = 'none'});
-    }
-  else {
-    abb.forEach(element => {
-      element.style.display = 'none'});
-    full.forEach(element => {
-      element.style.display = 'block'});
-    }
+// Map of macrons to regular vowels
+const macronMap = {
+  'ā': 'a', 'ē': 'e', 'ī': 'i', 'ō': 'o', 'ū': 'u',
+  'Ā': 'A', 'Ē': 'E', 'Ī': 'I', 'Ō': 'O', 'Ū': 'U'
+};
+
+// Store original text for restoration
+document.querySelectorAll('.la-text').forEach(element => {
+  element.dataset.originalText = element.textContent;
+  element.dataset.originalHTML = element.innerHTML;
 });
 
-var audio = $(".audio")[0];
-audio.play();
+// Function to replace macrons
+function replaceMacrons(text) {
+  return text.replace(/[āēīōūĀĒĪŌŪ]/g, match => macronMap[match]);
+}
 
-var audio = $(".audio")[0];
-$("nav a").mouseenter(function() {
-  audio.play();
+// Handle radio button change
+function handleRadioChange(event) {
+  const action = event.target.value;
+
+console.log('Selected Action:', action);
+
+
+  document.querySelectorAll('.la-text').forEach(element => {
+    const originalText = element.dataset.originalText;
+    const originalHTML = element.dataset.originalHTML
+    console.log('Original Text:', originalText);
+
+    if (action === 'remove') {
+      element.textContent = replaceMacrons(originalText);
+    } else if (action === 'keep') {
+      element.textContent = originalText;
+    } else if (action === 'essential') {
+      // Preserve essential macrons using HTML and replace others
+      element.innerHTML = originalHTML.replace(
+      /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
+        (match, group) => group || macronMap[match] || match
+      );
+    }
+  });
+}
+
+// Add event listeners to all radio buttons
+document.querySelectorAll('input[name="macronToggle"]').forEach(radio => {
+  radio.addEventListener('change', handleRadioChange);
 });
+

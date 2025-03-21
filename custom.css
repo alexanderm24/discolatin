@@ -437,7 +437,7 @@ display: none;
 }
 
 .offcanvas {
-z-index: 1000;
+z-index: 10000;
 }
 
 

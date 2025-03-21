@@ -1,4 +1,0 @@
----
-layout: hw
-title: Homework
----
