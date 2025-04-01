@@ -7,7 +7,7 @@ inf: petere
 secondppstem: pet
 infend: ere
 conjugation: third
-derivative: petition, appetite
+derivatives: petition, appetite
 mt: yes
 mt5thru7: yes
 ---

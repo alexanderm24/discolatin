@@ -7,5 +7,5 @@ inf: legere
 secondppstem: leg
 infend: ere
 conjugation: third
-derivative: illegible, lecture
+derivatives: illegible, lecture
 ---

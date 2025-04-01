@@ -9,5 +9,5 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: second
-derivative: servitude, servile
+derivatives: servitude, servile
 ---

@@ -7,7 +7,7 @@ inf: iacere
 secondppstem: iac
 infend: ere
 conjugation: third
-derivative: eject, projector
+derivatives: eject, projector
 f1: yes
 f: yes
 ---

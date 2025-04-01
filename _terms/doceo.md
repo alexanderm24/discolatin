@@ -7,7 +7,7 @@ inf: docēre
 secondppstem: doc
 infend: ēre
 conjugation: second
-derivative: docile, doctrine
+derivatives: docile, doctrine
 mt: yes
 mt5thru7: yes
 ---

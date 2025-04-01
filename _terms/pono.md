@@ -7,7 +7,7 @@ inf: pōnere
 secondppstem: pōn
 infend: ere
 conjugation: third
-derivative: position, component
+derivatives: position, component
 f1: yes
 f: yes
 ---

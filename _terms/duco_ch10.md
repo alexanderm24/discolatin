@@ -7,7 +7,7 @@ inf: dūcere
 secondppstem: dūc
 infend: ere
 conjugation: third
-derivative: productive, conducive
+derivatives: productive, conducive
 mt: yes
 mt5thru7: yes
 f1: yes

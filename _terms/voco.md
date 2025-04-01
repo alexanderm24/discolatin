@@ -7,7 +7,7 @@ inf: vocāre
 secondppstem: voc
 infend: āre
 conjugation: first
-derivative: vocation
+derivatives: vocal, vocation
 f3: yes
 f: yes
 ---

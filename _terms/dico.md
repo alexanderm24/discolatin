@@ -7,7 +7,7 @@ inf: dīcere
 secondppstem: dīc
 infend: ere
 conjugation: third
-derivative: dictator, contradiction
+derivatives: dictator, contradiction
 f1: yes
 f: yes
 ---

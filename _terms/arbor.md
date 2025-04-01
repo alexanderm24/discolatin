@@ -8,5 +8,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: third
-derivative: arboretum, arborist
+derivatives: arboretum, arborist
 ---

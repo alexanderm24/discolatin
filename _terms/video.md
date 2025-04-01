@@ -7,7 +7,7 @@ inf: vidēre
 secondppstem: vid
 infend: ēre
 conjugation: second
-derivative: vision, evidence
+derivatives: vision, evidence
 mt: yes
 mt1thru4: yes
 ---

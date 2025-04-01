@@ -7,7 +7,7 @@ inf: portāre
 secondppstem: port
 infend: āre
 conjugation: first
-derivative: teleportation, comportment
+derivatives: teleportation, comportment
 mt: yes
 mt5thru7: yes
 ---

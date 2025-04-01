@@ -7,7 +7,7 @@ femstem: mult
 femend: ae
 neutstem: mult
 neutend: a
-derivative: multitude, multiply
+derivatives: multitude, multiply
 mt: yes
 mt1thru4: yes
 ---

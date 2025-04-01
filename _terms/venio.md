@@ -7,7 +7,7 @@ inf: venīre
 secondppstem: ven
 infend: īre
 conjugation: third
-derivative: intervention, convenient
+derivatives: intervention, convenient
 mt: yes
 mt5thru7: yes
 ---

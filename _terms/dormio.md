@@ -7,5 +7,5 @@ inf: dormīre
 secondppstem: dorm
 infend: īre
 conjugation: fourth
-derivative: dormant, dormitory
+derivatives: dormant, dormitory
 ---

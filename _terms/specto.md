@@ -7,7 +7,7 @@ inf: spectāre
 secondppstem: spect
 infend: āre
 conjugation: first
-derivative: specter, inspector
+derivatives: specter, inspector
 mt: yes
 mt5thru7: yes
 ---

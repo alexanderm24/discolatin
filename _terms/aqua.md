@@ -9,5 +9,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: first
-derivative: aqueous, aquatic
+derivatives: aqueous, aquatic
 ---

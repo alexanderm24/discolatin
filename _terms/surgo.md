@@ -7,7 +7,7 @@ inf: surgere
 secondppstem: surg
 infend: ere
 conjugation: third
-derivative: insurgency, resurrection
+derivatives: insurgency, resurrection
 mt: yes
 mt5thru7: yes
 ---

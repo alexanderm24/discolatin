@@ -7,7 +7,7 @@ inf: ambulāre
 secondppstem: ambul
 infend: āre
 conjugation: first
-derivative: amble, ambulatory
+derivatives: amble, ambulatory
 mt: yes
 mt1thru4: yes
 ---

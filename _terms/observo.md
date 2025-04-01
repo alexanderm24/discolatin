@@ -7,4 +7,5 @@ inf: observāre
 secondppstem: observ
 infend: āre
 conjugation: first
+derivative: observatory
 ---

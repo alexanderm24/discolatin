@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM loaded and script running!');
-});
+//document.addEventListener('DOMContentLoaded', () => {
+  //console.log('DOM loaded and script running!');
+//});
 
 
 
@@ -42,8 +42,6 @@ sortPos.addEventListener("change", function() {
 //Constants
 const colorToggle = document.getElementById("toggleSwitchColor");
 const laText = document.querySelectorAll(".la-text");
-const full = document.querySelectorAll(".full");
-const abb = document.querySelectorAll(".abb");
 
 // Listen for the toggle switch change event
 colorToggle.addEventListener("change", function() {
@@ -65,43 +63,62 @@ const macronMap = {
 
 // Store original text for restoration
 document.querySelectorAll('.la-text').forEach(element => {
-  element.dataset.originalText = element.textContent;
+
   element.dataset.originalHTML = element.innerHTML;
 });
 
 // Function to replace macrons
 function replaceMacrons(text) {
+
   return text.replace(/[āēīōūĀĒĪŌŪ]/g, match => macronMap[match]);
 }
 
 // Handle radio button change
 function handleRadioChange(event) {
   const action = event.target.value;
-
-console.log('Selected Action:', action);
-
+  const diToggle = document.getElementById("toggleAbbreviate"); // Get abbreviation toggle state
+  const isAbbreviated = diToggle && diToggle.checked; // Check if abbreviations are active
 
   document.querySelectorAll('.la-text').forEach(element => {
-    const originalText = element.dataset.originalText;
-    const originalHTML = element.dataset.originalHTML
-    console.log('Original Text:', originalText);
+    let currentHTML = isAbbreviated ? element.innerHTML : element.dataset.originalHTML; // Keep abbreviation if active
 
     if (action === 'remove') {
-      element.textContent = replaceMacrons(originalText);
+      element.innerHTML = replaceMacrons(currentHTML);
     } else if (action === 'keep') {
-      element.textContent = originalText;
+      element.innerHTML = currentHTML; // Restore based on abbreviation state
     } else if (action === 'essential') {
-      // Preserve essential macrons using HTML and replace others
-      element.innerHTML = originalHTML.replace(
-      /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
+      element.innerHTML = currentHTML.replace(
+        /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
         (match, group) => group || macronMap[match] || match
       );
     }
   });
 }
 
+
 // Add event listeners to all radio buttons
 document.querySelectorAll('input[name="macronToggle"]').forEach(radio => {
   radio.addEventListener('change', handleRadioChange);
 });
 
+
+
+
+//document.addEventListener("DOMContentLoaded", function() {
+  const diToggle = document.getElementById("toggleAbbreviate"); 
+  const expDI = document.querySelectorAll(".expdi");
+
+  if (diToggle && expDI.length > 0) { // Ensure elements exist
+    const originalTexts = Array.from(expDI).map(el => el.innerHTML); // Store original text
+    
+    diToggle.addEventListener("change", function() {
+      expDI.forEach((el, index) => {
+        if (this.checked) {
+          el.innerHTML = "-"; // Replace content with "-"
+        } else {
+          el.innerHTML = originalTexts[index]; // Restore original content
+        }
+      });
+    });
+  }
+//});

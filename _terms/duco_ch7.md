@@ -7,6 +7,6 @@ inf: dūcere
 secondppstem: duc
 infend: ere
 conjugation: third
-derivative: conductor, induce
+derivatives: conductor, induce
 inactive: yes
 ---

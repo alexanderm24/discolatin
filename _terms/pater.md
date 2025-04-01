@@ -8,5 +8,5 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: third
-derivative: paternalistic, patrimony
+derivatives: paternalistic, patrimony
 ---

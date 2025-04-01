@@ -4,6 +4,5 @@ meaning: to go
 ch: seventeen
 pos: verb
 inf: īre
-infend: īre
 conjugation: irregular
 ---

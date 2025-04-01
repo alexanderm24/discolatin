@@ -7,5 +7,5 @@ inf: vexāre
 secondppstem: vex
 infend: āre
 conjugation: first
-derivative: vexatious, vexation
+derivatives: vexatious, vexation
 ---

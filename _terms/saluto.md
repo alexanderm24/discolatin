@@ -7,7 +7,7 @@ inf: salūtāre
 secondppstem: salūt
 infend: āre
 conjugation: first
-derivative: salutation, salutatorian
+derivatives: salutation, salutatorian
 mt: yes
 mt5thru7: yes
 ---

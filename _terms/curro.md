@@ -7,5 +7,5 @@ inf: currere
 secondppstem: curr
 infend: ere
 conjugation: third
-derivative: occur, current, course
+derivatives: occur, current, course
 ---
