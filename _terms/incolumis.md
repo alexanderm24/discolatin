@@ -2,7 +2,7 @@
 title: incolumis
 meaning: unhurt
 ch: fourteen
-pos: totadjective
+pos: thirdadjective
 femstem: incolum
 femend: is
 neutstem: incolum

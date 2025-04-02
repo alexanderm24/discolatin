@@ -2,7 +2,7 @@
 title: immōbilis
 meaning: motionless
 ch: twelve
-pos: totadjective
+pos: thirdadjective
 femstem: immōbil
 femend: is
 neutstem: immōbil
