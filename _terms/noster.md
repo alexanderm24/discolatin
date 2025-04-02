@@ -2,7 +2,7 @@
 title: noster
 meaning: our
 ch: fourteen
-pos: totadjective
+pos: extotadjective
 femstem: nostr
 femend: a
 neutstem: nostr
