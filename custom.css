@@ -1003,11 +1003,13 @@ z-index: 10000;
 .caro-accordion {
   margin: 0;
   max-width: 60%;
+  align-self: center;
 }
 
 @media only screen and (max-width:600px) {
   .caro-accordion {
     max-width: 350px;
+    align-self: center;
   }
 }
 
