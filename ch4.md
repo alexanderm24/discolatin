@@ -9,7 +9,7 @@ pronouns: yes
 adjectives: yes
 adverbs: yes
 prepositions: yes
-conjunctions: no
+conjunctions: yes
 interjections: no
 composites: no
 prepphrases: yes

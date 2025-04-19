@@ -3,7 +3,7 @@ title: vīlla
 meaning: house
 ch: one
 pos: noun
-stem: vill
+stem: vīll
 genend: ae
 abbgender: f.
 abbgender2: fem.

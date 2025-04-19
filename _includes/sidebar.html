@@ -4,7 +4,7 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      Sort:
+      <!--Sort:
     <div class="form-check">
       <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortalph" checked>
       <label class="form-check-label" for="flexRadioDefault1">
@@ -17,15 +17,16 @@
           By Parts of Speech
         </label>
       </div>
-    <hr>
+    <hr>-->
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleSwitchColor" checked>
         <label class="form-check-label" for="toggleSwitchColor">Color-code Parts of Speech</label>
       </div>
-      <!--<div class="form-check form-switch">
+      
+      <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
         <label class="form-check-label" for="toggleAbbreviate">Abbreviate Dictionary Info</label>
-      </div>-->
+      </div>
 
       <hr>
       Macrons (ā, ē, ī, ō, ū)
@@ -41,16 +42,15 @@
           Essential (2nd conjugation verbs)
         </label>
       </div>
-      <div class="form-check">
+      <!--<div class="form-check">
         <input class="form-check-input" type="radio" name="macronToggle" id="removeMacrons" value="remove">
         <label class="form-check-label" for="removeMacrons">
           None
         </label>
-      </div>
-
+      </div>-->
+      <hr>
 
     {% if page.pdfchl %}
-    <hr>
     <h6>Print:</h6>
     <p class="pdf">
       <a href="../documents/{{ page.pdfchl }}.pdf" target="_blank">
@@ -63,7 +63,7 @@
     {% endif %}
 
     {% if page.pdfpq %}
-    <hr>
+
     <p class="pdf">
       <a href="../documents/{{ page.pdfpq }}.pdf" target="_blank">
         Practice Quiz 1
@@ -85,7 +85,7 @@
       </a> (+ Dictionary Info)
     </p>
     {% endif %}
-      <hr>
+
 
       <h6>Additional Resources:</h6>
 

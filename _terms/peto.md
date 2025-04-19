@@ -1,6 +1,6 @@
 ---
 title: petō
-meaning: to look for/ head for
+meaning: to look for, to head for
 ch: five
 pos: verb
 inf: petere

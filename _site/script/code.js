@@ -1,10 +1,13 @@
-//document.addEventListener('DOMContentLoaded', () => {
-  //console.log('DOM loaded and script running!');
-//});
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('DOM loaded and script running!');
+});
 
 
 
 var cards = document.querySelectorAll('.card');
+var cardbg = document.querySelectorAll('.card-bg');
+var soundButton = document.querySelectorAll('.audio');
+var sparkButton = document.querySelectorAll('.rep');
 
 [...cards].forEach((card)=>{
   card.addEventListener( 'click', function() {
@@ -12,14 +15,37 @@ var cards = document.querySelectorAll('.card');
   });
 });
 
-const flipall = document.getElementById('flipall');
-var cards = document.querySelectorAll('.card');
-
-flipall.addEventListener('click', () => {
-  cards.forEach(card => {
-    card.classList.toggle('is-flipped');
+[...cardbg].forEach((cardbg)=>{
+  cardbg.addEventListener( 'click', function() {
+    cardbg.classList.toggle('is-flipped');
+    console.log('audio clicked');
   });
 });
+
+ // Prevent card flip when clicking the sound button
+ [...soundButton].forEach((soundButton)=>{
+  soundButton.addEventListener('click', (event) => {
+    event.stopPropagation(); // Prevent click event from propagating to the card
+  });
+});
+
+
+
+
+  [...sparkButton].forEach((sparkButton)=>{
+    sparkButton.addEventListener('click', (event) => {
+      event.stopPropagation(); // Prevent click event from propagating to the card
+    });
+  });
+
+//const flipall = document.getElementById('flipall');
+//var cards = document.querySelectorAll('.card');
+
+//flipall.addEventListener('click', () => {
+  //cards.forEach(card => {
+    //card.classList.toggle('is-flipped');
+  //});
+//});
 
 const sortAlph = document.getElementById("sortalph");
 const sortPos = document.getElementById("sortpos");
@@ -82,15 +108,13 @@ function handleRadioChange(event) {
   document.querySelectorAll('.la-text').forEach(element => {
     let currentHTML = isAbbreviated ? element.innerHTML : element.dataset.originalHTML; // Keep abbreviation if active
 
-    if (action === 'remove') {
-      element.innerHTML = replaceMacrons(currentHTML);
-    } else if (action === 'keep') {
-      element.innerHTML = currentHTML; // Restore based on abbreviation state
-    } else if (action === 'essential') {
+    if (action === 'essential') {
       element.innerHTML = currentHTML.replace(
         /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
         (match, group) => group || macronMap[match] || match
       );
+    } else if (action === 'keep') {
+      element.innerHTML = currentHTML; // Restore based on abbreviation state
     }
   });
 }
@@ -100,7 +124,6 @@ function handleRadioChange(event) {
 document.querySelectorAll('input[name="macronToggle"]').forEach(radio => {
   radio.addEventListener('change', handleRadioChange);
 });
-
 
 
 

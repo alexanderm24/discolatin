@@ -1,6 +1,6 @@
 ---
 title: amō
-meaning: to love or like
+meaning: to love/like
 ch: four
 pos: verb
 inf: amāre

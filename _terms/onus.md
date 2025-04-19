@@ -1,6 +1,6 @@
 ---
 title: onus
-meaning: burden
+meaning: load, burden
 ch: fifteen
 pos: nounthird
 genitive: oneris

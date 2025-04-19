@@ -8,6 +8,7 @@ secondppstem: habit
 infend: āre
 conjugation: first
 derivative: uninhabitable
+diaudio: no
 mt: yes
 mt1thru4: yes
 ---
