@@ -996,7 +996,8 @@ z-index: 10000;
 
 .accordion-button, .accordion-header, .accordion-item {
   margin: 0;
-  justify-self: center;
+  justify-content: left;
+  width: 100%
 }
 
 .caro-accordion {
