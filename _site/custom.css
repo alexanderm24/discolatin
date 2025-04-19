@@ -996,7 +996,7 @@ z-index: 10000;
 
 .accordion-button, .accordion-header, .accordion-item {
   margin: 0;
-  justify-content: left;
+  justify-content: center;
   width: 100%
 }
 
