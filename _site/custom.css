@@ -997,19 +997,19 @@ z-index: 10000;
 .accordion-button, .accordion-header, .accordion-item {
   margin: 0;
   justify-content: center;
-  width: 100%
+  width: 100%;
 }
 
 .caro-accordion {
   margin: 0;
-  max-width: 60%;
-  align-self: center;
+  width: 500px;
+  justify-self: center;
 }
 
 @media only screen and (max-width:600px) {
   .caro-accordion {
     max-width: 350px;
-    align-self: center;
+    text-align: center;
   }
 }
 
