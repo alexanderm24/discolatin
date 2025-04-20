@@ -1008,7 +1008,7 @@ z-index: 10000;
 
 @media only screen and (max-width:600px) {
   .caro-accordion {
-    max-width: 350px;
+    width: 350px;
     text-align: center;
   }
 }
