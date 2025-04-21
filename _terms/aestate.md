@@ -4,15 +4,15 @@ meaning: in the summer
 ch: one
 pos: adverb
 ---
-<div class="accordion caro-accordion" id="accordionExample">
+<div class="accordion caro-accordion" id="aestate">
     <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aestate1" aria-expanded="false" aria-controls="aestate1">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
 </svg>&#160; Example Sentence
             </button>
           </h2>
-          <div id="collapseOne" class="accordion-collapse collapse">
+          <div id="aestate1" class="accordion-collapse collapse">
             <div class="accordion-body">
               Cornelia 
               <a data-bs-toggle="tooltip" data-bs-title="in">in</a> 
@@ -25,12 +25,12 @@ pos: adverb
         </div>
       <div class="accordion-item">
           <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aestate2" aria-expanded="false" aria-controls="aestate2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16"><path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
 </svg>         &#160;Translation Tip
             </button>
           </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse">
+          <div id="aestate2" class="accordion-collapse collapse">
             <div class="accordion-body">
               Adverbs can be placed at the beginning or end of the sentence.
             </div>
@@ -86,6 +86,7 @@ pos: adverb
           </div>
         </div>
       </div>-->
+      </div>
 
 
 
