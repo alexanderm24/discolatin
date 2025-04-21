@@ -1025,8 +1025,19 @@ z-index: 10000;
 }
 
 
-.totadjective-underline {
-  text-decoration: underline;
-  text-decoration-color: #6ed1ff;
-  text-decoration-thickness: 3px;
+
+.verb-underline, .conjverb-underline {
+  text-decoration: underline #ffb01f 3px;
+}
+.noun-underline, .exnounsecond-underline, .nounthird-underline, .nounfifth-underliine, .pronoun-underline, .pronounthird-underline, .perspronoun-underline, .nouni-underline {
+  text-decoration: underline #ffe433 3px;
+}
+.preposition-underline, .prepdual-underline {
+  text-decoration: underline #6dd978 3px;
+}
+.adjective-underline, .totadjective-underline, .thirdadjective-underline, .altadjective-underline, .extotadjective-underline {
+  text-decoration: underline #6ed1ff 3px;
+}
+.adverb-underline {
+  text-decoration: underline #b395da 3px;
 }

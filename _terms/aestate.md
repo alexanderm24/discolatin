@@ -18,7 +18,7 @@ pos: adverb
               <a data-bs-toggle="tooltip" data-bs-title="in">in</a> 
                 <a data-bs-toggle="tooltip" data-bs-title="house">vīllā</a> 
                 <a data-bs-toggle="tooltip" data-bs-title="country">rūstica</a>
-                <span style="text-decoration: underline purple 2px;"> <a data-bs-toggle="tooltip" data-bs-title="in the summer">aestāte</a></span>
+                <span class="{{ page.pos }}-underline"><a data-bs-toggle="tooltip" data-bs-title="in the summer">aestāte</a></span>
                 <a data-bs-toggle="tooltip" data-bs-title="lives">habitat.</a>
             </div>
           </div>
