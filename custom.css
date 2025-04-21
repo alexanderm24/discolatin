@@ -1023,3 +1023,10 @@ z-index: 10000;
     padding-right: 1.75rem;
   }
 }
+
+
+.totadjective-underline {
+  text-decoration: underline;
+  text-decoration-color: #6ed1ff;
+  text-decoration-thickness: 3px;
+}

@@ -21,8 +21,8 @@ mt1thru4: yes
           <div id="alter1" class="accordion-collapse collapse">
             <div class="accordion-body">
               Flavia 
-               <a data-bs-toggle="tooltip" data-bs-title="another"><span style="text-decoration: underline #6ed1ff 2px;">altera</span></a>
               <a data-bs-toggle="tooltip" data-bs-title="girl">puella</a>
+              <a data-bs-toggle="tooltip" data-bs-title="another"><span class="{{ page.pos }}-underline">altera</span></a>
               <a data-bs-toggle="tooltip" data-bs-title="is">est.</a>
             </div>
           </div>
@@ -36,7 +36,7 @@ mt1thru4: yes
           </h2>
           <div id="alter2" class="accordion-collapse collapse">
             <div class="accordion-body">
-              Adjectives often follow the noun they modify.
+              Adjectives often come after the noun they modify.
             </div>
           </div>
         </div>
