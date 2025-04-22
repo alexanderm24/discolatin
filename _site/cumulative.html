@@ -3151,6 +3151,15 @@
                     </div>
                     <div class="rightcorner-bg d-flex justify-content-center">
                       
+                      <audio id="haudio-aqua" src="../assets/audio/aqua-haudio.m4a"></audio>
+                      <button class="audio ch rep" onclick="document.getElementById('haudio-aqua').play()">
+                          <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                          </svg>
+                        </button>
+                      
                     </div>
                   </div>
                   <div class="term-bg">aqua</div>
@@ -3171,9 +3180,21 @@
 <!--nouns 1&2-->
 
 
-<div class="card--top--back-bg di-bg noun la-text d-flex justify-content-center">
-  <div><span class="expdi">aqu</span>ae   f.</div>
+<div class="card--top--back-bg di-bg noun la-text d-flex justify-content-between">
+<div class="leftcornerb-bg"></div>
+<div><span class="expdi">aqu</span>ae   f.</div>
+<div class="rightcorner-bg">
+<audio id="diaudio-aqua" src="../assets/audio/aqua-diaudio.m4a"></audio>
+<button class="audio ch rep" onclick="document.getElementById('diaudio-aqua').play()">
+<svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+</svg>
+</button>
 </div>
+</div>
+
 
 
 
@@ -3341,7 +3362,60 @@
                 </div>
               </div>
               <div class="p-5">
-                
+                <div class="accordion caro-accordion" id="accordionExample">
+    <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arbor1" aria-expanded="false" aria-controls="arbor1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+</svg>&#160; Example Sentence
+            </button>
+          </h2>
+          <div id="arbor1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a data-bs-toggle="tooltip" data-bs-title="tree"><span class="nounthird-underline">Arbor</span></a>
+              <a data-bs-toggle="tooltip" data-bs-title="big">magna</a>
+              <a data-bs-toggle="tooltip" data-bs-title="is">est.</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arbor2" aria-expanded="false" aria-controls="arbor2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+</svg>&#160; Derivatives
+            </button>
+          </h2>
+          <div id="arbor2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+            <ul class="text-start">
+             <li>An <em>arboretum</em> is a garden full of trees.</li>
+             <li>An <em>arborist</em> is someone who specializes in taking care of trees.</li>
+            </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#arbor3" aria-expanded="false" aria-controls="arbor3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+  <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
+</svg>        &#160; Why feminine?
+            </button>
+          </h2>
+          <div id="arbor3" class="accordion-collapse collapse">
+            <div class="accordion-body text-start">
+            <ol>
+            <li>All nouns in Latin have gender, even if they are inanimate objects or intangible ideas.</li> 
+            <li>Often, nouns that end in <i>-a</i> are feminine, but this is a case in which we just have to memorize the gender with the English meaning.</li>
+            </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+
 
               </div>
             </div>
@@ -6579,7 +6653,7 @@
            
                     </div>
                   </div>
-                  <div class="term-bg">cūr?</div>
+                  <div class="term-bg">cūr...?</div>
                   </div>
                   <div class="card__face-bg card__face--back-bg">
                       <div class="card--top--back-bg d-flex justify-content-end">
@@ -6591,7 +6665,7 @@
                       </div>
           
           
-                      <div class="def-only-bg">why?</div>
+                      <div class="def-only-bg">why...?</div>
           
                       
                     
@@ -6601,7 +6675,22 @@
                 </div>
               </div>
               <div class="p-5">
-                
+                <div class="accordion caro-accordion" id="accordionExample">
+    <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cur1" aria-expanded="false" aria-controls="cur1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+</svg>&#160; Example Sentence
+            </button>
+          </h2>
+          <div id="cur1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a data-bs-toggle="tooltip" data-bs-title="why"><span class="adverb-underline">Cūr</span></a>
+              <a data-bs-toggle="tooltip" data-bs-title="are you reading">legis?</a>
+            </div>
+          </div>
+        </div>
+</div>
 
               </div>
             </div>
@@ -7990,6 +8079,15 @@
                     </div>
                     <div class="rightcorner-bg d-flex justify-content-center">
                       
+                      <audio id="haudio-dum" src="../assets/audio/dum-haudio.m4a"></audio>
+                      <button class="audio ch rep" onclick="document.getElementById('haudio-dum').play()">
+                      <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                        <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                        <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                        <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                      </svg>
+                        </button>
+                      
       
            
                     </div>
@@ -8016,7 +8114,25 @@
                 </div>
               </div>
               <div class="p-5">
-                
+                <div class="accordion caro-accordion" id="accordionExample">
+    <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dum1" aria-expanded="false" aria-controls="dum1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+</svg>&#160; Example Sentence
+            </button>
+          </h2>
+          <div id="dum1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a data-bs-toggle="tooltip" data-bs-title="while"><span class="adverb-underline">Dum</span></a> 
+              Cornelia 
+              <a data-bs-toggle="tooltip" data-bs-title="reads">legit</a>, 
+              Flavia 
+              <a data-bs-toggle="tooltip" data-bs-title="writes">scribit.</a> 
+            </div>
+          </div>
+        </div>
+</div>
 
               </div>
             </div>
@@ -8315,7 +8431,23 @@
                 </div>
               </div>
               <div class="p-5">
-                
+                <div class="accordion caro-accordion" id="accordionExample">
+    <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ecce1" aria-expanded="false" aria-controls="ecce1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+</svg>&#160; Example Sentence
+            </button>
+          </h2>
+          <div id="ecce1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <a data-bs-toggle="tooltip" data-bs-title="Look!"><span class="interjection-underline">Ecce!</span></a> 
+              <a data-bs-toggle="tooltip" data-bs-title="girls">puellae</a>
+              <a data-bs-toggle="tooltip" data-bs-title="walk">ambulant.</a>
+            </div>
+          </div>
+        </div>
+</div>
 
               </div>
             </div>
@@ -9442,7 +9574,25 @@
                 </div>
               </div>
               <div class="p-5">
-                
+                <div class="accordion caro-accordion" id="accordionExample">
+    <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#et1" aria-expanded="false" aria-controls="et1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16"><path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325" />
+</svg>&#160; Example Sentence
+            </button>
+          </h2>
+          <div id="et1" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Cornelia
+              <a data-bs-toggle="tooltip" data-bs-title="reads">legit</a> 
+              <a data-bs-toggle="tooltip" data-bs-title="and"><span class="conjunction-underline">et</span></a> 
+              Flavia 
+              <a data-bs-toggle="tooltip" data-bs-title="writes">scribit.</a>
+            </div>
+          </div>
+        </div>
+</div>
 
               </div>
             </div>
@@ -36736,10 +36886,10 @@
         <div class="rightcorner">
           
         </div>
-      <div class="term">cūr?</div>
+      <div class="term">cūr...?</div>
       </div>
       <div class="card__face card__face--back">
-        <div class="def-only">why?</div>
+        <div class="def-only">why...?</div>
         <div class="def-note-small">
           
         </div>
@@ -110747,10 +110897,10 @@
           <div class="rightcorner">
             
           </div>
-        <div class="term">cūr?</div>
+        <div class="term">cūr...?</div>
         </div>
         <div class="card__face card__face--back">
-          <div class="def-only">why?</div>
+          <div class="def-only">why...?</div>
           <div class="def-note-small">
             
           </div>
