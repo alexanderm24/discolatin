@@ -6,4 +6,6 @@ pos: adverb
 derivative: simultaneous
 mt: yes
 mt8thru10: yes
+f3: yes
+f: yes
 ---

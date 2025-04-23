@@ -6,4 +6,5 @@ pos: preposition
 di: (takes ablative)
 f1: yes
 f: yes
+f3: yes
 ---

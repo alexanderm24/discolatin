@@ -10,4 +10,6 @@ conjugation: second
 derivative: mansion
 mt: yes
 mt8thru10: yes
+f3: yes
+f: yes
 ---
