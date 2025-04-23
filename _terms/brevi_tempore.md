@@ -1,6 +1,6 @@
 ---
 title: brevi tempore
-meaning: in short time
+meaning: in a short time
 ch: two
 pos: phrase
 adjective: brevi
