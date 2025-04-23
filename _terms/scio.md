@@ -7,7 +7,7 @@ inf: scīre
 secondppstem: sc
 infend: īre
 conjugation: fourth
-derivatives: science, omniscient
+derivatives: science, omniscient, prescient
 f3: yes
 f: yes
 ---
