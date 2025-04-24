@@ -1,6 +1,6 @@
 ---
-title: quis?
-meaning: who? (question)
+title: quis...?
+meaning: who...? (question)
 ch: three
 pos: pronounthird
 abbgender: (m./f.)

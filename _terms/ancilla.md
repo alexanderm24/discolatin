@@ -1,6 +1,6 @@
 ---
 title: ancilla
-meaning: slave-woman
+meaning: slave-woman, slave
 ch: six
 pos: noun
 stem: ancill
