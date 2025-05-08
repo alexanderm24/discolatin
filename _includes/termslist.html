@@ -1,4 +1,4 @@
-<ul class="list-group">
+<!--<ul class="list-group">
     {% for terms in site.terms %}
             {% assign ch = terms.ch %}
             {% assign pos = terms.pos %}
@@ -7,14 +7,18 @@
       
             {% if ch == page.ch %}
             {% if pos == verb %}
-      <li class="list-group-item">
-        {{ terms.title }}
-       </li>
+      <li class="list-group-item">{{ terms.title }}</li>
        {% endif %}
        {% endif %}
        {% endfor %}
+</ul>
 
-    </ul>
+<ul class="list-group d-flex justify-content-center">
+
+    <li class="list-group-item">Test</li>
+
+</ul>-->
+  
     
 
 

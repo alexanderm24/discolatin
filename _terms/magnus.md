@@ -8,4 +8,5 @@ femend: a
 neutstem: magn
 neutend: um
 derivative: magnanimous
+allmeanings: yes
 ---

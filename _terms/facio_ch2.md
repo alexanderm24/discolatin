@@ -8,5 +8,6 @@ secondppstem: fac
 infend: ere
 conjugation: third
 derivatives: manufacture, effect, confection
+allmeanings: yes
 inactive: yes
 ---

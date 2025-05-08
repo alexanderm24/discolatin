@@ -1044,3 +1044,7 @@ z-index: 10000;
 .conjunction-underline {
   text-decoration: underline #b39680 3px;
 }
+
+.list-group {
+  max-width: 500px;
+}

@@ -7,4 +7,5 @@ dione: (with ablative)
 meaningtwo: into
 ditwo: (with accusative)
 repeat: yes
+allmeanings: yes
 ---

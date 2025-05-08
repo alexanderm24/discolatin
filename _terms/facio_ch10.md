@@ -7,7 +7,8 @@ inf: facere
 secondppstem: fac
 infend: ere
 conjugation: third
-derivatives: manufacture, confection
+derivatives: manufacture, effect, confection
+allmeanings: yes
 f1: yes
 f: yes
 ---

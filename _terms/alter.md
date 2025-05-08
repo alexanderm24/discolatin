@@ -49,15 +49,15 @@ mt1thru4: yes
                   </ul>
               In the example sentence above, <i>altera</i> is chosen to modify <i>puella</i> because <i>-a</i> is the feminine ending. Consider the alternative examples below:
               <ul class="list-group p-4">
-                    <li class="list-group-item">Example 1</li>
+                    <li class="list-group-item">Example 1: Masculine</li>
                     <li class="list-group-item p-3">
                     <a data-bs-toggle="tooltip" data-bs-title="another"><span class="{{ page.pos }}-underline">alter</span></a>
                     <a data-bs-toggle="tooltip" data-bs-title="boy">puer</a>
-                    <a data-bs-toggle="tooltip" data-bs-title="(he/she/it) walks">ambulat.</a></li>
+                    <a data-bs-toggle="tooltip" data-bs-title="walks">ambulat.</a></li>
                   </ul>
               <ul class="list-group p-4">
-                    <li class="list-group-item">Example 2</li>
-                    <li class="list-group-item p-3"><a data-bs-toggle="tooltip" data-bs-title="another"><span class="{{ page.pos }}-underline">alterum</span></a> <a data-bs-toggle="tooltip" data-bs-title="temple">templum</a> <a data-bs-toggle="tooltip" data-bs-title="(he/she/it) is">est.</a>
+                    <li class="list-group-item">Example 2: Neuter</li>
+                    <li class="list-group-item p-3"><a data-bs-toggle="tooltip" data-bs-title="another"><span class="{{ page.pos }}-underline">alterum</span></a> <a data-bs-toggle="tooltip" data-bs-title="temple">templum</a> <a data-bs-toggle="tooltip" data-bs-title="It is">est.</a>
                     </li>
                 </ul>
             </div>
@@ -71,8 +71,8 @@ mt1thru4: yes
             </button>
           </h2>
           <div id="alter2" class="accordion-collapse collapse">
-            <div class="accordion-body">
-              Adjectives often come after the noun they modify.
+            <div class="accordion-body text-start">
+              Adjectives often come after the noun they modify. Watch out for adjectives that are predicate nominatives.
             </div>
           </div>
         </div>
@@ -126,4 +126,3 @@ mt1thru4: yes
           </div>
         </div>
       </div>
-    </div>

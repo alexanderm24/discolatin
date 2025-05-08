@@ -6,6 +6,7 @@ meaningone: in
 dione: (with ablative)
 meaningtwo: into
 ditwo: (with accusative)
-repeat: yes
+rep: yes
+allmeanings: yes
 inactive: yes
 ---
