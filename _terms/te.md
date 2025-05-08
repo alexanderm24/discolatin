@@ -1,6 +1,6 @@
 ---
 title: tē
-meaning: you (accusative)
+meaning: you (direct object)
 ch: four
 pos: perspronoun
 ---

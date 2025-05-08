@@ -1,6 +1,6 @@
 ---
 title: tū
-meaning: you (nominative)
+meaning: you (subject)
 ch: four
 pos: perspronoun
 ---

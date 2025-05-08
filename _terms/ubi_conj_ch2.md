@@ -4,5 +4,6 @@ meaning: when
 ch: two
 pos: conjunction
 repeat: yes
+allmeanings: yes
 inactive: yes
 ---
