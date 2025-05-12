@@ -1,14 +1,12 @@
 ---
-title: pater
-meaning: father
-ch: six
+title: frater
+meaning: wife
 pos: nounthird
-genitive: patris
+genitive: fratris
 abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: third
-derivatives: paternalistic, patrimony
 f1: yes
 f: yes
 ---

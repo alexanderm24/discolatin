@@ -1,14 +1,13 @@
 ---
-title: pater
-meaning: father
-ch: six
+title: caupō
+meaning: innkeeper
+ch: seventeen
 pos: nounthird
-genitive: patris
+genitive: caupōnis
 abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: third
-derivatives: paternalistic, patrimony
 f1: yes
 f: yes
 ---
