@@ -1,6 +1,6 @@
 ---
 title: soror
-meaning: wife
+meaning: sister
 pos: nounthird
 genitive: sororis
 abbgender: f.
