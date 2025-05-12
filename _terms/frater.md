@@ -1,6 +1,6 @@
 ---
 title: frater
-meaning: wife
+meaning: brother
 pos: nounthird
 genitive: fratris
 abbgender: m.
