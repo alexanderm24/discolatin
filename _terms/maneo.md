@@ -1,6 +1,6 @@
 ---
 title: maneō
-meaning: to stay/ remain
+meaning: to stay, remain
 ch: nine
 pos: verb
 inf: manēre
