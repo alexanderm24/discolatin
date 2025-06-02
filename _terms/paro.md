@@ -8,4 +8,5 @@ secondppstem: par
 infend: āre
 conjugation: first
 derivative: preparatory
+ss1: yes
 ---

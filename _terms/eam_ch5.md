@@ -7,4 +7,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 inactive: yes
+ss1: yes
 ---

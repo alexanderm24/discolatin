@@ -1,11 +1,12 @@
 ---
-title: clamō
+title: clāmō
 meaning: to shout
 ch: three
 pos: verb
 inf: clamāre
-secondppstem: clam
+secondppstem: clām
 infend: āre
 conjugation: first
 derivative: exclamatory
+ss1: yes
 ---

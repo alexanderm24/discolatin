@@ -1,5 +1,5 @@
 ---
-title: homo
+title: homō
 meaning: person
 ch: fifteen
 pos: nounthird

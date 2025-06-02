@@ -3,7 +3,7 @@ title: clāmor
 meaning: ruckus, hubbub
 ch: five
 pos: nounthird
-genitive: clāmoris
+genitive: clāmōris
 abbgender: m.
 abbgender2: masc.
 gender: masculine

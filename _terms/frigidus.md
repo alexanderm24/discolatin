@@ -1,10 +1,10 @@
 ---
-title: frigidus
+title: frīgidus
 meaning: cool
 ch: five
 pos: totadjective
-femstem: frigid
+femstem: frīgid
 femend: a
-neutstem: frigid
+neutstem: frīgid
 neutend: um
 ---

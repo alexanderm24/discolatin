@@ -10,4 +10,5 @@ conjugation: second
 derivatives: docile, doctrine
 mt: yes
 mt5thru7: yes
+ss1: yes
 ---

@@ -10,4 +10,5 @@ conjugation: first
 derivative: station
 f1: yes
 f: yes
+ss1: yes
 ---

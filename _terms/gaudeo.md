@@ -9,4 +9,5 @@ infend: ēre
 conjugation: second
 f2: yes
 f: yes
+ss1: yes
 ---

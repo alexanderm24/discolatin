@@ -3,6 +3,7 @@ title: et
 meaning: and
 ch: one
 pos: conjunction
+ss1: yes
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

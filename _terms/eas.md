@@ -8,4 +8,5 @@ abbgender2: fem.
 gender: feminine
 mt: yes
 mt5thru7: yes
+ss1: yes
 ---

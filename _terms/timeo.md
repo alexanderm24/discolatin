@@ -9,4 +9,5 @@ infend: ēre
 conjugation: second
 mt: yes
 mt5thru7: yes
+ss1: yes
 ---

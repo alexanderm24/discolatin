@@ -1,10 +1,10 @@
 ---
-title: celō
+title: cēlō
 meaning: to hide
 ch: eleven
 pos: verb
 inf: celāre
-secondppstem: cel
+secondppstem: cēl
 infend: āre
 conjugation: first
 derivative: conceal

@@ -1,9 +1,9 @@
 ---
-title: liberī
+title: līberī
 meaning: children
 ch: ten
 pos: noun
-stem: liber
+stem: līber
 genend: ōrum
 abbgender: m.
 abbgender2: masc.
