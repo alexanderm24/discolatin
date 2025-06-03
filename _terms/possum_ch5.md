@@ -6,4 +6,5 @@ pos: verb
 inf: posse
 conjugation: irregular
 derivative: possible
+inactive: yes
 ---

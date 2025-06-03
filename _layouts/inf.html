@@ -1,0 +1,1944 @@
+---
+layout: base
+---
+
+{%- include custom-nav.html -%}
+
+{%- include sidebar.html -%}
+
+{%- include bbuttons.html -%}
+
+
+
+<div class="container pc">
+    <!--carousel, includes next/prev buttons-->
+    <div class="row text-center">
+      <div class="col">
+  
+      <!--carousel-->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+        <!--cover card-->
+        <div class="carousel-item active">
+          <div class="scene-bg scene--card-bg">
+            <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+          </div>
+        </div>
+  
+      <!--card list-->
+      {% for terms in site.terms %}
+      {% assign ch = terms.ch %}
+      {% assign pos = terms.pos %}
+      {% assign conj = terms.conjugation %}
+
+      
+
+      <!--1, 3, 4 verbs-->
+      {% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+      <div class="carousel-item">
+        <div class="scene-bg scene--card-bg">
+          <div class="card-bg">
+            <div class="card__face-bg card__face--front-bg verb la-text">
+              <div class="card--top--front-bg d-flex justify-content-between">
+              <div class="leftcorner-bg d-flex justify-content-center">
+                <!--{% if terms.repeat %}-->
+                <!--rep class is used to stop propagation-->
+                <button class="ch rep" data-bs-toggle="modal" data-bs-target="#sparkleModal">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                </button>
+                <!--{% endif %}-->
+              </div>
+              <div class="rightcorner-bg d-flex justify-content-center">
+                {% if terms.haudio %}
+                <audio id="haudio-{{ terms.slug }}" src="{{ terms.haudio }}"></audio>
+                <button class="audio ch rep" onclick="document.getElementById('haudio-{{ terms.slug }}').play()">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                    </svg>
+                  </button>
+                {% endif %}
+              </div>
+            </div>
+            <div class="term-bg la-text">{{ terms.inf }}</div>
+            </div>
+
+            <div class="card__face-bg card__face--back-bg">
+                {{ terms.conjugation }}
+   
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <!--2 verbs-->
+      {% if pos == "verb" and conj == "second" %}
+      <div class="carousel-item">
+        <div class="scene-bg scene--card-bg">
+          <div class="card-bg">
+            <div class="card__face-bg card__face--front-bg verb la-text">
+              <div class="card--top--front-bg d-flex justify-content-between">
+              <div class="leftcorner-bg d-flex justify-content-center">
+                {% if terms.repeat %}
+                <!--rep class is used to stop propagation-->
+                <button class="ch rep" data-bs-toggle="modal" data-bs-target="#sparkleModal">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                </button>
+                {% endif %}
+              </div>
+              <div class="rightcorner-bg d-flex justify-content-center">
+                {% if terms.haudio %}
+                <audio id="haudio-{{ terms.slug }}" src="{{ terms.haudio }}"></audio>
+                <button class="audio ch rep" onclick="document.getElementById('haudio-{{ terms.slug }}').play()">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                    </svg>
+                  </button>
+                {% endif %}
+              </div>
+            </div>
+            <div class="term-bg la-text">{{ terms.secondppstem }}<span class="essm">{{ terms.infend }}</span></div>
+            </div>
+
+            <div class="card__face-bg card__face--back-bg">
+                {{ terms.conjugation }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+      <!--irregular verbs-->
+      {% if pos == "verb" and conj == "irregular" %}
+      <div class="carousel-item">
+        <div class="scene-bg scene--card-bg">
+          <div class="card-bg">
+            <div class="card__face-bg card__face--front-bg verb la-text">
+              <div class="card--top--front-bg d-flex justify-content-between">
+              <div class="leftcorner-bg d-flex justify-content-center">
+                <!--{% if terms.repeat %}-->
+                <!--rep class is used to stop propagation-->
+                <button class="ch rep" data-bs-toggle="modal" data-bs-target="#sparkleModal">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-stars" viewBox="0 0 16 16">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                </button>
+                <!--{% endif %}-->
+              </div>
+              <div class="rightcorner-bg d-flex justify-content-center">
+                {% if terms.haudio %}
+                <audio id="haudio-{{ terms.slug }}" src="{{ terms.haudio }}"></audio>
+                <button class="audio ch rep" onclick="document.getElementById('haudio-{{ terms.slug }}').play()">
+                    <svg class="d-flex justify-content-center" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+                  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+                  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+                    </svg>
+                  </button>
+                {% endif %}
+              </div>
+            </div>
+            <div class="term-bg la-text">{{ terms.inf }}</div>
+            </div>
+
+            <div class="card__face-bg card__face--back-bg">
+            
+                {{ terms.conjugation }}
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+
+
+
+    
+      {% endfor %}
+        </div>
+      </div><!--ends carousel-->
+      </div><!--ends init. col-->
+    </div><!--ends init. row-->
+  </div><!--ends container-->
+
+  <!--carousel control-->
+  <div class="carousel-control justify-content-around d-flex">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div><!--carousel control closes-->
+
+  <div class="mt-5 pt-5">
+    <div class="formline mb-4">
+        <span class="formc">Sort:</span>
+        <div class="form-check form-check-reverse">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortalph" checked>
+          <label class="form-check-label" for="flexRadioDefault1">
+            Alphabetically
+          </label>
+        </div>
+        <div class="form-check form-check-reverse">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortpos">
+            <label class="form-check-label" for="flexRadioDefault2">
+              By Parts of Speech
+            </label>
+          </div>
+        </div>
+    
+    <container id="alph" class="vocabcontainer">
+        <div class="row text-center">
+          <div class="col">
+        {% for terms in site.terms %}
+        
+        {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+        {% assign conj = terms.conjugation %}
+      
+      
+        {% if terms.ss %}
+        
+      
+        
+      
+      
+      <!--verbs 1,3,4-->
+      {% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+      <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front--verb la-text">
+              <div class="rightcorner">
+                {% if repeat %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                </svg>
+                {% endif %}
+              </div>
+              <div class="term">
+                {{ terms.title }}
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="di-v la-text"><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</div>
+              <div class="def">{{ terms.meaning }}</div>
+              <div class="def-note-small">
+                {% if note %}
+                note: {{ terms.note }}
+                {% endif %}
+              </div>
+              {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+      {% endif %}
+      
+      <!--verbs 2-->
+      {% if pos == "verb" and conj == "second" %}
+      <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front--verb la-text">
+              <div class="rightcorner">
+                {% if repeat %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                </svg>
+                {% endif %}
+              </div>
+              <div class="term">
+                {{ terms.title }}
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="di-v la-text"><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></div>
+              <div class="def">{{ terms.meaning }}</div>
+              <div class="def-note-small">
+                {% if note %}
+                note: {{ terms.note }}
+                {% endif %}
+              </div>
+              {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+      {% endif %}
+      
+      <!--verbs irregular-->
+      {% if pos == "verb" and conj == "irregular" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--verb la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-v la-text">{{ terms.inf }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--verbs (conjugated)-->
+      {% if pos == "conjverb" %}
+      <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front--verb la-text">
+              <div class="rightcorner">
+                {% if repeat %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                </svg>
+                {% endif %}
+              </div>
+              <div class="term">
+                {{ terms.title }}
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="di-v la-text">{{ terms.di }}</div>
+              <div class="def">{{ terms.meaning }}</div>
+              <div class="def-note-small">
+                {% if note %}
+                note: {{ terms.note }}
+                {% endif %}
+              </div>
+              {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+      {% endif %}
+      
+      <!--nouns 1&2-->
+      {% if pos == "noun" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text"><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--exnounsecond (2nd decl. stem exceptions)-->
+      {% if pos == "exnounsecond" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--nouns 3-->
+      {% if pos == "nounthird" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text"><div class="rightcorner">
+            {% if repeat %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+            </svg>
+            {% endif %}
+          </div>
+          <div class="term">
+            {{ terms.title }}
+          </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--nouns 5-->
+      {% if pos == "nounfifth" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text"><div class="rightcorner">
+            {% if repeat %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+            </svg>
+            {% endif %}
+          </div>
+          <div class="term">
+            {{ terms.title }}
+          </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text"><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }} {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--pronouns-->
+      {% if pos == "pronoun" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">({{ terms.abbgender }})</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--personal pronoun-->
+      {% if pos == "perspronoun" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">{{ terms.title }}</div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--pronoun third (with gender)-->
+      {% if pos == "pronounthird" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--adjectives 212-->
+      {% if pos == "totadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+        <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text"> <span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend}}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--adjectives 212: noster ... maybe alter & miser?-->
+      {% if pos == "extotadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+        <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text">{{ terms.femstem }}{{ terms.femend }}, {{ terms.neutstem }}{{ terms.neutend }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+            <!--3rd adjectives-->
+            {% if pos == "thirdadjective" %}
+            <div class="scene scene--card">
+              <div class="card">
+              <div class="card__face card__face--front--adjective la-text">
+                  <div class="rightcorner">
+                    {% if repeat %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                    {% endif %}
+                  </div>
+                  <div class="term">
+                    {{ terms.title }}
+                  </div>
+              </div>
+                <div class="card__face card__face--back">
+                  <div class="di-adj la-text"> <span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend}}</div>
+                  <div class="def">{{ terms.meaning }}</div>
+                  <div class="def-note-small">
+                    {% if note %}
+                    note: {{ terms.note }}
+                    {% endif %}
+                  </div>
+                  {% if derivative %}
+                    <div class="derivative">derivative: {{ terms.derivative }}</div>
+                    {% endif %}
+                    {% if derivatives %}
+                    <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endif %}
+      
+      <!--adjectives (alt)-->
+      {% if pos == "altadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text">{{ terms.adjforms }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--adverbs-->
+      {% if pos == "adverb" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--adverb la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+          <div class="term">{{ terms.title }}</div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--prepositions-->
+      {% if pos == "preposition" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--preposition la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-prep la-text">{{ terms.di }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--prepositions (dual)-->
+      {% if pos == "prepdual" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--preposition la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-prep-one la-text">{{ terms.dione }}</div>
+            <div class="prep-meaning-one">{{ terms.meaningone }}</div>
+            <div class="di-prep-two la-text">{{ terms.ditwo }}</div>
+            <div class="prep-meaning-two">{{ terms.meaningtwo }}</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--conjunctions-->
+      {% if pos == "conjunction" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--conjunction la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--interjection-->
+      {% if pos == "interjection" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--phrase">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--composite-->
+      {% if pos == "composite" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--phrase la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+          <div class="term"><span class="noun la-text">{{ terms.noun }}</span><span class="prep la-text">{{ terms.prep }}</span></div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+          </div>
+        </div>
+      </container>
+      
+      
+      <!--Organize by Parts of Speech-->
+      <container id="pos" class="vocabcontainer">
+        <div class="row text-center">
+          <div class="col">
+      
+            
+      
+            
+      
+          
+            <h2>Verbs
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="A verb shows what a subject is doing or tells what the subject is, was, or will be. Usually, subjects are nouns, but in Latin, verbs don't always have a corresponding noun... Remember: subjects are baked into the verb! Verbs have three qualities: person, number, and tense.">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg></a>
+            </h2>
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+        {% assign conj = terms.conjugation %}
+      
+      
+        {% if terms.ss %}
+        
+      
+        {% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+        <div class="scene scene--card">
+            <div class="card">
+              <div class="card__face card__face--front--verb la-text">
+                <div class="rightcorner">
+                  {% if repeat %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                  <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                  </svg>
+                  {% endif %}
+                </div>
+                <div class="term">
+                  {{ terms.title }}
+                </div>
+              </div>
+              <div class="card__face card__face--back">
+                <div class="di-v la-text"><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</div>
+                <div class="def">{{ terms.meaning }}</div>
+                <div class="def-note-small">
+                  {% if note %}
+                  note: {{ terms.note }}
+                  {% endif %}
+                </div>
+                {% if derivative %}
+                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                {% endif %}
+                {% if derivatives %}
+                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                {% endif %}
+              </div>
+            </div>
+        </div>
+        {% endif %}
+      
+        {% if pos == "verb" and conj == "second" %}
+        <div class="scene scene--card">
+            <div class="card">
+              <div class="card__face card__face--front--verb la-text">
+                <div class="rightcorner">
+                  {% if repeat %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                  <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                  </svg>
+                  {% endif %}
+                </div>
+                <div class="term">
+                  {{ terms.title }}
+                </div>
+              </div>
+              <div class="card__face card__face--back">
+                <div class="di-v la-text">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></div>
+                <div class="def">{{ terms.meaning }}</div>
+                <div class="def-note-small">
+                  {% if note %}
+                  note: {{ terms.note }}
+                  {% endif %}
+                </div>
+                {% if derivative %}
+                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                {% endif %}
+                {% if derivatives %}
+                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                {% endif %}
+              </div>
+            </div>
+        </div>
+        {% endif %}
+      
+        <!--verbs irregular-->
+      {% if pos == "verb" and conj == "irregular" %}
+      <div class="scene scene--card">
+      <div class="card">
+      <div class="card__face card__face--front--verb la-text">
+        <div class="rightcorner">
+          {% if repeat %}
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+          <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+          </svg>
+          {% endif %}
+        </div>
+        <div class="term">
+          {{ terms.title }}
+        </div>
+      </div>
+      <div class="card__face card__face--back">
+        <div class="di-v la-text">{{ terms.inf }}</div>
+        <div class="def">{{ terms.meaning }}</div>
+        <div class="def-note-small">
+          {% if note %}
+          note: {{ terms.note }}
+          {% endif %}
+        </div>
+          {% if derivative %}
+          <div class="derivative">derivative: {{ terms.derivative }}</div>
+          {% endif %}
+          {% if derivatives %}
+          <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+          {% endif %}
+      </div>
+      </div>
+      </div>
+      {% endif %}
+      
+      
+            
+      
+        
+      {% endif %}
+      {% endfor %}
+    
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+        {% if pos == "conjverb" %}
+        <div class="scene scene--card">
+            <div class="card">
+              <div class="card__face card__face--front--verb la-text">
+                <div class="rightcorner">
+                  {% if repeat %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                  <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                  </svg>
+                  {% endif %}
+                </div>
+                <div class="term">
+                  {{ terms.title }}
+                </div>
+              </div>
+              <div class="card__face card__face--back">
+                <div class="di-v la-text">{{ terms.di }}</div>
+                <div class="def">{{ terms.meaning }}</div>
+                <div class="def-note-small">
+                  {% if note %}
+                  note: {{ terms.note }}
+                  {% endif %}
+                </div>
+                {% if derivative %}
+                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                {% endif %}
+                {% if derivatives %}
+                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                {% endif %}
+              </div>
+            </div>
+        </div>
+        {% endif %}
+          
+      {% endif %}
+      
+      {% endfor %}
+      
+            <h2>Nouns 
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Nouns" data-bs-content="A noun names people, places, things, or ideas. In Latin, nouns have three qualities: gender, case, and number.">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg></a>
+            </h2>
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+      
+      
+                        <!--nouns 1&2-->
+      
+                        {% if pos == "noun" %}
+                        <div class="scene scene--card">
+                          <div class="card">
+                            <div class="card__face card__face--front--noun la-text">
+                              <div class="rightcorner">
+                                {% if repeat %}
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                                </svg>
+                                {% endif %}
+                              </div>
+                              <div class="term">
+                                {{ terms.title }}
+                              </div>
+                            </div>
+                            <div class="card__face card__face--back">
+                              <div class="di-n la-text"><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+                              <div class="def">{{ terms.meaning }}</div>
+                              <div class="def-note-small">
+                                {% if note %}
+                                note: {{ terms.note }}
+                                {% endif %}
+                              </div>
+                              {% if derivative %}
+                                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                                {% endif %}
+                                {% if derivatives %}
+                                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                                {% endif %}
+                            </div>
+                          </div>
+                        </div>
+                        {% endif %}
+      
+      <!--exnounsecond (2nd decl. stem exceptions)-->
+      {% if pos == "exnounsecond" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--nouns 3-->
+      {% if pos == "nounthird" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text"><div class="rightcorner">
+            {% if repeat %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+            </svg>
+            {% endif %}
+          </div>
+          <div class="term">
+            {{ terms.title }}
+          </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--nouns 5-->
+      {% if pos == "nounfifth" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text"><div class="rightcorner">
+            {% if repeat %}
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+            <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+            </svg>
+            {% endif %}
+          </div>
+          <div class="term">
+            {{ terms.title }}
+          </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text"><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }} {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+      
+      
+            <h2>Pronouns
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Pronouns" data-bs-content="Pronouns take the place of nouns. They refer to people, places, things, or ideas. There are personal, relative, and interrogative pronouns.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg></a>
+            </h2>
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      <!--pronouns-->
+      {% if pos == "pronoun" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">({{ terms.abbgender }})</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--personal pronoun-->
+      {% if pos == "perspronoun" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">{{ terms.title }}</div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--pronoun third (with gender)-->
+      {% if pos == "pronounthird" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--noun la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-n la-text">{{ terms.genitive }}   {{ terms.abbgender }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+            <!--<h2>Adjectives
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adjectives" data-bs-content="Adjectives modify or describe nouns and pronouns.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg></a>
+            </h2>-->
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+            <!--adjectives 212-->
+      {% if pos == "totadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+        <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text"> <span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend}}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      <!--adjectives 212: noster ... maybe alter & miser?-->
+      {% if pos == "extotadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+        <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+        </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text">{{ terms.femstem }}{{ terms.femend }}, {{ terms.neutstem }}{{ terms.neutend }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+            <!--3rd adjectives-->
+            {% if pos == "thirdadjective" %}
+            <div class="scene scene--card">
+              <div class="card">
+              <div class="card__face card__face--front--adjective la-text">
+                  <div class="rightcorner">
+                    {% if repeat %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                    {% endif %}
+                  </div>
+                  <div class="term">
+                    {{ terms.title }}
+                  </div>
+              </div>
+                <div class="card__face card__face--back">
+                  <div class="di-adj la-text"> <span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend}}</div>
+                  <div class="def">{{ terms.meaning }}</div>
+                  <div class="def-note-small">
+                    {% if note %}
+                    note: {{ terms.note }}
+                    {% endif %}
+                  </div>
+                  {% if derivative %}
+                    <div class="derivative">derivative: {{ terms.derivative }}</div>
+                    {% endif %}
+                    {% if derivatives %}
+                    <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endif %}
+      
+      <!--adjectives (alt)-->
+      {% if pos == "altadjective" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--adjective la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-adj la-text">{{ terms.adjforms }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+            <h2>Adverbs
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adverbs" data-bs-content="Adverbs modify or describe verbs, adjectives, and other adverbs.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg></a>
+            </h2>
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+        {% if pos == "adverb" %}
+        <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front--adverb la-text">
+              <div class="rightcorner">
+                {% if repeat %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                </svg>
+                {% endif %}
+              </div>
+            <div class="term">{{ terms.title }}</div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="def-only">{{ terms.meaning }}</div>
+              <div class="def-note-small">
+                {% if note %}
+                note: {{ terms.note }}
+                {% endif %}
+              </div>
+              {% if derivative %}
+                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                {% endif %}
+                {% if derivatives %}
+                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+            <h2>Prepositions
+              <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositions" data-bs-content="Prepositions show the position or relationship of one noun to another. In Latin, prepositions take on nouns in the accusative and/or ablative cases. See examples in 'prepositional phrases.' ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg></a>
+            </h2>
+      
+            {% for terms in site.terms %}
+      
+          {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+      <!--prepositions-->
+      {% if pos == "preposition" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--preposition la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-prep la-text">{{ terms.di }}</div>
+            <div class="def">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      <!--prepositions (dual)-->
+      {% if pos == "prepdual" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--preposition la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+            <div class="term">
+              {{ terms.title }}
+            </div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="di-prep-one la-text">{{ terms.dione }}</div>
+            <div class="prep-meaning-one">{{ terms.meaningone }}</div>
+            <div class="di-prep-two la-text">{{ terms.ditwo }}</div>
+            <div class="prep-meaning-two">{{ terms.meaningtwo }}</div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+        
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+           
+        {% if pos == "conjunction" %}
+        <div class="scene scene--card">
+          <div class="card">
+            <div class="card__face card__face--front--conjunction la-text">
+              <div class="rightcorner">
+                {% if repeat %}
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                </svg>
+                {% endif %}
+              </div>
+              <div class="term">
+                {{ terms.title }}
+              </div>
+            </div>
+            <div class="card__face card__face--back">
+              <div class="def-only">{{ terms.meaning }}</div>
+              <div class="def-note-small">
+                {% if note %}
+                note: {{ terms.note }}
+                {% endif %}
+              </div>
+              {% if derivative %}
+                <div class="derivative">derivative: {{ terms.derivative }}</div>
+                {% endif %}
+                {% if derivatives %}
+                <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+      
+            {% for terms in site.terms %}
+      
+            {% assign ch = terms.ch %}
+        {% assign pos = terms.pos %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+      
+      
+        {% if terms.ss %}
+        
+      
+      
+            <!--interjection-->
+            {% if pos == "interjection" %}
+            <div class="scene scene--card">
+              <div class="card">
+                <div class="card__face card__face--front--phrase">
+                  <div class="rightcorner">
+                    {% if repeat %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+                    <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                    </svg>
+                    {% endif %}
+                  </div>
+                  <div class="term">
+                    {{ terms.title }}
+                  </div>
+                </div>
+                <div class="card__face card__face--back">
+                  <div class="def-only">{{ terms.meaning }}</div>
+                  <div class="def-note-small">
+                    {% if note %}
+                    note: {{ terms.note }}
+                    {% endif %}
+                  </div>
+                  {% if derivative %}
+                    <div class="derivative">derivative: {{ terms.derivative }}</div>
+                    {% endif %}
+                    {% if derivatives %}
+                    <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+                    {% endif %}
+                </div>
+              </div>
+            </div>
+            {% endif %}
+      
+      
+      {% endif %}
+      {% endfor %}
+
+      
+      {% for terms in site.terms %}
+      
+      {% assign ch = terms.ch %}
+      {% assign pos = terms.pos %}
+      {% assign inactive = terms.inactive %}
+      {% assign derivative = terms.derivative %}
+      {% assign derivatives = terms.derivatives %}
+      {% assign note = terms.note %}
+      {% assign repeat = terms.repeat %}
+      
+      
+      {% if terms.ss %}
+      
+      
+      <!--composite-->
+      {% if pos == "composite" %}
+      <div class="scene scene--card">
+        <div class="card">
+          <div class="card__face card__face--front--phrase la-text">
+            <div class="rightcorner">
+              {% if repeat %}
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-stars" viewBox="0 0 20 20">
+              <path d="M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.73 1.73 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.73 1.73 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.73 1.73 0 0 0 3.407 2.31zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+              </svg>
+              {% endif %}
+            </div>
+          <div class="term"><span class="noun la-text">{{ terms.noun }}</span><span class="prep la-text">{{ terms.prep }}</span></div>
+          </div>
+          <div class="card__face card__face--back">
+            <div class="def-only">{{ terms.meaning }}</div>
+            <div class="def-note-small">
+              {% if note %}
+              note: {{ terms.note }}
+              {% endif %}
+            </div>
+            {% if derivative %}
+              <div class="derivative">derivative: {{ terms.derivative }}</div>
+              {% endif %}
+              {% if derivatives %}
+              <div class="derivative">derivatives: {{ terms.derivatives }}</div>
+              {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endif %}
+      
+      
+      
+      {% endif %}
+      {% endfor %}
+      
+      
+      
+          </div>
+        </div>
+      </container>
+      
+</div>
+
+
+  <!-- Sparkle Modal -->
+<div class="modal fade" id="sparkleModal" tabindex="-1" aria-labelledby="sparkleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="sparkleexampleModalLabel">Lūce! (Sparkle!)</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          We have seen this word before! Now, there is an additional English meaning. You are required to know <em>all</em> English meanings for the quiz.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK!</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
+
+  
+
+
+
+  <script src="script/code.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    });
+  </script>
+  <script>
+    const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+  target: '#navbar-example'
+})
+  </script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+  
+  
+  
