@@ -10,4 +10,6 @@ conjugation: first
 derivatives: specter, inspector
 mt: yes
 mt5thru7: yes
+ss: yes
+ss2: yes
 ---

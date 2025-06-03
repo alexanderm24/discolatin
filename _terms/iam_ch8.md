@@ -7,4 +7,6 @@ repeat: yes
 allmeanings: yes
 mt: yes
 mt1thru4: yes
+ss: yes
+ss2: yes
 ---

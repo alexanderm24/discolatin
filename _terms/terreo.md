@@ -11,4 +11,6 @@ note: (something else)
 derivative: terrify
 mt: yes
 mt1thru4: yes
+ss: yes
+ss2: yes
 ---

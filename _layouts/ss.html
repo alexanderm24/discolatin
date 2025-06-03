@@ -32,7 +32,7 @@ layout: base
             {% assign conj = terms.conjugation %}
             {% assign declension = terms.declension %}
       
-            {% if terms.ss1%}
+            {% if terms.ss %}
       
             {% unless pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" %}
             <div class="carousel-item">
@@ -104,6 +104,7 @@ layout: base
               </div>
             </div>
             {% endunless %}
+            
 
             {% if pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" %}
             <div class="carousel-item">
@@ -458,8 +459,8 @@ layout: base
         {% assign conj = terms.conjugation %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
         
       
@@ -1168,7 +1169,7 @@ layout: base
       </div>
       {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
           </div>
@@ -1206,8 +1207,8 @@ layout: base
         {% assign conj = terms.conjugation %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
         {% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
         <div class="scene scene--card">
@@ -1315,7 +1316,7 @@ layout: base
       
             
       
-        {% endunless %}
+        
       {% endif %}
       {% endfor %}
     
@@ -1331,8 +1332,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
         {% if pos == "conjverb" %}
         <div class="scene scene--card">
@@ -1367,7 +1368,7 @@ layout: base
             </div>
         </div>
         {% endif %}
-          {% endunless %}
+          
       {% endif %}
       
       {% endfor %}
@@ -1391,8 +1392,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
       
       
@@ -1535,7 +1536,7 @@ layout: base
       </div>
       {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -1560,8 +1561,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       <!--pronouns-->
       {% if pos == "pronoun" %}
       <div class="scene scene--card">
@@ -1656,7 +1657,7 @@ layout: base
       {% endif %}
       
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -1679,8 +1680,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
             <!--adjectives 212-->
       {% if pos == "totadjective" %}
@@ -1822,7 +1823,7 @@ layout: base
       </div>
       {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -1845,8 +1846,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
         {% if pos == "adverb" %}
         <div class="scene scene--card">
@@ -1879,7 +1880,7 @@ layout: base
         </div>
         {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -1902,8 +1903,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
       <!--prepositions-->
       {% if pos == "preposition" %}
@@ -1967,7 +1968,7 @@ layout: base
       </div>
       {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -1984,8 +1985,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
            
         {% if pos == "conjunction" %}
@@ -2021,7 +2022,7 @@ layout: base
         </div>
         {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       
@@ -2037,8 +2038,8 @@ layout: base
         {% assign repeat = terms.repeat %}
       
       
-        {% if terms.ss1%}
-        {% unless inactive %}
+        {% if terms.ss %}
+        
       
       
             <!--interjection-->
@@ -2075,7 +2076,7 @@ layout: base
             </div>
             {% endif %}
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
 
@@ -2091,8 +2092,8 @@ layout: base
       {% assign repeat = terms.repeat %}
       
       
-      {% if terms.ss1%}
-      {% unless inactive %}
+      {% if terms.ss %}
+      
       
       <!--composite-->
       {% if pos == "composite" %}
@@ -2127,7 +2128,7 @@ layout: base
       {% endif %}
       
       
-      {% endunless %}
+      
       {% endif %}
       {% endfor %}
       

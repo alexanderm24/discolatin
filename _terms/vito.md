@@ -10,4 +10,6 @@ conjugation: first
 derivative: inevitable
 f2: yes
 f: yes
+ss: yes
+ss2: yes
 ---

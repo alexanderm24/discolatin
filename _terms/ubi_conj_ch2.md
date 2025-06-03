@@ -6,5 +6,6 @@ pos: conjunction
 repeat: yes
 allmeanings: yes
 inactive: yes
+ss: yes
 ss1: yes
 ---

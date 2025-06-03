@@ -11,4 +11,6 @@ declension: third
 derivative: civic
 f2: yes
 f: yes
+ss: yes
+ss2: yes
 ---

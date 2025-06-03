@@ -9,4 +9,6 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivatives: matriarch, maternity
+ss: yes
+ss2: yes
 ---

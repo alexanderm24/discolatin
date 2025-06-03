@@ -7,4 +7,6 @@ inf: velle
 conjugation: irregular
 f2: yes
 f: yes
+ss: yes
+ss2: yes
 ---

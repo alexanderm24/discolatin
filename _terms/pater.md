@@ -11,4 +11,6 @@ declension: third
 derivatives: paternalistic, patrimony
 f1: yes
 f: yes
+ss: yes
+ss2: yes
 ---

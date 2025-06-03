@@ -10,4 +10,6 @@ conjugation: first
 derivative: conceal
 f1: yes
 f: yes
+ss: yes
+ss2: yes
 ---

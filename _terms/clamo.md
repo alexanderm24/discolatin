@@ -8,5 +8,6 @@ secondppstem: clām
 infend: āre
 conjugation: first
 derivative: exclamatory
+ss: yes
 ss1: yes
 ---

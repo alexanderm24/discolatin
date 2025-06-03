@@ -8,4 +8,6 @@ abbgender: m./f.
 abbgender2: masc./fem.
 gender: masculine/feminine
 declension: third
+ss: yes
+ss2: yes
 ---

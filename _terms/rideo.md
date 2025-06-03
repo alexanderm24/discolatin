@@ -10,5 +10,6 @@ conjugation: second
 derivatives: derision, ridiculous
 mt: yes
 mt1thru4: yes
+ss: yes
 ss1: yes
 ---
