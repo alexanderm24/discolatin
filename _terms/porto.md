@@ -10,4 +10,6 @@ conjugation: first
 derivatives: teleportation, comportment
 mt: yes
 mt5thru7: yes
+ss: yes
+ss3: yes
 ---

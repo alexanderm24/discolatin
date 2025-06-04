@@ -9,4 +9,6 @@ gender: (masculine)
 declension: second
 mt: yes
 mt1thru4: yes
+ss: yes
+ss3: yes
 ---

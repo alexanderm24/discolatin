@@ -13,4 +13,6 @@ mt: yes
 mt8thru10: yes
 f3: yes
 f: yes
+ss: yes
+ss3: yes
 ---

@@ -6,6 +6,8 @@ pos: adverb
 haudio: ../assets/audio/dum-haudio.m4a
 mt: yes
 mt1thru4: yes
+ss: yes
+ss3: yes
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

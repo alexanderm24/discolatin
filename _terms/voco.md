@@ -10,4 +10,6 @@ conjugation: first
 derivatives: vocation, invoke
 f3: yes
 f: yes
+ss: yes
+ss3: yes
 ---

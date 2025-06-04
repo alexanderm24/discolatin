@@ -10,4 +10,6 @@ conjugation: second
 derivatives: vision, evidence
 mt: yes
 mt1thru4: yes
+ss: yes
+ss3: yes
 ---

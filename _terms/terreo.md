@@ -1,6 +1,6 @@
 ---
 title: terreō
-meaning: to frighten
+meaning: to scare, frighten
 ch: four
 pos: verb
 inf: terrēre
