@@ -10,4 +10,5 @@ conjugation: third
 derivatives: intervention, convenient
 mt: yes
 mt5thru7: yes
+ss: yes
 ---

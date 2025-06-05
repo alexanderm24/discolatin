@@ -10,4 +10,5 @@ conjugation: fourth
 derivatives: audition, audience
 mt: yes
 mt1thru4: yes
+ss: yes
 ---
