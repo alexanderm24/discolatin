@@ -976,6 +976,15 @@ z-index: 10000;
   }
 }
 
+.carousel-control-gram {
+  position: absolute;
+  z-index: 100;
+  padding: 0;
+  width: 400px;
+  left: calc(50% - 200px);
+  top: 500px;
+}
+
 
 
 .carousel-control-prev, .carousel-control-next {
