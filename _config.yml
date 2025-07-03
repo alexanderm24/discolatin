@@ -25,26 +25,6 @@ collections:
     output: true
   prepphrase:
     output: true
-  terms1:
-    output: true
-  terms2:
-    output: true
-  terms3:
-    output: true
-  terms4:
-    output: true
-  terms5:
-    output: true
-  terms6:
-    output: true
-  terms7:
-    output: true
-  terms8:
-    output: true
-  terms9:
-    output: true
-  terms10:
-    output: true
     
 
 
