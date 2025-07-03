@@ -1,14 +1,10 @@
 ---
 title: habeō
 meaning: to have, hold
-ch: ten
+ch: [ten, f1, f, ss, ss2]
 pos: verb
 inf: habēre
 secondppstem: hab
 infend: ēre
 conjugation: second
-f1: yes
-f: yes
-ss: yes
-ss2: yes
 ---

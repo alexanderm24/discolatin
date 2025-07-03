@@ -1,8 +1,6 @@
 ---
 title: fortasse
 meaning: maybe
-ch: fifteen
+ch: [fifteen, f3, f]
 pos: adverb
-f3: yes
-f: yes
 ---

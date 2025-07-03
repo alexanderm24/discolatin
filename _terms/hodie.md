@@ -1,8 +1,6 @@
 ---
 title: hodiē
 meaning: today
-ch: two
+ch: [two, mt, mt1thru4]
 pos: adverb
-mt: yes
-mt1thru4: yes
 ---

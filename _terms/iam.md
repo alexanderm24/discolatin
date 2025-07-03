@@ -1,9 +1,10 @@
 ---
 title: iam
 meaning: now
-ch: one
+2meaning: already
+ch: [one, two, eight, mt, mt1thru4, ss, ss2, cumulative]
+2meaningch: [eight, cumulative]
 pos: adverb
-inactive: yes
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

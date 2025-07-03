@@ -1,13 +1,11 @@
 ---
 title: iaciō
 meaning: to throw
-ch: ten
+ch: [ten, f1, f]
 pos: verb
 inf: iacere
 secondppstem: iac
 infend: ere
 conjugation: third
 derivatives: eject, projector
-f1: yes
-f: yes
 ---

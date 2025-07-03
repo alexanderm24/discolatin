@@ -1,14 +1,10 @@
 ---
 title: gaudeō
 meaning: to be glad
-ch: fourteen
+ch: [fourteen, f2, f, ss, ss1]
 pos: verb
 inf: gaudēre
 secondppstem: gaud
 infend: ēre
 conjugation: second
-f2: yes
-f: yes
-ss: yes
-ss1: yes
 ---

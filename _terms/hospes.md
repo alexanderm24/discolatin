@@ -1,7 +1,7 @@
 ---
 title: hospes
 meaning: host or guest
-ch: sixteen
+ch: [sixteen]
 pos: nounthird
 genitive: hospitis
 abbgender: m./f.

@@ -1,6 +1,6 @@
 ---
 title: frūstrā
 meaning: unsuccessfully, without success
-ch: fourteen
+ch: [fourteen]
 pos: adverb
 ---

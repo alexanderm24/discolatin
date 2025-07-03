@@ -1,8 +1,6 @@
 ---
 title: identidem
 meaning: again and again
-ch: thirteen
+ch: [thirteen, f2, f]
 pos: adverb
-f2: yes
-f: yes
 ---

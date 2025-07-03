@@ -1,7 +1,7 @@
 ---
 title: habitō
 meaning: to live
-ch: one
+ch: [one, mt, mt1thru4]
 pos: verb
 inf: habitāre
 secondppstem: habit
@@ -9,8 +9,6 @@ infend: āre
 conjugation: first
 derivative: uninhabitable
 diaudio: no
-mt: yes
-mt1thru4: yes
 ---
 <div class="accordion caro-accordion" id="habito">
     <div class="accordion-item">

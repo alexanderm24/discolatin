@@ -1,8 +1,6 @@
 ---
 title: ibi
 meaning: there
-ch: five
+ch: [five, mt, mt5thru7]
 pos: adverb
-mt: yes
-mt5thru7: yes
 ---
