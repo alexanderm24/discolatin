@@ -1,10 +1,7 @@
 ---
 title: cum
 meaning: with
-ch: twelve
+ch: [nine, twelve, mt, mt8thru9, f1, f, f3]
 pos: preposition
 di: (takes ablative)
-f1: yes
-f: yes
-f3: yes
 ---

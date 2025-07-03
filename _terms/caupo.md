@@ -1,7 +1,7 @@
 ---
 title: caupō
 meaning: innkeeper
-ch: seventeen
+ch: [seventeen]
 pos: nounthird
 genitive: caupōnis
 abbgender: m.

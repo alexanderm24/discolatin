@@ -1,7 +1,7 @@
 ---
 title: caelum
 meaning: sky
-ch: seventeen
+ch: [seventeen]
 pos: noun
 stem: cael
 genend: ī

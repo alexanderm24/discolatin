@@ -1,7 +1,7 @@
 ---
 title: cēlō
 meaning: to hide
-ch: eleven
+ch: [eleven, f1, f, ss, ss2]
 pos: verb
 inf: celāre
 secondppstem: cēl

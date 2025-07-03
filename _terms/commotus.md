@@ -1,7 +1,7 @@
 ---
 title: commōtus
 meaning: upset
-ch: fourteen
+ch: [fourteen]
 pos: totadjective
 femstem: commōt
 femend: a

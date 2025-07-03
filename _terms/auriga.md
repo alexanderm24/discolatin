@@ -1,7 +1,7 @@
 ---
 title: aurīga
 meaning: charioteer
-ch: fourteen
+ch: [fourteen]
 pos: noun
 stem: aurīg
 genend: ae

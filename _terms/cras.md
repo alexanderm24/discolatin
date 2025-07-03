@@ -1,9 +1,7 @@
 ---
 title: crās
 meaning: tomorrow
-ch: ten
+ch: [ten, f1, f]
 pos: adverb
 derivative: procrastinate
-f1: yes
-f: yes
 ---

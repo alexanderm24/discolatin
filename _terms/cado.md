@@ -1,13 +1,11 @@
 ---
 title: cadō
 meaning: to fall
-ch: three
+ch: [three, mt, mt1thru4]
 pos: verb
 inf: cadere
 secondppstem: cad
 infend: ere
 conjugation: third
 derivatives: decadent, cadence, cascade
-mt: yes
-mt1thru4: yes
 ---

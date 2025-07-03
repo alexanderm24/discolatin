@@ -1,7 +1,7 @@
 ---
 title: cisium
 meaning: 2004 Honda Cisium C-850
-ch: fourteen
+ch: [fourteen]
 pos: noun
 stem: cisi
 genend: ī

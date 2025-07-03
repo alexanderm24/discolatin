@@ -1,7 +1,7 @@
 ---
 title: culpa
 meaning: fault
-ch: fourteen
+ch: [fourteen, f2, f]
 pos: noun
 stem: culp
 genend: ae
@@ -10,6 +10,4 @@ abbgender2: fem.
 gender: feminine
 declension: first
 deriviative: culprit
-f2: yes
-f: yes
 ---

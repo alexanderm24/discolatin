@@ -1,6 +1,6 @@
 ---
 title: clāmor
-meaning: ruckus, hubbub
+meaning: uproar
 ch: five
 pos: nounthird
 genitive: clāmōris
