@@ -4,42 +4,60 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <!--Sort:
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortalph" checked>
-      <label class="form-check-label" for="flexRadioDefault1">
-        Alphabetically
-      </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortpos">
-        <label class="form-check-label" for="flexRadioDefault2">
-          By Parts of Speech
-        </label>
-      </div>
-    <hr>-->
+      
+    Card Design
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleSwitchColor" checked>
         <label class="form-check-label" for="toggleSwitchColor">Color-code Parts of Speech</label>
       </div>
-      
+      <br>
+      <hr>
+
+      <div class="d-flex flex-row justify-content-start">
+      <div>Card Front</div>
+
+      <div class="px-3">
+        <select class="form-select" id="cardTypeSelect">
+          <option value="full-entry" selected>Latin - Full Entry</option>
+          <option value="headword">Latin - Headword</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+      Dictionary Information<br>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
-        <label class="form-check-label" for="toggleAbbreviate">Abbreviate Dictionary Info</label>
+        <label class="form-check-label" for="toggleAbbreviate">Abbreviate</label>
       </div>
+      <br>
+
+      <!--<div class="d-flex flex-row justify-content-start">
+        <div>Verb Principal Parts</div>
+  
+        <div class="px-3">
+          <select class="form-select" id="verbpp">
+            <option value="2pp" selected>2</option>
+            <option value="4pp">4</option>
+          </select>
+        </div>
+      </div>-->
+    
 
       <hr>
       Macrons (ā, ē, ī, ō, ū)
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="macronToggle" id="keepMacrons" value="keep" checked>
-        <label class="form-check-label" for="keepMacrons">
-          All
+        <input class="form-check-input" type="radio" name="macronToggle" id="essentialMacrons" value="essential" checked>
+        <label class="form-check-label" for="essentialMacrons">
+          Essential (2nd conjugation infinitives)
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="macronToggle" id="essentialMacrons" value="essential">
-        <label class="form-check-label" for="essentialMacrons">
-          Essential (2nd conjugation verbs)
+        <input class="form-check-input" type="radio" name="macronToggle" id="keepMacrons" value="keep">
+        <label class="form-check-label" for="keepMacrons">
+          All
         </label>
       </div>
       <!--<div class="form-check">
@@ -79,15 +97,6 @@
     </p>
     {% endif %}
     
-
-    <p class="pdf">
-      <a href="https://www.canva.com/design/DAGWlkCG8fk/sqBdfpkKlqM5XFzBgDEAdQ/view?utm_content=DAGWlkCG8fk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he938500437" target="_blank">
-        Dictionary Info Guide
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
-    </svg>
-      </a>
-    </p>
 
 
 
