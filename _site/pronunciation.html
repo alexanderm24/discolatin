@@ -42,7 +42,7 @@
       <div class="wrapper">
         <nav class="navbar sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="https://discolatin.com/">
+      <a id="nav2" class="navbar-brand" href="https://discolatin.com/">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-house-door-fill d-inline-block align-text-bottom" viewBox="0 0 16 16">
             <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
         </svg>
@@ -58,42 +58,60 @@
       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-      <!--Sort:
-    <div class="form-check">
-      <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortalph" checked>
-      <label class="form-check-label" for="flexRadioDefault1">
-        Alphabetically
-      </label>
-    </div>
-    <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="sortpos">
-        <label class="form-check-label" for="flexRadioDefault2">
-          By Parts of Speech
-        </label>
-      </div>
-    <hr>-->
+      
+    Card Design
     <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleSwitchColor" checked>
         <label class="form-check-label" for="toggleSwitchColor">Color-code Parts of Speech</label>
       </div>
-      
+      <br>
+      <hr>
+
+      <div class="d-flex flex-row justify-content-start">
+      <div>Card Front</div>
+
+      <div class="px-3">
+        <select class="form-select" id="cardTypeSelect">
+          <option value="full-entry" selected>Latin - Full Entry</option>
+          <option value="headword">Latin - Headword</option>
+          <option value="english">English</option>
+        </select>
+      </div>
+    </div>
+    <br>
+    <hr>
+
+      Dictionary Information<br>
       <div class="form-check form-switch">
         <input class="form-check-input" type="checkbox" role="switch" id="toggleAbbreviate">
-        <label class="form-check-label" for="toggleAbbreviate">Abbreviate Dictionary Info</label>
+        <label class="form-check-label" for="toggleAbbreviate">Abbreviate</label>
       </div>
+      <br>
+
+      <!--<div class="d-flex flex-row justify-content-start">
+        <div>Verb Principal Parts</div>
+  
+        <div class="px-3">
+          <select class="form-select" id="verbpp">
+            <option value="2pp" selected>2</option>
+            <option value="4pp">4</option>
+          </select>
+        </div>
+      </div>-->
+    
 
       <hr>
       Macrons (ā, ē, ī, ō, ū)
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="macronToggle" id="keepMacrons" value="keep" checked>
-        <label class="form-check-label" for="keepMacrons">
-          All
+        <input class="form-check-input" type="radio" name="macronToggle" id="essentialMacrons" value="essential" checked>
+        <label class="form-check-label" for="essentialMacrons">
+          Essential (2nd conjugation infinitives)
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="radio" name="macronToggle" id="essentialMacrons" value="essential">
-        <label class="form-check-label" for="essentialMacrons">
-          Essential (2nd conjugation verbs)
+        <input class="form-check-input" type="radio" name="macronToggle" id="keepMacrons" value="keep">
+        <label class="form-check-label" for="keepMacrons">
+          All
         </label>
       </div>
       <!--<div class="form-check">
@@ -113,15 +131,6 @@
     
     
 
-    <p class="pdf">
-      <a href="https://www.canva.com/design/DAGWlkCG8fk/sqBdfpkKlqM5XFzBgDEAdQ/view?utm_content=DAGWlkCG8fk&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=he938500437" target="_blank">
-        Dictionary Info Guide
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
-    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"></path>
-    </svg>
-      </a>
-    </p>
-
 
 
   </div>
@@ -134,51 +143,61 @@
 Compare the long and short vowel pronunciations below.</p>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">a</button><br>
+        <audio id="a-short" src="../assets/audio/a-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('a-short').play()">a</button><br>
         <p>"ah" as in <i>aha</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ā</button>
+        <audio id="a-long" src="../assets/audio/a-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('a-long').play()">ā</button>
         <p>"ah" as in <i>father</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">e</button>
+        <audio id="e-short" src="../assets/audio/e-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('e-short').play()">e</button>
         <p>"eh" as in <i>pet</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ē</button>
+        <audio id="e-long" src="../assets/audio/e-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('e-long').play()">ē</button>
         <p>"ay" as in <i>play</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">i</button>
+        <audio id="i-short" src="../assets/audio/i-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-short').play()">i</button>
         <p>"ih" as in <i>it</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ī</button>
+        <audio id="i-long" src="../assets/audio/i-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-long').play()">ī</button>
         <p>"ee" as in <i>sleep</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">o</button>
+        <audio id="o-short" src="../assets/audio/o-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('o-short').play()">o</button>
         <p>"o" as in <i>for</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ō</button>
+        <audio id="o-long" src="../assets/audio/o-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('o-long').play()">ō</button>
         <p>"oh" as in <i>holy</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">u</button>
+        <audio id="u-short" src="../assets/audio/u-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('u-short').play()">u</button>
         <p>"oo" as in <i>foot</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ū</button>
+        <audio id="u-long" src="../assets/audio/u-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('u-long').play()">ū</button>
         <p>"ooh" as in <i>boot</i></p>
     </div>
 </div>
@@ -189,7 +208,8 @@ Compare the long and short vowel pronunciations below.</p>
 <p>Dipthongs are when two vowels make one combined sound:</p>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ae</button>
+        <audio id="ae-dipthong" src="../assets/audio/ae-dipthong.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('ae-dipthong').play()">ae</button>
         <p>pronounced "eye"</i></p>
     </div>
 </div>
@@ -205,19 +225,23 @@ Compare the long and short vowel pronunciations below.</p>
 <h2 class="mt-5">Consonants</h2>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">c</button><br>
+        <audio id="c-consonant" src="../assets/audio/c-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('c-consonant').play()">c</button><br>
         <p>hard "k" as in <i>cake</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">v</button>
+        <audio id="v-consonant" src="../assets/audio/v-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('v-consonant').play()">v</button>
         <p>"w" as in <i>water</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">g</button>
+        <audio id="g-consonant" src="../assets/audio/g-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('g-consonant').play()">g</button>
         <p>hard "g" as in <i>good</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">i <br><span style="font-size: 12px; line-height: 12px;">(beginning of word)</span></button>
+        <audio id="i-consonant" src="../assets/audio/i-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-consonant').play()"><span style="line-height: 12px;">i</span> <br><span style="font-size: 12px; line-height: 12px;">(beginning of word)</span></button>
         <p>"y" as in <i>yes</i></p>
     </div>
 </div>

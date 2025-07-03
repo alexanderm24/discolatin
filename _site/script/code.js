@@ -1,147 +1,153 @@
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('DOM loaded and script running!');
-});
 
 
+  // --------------------
+  // Card flip handlers
+  // --------------------
+const cards = document.querySelectorAll('.card');
+const cardbg = document.querySelectorAll('.card-bg');
+const soundButton = document.querySelectorAll('.audio');
+const sparkButton = document.querySelectorAll('.rep');
 
-var cards = document.querySelectorAll('.card');
-var cardbg = document.querySelectorAll('.card-bg');
-var soundButton = document.querySelectorAll('.audio');
-var sparkButton = document.querySelectorAll('.rep');
-
-[...cards].forEach((card)=>{
-  card.addEventListener( 'click', function() {
+cards.forEach(card => {
+  card.addEventListener('click', function(event) {
+    if (event.target.closest('.audio') || event.target.closest('.rep')) {
+      return; // don't flip if clicking a button
+    }
     card.classList.toggle('is-flipped');
   });
 });
 
-[...cardbg].forEach((cardbg)=>{
-  cardbg.addEventListener( 'click', function() {
-    cardbg.classList.toggle('is-flipped');
-    console.log('audio clicked');
-  });
-});
-
- // Prevent card flip when clicking the sound button
- [...soundButton].forEach((soundButton)=>{
-  soundButton.addEventListener('click', (event) => {
-    event.stopPropagation(); // Prevent click event from propagating to the card
-  });
-});
-
-
-
-
-  [...sparkButton].forEach((sparkButton)=>{
-    sparkButton.addEventListener('click', (event) => {
-      event.stopPropagation(); // Prevent click event from propagating to the card
-    });
-  });
-
-//const flipall = document.getElementById('flipall');
-//var cards = document.querySelectorAll('.card');
-
-//flipall.addEventListener('click', () => {
-  //cards.forEach(card => {
-    //card.classList.toggle('is-flipped');
-  //});
-//});
-
-const sortAlph = document.getElementById("sortalph");
-const sortPos = document.getElementById("sortpos");
-const alph = document.getElementById("alph");
-const pos = document.getElementById("pos");
-
-sortAlph.addEventListener("change", function() {
-  if (this.checked) {
-    alph.style.display = 'inline'
-    pos.style.display = 'none' }
-});
-
-sortPos.addEventListener("change", function() {
-  if (this.checked) {
-    alph.style.display = 'none'
-    pos.style.display = 'inline'
-   }
-});
-
-//Constants
-const colorToggle = document.getElementById("toggleSwitchColor");
-const laText = document.querySelectorAll(".la-text");
-
-// Listen for the toggle switch change event
-colorToggle.addEventListener("change", function() {
-  if (this.checked) {
-    laText.forEach(element => {
-      element.style.background = null;
-  })
-  } else {
-    laText.forEach(element => {
-      element.style.background = 'white';
-  })}
-});
-
-// Map of macrons to regular vowels
-const macronMap = {
-  'ā': 'a', 'ē': 'e', 'ī': 'i', 'ō': 'o', 'ū': 'u',
-  'Ā': 'A', 'Ē': 'E', 'Ī': 'I', 'Ō': 'O', 'Ū': 'U'
-};
-
-// Store original text for restoration
-document.querySelectorAll('.la-text').forEach(element => {
-
-  element.dataset.originalHTML = element.innerHTML;
-});
-
-// Function to replace macrons
-function replaceMacrons(text) {
-
-  return text.replace(/[āēīōūĀĒĪŌŪ]/g, match => macronMap[match]);
-}
-
-// Handle radio button change
-function handleRadioChange(event) {
-  const action = event.target.value;
-  const diToggle = document.getElementById("toggleAbbreviate"); // Get abbreviation toggle state
-  const isAbbreviated = diToggle && diToggle.checked; // Check if abbreviations are active
-
-  document.querySelectorAll('.la-text').forEach(element => {
-    let currentHTML = isAbbreviated ? element.innerHTML : element.dataset.originalHTML; // Keep abbreviation if active
-
-    if (action === 'essential') {
-      element.innerHTML = currentHTML.replace(
-        /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
-        (match, group) => group || macronMap[match] || match
-      );
-    } else if (action === 'keep') {
-      element.innerHTML = currentHTML; // Restore based on abbreviation state
+cardbg.forEach(card => {
+  card.addEventListener('click', function(event) {
+    if (event.target.closest('.audio') || event.target.closest('.rep')) {
+      return; // don't flip if clicking a button
     }
+    card.classList.toggle('is-flipped');
   });
-}
-
-
-// Add event listeners to all radio buttons
-document.querySelectorAll('input[name="macronToggle"]').forEach(radio => {
-  radio.addEventListener('change', handleRadioChange);
 });
 
+[...soundButton, ...sparkButton].forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.stopPropagation(); // stops bubbling up for safety
+  });
+});
 
+  // --------------------
+  // Sorting toggle
+  // --------------------
+  const sortAlph = document.getElementById("sortalph");
+  const sortPos = document.getElementById("sortpos");
+  const alph = document.getElementById("alph");
+  const pos = document.getElementById("pos");
 
-//document.addEventListener("DOMContentLoaded", function() {
-  const diToggle = document.getElementById("toggleAbbreviate"); 
-  const expDI = document.querySelectorAll(".expdi");
+  if (sortAlph && sortPos && alph && pos) {
+    sortAlph.addEventListener("change", function() {
+      if (this.checked) {
+        alph.style.display = 'inline';
+        pos.style.display = 'none';
+      }
+    });
 
-  if (diToggle && expDI.length > 0) { // Ensure elements exist
-    const originalTexts = Array.from(expDI).map(el => el.innerHTML); // Store original text
-    
-    diToggle.addEventListener("change", function() {
-      expDI.forEach((el, index) => {
-        if (this.checked) {
-          el.innerHTML = "-"; // Replace content with "-"
-        } else {
-          el.innerHTML = originalTexts[index]; // Restore original content
-        }
+    sortPos.addEventListener("change", function() {
+      if (this.checked) {
+        alph.style.display = 'none';
+        pos.style.display = 'inline';
+      }
+    });
+  }
+
+  // --------------------
+  // Color toggle
+  // --------------------
+  const colorToggle = document.getElementById("toggleSwitchColor");
+  const laText = document.querySelectorAll(".la-text");
+
+  if (colorToggle) {
+    colorToggle.addEventListener("change", function() {
+      laText.forEach(element => {
+        element.style.background = this.checked ? null : 'white';
       });
     });
   }
-//});
+
+  // --------------------
+  // Card type select
+  // --------------------
+  const select = document.getElementById("cardTypeSelect");
+  if (select) {
+    select.addEventListener("change", updateCards);
+    updateCards();
+  }
+
+  function updateCards() {
+    const selectedType = select ? select.value : null;
+    document.querySelectorAll(".scene--card, .scene--card-bg").forEach(card => {
+      const full = card.querySelector(".card-full-entry");
+      const head = card.querySelector(".card-headword");
+      const eng  = card.querySelector(".card-english");
+      if (full) full.style.display = selectedType === 'full-entry' ? "" : "none";
+      if (head) head.style.display = selectedType === 'headword' ? "" : "none";
+      if (eng)  eng.style.display = selectedType === 'english' ? "" : "none";
+    });
+  }
+
+  // --------------------
+  // Macron + abbreviation system
+  // --------------------
+  const macronMap = {
+    'ā': 'a', 'ē': 'e', 'ī': 'i', 'ō': 'o', 'ū': 'u',
+    'Ā': 'A', 'Ē': 'E', 'Ī': 'I', 'Ō': 'O', 'Ū': 'U'
+  };
+
+  // Store original la-text
+  document.querySelectorAll('.la-text').forEach(element => {
+    element.dataset.originalHTML = element.innerHTML;
+  });
+
+  // Store original standalone expdi
+  const expDI = document.querySelectorAll(".expdi");
+  const originalExpDI = Array.from(expDI).map(el => el.innerHTML);
+
+  function updateContent() {
+    const macronRadio = document.querySelector('input[name="macronToggle"]:checked');
+    const macronAction = macronRadio ? macronRadio.value : 'essential';
+
+    const diToggle = document.getElementById("toggleAbbreviate");
+    const isAbbreviated = diToggle && diToggle.checked;
+
+    // Handle la-text abbreviation + macron
+    document.querySelectorAll('.la-text').forEach(element => {
+      let currentHTML = element.dataset.originalHTML;
+
+      if (isAbbreviated) {
+        currentHTML = currentHTML.replace(/<span class="expdi">.*?<\/span>/g, '-');
+      }
+
+      if (macronAction === 'essential') {
+        element.innerHTML = currentHTML.replace(
+          /(<span class="essm">.*?<\/span>)|[āēīōūĀĒĪŌŪ]/g,
+          (match, group) => group || macronMap[match] || match
+        );
+      } else if (macronAction === 'keep') {
+        element.innerHTML = currentHTML;
+      }
+    });
+
+    // Handle standalone expdi elements
+    expDI.forEach((el, index) => {
+      el.innerHTML = isAbbreviated ? "-" : originalExpDI[index];
+    });
+  }
+
+  // Attach listeners for macron + abbreviation
+  document.querySelectorAll('input[name="macronToggle"]').forEach(radio => {
+    radio.addEventListener("change", updateContent);
+  });
+
+  const diToggle = document.getElementById("toggleAbbreviate");
+  if (diToggle) {
+    diToggle.addEventListener("change", updateContent);
+  }
+
+  updateContent();
+
