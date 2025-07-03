@@ -1,13 +1,10 @@
 ---
 title: eās
-meaning: them (accusative)
-ch: five
+meaning: them
+ch: [five, mt, mt5thru7, ss, ss1]
 pos: pronoun
 abbgender: f.
 abbgender2: fem.
 gender: feminine
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
+note: accusative
 ---

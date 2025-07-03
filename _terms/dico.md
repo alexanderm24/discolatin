@@ -1,13 +1,11 @@
 ---
 title: dīcō
 meaning: to say
-ch: ten
+ch: [ten, f1, f, ss, ss4]
 pos: verb
 inf: dīcere
 secondppstem: dīc
 infend: ere
 conjugation: third
 derivatives: dictator, contradiction
-f1: yes
-f: yes
 ---

@@ -1,8 +1,6 @@
 ---
 title: diū
 meaning: for a long time
-ch: fifteen
+ch: [fifteen, f3, f]
 pos: adverb
-f3: yes
-f: yes
 ---

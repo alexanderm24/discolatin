@@ -1,13 +1,11 @@
 ---
 title: custōdiō
 meaning: to guard
-ch: seventeen
+ch: [seventeen, f3, f]
 pos: verb
 inf: custōdīre
 secondppstem: custōd
 infend: īre
 conjugation: fourth
 derivative: custody
-f3: yes
-f: yes
 ---

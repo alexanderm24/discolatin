@@ -2,8 +2,7 @@
 title: eius
 meaning: his/hers/its
 note: (of him/her/it)
-ch: eight
+ch: [eight, mt, mt1thru4]
 pos: perspronoun
-mt: yes
-mt1thru4: yes
+allmeanings: yes
 ---

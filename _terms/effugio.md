@@ -1,12 +1,10 @@
 ---
 title: effugiō
 meaning: to run away, escape
-ch: eleven
+ch: [eleven, f1, f]
 pos: verb
 inf: effugere
 secondppstem: effug
 infend: ere
 conjugation: third
-f1: yes
-f: yes
 ---

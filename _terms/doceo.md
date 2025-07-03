@@ -1,15 +1,11 @@
 ---
 title: doceō
 meaning: to teach
-ch: six
+ch: [six, mt, mt5thru7, ss, ss1]
 pos: verb
 inf: docēre
 secondppstem: doc
 infend: ēre
 conjugation: second
 derivatives: docile, doctrine
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
 ---

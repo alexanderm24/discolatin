@@ -1,11 +1,7 @@
 ---
 title: ego
 meaning: I
-ch: eight
+ch: [five, eight, mt, mt5thru7, ss, ss1]
 pos: perspronoun
 derivatives: egocentric, egotistical
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
 ---

@@ -1,15 +1,11 @@
 ---
 title: cūrō
 meaning: to take care of
-ch: six
+ch: [six, mt, mt5thru7, ss, ss3]
 pos: verb
 inf: cūrāre
 secondppstem: cūr
 infend: āre
 conjugation: first
 derivative: curator
-mt: yes
-mt5thru7: yes
-ss: yes
-ss3: yes
 ---

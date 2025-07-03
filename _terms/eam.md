@@ -1,10 +1,10 @@
 ---
 title: eam
-meaning: her (accusative)
-ch: five
+meaning: her
+ch: [five, seven, mt, mt5thru7, ss, ss1]
 pos: pronoun
 abbgender: f.
 abbgender2: fem.
 gender: feminine
-inactive: yes
+note: accusative
 ---

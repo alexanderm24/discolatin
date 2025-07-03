@@ -8,4 +8,6 @@ secondppstem: curr
 infend: ere
 conjugation: third
 derivatives: occur, current, course
+ss: yes
+ss4: yes
 ---

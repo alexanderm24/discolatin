@@ -1,7 +1,7 @@
 ---
 title: dominus
 meaning: master
-ch: eleven
+ch: [eleven, f1, f, ss, ss5]
 pos: noun
 stem: domin
 genend: ī
@@ -12,4 +12,6 @@ declension: second
 derivative: dominate
 f1: yes
 f: yes
+ss: yes
+ss5: yes
 ---

@@ -1,10 +1,6 @@
 ---
 title: deinde
 meaning: then
-ch: eight
+ch: [eight, mt, mt8thru9, ss, ss5]
 pos: adverb
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---
