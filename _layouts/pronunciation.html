@@ -2,7 +2,7 @@
 layout: base
 ---
 
-{%- include ns-nav.html -%}
+{%- include navs/ns-nav.html -%}
 
 {%- include sidebar.html -%}
 
@@ -14,51 +14,61 @@ layout: base
 Compare the long and short vowel pronunciations below.</p>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">a</button><br>
+        <audio id="a-short" src="../assets/audio/a-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('a-short').play()">a</button><br>
         <p>"ah" as in <i>aha</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ā</button>
+        <audio id="a-long" src="../assets/audio/a-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('a-long').play()">ā</button>
         <p>"ah" as in <i>father</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">e</button>
+        <audio id="e-short" src="../assets/audio/e-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('e-short').play()">e</button>
         <p>"eh" as in <i>pet</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ē</button>
+        <audio id="e-long" src="../assets/audio/e-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('e-long').play()">ē</button>
         <p>"ay" as in <i>play</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">i</button>
+        <audio id="i-short" src="../assets/audio/i-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-short').play()">i</button>
         <p>"ih" as in <i>it</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ī</button>
+        <audio id="i-long" src="../assets/audio/i-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-long').play()">ī</button>
         <p>"ee" as in <i>sleep</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">o</button>
+        <audio id="o-short" src="../assets/audio/o-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('o-short').play()">o</button>
         <p>"o" as in <i>for</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ō</button>
+        <audio id="o-long" src="../assets/audio/o-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('o-long').play()">ō</button>
         <p>"oh" as in <i>holy</i></p>
     </div>
 </div>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">u</button>
+        <audio id="u-short" src="../assets/audio/u-short.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('u-short').play()">u</button>
         <p>"oo" as in <i>foot</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ū</button>
+        <audio id="u-long" src="../assets/audio/u-long.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('u-long').play()">ū</button>
         <p>"ooh" as in <i>boot</i></p>
     </div>
 </div>
@@ -69,7 +79,8 @@ Compare the long and short vowel pronunciations below.</p>
 <p>Dipthongs are when two vowels make one combined sound:</p>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">ae</button>
+        <audio id="ae-dipthong" src="../assets/audio/ae-dipthong.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('ae-dipthong').play()">ae</button>
         <p>pronounced "eye"</i></p>
     </div>
 </div>
@@ -85,19 +96,23 @@ Compare the long and short vowel pronunciations below.</p>
 <h2 class="mt-5">Consonants</h2>
 <div class="row row-cols-auto button-group g-2">
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">c</button><br>
+        <audio id="c-consonant" src="../assets/audio/c-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('c-consonant').play()">c</button><br>
         <p>hard "k" as in <i>cake</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">v</button>
+        <audio id="v-consonant" src="../assets/audio/v-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('v-consonant').play()">v</button>
         <p>"w" as in <i>water</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">g</button>
+        <audio id="g-consonant" src="../assets/audio/g-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('g-consonant').play()">g</button>
         <p>hard "g" as in <i>good</i></p>
     </div>
     <div class="col-3-sm">
-        <button type="button" class="btn btn-pro">i <br><span style="font-size: 12px; line-height: 12px;">(beginning of word)</span></button>
+        <audio id="i-consonant" src="../assets/audio/i-consonant.mp3"></audio>
+        <button type="button" class="btn btn-pro" onclick="document.getElementById('i-consonant').play()"><span style="line-height: 12px;">i</span> <br><span style="font-size: 12px; line-height: 12px;">(beginning of word)</span></button>
         <p>"y" as in <i>yes</i></p>
     </div>
 </div>
