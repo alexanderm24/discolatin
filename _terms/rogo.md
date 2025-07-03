@@ -1,13 +1,11 @@
 ---
 title: rogō
 meaning: to ask
-ch: twelve
+ch: [twelve, f1, f]
 pos: verb
 inf: rogāre
 secondppstem: rog
 infend: āre
 conjugation: first
 derivative: interrogate
-f1: yes
-f: yes
 ---

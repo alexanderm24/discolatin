@@ -1,8 +1,6 @@
 ---
 title: quamquam
 meaning: although
-ch: eleven
+ch: [eleven, f1, f]
 pos: adverb
-f1: yes
-f: yes
 ---

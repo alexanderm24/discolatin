@@ -6,6 +6,6 @@ pos: verb
 inf: respondēre
 secondppstem: respond
 infend: ēre
-conjugation: fourth
+conjugation: second
 derivative: responsive
 ---

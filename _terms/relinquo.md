@@ -1,13 +1,11 @@
 ---
 title: relinquō
 meaning: to leave behind
-ch: sixteen
+ch: [sixteen, f3, f, ss, ss4]
 pos: verb
 inf: relinquere
 secondppstem: relinqu
 infend: ere
 conjugation: third
 derivative: relinquish
-f3: yes
-f: yes
 ---
