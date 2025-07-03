@@ -1,9 +1,7 @@
 ---
 title: accidit
 meaning: (it) happens
-ch: fourteen
+ch: [fourteen, f2, f]
 pos: conjverb
 di: (3rd person singular)
-f2: yes
-f: yes
 ---

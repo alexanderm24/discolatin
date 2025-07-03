@@ -1,8 +1,6 @@
 ---
 title: adhūc
 meaning: still
-ch: five
+ch: [five, mt, mt5thru7, ss, ss5]
 pos: adverb
-mt: yes
-mt5thru7: yes
 ---

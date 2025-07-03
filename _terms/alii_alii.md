@@ -1,10 +1,6 @@
 ---
 title: aliī...aliī
 meaning: some...others
-ch: nine
+ch: [nine, mt, mt8thru9]
 pos: conjunction
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

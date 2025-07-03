@@ -1,9 +1,7 @@
 ---
 title: apud
 meaning: with, among
-ch: sixteen
+ch: [sixteen, f3, f]
 pos: preposition
 di: (takes accusative)
-f3: yes
-f: yes
 ---

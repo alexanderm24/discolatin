@@ -1,15 +1,11 @@
 ---
 title: ambulō
 meaning: to walk
-ch: two
+ch: [two, mt, mt1thru4, ss, ss1]
 pos: verb
 inf: ambulāre
 secondppstem: ambul
 infend: āre
 conjugation: first
 derivatives: amble, ambulatory
-mt: yes
-mt1thru4: yes
-ss: yes
-ss1: yes
 ---
