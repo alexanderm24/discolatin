@@ -1,7 +1,7 @@
 ---
 title: vir
 meaning: man
-ch: three
+ch: [three, f1, f, ss, ss5]
 pos: noun
 stem: vir
 genend: ī
@@ -9,6 +9,4 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: second
-f1: yes
-f: yes
 ---

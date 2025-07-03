@@ -1,12 +1,8 @@
 ---
 title: volō
 meaning: to want
-ch: seventeen
+ch: [five, seventeen, f2, f, ss, ss2]
 pos: verb
 inf: velle
 conjugation: irregular
-f2: yes
-f: yes
-ss: yes
-ss2: yes
 ---

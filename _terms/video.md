@@ -1,15 +1,11 @@
 ---
 title: videō
 meaning: to see
-ch: four
+ch: [four, mt, mt1thru4, ss, ss3]
 pos: verb
 inf: vidēre
 secondppstem: vid
 infend: ēre
 conjugation: second
 derivatives: vision, evidence
-mt: yes
-mt1thru4: yes
-ss: yes
-ss3: yes
 ---

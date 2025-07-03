@@ -1,11 +1,7 @@
 ---
 title: vōs
 meaning: you all
-ch: eight
+ch: [eight, mt, mt8thru9, ss, ss4]
 pos: perspronoun
 note: can be nominative or accusative
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

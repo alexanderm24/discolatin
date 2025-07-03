@@ -1,15 +1,11 @@
 ---
 title: vītō
 meaning: to avoid
-ch: thirteen
+ch: [thirteen, f2, f, ss, ss2]
 pos: verb
 inf: vītāre
 secondppstem: vīt
 infend: āre
 conjugation: first
 derivative: inevitable
-f2: yes
-f: yes
-ss: yes
-ss2: yes
 ---

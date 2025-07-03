@@ -8,4 +8,6 @@ secondppstem: vex
 infend: āre
 conjugation: first
 derivatives: vexatious, vexation
+ss: yes
+ss4: yes
 ---
