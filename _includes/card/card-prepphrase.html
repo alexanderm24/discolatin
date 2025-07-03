@@ -1,0 +1,32 @@
+<div class="scene scene--card">
+    <div class="card">
+        <!--Front-->
+        <div class="card__face card__face--front {{ pos }} la-text">
+          <div class="card--top--front d-flex justify-content-between">
+          <div class="leftcorner d-flex justify-content-center">
+            {%- include btns/sparkle-btn.html -%}
+          </div>
+          <div class="rightcorner d-flex justify-content-center">
+            {%- include btns/la-btn.html -%}
+          </div>
+        </div>
+        <!--Change term-bg class?-->
+        <div class="term"><div><span class="prep la-text">{{ prepphrase.preposition }}</span> <span class="noun la-text">{{ prepphrase.noun }}</span></div></div>
+        </div>
+    
+        <!--Back-->
+        <div class="card__face card__face--back">
+            {%- include card/di.html -%}
+          <div class="card--top--back">
+            <div class="rightcorner">
+                {%- include btns/e-btn.html -%}
+            </div>
+          </div>
+    
+          <div class="def">
+            <div>{{ prepphrase.meaning }}</div>
+          </div>
+    
+        </div>
+    </div>
+    </div>

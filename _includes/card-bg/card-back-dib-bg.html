@@ -1,0 +1,69 @@
+
+    <!--DI cards-->
+    {% unless pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" %}
+    {%- include card-bg/di-bg.html -%}
+    <div class="card--top--back-bg">
+      <div class="rightcorner-bg">
+        {%- include btns/e-btn.html -%}
+     </div>
+     </div>
+
+     <div class="def-bg">
+        <div>{{ terms.meaning }}{% if terms.2meaningch contains page.ch %}, {{ terms.2meaning }} {% endif %}</div>
+      </div>
+
+      <!--Note-->
+      {% assign note = terms.note %}
+        {% if note %}
+      <div class="def-note-bg">
+        note: {{ terms.note }}
+      </div>
+      {% endif %}
+
+    
+     
+    <!--Derivative-->
+    {% assign derivative = terms.derivative %}
+    {% assign derivatives = terms.derivatives %}
+    {% if derivative %}
+    <div class="derivative-bg">derivative: {{ terms.derivative }}</div>
+    {% endif %}
+    {% if derivatives %}
+    <div class="derivative-bg">derivatives: {{ terms.derivatives }}</div>
+    {% endif %}
+
+    
+    {% endunless %}
+    
+
+    {% if pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" %}
+    <div class="card--top--back-bg">
+        <div class="rightcorner-bg">
+            {%- include btns/di-btn.html -%}
+        </div>
+    </div>
+      <div class="def-only-bg">
+        <div>{{ terms.meaning }}{% if terms.2meaningch contains page.ch %}, {{ terms.2meaning }} {% endif %}</div>
+      </div>
+
+      <!--Note-->
+      {% assign note = terms.note %}
+    {% if note %}
+      <div class="def-note-bg">
+        note: {{ terms.note }}
+      </div>
+      {% endif %}
+
+    
+     
+    <!--Derivative-->
+    {% assign derivative = terms.derivative %}
+    {% assign derivatives = terms.derivatives %}
+    {% if derivative %}
+    <div class="derivative-bg">derivative: {{ terms.derivative }}</div>
+    {% endif %}
+    {% if derivatives %}
+    <div class="derivative-bg">derivatives: {{ terms.derivatives }}</div>
+    {% endif %}
+
+{% endif %}
