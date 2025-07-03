@@ -2,42 +2,26 @@
 layout: base
 ---
 
-{%- include custom-nav.html -%}
+{%- include navs/custom-nav.html -%}
 
 {%- include sidebar.html -%}
 
 {%- include bbuttons.html -%}
 
-{%- include expcarousel.html -%}
+{%- include carousels/carousel.html -%}
 
 <div class="mt-5 pt-5">
 {%- include termslist.html -%}
 </div>
 
 <div class="mt-5 pt-5">
-{%- include oggrid.html -%}
+{%- include grids/oggrid.html -%}
 </div>
 <!--{%- include flip-button.html -%}-->
 
 <!-- Sparkle Modal -->
+{%- include sparklemodal.html -%}
 
-<div class="modal fade" id="sparkleModal" tabindex="-1" aria-labelledby="sparkleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="sparkleexampleModalLabel">Stellae! (Stars!)</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        
-       You are required to provide <em>all</em> English meanings for the quiz.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">OK!</button>
-      </div>
-    </div>
-  </div>
-</div>
 
   <script src="script/code.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
