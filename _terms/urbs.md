@@ -1,7 +1,7 @@
 ---
 title: urbs
 meaning: city
-ch: seven
+ch: [seven, mt, mt5thru7]
 pos: nounthird
 genitive: urbis
 abbgender: f.
@@ -9,6 +9,4 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivatives: urbane, suburb
-mt: yes
-mt5thru7: yes
 ---

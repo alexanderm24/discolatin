@@ -1,16 +1,11 @@
 ---
 title: terreō
 meaning: to scare, frighten
-ch: four
+ch: [four, mt, mt1thru4, ss, ss2]
 pos: verb
 inf: terrēre
 secondppstem: terr
 infend: ēre
 conjugation: second
-note: (something else)
 derivative: terrify
-mt: yes
-mt1thru4: yes
-ss: yes
-ss2: yes
 ---

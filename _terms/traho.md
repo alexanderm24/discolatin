@@ -1,13 +1,11 @@
 ---
 title: trahō
-meaning: to drag
-ch: twelve
+meaning: to drag, pull
+ch: [twelve, f1, f]
 pos: verb
 inf: trahere
 secondppstem: trah
 infend: ere
 conjugation: third
 derivative: protracted
-f1: yes
-f: yes
 ---

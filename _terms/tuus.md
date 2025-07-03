@@ -1,14 +1,10 @@
 ---
 title: tuus
 meaning: your
-ch: nine
+ch: [nine, mt, mt8thru9]
 pos: totadjective
 femstem: tu
 femend: a
 neutstem: tu
 neutend: um
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

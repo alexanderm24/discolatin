@@ -1,17 +1,11 @@
 ---
 title: temptō
 meaning: to try
-ch: nine
+ch: [nine, mt, mt8thru9, ss, ss2]
 pos: verb
 inf: temptāre
 secondppstem: tempt
 infend: āre
 conjugation: first
 derivative: temptation
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
-ss: yes
-ss2: yes
 ---

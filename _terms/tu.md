@@ -1,6 +1,7 @@
 ---
 title: tū
-meaning: you (subject)
+meaning: you
+note: subject
 ch: four
 pos: perspronoun
 ss: yes

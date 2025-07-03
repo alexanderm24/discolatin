@@ -1,6 +1,7 @@
 ---
 title: tē
-meaning: you (direct object)
+meaning: you
+note: direct object
 ch: four
 pos: perspronoun
 ss: yes

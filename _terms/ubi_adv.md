@@ -1,9 +1,6 @@
 ---
 title: ubi
 meaning: where
-ch: one
+ch: [one, two, mt, mt1thru4, ss, ss1]
 pos: adverb
-inactive: yes
-ss: yes
-ss1: yes
 ---

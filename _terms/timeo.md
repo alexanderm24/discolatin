@@ -1,14 +1,10 @@
 ---
 title: timeō
 meaning: to fear, be afraid of
-ch: five
+ch: [five, mt, mt5thru7, ss, ss1]
 pos: verb
 inf: timēre
 secondppstem: tim
 infend: ēre
 conjugation: second
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
 ---

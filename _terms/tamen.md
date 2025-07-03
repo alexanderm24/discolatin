@@ -1,8 +1,6 @@
 ---
 title: tamen
 meaning: however
-ch: six
+ch: [six, mt, mt5thru7, ss, ss5]
 pos: adverb
-mt: yes
-mt5thru7: yes
 ---

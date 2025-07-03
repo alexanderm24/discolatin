@@ -1,6 +1,6 @@
 ---
 title: ubi...?
 meaning: where...?
-ch: one
+ch: [one, two]
 pos: adverb
 ---
