@@ -4,17 +4,16 @@ body {
 }
 
 .homecontainer {
-margin-top: 0;
-margin-left: auto;
-margin-right: auto;
-padding: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
 }
 
 .form-check, .form-check-reverse, .form-check-inline, .formc {
   color: white;
   align-content:flex-start;
-  }
-  
+}
 
 .main-t {
   width: 25vw;
@@ -43,8 +42,6 @@ padding: 0;
   padding-bottom: 0.833vw;
 }
 
-
-
 #hometitle {
   font-family: "Sarina", serif;
   font-weight: 400;
@@ -57,9 +54,9 @@ padding: 0;
 }
 
 .vocabcontainer {
-margin-top: 10rem;
-margin-left: auto;
-margin-right: auto; 
+  margin-top: 10rem;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 .doi {
@@ -75,58 +72,63 @@ margin-right: auto;
 }
 
 .form-check {
-color: white;
-align-content:flex-start;
+  color: white;
+  align-content:flex-start;
 }
 
 h1, h2, h3, h4, h5, p {
-font-family: "Comfortaa", sans-serif;
-text-align: center;
-color: white;
+  font-family: "Comfortaa", sans-serif;
+  text-align: center;
+  color: white;
 }
 
 h1, h4, .home {
-text-align: center;
+  text-align: center;
 }
 
-
-
 .home {
-margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .navbar {
-background-color: black;
-z-index: 999;
+  background-color: black;
+  z-index: 999;
 }
 
 .navbar-brand {
-color: white;
+  color: white;
 }
 
-a:visited {
-color: white;
+#nav1 > a:visited {
+  color: white;
+}
+
+#nav2 > a:visited {
+  color: white;
 }
 
 .container-fluid > a:hover {
-color: white;
-text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 button {
-margin: .5rem;
-width: 10rem;
+  margin: .5rem;
+  width: 10rem;
 }
 
 a {
-text-decoration: none;
-color: none;
+  text-decoration: none;
 }
 
 a:hover > button.btn-mt {
   text-decoration: none;
   color: black;
-  }
+}
+
+a.text-decoration-none:visited {
+  color: #0D6FFD;
+}
 
 /* big or "main" cards */
 .scene-bg {
@@ -135,7 +137,7 @@ a:hover > button.btn-mt {
   height: 450px;
   margin: 1rem;
   perspective: 1000px;
-  }
+}
 
   @media only screen and (max-width: 600px) {
     .scene-bg {
@@ -149,18 +151,18 @@ a:hover > button.btn-mt {
   }
 
 .card-bg {
-    position: relative;
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transform-origin: center right;
-    transition: transform 1.25s;
-    border-radius: 16px;
-    outline-color: black;
-    box-shadow: 1px 1px 1px 1px black;
-  }
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 1.25s;
+  border-radius: 16px;
+  outline-color: black;
+  box-shadow: 1px 1px 1px 1px black;
+}
 
   @media only screen and (max-width: 600px) {
     .card-bg {
@@ -189,7 +191,7 @@ a:hover > button.btn-mt {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 55px;
     backface-visibility: hidden;
     border-radius: 16px;
     }
@@ -269,9 +271,15 @@ a:hover > button.btn-mt {
     
 
     .term-bg {
-      padding-top: 6rem;
-      height: 80%;
+      font-size: 50px;
+      height: 60%;
+      padding-top: 0;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem;
       line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       }
 
     @media only screen and (max-width:600px) {
@@ -283,12 +291,15 @@ a:hover > button.btn-mt {
     }
 
     .def-only-bg {
-      padding-top: 6rem;
+      padding-top: 0;
       padding-right: 7rem;
       padding-left: 7rem;
-      height: 50%;
+      height: 60%;
       line-height: normal;
       font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     @media only screen and (max-width:600px) {
@@ -300,6 +311,11 @@ a:hover > button.btn-mt {
         line-height: normal;
         font-size: 35px;
       }
+    }
+
+    .disamb-note-bg, .conj-note-bg {
+      font-size: 30px;
+      margin-top: 5px;
     }
 
     .di-bg {
@@ -323,37 +339,19 @@ a:hover > button.btn-mt {
       }
     }
 
-
-
-    .demo {
-      background: white;
-    }
-    .verb, .conjverb {
-      background: #ffb01f;
-    }
-    .noun, .exnounsecond, .nounthird, .nounfifth, .pronoun, .pronounthird, .perspronoun, .nouni {
-      background: #ffe433;
-    }
-    .preposition, .prepdual {
-      background: #6dd978;
-    }
-    .adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective {
-      background: #6ed1ff;
-    }
-    .adverb {
-      background: #b395da;
-    }
-    .interjection, .phrase, .composite {
-      background: white;
-    }
   
     
     .def-bg {
-      padding-top: 1rem;
+      padding-top: 0;
       padding-right: 7rem;
       padding-left: 7rem;
+      height: 20%;
+      margin-bottom: 10%;
       line-height: normal;
       font-size: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     @media only screen and (max-width:600px) {
@@ -368,112 +366,22 @@ a:hover > button.btn-mt {
       }
     }
 
-    .prep-meaning-one-bg {
-      width: 100%;
-      height: 25%;
-      line-height: 90px;
-      font-size: 35px;
-      padding-top: 1rem;
-      }
-
-      @media only screen and (max-width:600px) {
-        .prep-meaning-one-bg {
-          width: 100%;
-          height: 25%;
-          line-height: 45px;
-          font-size: 28px;
-        }
-      }
-      
-      .di-prep-bg, .di-prep-one-bg {
-      background: #6dd978;
-      border-top-left-radius: 16px;
-      border-top-right-radius: 16px;
-      width: 100%;
-      height: 25%;
-      line-height: 90px;
-      font-size: 35px;
-      border-bottom: 4px dotted black;
-      }
-
-      @media only screen and (max-width:600px) {
-        .di-prep-bg, .di-prep-one-bg {
-          background: #6dd978;
-          border-top-left-radius: 16px;
-          border-top-right-radius: 16px;
-          width: 100%;
-          height: 25%;
-          line-height: 55px;
-          font-size: 28px;
-          border-bottom: 4px dotted black;
-        }
-      }
-
-      
-      .prep-meaning-two-bg {
-      width: 100%;
-      height: 25%;
-      line-height: 75px;
-      font-size: 35px;
-      padding-top: 1rem;
-      }
-
-      @media only screen and (max-width:600px) {
-        .prep-meaning-two-bg {
-          width: 100%;
-        height: 25%;
-        line-height: 45px;
-        font-size: 28px;
-        }
-      }
-      
-      .di-prep-two-bg {
-      background: #6dd978;
-      width: 100%;
-      height: 25%;
-      line-height: 90px;
-      font-size: 35px;
-      border-top: 4px dotted black;
-      border-bottom: 4px dotted black;
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      }
-
-      @media only screen and (max-width:600px) {
-        .di-prep-two-bg {
-          background: #6dd978;
-          width: 100%;
-          height: 25%;
-          line-height: 45px;
-          font-size: 28px;
-          border-top: 4px dotted black;
-          border-bottom: 4px dotted black;
-        }
-      }
-    
-    .def-note-small {
+    .def-note-bg {
     width: 100%;
-    height: 35%;
-    padding-top: 2.3rem;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
+    margin-top: 0;
+    height: 5%;
     font-size: 18px;
     line-height: 23px;
-    text-align: left;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     }
     
     .derivative-bg {
     width: 100%;
     font-style: italic;
+    margin-top: 0;
     color: darkgray;
-    margin-top: 4rem;
     padding-right: 1.2rem;
     padding-left: 1.2rem;
-    height: 10%; 
+    height: 15%; 
     font-size: 18px;
     line-height: 23px;
     display: flex;
@@ -501,48 +409,39 @@ a:hover > button.btn-mt {
     
     
     .def-only {
-      margin-top: 68.75px;
-      padding-top: 50px;
-      padding-left: 40px;
-      padding-right:40px;
+      margin-top: 0;
+      padding-top: 0;
+      padding-right: 2rem;
+      padding-left: 2rem;
+      height: 55%;
+      line-height: normal;
       font-size: 35px;
-      line-height: 45px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 25%;
+      justify-content: center;
     }
-    
-    .def-split1 {
-    font-size: 35px;
-    width: 100%;
-    height: 50%; 
+
+    .disamb-note, .conj-note {
+      font-size: 25px;
+      margin-top: 5px;
     }
-    
-    
-    .def-split2 {
-    font-size: 25px;
-    width: 100%;
-    height: 50%; 
-    line-height: 100px;
-    }
-    
-    
-    .conjunction {
-      background: #b39680;
-    }
-    
-    
-    .di-prepphrase {
-      background: #7dea88;
-      font-size: 28px;
+
+    .di {
+      font-size: 25px;
+      text-align: center;
       width: 100%;
       height: 25%;
-      line-height: 80px;
+      line-height: normal;
       border-top-left-radius: 16px;
       border-top-right-radius: 16px;
       border-bottom: 4px dotted black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+    
+  
+  
     
 
     
@@ -589,59 +488,69 @@ transform: translateX(-100%) rotateY(-180deg);
 position: absolute;
 width: 100%;
 height: 100%;
-line-height: 275px;
 color: black;
 text-align: center;
 font-weight: bold;
-font-size: 40px;
 backface-visibility: hidden;
 border-radius: 16px;
 }
 
+.card--top--front, .card--top--back {
+    height: 25%;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+
 .term {
-height: 50%;
-line-height: 135px;
+  height: 55%;
+  font-size: 37px;
+  padding-top: 0;
+  padding-right: 2.4rem;
+  padding-left: 2.4rem;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .rightcorner {
 text-align: right;
-height: 25%;
-line-height: 58px;
+line-height: normal;
+}
+
+.leftcornerb {
+  margin-left: 40px;
 }
 
 .card__face--front--verb, .verb {
   background: #ffb01f;
 }
 
-.di-v {
-  background: #ffb01f;
-  font-size: 28px;
-  width: 100%;
-  height: 25%;
-  line-height: 80px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom: 4px dotted black;
-}
 
 .def {
   width: 100%;
-  height: 25%; 
+  height: 10%; 
   font-size: 35px;
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-right: 40px;
-  line-height: 42px;
+  padding-top: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 10%;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.def-note-small {
+.def-note-dif {
 width: 100%;
-height: 35%;
-padding-top: 2.3rem;
-padding-left: 1.4rem;
-padding-right: 1.4rem;
+margin-top: 0;
+height: 5%;
 font-size: 18px;
 line-height: 23px;
+padding-right: 2rem;
+padding-left: 2rem;
 text-align: left;
 font-style: italic;
 display: flex;
@@ -649,13 +558,29 @@ justify-content: center;
 align-items: center;
 }
 
-.derivative {
+.def-note-dib {
+  width: 100%;
+  margin-top: 0;
+  height: 15%;
+  font-size: 18px;
+  line-height: 23px;
+  padding-right: 1.7rem;
+  padding-left: 1.7rem;
+  text-align: left;
+  font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.derivative-dif {
 width: 100%;
 font-style: italic;
+margin-top: 0;
 color: darkgray;
 padding-right: 1.2rem;
 padding-left: 1.2rem;
-height: 10%; 
+height: 15%; 
 font-size: 18px;
 line-height: 23px;
 display: flex;
@@ -663,108 +588,27 @@ align-items: center;
 justify-content: center;
 }
 
-.card__face--front--phrase {
-  background: white;
-}
-
-.card__face--front--noun, .noun {
-  background: #ffe433;
-}
-
-.di-n {
-  background: #ffe433;
-  font-size: 28px;
+.derivative-dib {
   width: 100%;
-  height: 25%;
-  line-height: 80px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom: 4px dotted black;
-}
-
-
-.card__face--front--preposition, .prep {
-  background: #6dd978;
-}
-
-.card__face--front--prepdual {
-background: #6dd978;
-}
-
-.prep-meaning-one {
-width: 100%;
-height: 25%;
-line-height: 70px;
-font-size: 28px;
-}
-
-.di-prep, .di-prep-one {
-background: #6dd978;
-border-top-left-radius: 16px;
-border-top-right-radius: 16px;
-width: 100%;
-height: 25%;
-line-height: 75px;
-font-size: 28px;
-border-bottom: 4px dotted black;
-}
-
-.prep-meaning-two {
-width: 100%;
-height: 25%;
-line-height: 70px;
-font-size: 28px;
-}
-
-.di-prep-two {
-background: #6dd978;
-width: 100%;
-height: 25%;
-line-height: 75px;
-font-size: 28px;
-border-top: 4px dotted black;
-border-bottom: 4px dotted black;
-}
-
-.card__face--front--adjective, .adj {
-  background: #6ed1ff;
-}
-
-.di-adj {
-  background: #6ed1ff;
-  font-size: 28px;
-  width: 100%;
-  height: 25%;
-  line-height: 80px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom: 4px dotted black;
-}
-
-
-.card__face--front--adverb {
-  background: #b395da;
-}
-
-.def-only {
-  margin-top: 68.75px;
-  padding-top: 50px;
-  padding-left: 40px;
-  padding-right:40px;
-  font-size: 35px;
-  line-height: 45px;
+  font-style: italic;
+  margin-top: 0;
+  color: darkgray;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  height: 10%; 
+  font-size: 18px;
+  line-height: 23px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 25%;
-}
+  justify-content: center;
+  }
+
 
 .def-split1 {
 font-size: 35px;
 width: 100%;
 height: 50%; 
 }
-
 
 .def-split2 {
 font-size: 25px;
@@ -798,10 +642,6 @@ line-height: 100px;
     }
 
 
-.card__face--front--conjunction {
-  background: #b39680;
-}
-
 
 .di-prepphrase {
   background: #7dea88;
@@ -824,16 +664,6 @@ line-height: 100px;
 );
 }
 
-.di-infconj {
-  background: #FFC65C;
-  font-size: 28px;
-  width: 100%;
-  height: 25%;
-  line-height: 80px;
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-  border-bottom: 4px dotted black;
-}
 
 .card__face--back {
 background: white;
@@ -884,6 +714,11 @@ z-index: 10000;
 .btn-pro {
   font-size: 2rem;
   background-color: whitesmoke;
+}
+
+.btn-pro:hover {
+  font-size: 2rem;
+  background-color: #ADD8E6;
 }
 
 .btn.cumulative {
@@ -1034,7 +869,6 @@ z-index: 10000;
 }
 
 
-
 .verb-underline, .conjverb-underline {
   text-decoration: underline #ffb01f 3px;
 }
@@ -1053,6 +887,32 @@ z-index: 10000;
 .conjunction-underline {
   text-decoration: underline #b39680 3px;
 }
+
+.demo, .prepphrase {
+  background: white;
+}
+.verb, .conjverb {
+  background: #ffb01f;
+}
+.noun, .exnounsecond, .nounthird, .nounfifth, .pronoun, .pronounthird, .perspronoun, .nouni {
+  background: #ffe433;
+}
+.preposition, .prepdual, .prep {
+  background: #6dd978;
+}
+.adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj {
+  background: #6ed1ff;
+}
+.adverb {
+  background: #b395da;
+}
+.interjection, .phrase, .composite {
+  background: white;
+}
+.conjunction {
+  background: #b39680;
+}
+
 
 .list-group {
   max-width: 500px;

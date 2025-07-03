@@ -1,6 +1,19 @@
 ---
-layout: mt1
+layout: chlist
 title: Midterm Chapters 1-4
+ch: mt1thru4
+verbs: yes
+conjverbs: yes
+nouns: yes
+pronouns: yes
+adjectives: yes
+adverbs: yes
+prepositions: no
+conjunctions: yes
+interjections: no
+composites: no
+prepphrases: no
+phrases: no
 pdfchl: mt1
 pdfpq: mt1practice
 pdfpq2: mt1practice2
