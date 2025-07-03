@@ -1,13 +1,10 @@
 ---
 title: eum
-meaning: him (accusative)
-ch: seven
+meaning: him
+ch: [five, seven, mt, mt5thru7, ss, ss1]
 pos: pronoun
 abbgender: m.
 abbgender2: masc.
 gender: masculine
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
+note: accusative
 ---

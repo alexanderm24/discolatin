@@ -1,12 +1,11 @@
 ---
 title: ferō
 meaning: to bring
-ch: ten
+ch: [ten, twelve, seventeen, f1, f]
 pos: verb
 inf: ferre
 conjugation: irregular
 derivative: reference
-inactive: yes
 ---
 <div class="accordion caro-accordion" id="fero">
     <div class="accordion-item">
@@ -27,4 +26,6 @@ inactive: yes
           </div>
         </div>
       </div>
+
+
 

@@ -1,10 +1,8 @@
 ---
 title: eō
 meaning: to go
-ch: fourteen
+ch: [seven, fourteen, seventeen, f2, f]
 pos: verb
 inf: īre
 conjugation: irregular
-f2: yes
-f: yes
 ---

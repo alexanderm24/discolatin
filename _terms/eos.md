@@ -1,10 +1,10 @@
 ---
 title: eōs
-meaning: them (accusative)
-ch: five
+meaning: them
+ch: [five, seven, mt, mt5thru7, ss1]
 pos: pronoun
 abbgender: m.
 abbgender2: masc.
 gender: masculine
-inactive: yes
+note: accusative
 ---
