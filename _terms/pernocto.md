@@ -1,7 +1,7 @@
 ---
 title: pernoctō
 meaning: to spend the night
-ch: seventeen
+ch: [seventeen]
 pos: verb
 inf: pernoctāre
 secondppstem: pernoct

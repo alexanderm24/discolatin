@@ -1,7 +1,7 @@
 ---
 title: perīculum
 meaning: danger
-ch: fourteen
+ch: [fourteen, f2, f]
 pos: noun
 stem: perīcul
 genend: ī
@@ -9,6 +9,4 @@ abbgender: n.
 abbgender2: neut.
 gender: neuter
 declension: second
-f2: yes
-f: yes
 ---

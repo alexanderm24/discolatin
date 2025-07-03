@@ -1,13 +1,11 @@
 ---
 title: plēnus
 meaning: full
-ch: eleven
+ch: [eleven, f1, f]
 pos: totadjective
 femstem: plēn
 femend: a
 neutstem: plēn
 neutend: um
 derivative: plenary
-f1: yes
-f: yes
 ---

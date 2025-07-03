@@ -1,10 +1,11 @@
 ---
 title: possum
 meaning: to be able
-ch: five
+ch: [five, seventeen]
 pos: verb
 inf: posse
 conjugation: irregular
 derivative: possible
-inactive: yes
+ss: yes
+ss2: yes
 ---

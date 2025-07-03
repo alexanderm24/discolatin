@@ -1,12 +1,10 @@
 ---
 title: parātus
 meaning: ready
-ch: ten
+ch: [ten, f1, f]
 pos: totadjective
 femstem: parāt
 femend: a
 neutstem: parāt
 neutend: um
-f1: yes
-f: yes
 ---

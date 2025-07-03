@@ -1,9 +1,7 @@
 ---
 title: prope
 meaning: near
-ch: nine
+ch: [five, nine, mt, mt5thru7]
 pos: preposition
 di: (takes accusative)
-mt: yes
-mt5thru7: yes
 ---

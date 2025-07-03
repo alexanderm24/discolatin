@@ -1,7 +1,7 @@
 ---
 title: porta
 meaning: gate
-ch: eleven
+ch: [eleven, f1, f]
 pos: noun
 stem: port
 genend: ae
@@ -10,6 +10,4 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: portal
-f1: yes
-f: yes
 ---
