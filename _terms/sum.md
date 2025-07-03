@@ -1,12 +1,10 @@
 ---
 title: sum
 meaning: to be
-ch: one
+ch: [one, two, seventeen]
 pos: verb
 inf: esse
 conjugation: irregular
-inactive: yes
-annotated: _includes/termsnotes/sum-note.html
 ---
 <div class="accordion caro-accordion" id="sum">
   <div class="accordion-item">

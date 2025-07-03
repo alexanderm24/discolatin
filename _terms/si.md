@@ -1,10 +1,6 @@
 ---
 title: sī
 meaning: if
-ch: five
+ch: [five, mt5thru7, ss, ss1]
 pos: conjunction
-mt: yes
-mt5thru7: yes
-ss: yes
-ss1: yes
 ---

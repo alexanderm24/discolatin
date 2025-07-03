@@ -1,14 +1,11 @@
 ---
 title: suus
-meaning: his own, her own, its own
-ch: nine
+meaning: his, her, its (own)
+ch: [nine, mt, mt8thru9]
 pos: totadjective
 femstem: su
 femend: a
 neutstem: su
 neutend: um
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
+allmeanings: yes
 ---

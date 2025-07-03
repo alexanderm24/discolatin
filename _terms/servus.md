@@ -10,4 +10,6 @@ abbgender2: masc.
 gender: masculine
 declension: second
 derivatives: servitude, servile
+ss: yes
+ss5: yes
 ---

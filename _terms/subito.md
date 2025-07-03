@@ -1,8 +1,6 @@
 ---
 title: subito
 meaning: suddenly
-ch: three
+ch: [three, mt, mt1thru4]
 pos: adverb
-mt: yes
-mt1thru4: yes
 ---

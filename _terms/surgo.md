@@ -1,13 +1,11 @@
 ---
 title: surgō
 meaning: to get up
-ch: six
+ch: [six, mt, mt5thru7]
 pos: verb
 inf: surgere
 secondppstem: surg
 infend: ere
 conjugation: third
 derivatives: insurgency, resurrection
-mt: yes
-mt5thru7: yes
 ---

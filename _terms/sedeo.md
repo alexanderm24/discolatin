@@ -1,15 +1,11 @@
 ---
 title: sedeō
 meaning: to sit
-ch: one
+ch: [one, mt, mt1thru4, ss, ss1]
 pos: verb
 inf: sedēre
 secondppstem: sed
 infend: ēre
 conjugation: second
 derivatives: sedentary, session, sessile
-mt: yes
-mt1thru4: yes
-ss: yes
-ss1: yes
 ---

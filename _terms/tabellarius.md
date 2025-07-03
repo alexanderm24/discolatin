@@ -1,7 +1,7 @@
 ---
 title: tabellārius
 meaning: courier, mailman
-ch: thirteen
+ch: [thirteen, fourteen]
 pos: noun
 stem: tabellāri
 genend: ī

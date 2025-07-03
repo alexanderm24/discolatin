@@ -1,15 +1,11 @@
 ---
 title: spectō
 meaning: to watch
-ch: seven
+ch: [seven, mt, mt5thru7, ss, ss2]
 pos: verb
 inf: spectāre
 secondppstem: spect
 infend: āre
 conjugation: first
 derivatives: specter, inspector
-mt: yes
-mt5thru7: yes
-ss: yes
-ss2: yes
 ---

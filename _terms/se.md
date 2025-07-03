@@ -1,10 +1,6 @@
 ---
 title: sē
 meaning: himself, herself, itself
-ch: eleven
+ch: [eleven, f1, f, ss, ss2]
 pos: perspronoun
-f1: yes
-f: yes
-ss: yes
-ss2: yes
 ---

@@ -1,8 +1,7 @@
 ---
 title: sub
 meaning: under
-ch: one
+ch: [one, nine, mt, mt8thru9]
 pos: preposition
 di: (takes ablative)
-inactive: yes
 ---
