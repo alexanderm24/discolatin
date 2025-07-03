@@ -284,9 +284,15 @@ a.text-decoration-none:visited {
 
     @media only screen and (max-width:600px) {
       .term-bg {
-        padding-top: 3.438rem;
-        height: 50%;
-        line-height: normal;
+      font-size: 37px;
+      height: 60%;
+      padding-top: 0;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem;
+      line-height: normal;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       }
     }
 
