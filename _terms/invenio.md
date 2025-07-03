@@ -1,13 +1,11 @@
 ---
 title: inveniō
 meaning: to find
-ch: twelve
+ch: [twelve, f1, f]
 pos: verb
 inf: invenīre
 secondppstem: inven
 infend: īre
 conjugation: fourth
 derivative: invention
-f1: yes
-f: yes
 ---

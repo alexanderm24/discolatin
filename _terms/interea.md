@@ -1,8 +1,6 @@
 ---
 title: intereā
 meaning: meanwhile
-ch: ten
+ch: [ten, f1, f]
 pos: adverb
-f1: yes
-f: yes
 ---

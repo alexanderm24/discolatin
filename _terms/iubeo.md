@@ -1,14 +1,10 @@
 ---
 title: iubeō
 meaning: to order
-ch: ten
+ch: [ten, f1, f, ss, ss1]
 pos: verb
 inf: iubēre
 secondppstem: iub
 infend: ēre
 conjugation: second
-f1: yes
-f: yes
-ss: yes
-ss1: yes
 ---

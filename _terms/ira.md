@@ -1,7 +1,7 @@
 ---
 title: īra
 meaning: anger, wrath
-ch: eleven
+ch: [eleven, f1, f]
 pos: noun
 stem: īr
 genend: ae
@@ -10,6 +10,4 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: ire
-f1: yes
-f: yes
 ---

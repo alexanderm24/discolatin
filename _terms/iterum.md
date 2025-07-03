@@ -1,10 +1,6 @@
 ---
 title: iterum
 meaning: again
-ch: eight
+ch: [eight, mt, mt8thru9, f3, f]
 pos: adverb
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

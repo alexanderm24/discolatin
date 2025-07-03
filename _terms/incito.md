@@ -1,6 +1,7 @@
 ---
 title: incitō
-meaning: to drive (like an animal)
+meaning: to drive, urge on
+note: something else, like an animal
 ch: ten
 pos: verb
 inf: incitāre

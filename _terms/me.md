@@ -1,10 +1,6 @@
 ---
 title: mē
 meaning: me
-ch: four
+ch: [four, mt, mt1thru4, ss, ss1]
 pos: perspronoun
-mt: yes
-mt1thru4: yes
-ss: yes
-ss1: yes
 ---

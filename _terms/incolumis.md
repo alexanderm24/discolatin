@@ -1,7 +1,7 @@
 ---
 title: incolumis
-meaning: unhurt
-ch: fourteen
+meaning: safe, unhurt
+ch: [fourteen]
 pos: thirdadjective
 femstem: incolum
 femend: is

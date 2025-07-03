@@ -1,8 +1,6 @@
 ---
 title: itaque
 meaning: and so
-ch: sixteen
+ch: [sixteen, f3, f]
 pos: adverb
-f3: yes
-f: yes
 ---

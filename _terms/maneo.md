@@ -1,15 +1,11 @@
 ---
 title: maneō
 meaning: to stay, remain
-ch: nine
+ch: [nine, mt, mt8thru9]
 pos: verb
 inf: manēre
 secondppstem: man
 infend: ēre
 conjugation: second
 derivative: mansion
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

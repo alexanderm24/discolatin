@@ -1,7 +1,7 @@
 ---
 title: iocus
 meaning: joke
-ch: sixteen
+ch: [sixteen]
 pos: noun
 stem: ioc
 genend: ī

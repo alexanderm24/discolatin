@@ -1,7 +1,7 @@
 ---
 title: lūdō
 meaning: to play
-ch: sixteen
+ch: [five, sixteen, f3, f]
 pos: verb
 inf: ludere
 secondppstem: lud
