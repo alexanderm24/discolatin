@@ -1,8 +1,6 @@
 ---
 title: mox
 meaning: soon
-ch: six
+ch: [six, mt, mt5thru7, ss, ss4]
 pos: adverb
-mt: yes
-mt5thru7: yes
 ---

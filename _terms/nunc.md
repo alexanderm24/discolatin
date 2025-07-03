@@ -1,9 +1,7 @@
 ---
 title: nunc
 meaning: now
-ch: six
+ch: [six, mt, mt5thru7, ss, ss4]
 pos: adverb
 derivative: quidnunc
-mt: yes
-mt5thru7: yes
 ---

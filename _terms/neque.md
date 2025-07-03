@@ -1,8 +1,6 @@
 ---
 title: neque
 meaning: and...not
-ch: six
+ch: [six, mt, mt5thru7, ss, ss5]
 pos: conjunction
-mt: yes
-mt5thru7: yes
 ---

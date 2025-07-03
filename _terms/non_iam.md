@@ -1,10 +1,6 @@
 ---
 title: nōn iam
 meaning: no longer
-ch: two
+ch: [two, mt, mt1thru4, ss, ss2]
 pos: adverb
-mt: yes
-mt1thru4: yes
-ss: yes
-ss2: yes
 ---

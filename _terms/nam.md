@@ -1,10 +1,6 @@
 ---
 title: nam
 meaning: because
-ch: eight
+ch: [eight, mt, mt8thru9]
 pos: conjunction
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

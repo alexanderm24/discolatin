@@ -1,10 +1,6 @@
 ---
 title: nōbīs
 meaning: for us
-ch: eight
+ch: [eight, mt, mt8thru9]
 pos: perspronoun
-mt: yes
-mt8thru10: yes
-f3: yes
-f: yes
 ---

@@ -1,10 +1,8 @@
 ---
 title: nōlō
 meaning: to not want
-ch: seventeen
+ch: [five, seventeen, f2, f]
 pos: verb
 inf: nolle
 conjugation: irregular
-f2: yes
-f: yes
 ---

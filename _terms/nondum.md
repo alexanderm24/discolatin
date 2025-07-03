@@ -1,8 +1,6 @@
 ---
 title: nōndum
 meaning: not yet
-ch: six
+ch: [six, mt, mt5thru7]
 pos: adverb
-mt: yes
-mt5thru7: yes
 ---
