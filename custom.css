@@ -923,3 +923,31 @@ z-index: 10000;
 .list-group {
   max-width: 500px;
 }
+
+.cover-container {
+  max-width: 42em;
+}
+
+#home {
+  background-color: beige;
+}
+
+.homegreeting > h1 {
+  font-family: "Leckerli One", cursive;
+  color: #3D3A24;
+}
+
+.brown {
+  color: #3D3A24;
+}
+
+.btn-6 {
+  background-color: #B46C40;
+  color: beige;
+}
+
+.btn-6:hover {
+  background-color: #B46C40;
+  color: beige;
+}
+
