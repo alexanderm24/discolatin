@@ -3,7 +3,9 @@ title: miser
 meaning: unhappy
 ch: [nine, mt, mt8thru9]
 pos: totadjective
-femend: misera
-neutend: miserum
+femstem: miser
+femend: a
+neutstem: miser
+neutend: um
 derivative: immiserate
 ---
