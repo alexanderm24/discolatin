@@ -4,7 +4,7 @@ meaning: friend
 ch: three
 pos: noun
 stem: amīc
-genend: us
+genend: ī
 abbgender: m.
 abbgender2: masc.
 gender: masculine

@@ -111,10 +111,10 @@
 
 <!--prepphrase-->
 {% if pos == "prepphrase" %}
-<span class="prep la-text">{{ prepphrase.preposition }}</span> <span class="noun la-text">{{ prepphrase.noun }}</span> 
+<span class="prep la-text">{{ prepphrase.preposition }}</span> <span class="noun la-text">{{ prepphrase.noun }}</span>&#8205;<span class="essm">{{ prepphrase.ablend }}</span>
 {% endif %}
 
 <!--other phrases-->
 {% if pos == "phrase" %}
-<span class="adj la-text">{{ terms.adjective }}</span> <span class="verb la-text">{{ terms.verb }}</span> <span class="noun la-text">{{ terms.noun }}</span> <span class="noun la-text">{{ terms.noun1 }}</span> <span class="verb la-text">{{ terms.verb2 }}</span>
+<span class="adj la-text">{{ terms.adjective }}<span class="essm">{{ terms.ablend }}</span></span> <span class="verb la-text">{{ terms.verb }}</span> <span class="noun la-text">{{ terms.noun }}</span> <span class="noun la-text">{{ terms.noun1 }}</span> <span class="verb la-text">{{ terms.verb2 }}</span>
 {% endif %}
