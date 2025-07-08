@@ -7,4 +7,5 @@ femstem: parāt
 femend: a
 neutstem: parāt
 neutend: um
+sixms: P
 ---

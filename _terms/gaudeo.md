@@ -7,4 +7,5 @@ inf: gaudēre
 secondppstem: gaud
 infend: ēre
 conjugation: second
+sixms: G
 ---

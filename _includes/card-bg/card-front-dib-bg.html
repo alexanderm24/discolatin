@@ -60,6 +60,11 @@
 <div class="disamb-note-bg">{{ terms.disamb }}</div>
 {% endif %}
 
+<!--tot pronouns (ille, illa, illud, etc)-->
+{% if pos == "totpronoun" %}
+{{ terms.title }}
+{% endif %}
+
 <!--adjectives 212-->
 {% if pos == "totadjective" %}
 {{ terms.title }}
@@ -67,6 +72,11 @@
 
 <!--adjectives 212: noster ... maybe alter & miser?-->
 {% if pos == "extotadjective" %}
+{{ terms.title }}
+{% endif %}
+
+<!--indeclinable adjectives (numbers)-->
+{% if pos == "iadj" %}
 {{ terms.title }}
 {% endif %}
 

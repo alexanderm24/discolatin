@@ -900,13 +900,13 @@ z-index: 10000;
 .verb, .conjverb {
   background: #ffb01f;
 }
-.noun, .exnounsecond, .nounthird, .nounfifth, .pronoun, .pronounthird, .perspronoun, .nouni {
+.noun, .exnounsecond, .nounthird, .nounfifth, .pronoun, .pronounthird, .perspronoun, .nouni, .totpronoun {
   background: #ffe433;
 }
 .preposition, .prepdual, .prep {
   background: #6dd978;
 }
-.adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj {
+.adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj, .iadj {
   background: #6ed1ff;
 }
 .adverb {
@@ -949,5 +949,14 @@ z-index: 10000;
 .btn-6:hover {
   background-color: #B46C40;
   color: beige;
+}
+
+.glossms {
+  color: black;
+  text-align: left;
+}
+
+html {
+  scroll-padding-top: 5rem;
 }
 

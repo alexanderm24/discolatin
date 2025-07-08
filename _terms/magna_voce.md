@@ -6,4 +6,5 @@ pos: phrase
 adjective: magn
 ablend: ā
 noun: voce
+sixms: M
 ---

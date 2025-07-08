@@ -8,4 +8,5 @@ secondppstem: cad
 infend: ere
 conjugation: third
 derivatives: decadent, cadence, cascade
+sixms: C
 ---

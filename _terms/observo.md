@@ -8,4 +8,5 @@ secondppstem: observ
 infend: āre
 conjugation: first
 derivative: observatory
+sixms: O
 ---

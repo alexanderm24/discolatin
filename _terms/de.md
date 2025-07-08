@@ -6,4 +6,5 @@ meaning: down from
 ch: [nine, sixteen]
 pos: preposition
 di: (takes ablative)
+sixms: D
 ---

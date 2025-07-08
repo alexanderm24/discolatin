@@ -7,4 +7,5 @@ inf: habēre
 secondppstem: hab
 infend: ēre
 conjugation: second
+sixms: H
 ---

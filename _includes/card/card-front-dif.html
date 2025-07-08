@@ -60,6 +60,11 @@
 <div class="disamb-note">{{ terms.disamb }}</div>
 {% endif %}
 
+<!--tot pronouns (ille, illa, illud, etc)-->
+{% if pos == "totpronoun" %}
+{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+{% endif %}
+
 <!--adjectives 212-->
 {% if pos == "totadjective" %}
 {{ terms.title }}, <span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}
@@ -68,6 +73,11 @@
 <!--adjectives 212: noster ... maybe alter & miser?-->
 {% if pos == "extotadjective" %}
 {{ terms.title }}, <span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}
+{% endif %}
+
+<!--indeclinable adjectives (numbers)-->
+{% if pos == "iadj" %}
+{{ terms.title }}
 {% endif %}
 
 <!--3rd adjectives-->

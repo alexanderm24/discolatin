@@ -8,4 +8,5 @@ secondppstem: labōr
 infend: āre
 conjugation: first
 derivative: elaborate
+sixms: L
 ---
