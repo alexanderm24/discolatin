@@ -6,4 +6,5 @@ inf: excipere
 secondppstem: excip
 infend: ere
 conjugation: third
+six: y
 ---

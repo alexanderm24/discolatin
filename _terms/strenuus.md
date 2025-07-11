@@ -8,4 +8,5 @@ femend: a
 neutstem: strēnu
 neutend: um
 derivative: strenuous
+six: y
 ---

@@ -6,4 +6,5 @@ pos: verb
 inf: abesse
 conjugation: irregular
 derivative: absent
+six: y
 ---

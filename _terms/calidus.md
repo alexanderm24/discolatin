@@ -7,4 +7,5 @@ femstem: calid
 femend: a
 neutstem: calid
 neutend: um
+six: y
 ---

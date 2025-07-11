@@ -8,4 +8,5 @@ abbgender2: (fem.)
 gender: (feminine)
 declension: first
 sixms: Q
+six: y
 ---

@@ -8,4 +8,5 @@ secondppstem: ag
 infend: ere
 conjugation: third
 allmeanings: yes
+six: y
 ---

@@ -6,9 +6,12 @@ pos: verb
 inf: habitāre
 secondppstem: habit
 infend: āre
+thirdpp: habitāvī
+fourthpp: habitātus
 conjugation: first
 derivative: uninhabitable
 diaudio: no
+six: y
 ---
 <div class="accordion caro-accordion" id="habito">
     <div class="accordion-item">

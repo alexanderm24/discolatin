@@ -1,8 +1,7 @@
 ---
 title: nōn
 meaning: not
-ch: two
+ch: [two, ss, ss1]
 pos: adverb
-ss: yes
-ss1: yes
+six: y
 ---

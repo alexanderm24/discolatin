@@ -7,4 +7,5 @@ inf: festināre
 secondppstem: festin
 infend: āre
 conjugation: first
+six: y
 ---

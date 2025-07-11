@@ -8,4 +8,5 @@ secondppstem: imped
 infend: īre
 conjugation: fourth
 derivative: impediment
+six: y
 ---

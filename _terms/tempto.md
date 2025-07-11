@@ -8,4 +8,5 @@ secondppstem: tempt
 infend: āre
 conjugation: first
 derivative: temptation
+six: y
 ---

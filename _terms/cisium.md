@@ -9,4 +9,5 @@ abbgender: n.
 abbgender2: neut.
 gender: neuter
 declension: second
+six: y
 ---

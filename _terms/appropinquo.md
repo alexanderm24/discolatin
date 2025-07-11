@@ -7,4 +7,5 @@ inf: appropinquāre
 secondppstem: appropinq
 infend: āre
 conjugation: first
+six: y
 ---

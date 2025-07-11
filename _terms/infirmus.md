@@ -6,4 +6,5 @@ femstem: infirm
 femend: a
 neutstem: infirm
 neutend: um
+six: y
 ---

@@ -7,4 +7,5 @@ femstem: incolum
 femend: is
 neutstem: incolum
 neutend: e
+six: y
 ---

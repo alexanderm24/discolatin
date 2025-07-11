@@ -9,4 +9,5 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivatives: urbane, suburb
+six: y
 ---

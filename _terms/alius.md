@@ -7,4 +7,5 @@ femstem: ali
 femend: a
 neutstem: ali
 neutend: ud
+six: y
 ---

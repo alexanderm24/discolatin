@@ -8,4 +8,5 @@ secondppstem: lacrim
 infend: āre
 conjugation: first
 derivative: lacrimose
+six: y
 ---

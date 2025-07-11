@@ -8,4 +8,5 @@ secondppstem: gaud
 infend: ēre
 conjugation: second
 sixms: G
+six: y
 ---

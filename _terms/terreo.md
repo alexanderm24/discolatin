@@ -8,4 +8,5 @@ secondppstem: terr
 infend: ēre
 conjugation: second
 derivative: terrify
+six: y
 ---

@@ -8,4 +8,5 @@ secondppstem: doc
 infend: ēre
 conjugation: second
 derivatives: docile, doctrine
+six: y
 ---

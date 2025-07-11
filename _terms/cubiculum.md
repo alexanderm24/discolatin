@@ -10,4 +10,5 @@ abbgender2: neut.
 gender: neuter
 declension: second
 derivative: cubicule
+six: y
 ---

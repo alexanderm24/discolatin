@@ -9,6 +9,7 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivatives: arboretum, arborist
+six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

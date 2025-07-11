@@ -9,4 +9,5 @@ abbgender2: masc./fem.
 gender: masculine/feminine
 declension: third
 derivative: hospitality
+six: y
 ---

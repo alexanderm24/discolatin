@@ -8,6 +8,7 @@ secondppstem: scrīb
 infend: ere
 conjugation: third
 derivatives: scribe, scribble, script
+six: y
 ---
 <div class="accordion caro-accordion" id="scribo">
     <div class="accordion-item">

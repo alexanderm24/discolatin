@@ -42,6 +42,7 @@ title: Glossary
 
 <ul class="list-group d-block mx-auto">
 {% for terms in site.terms %}
+{% if terms.sixth %}
 
 {% assign pos = terms.pos %}
 {% assign ch = terms.ch %}
@@ -189,7 +190,7 @@ title: Glossary
 </li>
 
 
-
+{% endif %}
 {% endfor %}
 
 </ul>

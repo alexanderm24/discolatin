@@ -6,4 +6,5 @@ femstem: un
 femend: a
 neutstem: un
 neutend: um
+six: y
 ---

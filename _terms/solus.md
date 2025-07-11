@@ -8,4 +8,5 @@ femend: a
 neutstem: sol
 neutend: um
 derivatives: solitude, solitary
+six: y
 ---

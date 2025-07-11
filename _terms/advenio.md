@@ -7,4 +7,5 @@ inf: advenīre
 secondppstem: adven
 infend: īre
 conjugation: fourth
+six: y
 ---

@@ -5,4 +5,5 @@ ch: seven
 pos: interjection
 derivative: valedictorian
 sixms: V
+six: y
 ---

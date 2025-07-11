@@ -6,6 +6,7 @@ pos: verb
 inf: ferre
 conjugation: irregular
 derivative: reference
+six: y
 ---
 <div class="accordion caro-accordion" id="fero">
     <div class="accordion-item">

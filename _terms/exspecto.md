@@ -7,4 +7,5 @@ inf: exspectāre
 secondppstem: exspect
 infend: āre
 conjugation: first
+six: y
 ---

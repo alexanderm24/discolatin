@@ -6,4 +6,5 @@ meaning: with me
 ch: nine
 pos: composite
 note: mecum combines mē + cum (with) into one word
+six: y
 ---

@@ -3,6 +3,7 @@ title: aestāte
 meaning: in the summer
 ch: one
 pos: adverb
+six: y
 ---
 <div class="accordion caro-accordion" id="aestate">
     <div class="accordion-item">

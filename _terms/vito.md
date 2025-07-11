@@ -8,4 +8,5 @@ secondppstem: vīt
 infend: āre
 conjugation: first
 derivative: inevitable
+six: y
 ---

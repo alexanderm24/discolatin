@@ -9,4 +9,5 @@ infend: āre
 conjugation: first
 derivative: elaborate
 sixms: L
+six: y
 ---

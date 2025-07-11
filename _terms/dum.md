@@ -4,6 +4,7 @@ meaning: while
 ch: [one, mt, mt1thru4, ss, ss3]
 pos: adverb
 haudio: ../assets/audio/dum-haudio.m4a
+six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

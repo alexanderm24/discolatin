@@ -2,9 +2,8 @@
 title: omnēs
 adjforms: omnia
 meaning: every, all
-ch: six
+ch: [six, ss, ss5]
 pos: altadjective
 disamb: (adjective)
-ss: yes
-ss5: yes
+six: y
 ---

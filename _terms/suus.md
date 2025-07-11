@@ -8,4 +8,5 @@ femend: a
 neutstem: su
 neutend: um
 allmeanings: yes
+six: y
 ---

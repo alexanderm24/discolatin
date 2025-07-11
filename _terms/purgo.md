@@ -7,4 +7,5 @@ inf: pūrgāre
 secondppstem: pūrg
 infend: āre
 conjugation: first
+six: y
 ---

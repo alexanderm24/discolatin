@@ -6,4 +6,5 @@ femstem: ips
 femend: a
 neutstem: ips
 neutend: ud
+six: y
 ---

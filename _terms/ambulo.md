@@ -8,4 +8,5 @@ secondppstem: ambul
 infend: āre
 conjugation: first
 derivatives: amble, ambulatory
+six: y
 ---

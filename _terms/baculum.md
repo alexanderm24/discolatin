@@ -10,4 +10,5 @@ abbgender2: neut.
 gender: neuter
 declension: second
 sixms: B
+six: y
 ---

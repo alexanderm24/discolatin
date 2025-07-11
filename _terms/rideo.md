@@ -8,4 +8,5 @@ secondppstem: rīd
 infend: ēre
 conjugation: second
 derivatives: derision, ridiculous
+six: y
 ---

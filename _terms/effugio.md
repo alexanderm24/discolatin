@@ -7,4 +7,5 @@ inf: effugere
 secondppstem: effug
 infend: ere
 conjugation: third
+six: y
 ---

@@ -6,4 +6,5 @@ inf: convocāre
 secondppstem: convoc
 infend: āre
 conjugation: first
+six: y
 ---

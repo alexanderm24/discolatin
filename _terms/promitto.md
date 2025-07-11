@@ -7,4 +7,5 @@ inf: prōmittere
 secondppstem: prōmitt
 infend: ere
 conjugation: third
+six: y
 ---

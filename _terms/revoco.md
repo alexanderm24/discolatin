@@ -8,4 +8,5 @@ secondppstem: revoc
 infend: āre
 conjugation: first
 derivative: irrevocable
+six: y
 ---

@@ -7,5 +7,6 @@ femstem: alter
 femend: a
 neutstem: alter
 neutend: um
+six: y
 ---
 {%- include notes-accordion/alter.html -%}

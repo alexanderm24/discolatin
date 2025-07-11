@@ -7,4 +7,5 @@ inf: timēre
 secondppstem: tim
 infend: ēre
 conjugation: second
+six: y
 ---

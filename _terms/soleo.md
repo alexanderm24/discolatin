@@ -7,4 +7,5 @@ inf: solēre
 secondppstem: sol
 infend: ēre
 conjugation: second
+six: y
 ---

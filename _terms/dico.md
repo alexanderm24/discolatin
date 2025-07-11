@@ -8,4 +8,5 @@ secondppstem: dīc
 infend: ere
 conjugation: third
 derivatives: dictator, contradiction
+six: y
 ---

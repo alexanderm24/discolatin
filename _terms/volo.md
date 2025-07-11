@@ -5,4 +5,5 @@ ch: [five, seventeen, f2, f, ss, ss2]
 pos: verb
 inf: velle
 conjugation: irregular
+six: y
 ---

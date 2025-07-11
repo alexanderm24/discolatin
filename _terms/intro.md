@@ -7,4 +7,5 @@ inf: intrāre
 secondppstem: intr
 infend: āre
 conjugation: first
+six: y
 ---

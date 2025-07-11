@@ -7,4 +7,5 @@ inf: appārēre
 secondppstem: appār
 infend: ēre
 conjugation: second
+six: y
 ---

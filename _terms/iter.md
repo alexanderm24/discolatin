@@ -9,4 +9,5 @@ abbgender2: neut.
 gender: neuter
 declension: third
 derivative: itinerary
+six: y
 ---

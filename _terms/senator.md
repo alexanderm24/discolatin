@@ -7,4 +7,5 @@ abbgender: n.
 abbgender2: meut.
 gender: neuter
 declension: third
+six: y
 ---

@@ -6,4 +6,5 @@ femstem: salv
 femend: a
 neutstem: salv
 neutend: um
+six: y
 ---

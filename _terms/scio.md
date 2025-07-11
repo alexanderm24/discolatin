@@ -8,4 +8,5 @@ secondppstem: sc
 infend: īre
 conjugation: fourth
 derivatives: science, omniscient, prescient
+six: y
 ---

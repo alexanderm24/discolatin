@@ -7,4 +7,5 @@ femstem: praeclār
 femend: a
 neutstem: praeclār
 neutend: um
+six: y
 ---

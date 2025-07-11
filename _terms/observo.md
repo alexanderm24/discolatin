@@ -9,4 +9,5 @@ infend: āre
 conjugation: first
 derivative: observatory
 sixms: O
+six: y
 ---

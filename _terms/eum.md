@@ -7,4 +7,5 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 note: accusative
+six: y
 ---

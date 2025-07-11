@@ -7,4 +7,5 @@ femstem: bon
 femend: a
 neutstem: bon
 neutend: um
+six: y
 ---

@@ -8,4 +8,5 @@ secondppstem: voc
 infend: āre
 conjugation: first
 derivatives: vocation, invoke
+six: y
 ---

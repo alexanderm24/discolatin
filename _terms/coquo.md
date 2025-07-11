@@ -7,4 +7,5 @@ inf: coquere
 secondppstem: coqu
 infend: ere
 conjugation: third
+six: y
 ---

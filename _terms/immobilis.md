@@ -7,4 +7,5 @@ femstem: immōbil
 femend: is
 neutstem: immōbil
 neutend: e
+six: y
 ---

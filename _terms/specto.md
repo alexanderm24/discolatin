@@ -8,4 +8,5 @@ secondppstem: spect
 infend: āre
 conjugation: first
 derivatives: specter, inspector
+six: y
 ---

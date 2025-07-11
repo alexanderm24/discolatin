@@ -7,4 +7,5 @@ inf: latrāre
 secondppstem: latr
 infend: āre
 conjugation: first
+six: y
 ---

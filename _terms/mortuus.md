@@ -8,4 +8,5 @@ femend: a
 neutstem: mortu
 neutend: um
 derivative: mortality
+six: y
 ---

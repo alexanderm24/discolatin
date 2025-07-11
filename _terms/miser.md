@@ -8,4 +8,5 @@ femend: a
 neutstem: miser
 neutend: um
 derivative: immiserate
+six: y
 ---

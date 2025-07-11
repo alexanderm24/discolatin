@@ -2,8 +2,7 @@
 title: tū
 meaning: you
 note: subject
-ch: four
+ch: [four, ss, ss1]
 pos: perspronoun
-ss: yes
-ss1: yes
+six: y
 ---

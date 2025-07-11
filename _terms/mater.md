@@ -1,7 +1,7 @@
 ---
 title: māter
 meaning: mother
-ch: six
+ch: [six, ss, ss2]
 pos: nounthird
 genitive: mātris
 abbgender: f.
@@ -9,6 +9,5 @@ abbgender2: fem.
 gender: feminine
 declension: third
 derivatives: matriarch, maternity
-ss: yes
-ss2: yes
+six: y
 ---

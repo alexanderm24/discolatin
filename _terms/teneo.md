@@ -6,7 +6,7 @@ pos: verb
 inf: tenēre
 secondppstem: ten
 infend: ēre
-infhyph: -ēre
 conjugation: second
 derivative: container
+six: y
 ---

@@ -6,4 +6,5 @@ pos: preposition
 disamb: (with accusative)
 di: (with accusative)
 allmeanings: yes
+six: y
 ---

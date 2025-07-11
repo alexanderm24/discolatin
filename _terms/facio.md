@@ -10,4 +10,5 @@ conjugation: third
 derivatives: manufacture, effect, confection
 allmeanings: yes
 sixms: F
+six: y
 ---

@@ -8,4 +8,5 @@ femend: a
 neutstem: tard
 neutend: um
 derivative: tardiness
+six: y
 ---

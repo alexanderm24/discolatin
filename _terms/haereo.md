@@ -8,4 +8,5 @@ secondppstem: haer
 infend: ēre
 conjugation: second
 derivative: adhesive
+six: y
 ---

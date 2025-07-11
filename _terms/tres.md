@@ -4,4 +4,5 @@ meaning: three
 pos: extotadjective
 femstem: trēs
 neutstem: tria
+six: y
 ---

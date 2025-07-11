@@ -7,4 +7,5 @@ femstem: long
 femend: a
 neutstem: long
 neutend: um
+six: y
 ---

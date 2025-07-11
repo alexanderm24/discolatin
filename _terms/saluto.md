@@ -8,4 +8,5 @@ secondppstem: salūt
 infend: āre
 conjugation: first
 derivatives: salutation, salutatorian
+six: y
 ---

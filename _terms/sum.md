@@ -5,6 +5,7 @@ ch: [one, two, seventeen]
 pos: verb
 inf: esse
 conjugation: irregular
+six: y
 ---
 <div class="accordion caro-accordion" id="sum">
   <div class="accordion-item">

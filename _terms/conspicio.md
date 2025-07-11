@@ -8,4 +8,5 @@ secondppstem: cōnspic
 infend: ere
 conjugation: third
 derivative: conspicuous
+six: y
 ---

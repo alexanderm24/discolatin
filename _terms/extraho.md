@@ -6,4 +6,5 @@ inf: extrahere
 secondppstem: extrah
 infend: ere
 conjugation: third
+six: y
 ---

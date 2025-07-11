@@ -8,4 +8,5 @@ femend: ae
 neutstem: mult
 neutend: a
 derivatives: multitude, multiply
+six: y
 ---

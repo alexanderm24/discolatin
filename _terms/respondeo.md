@@ -8,4 +8,5 @@ secondppstem: respond
 infend: ēre
 conjugation: second
 derivative: responsive
+six: y
 ---

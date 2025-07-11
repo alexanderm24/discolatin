@@ -7,6 +7,7 @@ ch: [one, five, nine, cumulative]
 pos: preposition
 disamb: (with ablative)
 di: (with ablative)
+six: y
 ---
 <div class="accordion caro-accordion" id="aestate">
     <div class="accordion-item">

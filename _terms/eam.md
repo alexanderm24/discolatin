@@ -8,4 +8,5 @@ abbgender2: fem.
 gender: feminine
 note: accusative
 sixms: E
+six: y
 ---

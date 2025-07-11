@@ -7,4 +7,5 @@ femstem: commōt
 femend: a
 neutstem: commōt
 neutend: um
+six: y
 ---

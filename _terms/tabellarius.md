@@ -10,4 +10,5 @@ abbgender2: masc.
 gender: masculine
 declension: second
 sixms: T
+six: y
 ---

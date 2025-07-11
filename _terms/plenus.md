@@ -8,4 +8,5 @@ femend: a
 neutstem: plēn
 neutend: um
 derivative: plenary
+six: y
 ---

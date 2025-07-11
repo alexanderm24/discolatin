@@ -8,4 +8,5 @@ femend: a
 neutstem: parāt
 neutend: um
 sixms: P
+six: y
 ---

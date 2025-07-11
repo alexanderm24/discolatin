@@ -8,4 +8,5 @@ secondppstem: st
 infend: āre
 conjugation: first
 derivative: station
+six: y
 ---

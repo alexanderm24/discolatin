@@ -7,4 +7,5 @@ femstem: cūnct
 femend: ae
 neutstem: cūnct
 neutend: a
+six: y
 ---

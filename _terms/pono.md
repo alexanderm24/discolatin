@@ -8,4 +8,5 @@ secondppstem: pōn
 infend: ere
 conjugation: third
 derivatives: position, component
+six: y
 ---

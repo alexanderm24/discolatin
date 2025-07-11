@@ -8,4 +8,5 @@ secondppstem: man
 infend: ēre
 conjugation: second
 derivative: mansion
+six: y
 ---

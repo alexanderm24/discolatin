@@ -1,9 +1,9 @@
 ---
 title: ecce
-nmtitle: ecce
 meaning: look!
 ch: one
 pos: interjection
+six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

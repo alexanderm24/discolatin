@@ -9,4 +9,5 @@ secondppstem: incit
 infend: āre
 conjugation: third
 derivative: incitement
+six: y
 ---

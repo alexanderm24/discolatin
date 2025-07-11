@@ -8,4 +8,5 @@ secondppstem: trād
 infend: ere
 conjugation: third
 derivatives: traitor, tradition
+six: y
 ---

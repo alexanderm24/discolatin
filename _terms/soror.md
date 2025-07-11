@@ -8,8 +8,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: third
-f1: yes
-f: yes
-ss: yes
-ss2: yes
+six: y
 ---

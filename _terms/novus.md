@@ -8,4 +8,5 @@ femend: a
 neutstem: nov
 neutend: um
 derivatives: novelty, novice
+six: y
 ---

@@ -1,7 +1,7 @@
 ---
 title: equus
 meaning: horse
-ch: ten
+ch: [ten, ss, ss4]
 pos: noun
 stem: equ
 genend: ī
@@ -10,6 +10,5 @@ abbgender2: masc.
 gender: masculine
 declension: second
 derivative: equestrian
-ss: yes
-ss4: yes
+six: y
 ---

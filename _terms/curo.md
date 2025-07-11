@@ -8,4 +8,5 @@ secondppstem: cūr
 infend: āre
 conjugation: first
 derivative: curator
+six: y
 ---

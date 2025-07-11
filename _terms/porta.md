@@ -10,4 +10,5 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: portal
+six: y
 ---

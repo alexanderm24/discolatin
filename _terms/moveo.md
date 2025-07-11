@@ -8,4 +8,5 @@ secondppstem: mov
 infend: ēre
 conjugation: second
 derivative: motion
+six: y
 ---

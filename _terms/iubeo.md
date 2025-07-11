@@ -7,4 +7,5 @@ inf: iubēre
 secondppstem: iub
 infend: ēre
 conjugation: second
+six: y
 ---

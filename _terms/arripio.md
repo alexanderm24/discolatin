@@ -7,4 +7,5 @@ inf: arripere
 secondppstem: arrip
 infend: ere
 conjugation: third
+six: y
 ---

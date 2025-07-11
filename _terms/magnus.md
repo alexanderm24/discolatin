@@ -9,4 +9,5 @@ neutstem: magn
 neutend: um
 derivative: magnanimous
 allmeanings: yes
+six: y
 ---

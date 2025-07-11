@@ -8,4 +8,5 @@ secondppstem: rog
 infend: āre
 conjugation: first
 derivative: interrogate
+six: y
 ---

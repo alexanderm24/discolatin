@@ -9,4 +9,5 @@ infend: ere
 conjugation: third
 derivatives: eject, projector
 sixms: I
+six: y
 ---

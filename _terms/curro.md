@@ -1,13 +1,12 @@
 ---
 title: currō
 meaning: to run
-ch: two
+ch: [two, ss, ss4]
 pos: verb
 inf: currere
 secondppstem: curr
 infend: ere
 conjugation: third
 derivatives: occur, current, course
-ss: yes
-ss4: yes
+six: y
 ---

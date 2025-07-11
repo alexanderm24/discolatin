@@ -8,4 +8,5 @@ secondppstem: vid
 infend: ēre
 conjugation: second
 derivatives: vision, evidence
+six: y
 ---

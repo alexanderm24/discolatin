@@ -7,4 +7,5 @@ inf: gerere
 secondppstem: ger
 infend: ere
 conjugation: third
+six: y
 ---

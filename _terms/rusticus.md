@@ -7,6 +7,7 @@ femstem: rūstic
 femend: a
 neutstem: rūstic
 neutend: um
+six: y
 ---
 <div class="accordion caro-accordion" id="aestate">
     <div class="accordion-item">

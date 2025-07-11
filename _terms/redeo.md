@@ -5,4 +5,5 @@ ch: seven
 pos: verb
 inf: redīre
 conjugation: irregular
+six: y
 ---

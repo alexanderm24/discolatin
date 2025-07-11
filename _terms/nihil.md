@@ -9,4 +9,5 @@ gender: (neuter)
 declension: indecl
 note: can be nominative or accusative
 derivatives: annihilate, nihilist
+six: y
 ---

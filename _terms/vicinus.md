@@ -8,4 +8,5 @@ femend: a
 neutstem: vīcīn
 neutend: um
 derivative: vicinity
+six: y
 ---

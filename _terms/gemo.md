@@ -7,4 +7,5 @@ inf: gemere
 secondppstem: gem
 infend: ere
 conjugation: third
+six: y
 ---

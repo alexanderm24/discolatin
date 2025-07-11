@@ -8,4 +8,5 @@ secondppstem: pet
 infend: ere
 conjugation: third
 derivatives: petition, appetite
+six: y
 ---

@@ -6,4 +6,5 @@ femstem: du
 femend: ae
 neutstem: du
 neutend: o
+six: y
 ---

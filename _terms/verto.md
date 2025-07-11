@@ -8,4 +8,5 @@ secondppstem: vert
 infend: ere
 conjugation: third
 derivatives: conversion, vertical, invert
+six: y
 ---

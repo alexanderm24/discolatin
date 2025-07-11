@@ -7,4 +7,5 @@ ch: [nine, sixteen]
 pos: preposition
 di: (takes ablative)
 sixms: D
+six: y
 ---

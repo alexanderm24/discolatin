@@ -8,4 +8,5 @@ secondppstem: aper
 infend: īre
 conjugation: fourth
 derivative: aperture
+six: y
 ---

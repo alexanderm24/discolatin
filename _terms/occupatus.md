@@ -6,4 +6,5 @@ femstem: occupat
 femend: a
 neutstem: occupat
 neutend: um
+six: y
 ---

@@ -4,4 +4,5 @@ meaning: through
 ch: six
 pos: preposition
 di: (takes accusative)
+six: y
 ---

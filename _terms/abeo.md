@@ -5,4 +5,5 @@ ch: nine
 pos: verb
 inf: abīre
 conjugation: irregular
+six: y
 ---

@@ -5,4 +5,5 @@ meaning: hurry up! come on!
 ch: eight
 pos: conjverb
 derivative: agitation
+six: y
 ---

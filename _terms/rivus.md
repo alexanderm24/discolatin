@@ -11,4 +11,5 @@ gender: masculine
 declension: second
 note: not river
 derivative: rivulet
+six: y
 ---

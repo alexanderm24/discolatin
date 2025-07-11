@@ -8,4 +8,5 @@ secondppstem: verber
 infend: āre
 conjugation: first
 derivative: reverberate
+six: y
 ---

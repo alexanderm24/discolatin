@@ -8,4 +8,5 @@ secondppstem: tac
 infend: ēre
 conjugation: second
 derivative: tact
+six: y
 ---

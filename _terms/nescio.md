@@ -7,4 +7,5 @@ inf: nescīre
 secondppstem: nesc
 infend: īre
 conjugation: fourth
+six: y
 ---

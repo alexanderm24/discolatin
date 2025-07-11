@@ -7,4 +7,5 @@ femstem: scelest
 femend: a
 neutstem: scelest
 neutend: um
+six: y
 ---

@@ -5,4 +5,5 @@ ch: six
 pos: phrase
 adjective: necesse
 verb: est
+six: y
 ---

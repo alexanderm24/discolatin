@@ -8,6 +8,7 @@ secondppstem: leg
 infend: ere
 conjugation: third
 derivatives: illegible, lecture
+six: y
 ---
 <div class="accordion caro-accordion" id="lego">
     <div class="accordion-item">

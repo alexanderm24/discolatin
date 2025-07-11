@@ -7,4 +7,5 @@ inf: discēdere
 secondppstem: discēd
 infend: ere
 conjugation: third
+six: y
 ---

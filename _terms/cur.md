@@ -3,6 +3,7 @@ title: cūr...?
 meaning: why...?
 ch: [one, mt, mt1thru4, ss, ss3]
 pos: adverb
+six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

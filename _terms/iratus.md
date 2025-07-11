@@ -8,4 +8,5 @@ femend: a
 neutstem: īrāt
 neutend: um
 derivative: irate
+six: y
 ---

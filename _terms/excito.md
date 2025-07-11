@@ -8,4 +8,5 @@ secondppstem: excit
 infend: āre
 conjugation: first
 derivative: excitatory
+six: y
 ---

@@ -7,4 +7,5 @@ inf: induere
 secondppstem: indu
 infend: ere
 conjugation: third
+six: y
 ---

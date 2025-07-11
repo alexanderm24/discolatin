@@ -9,4 +9,5 @@ diaudio: ../assets/audio/ab_a-diaudio.mp3
 eaudio: ../assets/audio/ab_a-eaudio.mp3
 faudio:
 sixms: A
+six: y
 ---

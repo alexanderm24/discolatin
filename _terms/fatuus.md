@@ -8,4 +8,5 @@ femend: a
 neutstem: fatu
 neutend: um
 derivative: fatuous
+six: y
 ---

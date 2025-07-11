@@ -9,4 +9,5 @@ abbgender2: masc.
 gender: masculine
 declension: third
 derivative: principality
+six: y
 ---

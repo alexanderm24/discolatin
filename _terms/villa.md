@@ -9,4 +9,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: first
+six: y
 ---

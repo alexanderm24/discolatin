@@ -1,0 +1,53 @@
+
+    <!--Front-->
+    <div class="card__face-bg card__face--front-bg {{ pos }} la-text">
+        <div class="card--top--front-bg d-flex justify-content-between">
+        <div class="leftcorner-bg d-flex justify-content-center">
+          {%- include btns/sparkle-btn.html -%}
+        </div>
+        <div class="rightcorner-bg d-flex justify-content-center">
+          {%- include btns/la-btn.html -%}
+        </div>
+      </div>
+      <!--Change term-bg class?-->
+      <div class="term-bg"><div>{%- include card-bg/card-front-dif-bg7.html -%}</div></div>
+      </div>
+  
+      <!--Back-->
+      <div class="card__face-bg card__face--back-bg">
+        <div class="card--top--back-bg">
+          <div class="rightcorner-bg">
+              {%- include btns/e-btn.html -%}
+          </div>
+        </div>
+  
+        <div class="def-only-bg">
+          <div>{{ terms.meaning }}{% if terms.2meaningch contains page.ch %}, {{ terms.2meaning }} {% endif %}</div>
+        </div>
+  
+        <!--Note-->
+        {% assign note = terms.note %}
+          {% if note %}
+        <div class="def-note-bg">
+          note: {{ terms.note }}
+        </div>
+        {% endif %}
+  
+      
+       
+      <!--Derivative-->
+      {% assign derivative = terms.derivative %}
+      {% assign derivatives = terms.derivatives %}
+      {% if derivative %}
+      <div class="derivative-bg">derivative: {{ terms.derivative }}</div>
+      {% endif %}
+      {% if derivatives %}
+      <div class="derivative-bg">derivatives: {{ terms.derivatives }}</div>
+      {% endif %}
+      </div>
+  
+  
+  
+  
+  
+  

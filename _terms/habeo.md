@@ -8,4 +8,5 @@ secondppstem: hab
 infend: ēre
 conjugation: second
 sixms: H
+six: y
 ---

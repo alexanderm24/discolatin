@@ -8,4 +8,5 @@ secondppstem: surg
 infend: ere
 conjugation: third
 derivatives: insurgency, resurrection
+six: y
 ---

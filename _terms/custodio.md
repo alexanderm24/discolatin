@@ -8,4 +8,5 @@ secondppstem: custōd
 infend: īre
 conjugation: fourth
 derivative: custody
+six: y
 ---

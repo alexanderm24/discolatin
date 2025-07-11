@@ -1,7 +1,7 @@
 ---
 title: servus
 meaning: slave
-ch: three
+ch: [three, ss, ss5]
 pos: noun
 stem: serv
 genend: ī
@@ -10,6 +10,5 @@ abbgender2: masc.
 gender: masculine
 declension: second
 derivatives: servitude, servile
-ss: yes
-ss5: yes
+six: y
 ---

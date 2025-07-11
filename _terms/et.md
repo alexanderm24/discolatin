@@ -1,10 +1,9 @@
 ---
 title: et
 meaning: and
-ch: one
+ch: [one, ss, ss1]
 pos: conjunction
-ss: yes
-ss1: yes
+six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
     <div class="accordion-item">

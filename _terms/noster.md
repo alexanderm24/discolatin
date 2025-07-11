@@ -7,4 +7,5 @@ femstem: nostr
 femend: a
 neutstem: nostr
 neutend: um
+six: y
 ---

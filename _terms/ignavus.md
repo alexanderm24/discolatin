@@ -7,4 +7,5 @@ femstem: ignāv
 femend: a
 neutstem: ignāv
 neutend: um
+six: y
 ---

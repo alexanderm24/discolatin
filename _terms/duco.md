@@ -8,4 +8,5 @@ secondppstem: dūc
 infend: ere
 conjugation: third
 derivatives: productive, conducive, conductor, induce
+six: y
 ---

@@ -6,4 +6,5 @@ inf: concidere
 secondppstem: concid
 infend: ere
 conjugation: third
+six: y
 ---

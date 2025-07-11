@@ -8,4 +8,5 @@ secondppstem: dorm
 infend: īre
 conjugation: fourth
 derivatives: dormant, dormitory
+six: y
 ---

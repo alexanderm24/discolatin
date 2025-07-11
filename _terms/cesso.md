@@ -7,4 +7,5 @@ inf: cessāre
 secondppstem: cess
 infend: āre
 conjugation: first
+six: y
 ---

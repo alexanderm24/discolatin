@@ -6,4 +6,5 @@ inf: dēvertere
 secondppstem: dēvert
 infend: ere
 conjugation: third
+six: y
 ---

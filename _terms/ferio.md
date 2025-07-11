@@ -7,6 +7,7 @@ inf: ferīre
 secondppstem: fer
 infend: īre
 conjugation: fourth
+six: y
 ---
 <div class="accordion caro-accordion" id="ferio">
     <div class="accordion-item">

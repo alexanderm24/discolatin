@@ -8,4 +8,5 @@ secondppstem: port
 infend: āre
 conjugation: first
 derivatives: teleportation, comportment
+six: y
 ---

@@ -1,8 +1,7 @@
 ---
 title: quod
 meaning: because
-ch: two
+ch: [two, ss, ss1]
 pos: conjunction
-ss: yes
-ss1: yes
+six: y
 ---

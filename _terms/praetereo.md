@@ -6,4 +6,5 @@ pos: verb
 inf: praeterīre
 secondppstem: praeterīre
 conjugation: irregular
+six: y
 ---

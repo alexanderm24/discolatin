@@ -7,4 +7,5 @@ femstem: dēfess
 femend: a
 neutstem: dēfess
 neutend: um
+six: y
 ---

@@ -7,4 +7,5 @@ inf: pernoctāre
 secondppstem: pernoct
 infend: āre
 conjugation: first
+six: y
 ---

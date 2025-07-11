@@ -8,4 +8,5 @@ secondppstem: sed
 infend: ēre
 conjugation: second
 derivatives: sedentary, session, sessile
+six: y
 ---
