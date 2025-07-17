@@ -3,6 +3,8 @@ title: aestāte
 meaning: in the summer
 ch: one
 pos: adverb
+haudio: ../assets/audio/aestate-haudio.mp3
+laudio: ../assets/audio/aestate-haudio.mp3
 six: y
 ---
 <div class="accordion caro-accordion" id="aestate">

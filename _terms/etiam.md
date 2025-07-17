@@ -5,6 +5,9 @@ meaning: also
 ch: [one, two, six, mt, mt1thru4, ss, ss3, cumulative]
 2meaningch: [six, cumulative]
 pos: adverb
+haudio: ../assets/audio/etiam-haudio.mp3
+laudio: ../assets/audio/etiam-haudio.mp3
+eaudio: ../assets/audio/etiam-eaudio.mp3
 six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">
