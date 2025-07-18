@@ -1,7 +1,7 @@
 ---
 title: pēs
 meaning: foot
-ch: [thirteen, f2, f]
+ch: [thirteen, f2, f, body]
 pos: nounthird
 genitive: pedis
 abbgender: m.

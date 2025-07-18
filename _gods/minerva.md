@@ -1,6 +1,7 @@
 ---
 title: Minerva
 gen: Minervae
+pos: noun
 gender: f.
 over: Olympian goddess of wisdom and good counsel, war, the defence of towns, heroic endeavour, weaving, pottery and various other crafts.
 romanang: Minerva

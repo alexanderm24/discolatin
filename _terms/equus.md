@@ -1,7 +1,7 @@
 ---
 title: equus
 meaning: horse
-ch: [ten, ss, ss4]
+ch: [ten, ss, ss4, animalia]
 pos: noun
 stem: equ
 genend: ī

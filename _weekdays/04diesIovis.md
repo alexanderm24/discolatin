@@ -1,6 +1,6 @@
 ---
 title: diēs Iovis
-litmeaning: Day of Jove (Jupiter)
+litmeaning: Day of Jupiter
 meaning: Thursday
 order: 4
 ---

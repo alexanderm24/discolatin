@@ -1,4 +1,5 @@
 ---
-layout: body
+layout: chlist
 title: Body
+ch: body
 ---

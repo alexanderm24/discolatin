@@ -1,7 +1,7 @@
 ---
 title: pater
 meaning: father
-ch: [six, f1, f, ss, ss2]
+ch: [six, f1, f, ss, ss2, familia]
 pos: nounthird
 genitive: patris
 abbgender: m.

@@ -1,7 +1,7 @@
 ---
 title: lupus
 meaning: wolf
-ch: five
+ch: [five, animalia]
 pos: noun
 stem: lup
 genend: ī

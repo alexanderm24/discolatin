@@ -57,6 +57,7 @@ body {
   margin-top: 10rem;
   margin-left: auto;
   margin-right: auto; 
+  background-color: black;
 }
 
 .doi {
@@ -610,19 +611,6 @@ justify-content: center;
   }
 
 
-.def-split1 {
-font-size: 35px;
-width: 100%;
-height: 50%; 
-}
-
-.def-split2 {
-font-size: 25px;
-width: 100%;
-height: 50%; 
-line-height: 100px;
-}
-
 .def-spliteven1 {
   font-size: 35px;
   width: 100%;
@@ -960,3 +948,18 @@ html {
   scroll-padding-top: 5rem;
 }
 
+
+.def-split1 {
+  font-size: 35px;
+  width: 100%;
+  height: 50%;
+  padding-top: 7rem;
+  }
+  
+  .def-split2 {
+  font-size: 25px;
+  width: 100%;
+  height: 50%; 
+  line-height: 100px;
+  }
+  

@@ -2,7 +2,7 @@
 title: patruus
 meaning: uncle
 pos: noun
-ch: [ss, ss5]
+ch: [ss, ss5, familia]
 stem: patru
 genend: ī
 abbgender: m.

@@ -2,7 +2,7 @@
 title: filia
 meaning: daughter
 pos: noun
-ch: [f, f1]
+ch: [f, f1, familia]
 stem: fili
 genend: ae
 abbgender: f.
