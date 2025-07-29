@@ -1,0 +1,128 @@
+<!--verbs 1,3,4-->
+{% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+{{ terms.title }}
+{% endif %}
+
+<!--2nd conj-->
+{% if pos == "verb" and conj == "second" %}
+{{ terms.title }}
+{% endif %}
+
+<!--irregular conj-->
+{% if pos == "verb" and conj == "irregular" %}
+{{ terms.title }}
+{% endif %}
+
+<!--verbs (conjugated)-->
+{% if pos == "conjverb" %}
+{{ terms.title }}
+{% endif %}
+
+<!--nouns 1&2-->
+{% if pos == "noun" %}
+{{ terms.title }}
+{% endif %}
+
+<!--exnounsecond (2nd decl. stem exceptions)-->
+{% if pos == "exnounsecond" %}
+{{ terms.title }}
+{% endif %}
+
+<!--nouns 3-->
+{% if pos == "nounthird" %}
+{{ terms.title }}
+{% endif %}
+
+<!--nouns 5-->
+{% if pos == "nounfifth" %}
+{{ terms.title }}
+{% endif %}
+
+<!--nouns indecl-->
+{% if pos == "nouni" %}
+{{ terms.title }}
+<div class="disamb-note-bg">{{ terms.disamb }}</div>
+{% endif %}
+
+<!--pronouns-->
+{% if pos == "pronoun" %}
+{{ terms.title}}
+{% endif %}
+
+<!--personal pronouns-->
+{% if pos == "perspronoun" %}
+{{ terms.title}}
+{% endif %}
+
+<!--pronoun third (with gender)-->
+{% if pos == "pronounthird" %}
+{{ terms.title }}
+<div class="disamb-note-bg">{{ terms.disamb }}</div>
+{% endif %}
+
+<!--tot pronouns (ille, illa, illud, etc)-->
+{% if pos == "totpronoun" %}
+{{ terms.title }}
+{% endif %}
+
+<!--adjectives 212-->
+{% if pos == "totadjective" %}
+{{ terms.title }}
+{% endif %}
+
+<!--adjectives 212: noster ... maybe alter & miser?-->
+{% if pos == "extotadjective" %}
+{{ terms.title }}
+{% endif %}
+
+<!--indeclinable adjectives (numbers)-->
+{% if pos == "iadj" %}
+{{ terms.title }}
+{% endif %}
+
+<!--3rd adjectives-->
+{% if pos == "thirdadjective" %}
+{{ terms.title }}
+{% endif %}
+
+<!--adjectives (alt)-->
+{% if pos == "altadjective" %}
+{{ terms.title }}
+<div class="disamb-note-bg">{{ terms.disamb }}</div>
+{% endif %}
+
+<!--adverbs-->
+{% if pos == "adverb" %}
+{{ terms.title }}
+{% endif %}
+
+<!--conjunctions-->
+{% if pos == "conjunction" %}
+{{ terms.title }}
+{% endif %}
+
+<!--interjections-->
+{% if pos == "interjection" %}
+{{ terms.title }}
+{% endif %}
+
+<!--prepositions-->
+{% if pos == "preposition" %}
+{{ terms.title }}
+<div class="disamb-note-bg">{{ terms.disamb }}</div>
+{% endif %}
+
+<!--composite-->
+{% if pos == "composite" %}
+<span class="noun la-text">{{ terms.noun }}</span><span class="prep la-text">{{ terms.prep }}</span>
+{% endif %}
+
+<!--prepphrase-->
+{% if pos == "prepphrase" %}
+<span class="prep la-text">{{ prepphrase.preposition }}</span> <span class="noun la-text">{{ prepphrase.noun }}</span>&#8205;<span class="essm">{{ prepphrase.ablend }}</span>
+{% endif %}
+
+<!--other phrases-->
+{% if pos == "phrase" %}
+<span class="adj la-text">{{ terms.adjective }}<span class="essm">{{ terms.ablend }}</span></span> <span class="verb la-text">{{ terms.verb }}</span> <span class="noun la-text">{{ terms.noun }}</span> <span class="noun la-text">{{ terms.noun1 }}</span> <span class="verb la-text">{{ terms.verb2 }}</span>
+{% endif %}
