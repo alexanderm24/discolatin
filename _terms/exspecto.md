@@ -6,6 +6,8 @@ pos: verb
 inf: exspectāre
 secondppstem: exspect
 infend: āre
+thirdpp: exspectāvī
+fourthpp: exspectātus
 conjugation: first
 six: y
 ---

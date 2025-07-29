@@ -6,6 +6,8 @@ pos: verb
 inf: docēre
 secondppstem: doc
 infend: ēre
+thirdpp: docuī
+fourthpp: doctus
 conjugation: second
 derivatives: docile, doctrine
 six: y

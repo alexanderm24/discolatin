@@ -7,6 +7,8 @@ pos: verb
 inf: incitāre
 secondppstem: incit
 infend: āre
+thirdpp: incitāvī
+fourthpp: incitātus
 conjugation: third
 derivative: incitement
 six: y

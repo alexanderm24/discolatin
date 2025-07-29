@@ -6,6 +6,8 @@ pos: verb
 inf: petere
 secondppstem: pet
 infend: ere
+thirdpp: petīvī
+fourthpp: petītus
 conjugation: third
 derivatives: petition, appetite
 six: y

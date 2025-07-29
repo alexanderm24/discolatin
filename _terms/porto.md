@@ -6,6 +6,8 @@ pos: verb
 inf: portāre
 secondppstem: port
 infend: āre
+thirdpp: portāvī
+fourthpp: portātus
 conjugation: first
 derivatives: teleportation, comportment
 six: y

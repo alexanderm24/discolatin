@@ -6,6 +6,8 @@ pos: verb
 inf: dūcere
 secondppstem: dūc
 infend: ere
+thirdpp: dūxī
+fourthpp: ductus
 conjugation: third
 derivatives: productive, conducive, conductor, induce
 six: y

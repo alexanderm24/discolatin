@@ -6,6 +6,8 @@ pos: verb
 inf: ludere
 secondppstem: lud
 infend: ere
+thirdpp: lūsī
+fourthpp: lūsūrus
 conjugation: third
 derivative: ludicrous
 six: y

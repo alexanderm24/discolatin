@@ -6,6 +6,8 @@ pos: verb
 inf: prōmittere
 secondppstem: prōmitt
 infend: ere
+thirdpp: prōmīsī
+fourthpp: prōmissus
 conjugation: third
 six: y
 ---

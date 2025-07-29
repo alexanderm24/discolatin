@@ -4,6 +4,8 @@ meaning: to be
 ch: [one, two, seventeen]
 pos: verb
 inf: esse
+thirdpp: fuī
+fourthpp: futūrus
 conjugation: irregular
 six: y
 ---

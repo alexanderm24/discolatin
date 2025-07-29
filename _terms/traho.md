@@ -6,6 +6,8 @@ pos: verb
 inf: trahere
 secondppstem: trah
 infend: ere
+thirdpp: trāxī
+fourthpp: tractus
 conjugation: third
 derivative: protracted
 six: y

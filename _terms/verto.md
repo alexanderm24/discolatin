@@ -6,6 +6,8 @@ pos: verb
 inf: vertere
 secondppstem: vert
 infend: ere
+thirdpp: vertī
+fourthpp: versus
 conjugation: third
 derivatives: conversion, vertical, invert
 six: y

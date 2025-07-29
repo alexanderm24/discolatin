@@ -6,6 +6,8 @@ pos: verb
 inf: manēre
 secondppstem: man
 infend: ēre
+thirdpp: mānsī
+fourthpp: mānsus
 conjugation: second
 derivative: mansion
 six: y

@@ -6,6 +6,8 @@ pos: verb
 inf: gerere
 secondppstem: ger
 infend: ere
+thirdpp: gessī
+fourthpp: gestus
 conjugation: third
 six: y
 ---

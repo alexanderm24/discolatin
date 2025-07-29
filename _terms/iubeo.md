@@ -6,6 +6,8 @@ pos: verb
 inf: iubēre
 secondppstem: iub
 infend: ēre
+thirdpp: iūssī
+fourthpp: iūssus
 conjugation: second
 six: y
 ---

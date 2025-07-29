@@ -1,11 +1,13 @@
 ---
-title: latrō
+title: lātrō
 meaning: to bark
 ch: twelve
 pos: verb
-inf: latrāre
-secondppstem: latr
+inf: lātrāre
+secondppstem: lātr
 infend: āre
+thirdpp: lātrāvī
+fourthpp: lātrātūrus
 conjugation: first
 six: y
 ---

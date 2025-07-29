@@ -7,5 +7,6 @@ inf: solēre
 secondppstem: sol
 infend: ēre
 conjugation: second
+note: takes infinitive
 six: y
 ---

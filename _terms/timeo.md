@@ -6,6 +6,7 @@ pos: verb
 inf: timēre
 secondppstem: tim
 infend: ēre
+thirdpp: timuī
 conjugation: second
 six: y
 ---

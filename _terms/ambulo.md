@@ -6,6 +6,8 @@ pos: verb
 inf: ambulāre
 secondppstem: ambul
 infend: āre
+thirdpp: ambulāvī
+fourthpp: ambulatus
 conjugation: first
 derivatives: amble, ambulatory
 six: y

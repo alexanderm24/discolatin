@@ -781,12 +781,12 @@ z-index: 10000;
   padding: 0;
   width: 400px;
   left: calc(50% - 200px);
-  top: 645px;
+  top: 690px;
 }
 
 @media only screen and (max-width:600px) {
   .carousel-control {
-    top: 500px
+    top: 540px
   }
 }
 
@@ -961,5 +961,9 @@ html {
   width: 100%;
   height: 50%; 
   line-height: 100px;
+  }
+
+  .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before {
+    color: darkgrey;
   }
   

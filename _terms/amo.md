@@ -6,6 +6,8 @@ pos: verb
 inf: amāre
 secondppstem: am
 infend: āre
+thirdpp: amāvī
+fourthpp: amātus
 conjugation: first
 six: y
 ---

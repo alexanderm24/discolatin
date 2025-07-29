@@ -6,6 +6,8 @@ pos: verb
 inf: relinquere
 secondppstem: relinqu
 infend: ere
+thirdpp: relīquī
+fourthpp: relictus
 conjugation: third
 derivative: relinquish
 six: y

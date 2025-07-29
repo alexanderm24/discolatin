@@ -6,6 +6,8 @@ pos: verb
 inf: legere
 secondppstem: leg
 infend: ere
+thirdpp: lēgī
+fourthpp: lēctus
 conjugation: third
 derivatives: illegible, lecture
 six: y

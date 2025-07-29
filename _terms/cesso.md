@@ -6,6 +6,8 @@ pos: verb
 inf: cessāre
 secondppstem: cess
 infend: āre
+thirdpp: cessāvī
+fourthpp: cessātūrus
 conjugation: first
 six: y
 ---

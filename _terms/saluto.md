@@ -6,6 +6,8 @@ pos: verb
 inf: salūtāre
 secondppstem: salūt
 infend: āre
+thirdpp: salūtāvī
+fourthpp: salūtātus
 conjugation: first
 derivatives: salutation, salutatorian
 six: y

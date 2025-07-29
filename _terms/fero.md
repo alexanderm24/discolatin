@@ -4,6 +4,8 @@ meaning: to bring
 ch: [ten, twelve, seventeen, f1, f]
 pos: verb
 inf: ferre
+thirdpp: tulī
+fourthpp: lātus
 conjugation: irregular
 derivative: reference
 six: y

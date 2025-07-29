@@ -6,6 +6,8 @@ pos: verb
 inf: celāre
 secondppstem: cēl
 infend: āre
+thirdpp: celāvī
+fourthpp: celātus
 conjugation: first
 derivative: conceal
 f1: yes

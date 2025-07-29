@@ -6,6 +6,8 @@ pos: verb
 inf: dīcere
 secondppstem: dīc
 infend: ere
+thirdpp: dīxī
+fourthpp: dictus
 conjugation: third
 derivatives: dictator, contradiction
 six: y

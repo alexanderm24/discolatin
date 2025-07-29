@@ -6,6 +6,8 @@ pos: verb
 inf: pōnere
 secondppstem: pōn
 infend: ere
+thirdpp: posuī
+fourthpp: positus
 conjugation: third
 derivatives: position, component
 six: y

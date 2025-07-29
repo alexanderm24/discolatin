@@ -6,6 +6,8 @@ pos: verb
 inf: vocāre
 secondppstem: voc
 infend: āre
+thirdpp: vocāvī
+fourthpp: vocātus
 conjugation: first
 derivatives: vocation, invoke
 six: y

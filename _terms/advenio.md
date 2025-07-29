@@ -6,6 +6,8 @@ pos: verb
 inf: advenīre
 secondppstem: adven
 infend: īre
+thirdpp: advenī
+fourthpp: adventus
 conjugation: fourth
 six: y
 ---

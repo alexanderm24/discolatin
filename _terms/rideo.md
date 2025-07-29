@@ -6,6 +6,8 @@ pos: verb
 inf: rīdēre
 secondppstem: rīd
 infend: ēre
+thirdpp: rīsī
+fourthpp: rīsus
 conjugation: second
 derivatives: derision, ridiculous
 six: y

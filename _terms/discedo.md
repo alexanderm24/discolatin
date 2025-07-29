@@ -6,6 +6,8 @@ pos: verb
 inf: discēdere
 secondppstem: discēd
 infend: ere
+thirdpp: discessī
+fourthpp: discessūrus
 conjugation: third
 six: y
 ---

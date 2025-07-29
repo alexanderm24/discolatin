@@ -6,6 +6,8 @@ pos: verb
 inf: sedēre
 secondppstem: sed
 infend: ēre
+thirdpp: sēdī
+fourthpp: sessūrus
 conjugation: second
 derivatives: sedentary, session, sessile
 six: y

@@ -6,6 +6,8 @@ pos: verb
 inf: induere
 secondppstem: indu
 infend: ere
+thirdpp: induī
+fourthpp: indūtus
 conjugation: third
 six: y
 ---

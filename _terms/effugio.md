@@ -6,6 +6,7 @@ pos: verb
 inf: effugere
 secondppstem: effug
 infend: ere
+thirdpp: effūgī
 conjugation: third
 six: y
 ---

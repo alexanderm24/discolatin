@@ -6,6 +6,8 @@ pos: verb
 inf: cūrāre
 secondppstem: cūr
 infend: āre
+thirdpp: cūrāvī
+fourthpp: cūrātus
 conjugation: first
 derivative: curator
 six: y

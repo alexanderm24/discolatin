@@ -6,6 +6,8 @@ pos: verb
 inf: mittere
 secondppstem: mitt
 infend: ere
+thirdpp: mīsī
+fourthpp: missus
 conjugation: third
 derivative: mission
 six: y

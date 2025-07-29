@@ -6,6 +6,8 @@ pos: verb
 inf: cadere
 secondppstem: cad
 infend: ere
+thirdpp: cecidī
+fourthpp: cāsūrus
 conjugation: third
 derivatives: decadent, cadence, cascade
 sixms: C

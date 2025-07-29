@@ -5,6 +5,8 @@ pos: verb
 inf: dēvertere
 secondppstem: dēvert
 infend: ere
+thirdpp: dēvertī
+fourthpp: dēversus
 conjugation: third
 six: y
 ---

@@ -6,6 +6,8 @@ pos: verb
 inf: vidēre
 secondppstem: vid
 infend: ēre
+thirdpp: vīdī
+fourthpp: vīsus
 conjugation: second
 derivatives: vision, evidence
 six: y

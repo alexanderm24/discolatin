@@ -6,6 +6,8 @@ pos: verb
 inf: observāre
 secondppstem: observ
 infend: āre
+thirdpp: observāvī
+fourthpp: observātus
 conjugation: first
 derivative: observatory
 sixms: O

@@ -6,6 +6,8 @@ pos: verb
 inf: tenēre
 secondppstem: ten
 infend: ēre
+thirdpp: tenuī
+fourthpp: tentus
 conjugation: second
 derivative: container
 six: y

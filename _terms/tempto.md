@@ -6,6 +6,8 @@ pos: verb
 inf: temptāre
 secondppstem: tempt
 infend: āre
+thirdpp: temptāvī
+fourthpp: temptātus
 conjugation: first
 derivative: temptation
 six: y

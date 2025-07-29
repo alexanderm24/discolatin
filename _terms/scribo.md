@@ -6,6 +6,8 @@ pos: verb
 inf: scrībere
 secondppstem: scrīb
 infend: ere
+thirdpp: scrīpsī
+fourthpp: scrīptus
 conjugation: third
 derivatives: scribe, scribble, script
 six: y

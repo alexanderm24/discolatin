@@ -6,6 +6,8 @@ pos: verb
 inf: venīre
 secondppstem: ven
 infend: īre
+thirdpp: vēnī
+fourthpp: ventūrus
 conjugation: third
 derivatives: intervention, convenient
 six: y

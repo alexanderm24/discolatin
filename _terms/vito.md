@@ -6,6 +6,8 @@ pos: verb
 inf: vītāre
 secondppstem: vīt
 infend: āre
+thirdpp: vītāvī
+fourthpp: vītātus
 conjugation: first
 derivative: inevitable
 six: y

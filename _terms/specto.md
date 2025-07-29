@@ -6,6 +6,8 @@ pos: verb
 inf: spectāre
 secondppstem: spect
 infend: āre
+thirdpp: spectāvī
+fourthpp: spectātus
 conjugation: first
 derivatives: specter, inspector
 six: y

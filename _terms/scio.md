@@ -6,6 +6,8 @@ pos: verb
 inf: scīre
 secondppstem: sc
 infend: īre
+thirdpp: scīvī
+fourthpp: scītus
 conjugation: fourth
 derivatives: science, omniscient, prescient
 six: y

@@ -6,6 +6,8 @@ pos: verb
 inf: facere
 secondppstem: fac
 infend: ere
+thirdpp: fēcī
+fourthpp: factus
 conjugation: third
 derivatives: manufacture, effect, confection
 allmeanings: yes
