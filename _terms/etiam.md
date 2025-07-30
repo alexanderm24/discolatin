@@ -2,8 +2,8 @@
 title: etiam
 meaning: also
 2meaning: even
-ch: [one, two, six, mt, mt1thru4, ss, ss3, cumulative]
-2meaningch: [six, cumulative]
+ch: [one, two, six, mt, mt1thru4, ss, ss3, cumulative, 7r]
+2meaningch: [six, cumulative, 7r]
 pos: adverb
 haudio: ../assets/audio/etiam-haudio.mp3
 laudio: ../assets/audio/etiam-haudio.mp3

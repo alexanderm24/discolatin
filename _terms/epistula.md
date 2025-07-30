@@ -1,7 +1,7 @@
 ---
 title: epistula
 meaning: letter
-ch: seven
+ch: [seven, 7r]
 pos: noun
 stem: epistul
 genend: ae

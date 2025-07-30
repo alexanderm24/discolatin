@@ -1,7 +1,7 @@
 ---
 title: exspectō
 meaning: to wait for
-ch: fifteen
+ch: [fifteen, 7r]
 pos: verb
 inf: exspectāre
 secondppstem: exspect

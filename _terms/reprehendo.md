@@ -1,7 +1,7 @@
 ---
 title: reprehendō
 meaning: to scold
-ch: six
+ch: [six, 7r]
 pos: verb
 inf: reprehendere
 secondppstem: reprehend

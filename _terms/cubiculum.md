@@ -1,7 +1,7 @@
 ---
 title: cubiculum
 meaning: bedroom
-ch: eight
+ch: [eight, 7r]
 pos: noun
 stem: cubicul
 genend: ī

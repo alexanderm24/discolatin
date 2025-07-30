@@ -1,7 +1,7 @@
 ---
 title: animus
 meaning: mind
-ch: [sixteen, f3, f]
+ch: [sixteen, f3, f, 7r]
 pos: noun
 stem: anim
 genend: ī

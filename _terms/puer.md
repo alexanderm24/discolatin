@@ -1,7 +1,7 @@
 ---
 title: puer
 meaning: boy
-ch: [three, ss, ss4]
+ch: [three, ss, ss4, 7r]
 pos: noun
 stem: puer
 genend: ī

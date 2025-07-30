@@ -1,7 +1,7 @@
 ---
 title: dominus
 meaning: master
-ch: [eleven, f1, f, ss, ss5]
+ch: [eleven, f1, f, ss, ss5, 7r]
 pos: noun
 stem: domin
 genend: ī

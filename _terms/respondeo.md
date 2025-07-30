@@ -1,7 +1,7 @@
 ---
 title: respondeō
 meaning: to reply
-ch: five
+ch: [five, 7r]
 pos: verb
 inf: respondēre
 secondppstem: respond

@@ -1,7 +1,7 @@
 ---
 title: portō
 meaning: to carry
-ch: [six, mt, mt5thru7, ss, ss3]
+ch: [six, mt, mt5thru7, ss, ss3, 7r]
 pos: verb
 inf: portāre
 secondppstem: port

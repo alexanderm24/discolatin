@@ -1,7 +1,7 @@
 ---
 title: amīca
 meaning: friend
-ch: two
+ch: [two, 7r]
 pos: noun
 stem: amīc
 genend: ae

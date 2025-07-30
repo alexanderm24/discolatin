@@ -1,7 +1,7 @@
 ---
 title: puella
 meaning: girl
-ch: one
+ch: [one, 7r]
 pos: noun
 stem: puell
 genend: ae

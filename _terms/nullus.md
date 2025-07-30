@@ -1,7 +1,7 @@
 ---
 title: nūllus
 meaning: "no, not any"
-ch: [nine, mt, mt8thru9]
+ch: [nine, mt, mt8thru9, 7r]
 pos: totadjective
 femstem: "nūll"
 femend: a

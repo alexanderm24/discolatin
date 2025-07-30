@@ -1,6 +1,7 @@
 ---
 title: senātor
 meaning: senator
+ch: [7r]
 pos: nounthird
 genitive: senātōris
 abbgender: n.

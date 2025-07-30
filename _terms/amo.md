@@ -1,7 +1,7 @@
 ---
 title: amō
 meaning: to love/like
-ch: [four, mt, mt1thru4, ss, ss1]
+ch: [four, mt, mt1thru4, ss, ss1, 7r]
 pos: verb
 inf: amāre
 secondppstem: am

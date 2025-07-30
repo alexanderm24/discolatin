@@ -1,7 +1,7 @@
 ---
 title: lacrimō
 meaning: to cry
-ch: nine
+ch: [nine, 7r]
 pos: verb
 inf: lacrimāre
 secondppstem: lacrim

@@ -1,7 +1,7 @@
 ---
 title: iānua
 meaning: door
-ch: nine
+ch: [nine, 7r]
 pos: noun
 stem: iānu
 genend: ae

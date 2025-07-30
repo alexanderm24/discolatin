@@ -2,7 +2,7 @@
 title: filius
 meaning: son
 pos: noun
-ch: [f1, f, familia]
+ch: [f1, f, familia, 7r]
 stem: fili
 genend: ī
 abbgender: m.

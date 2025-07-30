@@ -1,7 +1,7 @@
 ---
 title: raeda
 meaning: carriage
-ch: [ten, fourteen]
+ch: [ten, fourteen, 7r]
 pos: noun
 stem: raed
 genend: ae

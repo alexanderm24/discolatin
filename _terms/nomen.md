@@ -1,7 +1,7 @@
 ---
 title: nomen
 meaning: name
-ch: [f3, f]
+ch: [f3, f, 7r]
 pos: nounthird
 genitive: nominis
 abbgender: n.

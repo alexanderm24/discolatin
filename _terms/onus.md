@@ -1,7 +1,7 @@
 ---
 title: onus
 meaning: load, burden
-ch: [fifteen, f3, f]
+ch: [fifteen, f3, f, 7r]
 pos: nounthird
 genitive: oneris
 abbgender: n.

@@ -1,7 +1,7 @@
 ---
 title: rogō
 meaning: to ask
-ch: [twelve, f1, f]
+ch: [twelve, f1, f, 7r]
 pos: verb
 inf: rogāre
 secondppstem: rog

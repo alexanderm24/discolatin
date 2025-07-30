@@ -1,7 +1,7 @@
 ---
 title: temptō
 meaning: to try
-ch: [nine, mt, mt8thru9, ss, ss2]
+ch: [nine, mt, mt8thru9, ss, ss2, 7r]
 pos: verb
 inf: temptāre
 secondppstem: tempt

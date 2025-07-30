@@ -1,7 +1,7 @@
 ---
 title: novus
 meaning: new
-ch: [sixteen, f3, f]
+ch: [sixteen, f3, f, 7r]
 pos: totadjective
 femstem: nov
 femend: a

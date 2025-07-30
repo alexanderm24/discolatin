@@ -1,7 +1,7 @@
 ---
 title: arbor
 meaning: tree
-ch: one
+ch: [one, 7r]
 pos: nounthird
 genitive: arboris
 abbgender: f.

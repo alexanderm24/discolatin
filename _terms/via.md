@@ -1,7 +1,7 @@
 ---
 title: via
 meaning: road
-ch: [ten, fourteen]
+ch: [ten, fourteen, 7r]
 pos: noun
 stem: vi
 genend: ae

@@ -1,7 +1,7 @@
 ---
 title: prīnceps
 meaning: emperor
-ch: seven
+ch: [seven, 7r]
 pos: nounthird
 genitive: prīncipis
 abbgender: m.

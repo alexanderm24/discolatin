@@ -1,7 +1,7 @@
 ---
 title: dēfessus
 meaning: tired
-ch: two
+ch: [two, 7r]
 pos: totadjective
 femstem: dēfess
 femend: a

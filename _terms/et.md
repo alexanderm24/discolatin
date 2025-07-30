@@ -1,7 +1,7 @@
 ---
 title: et
 meaning: and
-ch: [one, ss, ss1]
+ch: [one, ss, ss1, 7r]
 pos: conjunction
 six: y
 ---

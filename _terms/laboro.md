@@ -1,7 +1,7 @@
 ---
 title: labōrō
 meaning: to work
-ch: three
+ch: [three, 7r]
 pos: verb
 inf: labōrāre
 secondppstem: labōr

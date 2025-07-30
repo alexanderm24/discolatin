@@ -1,7 +1,7 @@
 ---
 title: fēmina
 meaning: woman
-ch: [three, animalia]
+ch: [three, animalia, 7r]
 pos: noun
 stem: fēmin
 genend: ae

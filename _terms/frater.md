@@ -2,7 +2,7 @@
 title: frater
 meaning: brother
 pos: nounthird
-ch: [f1, f, ss, ss2, familia]
+ch: [f1, f, ss, ss2, familia, 7r]
 genitive: fratris
 abbgender: m.
 abbgender2: masc.

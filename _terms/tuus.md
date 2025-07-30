@@ -1,7 +1,7 @@
 ---
 title: tuus
 meaning: your
-ch: [nine, mt, mt8thru9]
+ch: [nine, mt, mt8thru9, 7r]
 pos: totadjective
 femstem: tu
 femend: a

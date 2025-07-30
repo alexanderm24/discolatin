@@ -1,7 +1,7 @@
 ---
 title: in
 meaning: into
-ch: [five, nine, cumulative]
+ch: [five, nine, cumulative, 7r]
 pos: preposition
 disamb: (with accusative)
 di: (with accusative)

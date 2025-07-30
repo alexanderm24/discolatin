@@ -1,7 +1,7 @@
 ---
 title: tempus
 meaning: time
-ch: [eight, mt, mt8thru9, f3, f]
+ch: [eight, mt, mt8thru9, f3, f, 7r]
 pos: nounthird
 genitive: temporis
 abbgender: n.

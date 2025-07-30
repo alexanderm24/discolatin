@@ -2,7 +2,7 @@
 title: iam
 meaning: now
 2meaning: already
-ch: [one, two, eight, mt, mt1thru4, ss, ss2, cumulative]
+ch: [one, two, eight, mt, mt1thru4, ss, ss2, cumulative, 7r]
 2meaningch: [eight, cumulative]
 pos: adverb
 six: y

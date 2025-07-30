@@ -1,7 +1,7 @@
 ---
 title: pōnō
 meaning: to put, place
-ch: [ten, f1, f]
+ch: [ten, f1, f, 7r]
 pos: verb
 inf: pōnere
 secondppstem: pōn

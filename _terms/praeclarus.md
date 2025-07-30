@@ -1,7 +1,7 @@
 ---
 title: praeclārus
 meaning: famous
-ch: thirteen
+ch: [thirteen, 7r]
 pos: totadjective
 femstem: praeclār
 femend: a

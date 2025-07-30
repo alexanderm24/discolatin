@@ -1,7 +1,7 @@
 ---
 title: alter
 meaning: other, another
-ch: [one, mt, mt1thru4]
+ch: [one, mt, mt1thru4, 7r]
 pos: totadjective
 femstem: alter
 femend: a

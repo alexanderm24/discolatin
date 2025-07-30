@@ -1,7 +1,7 @@
 ---
 title: habeō
 meaning: to have, hold
-ch: [ten, f1, f, ss, ss2]
+ch: [ten, f1, f, ss, ss2, 7r]
 pos: verb
 inf: habēre
 secondppstem: hab

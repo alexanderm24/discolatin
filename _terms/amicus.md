@@ -1,7 +1,7 @@
 ---
 title: amīcus
 meaning: friend
-ch: three
+ch: [three, 7r]
 pos: noun
 stem: amīc
 genend: ī

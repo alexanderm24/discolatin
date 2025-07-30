@@ -1,7 +1,7 @@
 ---
 title: igitur
 meaning: therefore
-ch: four
+ch: [four, 7r]
 pos: conjunction
 six: y
 ---

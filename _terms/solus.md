@@ -1,7 +1,7 @@
 ---
 title: solus
 meaning: alone
-ch: three
+ch: [three,7r]
 pos: totadjective
 femstem: sol
 femend: a

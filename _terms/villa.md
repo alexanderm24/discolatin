@@ -1,7 +1,7 @@
 ---
 title: vīlla
 meaning: house
-ch: one
+ch: [one, 7r]
 pos: noun
 stem: vīll
 genend: ae

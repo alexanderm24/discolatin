@@ -1,7 +1,7 @@
 ---
 title: dum
 meaning: while
-ch: [one, mt, mt1thru4, ss, ss3]
+ch: [one, mt, mt1thru4, ss, ss3, 7r]
 pos: adverb
 haudio: ../assets/audio/dum-haudio.m4a
 laudio: ../assets/audio/dum-haudio.m4a

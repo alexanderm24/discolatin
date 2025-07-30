@@ -1,7 +1,7 @@
 ---
 title: trādō
 meaning: to hand over
-ch: seven
+ch: [seven, 7r]
 pos: verb
 inf: trādere
 secondppstem: trād

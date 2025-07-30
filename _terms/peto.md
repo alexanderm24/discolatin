@@ -1,7 +1,7 @@
 ---
 title: petō
 meaning: to look for, to head for
-ch: [five, mt, mt5thru7, ss, ss4]
+ch: [five, mt, mt5thru7, ss, ss4, 7r]
 pos: verb
 inf: petere
 secondppstem: pet

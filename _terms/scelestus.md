@@ -1,7 +1,7 @@
 ---
 title: scelestus
 meaning: wicked
-ch: [ten, f1, f]
+ch: [ten, f1, f, 7r]
 pos: totadjective
 femstem: scelest
 femend: a

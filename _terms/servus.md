@@ -1,7 +1,7 @@
 ---
 title: servus
 meaning: slave
-ch: [three, ss, ss5]
+ch: [three, ss, ss5, 7r]
 pos: noun
 stem: serv
 genend: ī
