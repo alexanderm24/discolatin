@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 8
 ch: eight
+grade: sixth
 verbs: yes
 conjverbs: yes
 nouns: yes

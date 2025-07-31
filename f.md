@@ -2,6 +2,7 @@
 layout: chlist
 title: Final Cumulative
 ch: f
+grade: sixth
 verbs: yes
 conjverbs: yes
 nouns: yes

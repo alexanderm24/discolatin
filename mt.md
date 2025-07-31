@@ -2,6 +2,7 @@
 layout: chlist
 title: Midterm Cumulative
 ch: mt
+grade: sixth
 pdfchl: mt
 pdfpq: mtpractice
 pdfpq2: mtpractice2

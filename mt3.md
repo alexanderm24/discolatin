@@ -2,6 +2,7 @@
 layout: chlist
 title: Midterm Chapters 8-10
 ch: mt8thru9
+grade: sixth
 verbs: yes
 conjverbs: no
 nouns: yes

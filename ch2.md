@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 2
 ch: two
+grade: sixth
 verbs: yes
 conjverbs: no
 nouns: yes
