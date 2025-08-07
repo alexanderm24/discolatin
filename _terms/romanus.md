@@ -1,7 +1,7 @@
 ---
 title: Rōmānus
 meaning: Roman
-ch: [7r]
+ch: [7r, seventeen7]
 pos: totadjective
 femstem: Rōmān
 femend: a

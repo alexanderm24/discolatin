@@ -1,7 +1,7 @@
 ---
 title: volō
 meaning: to want
-ch: [five, seventeen, f2, f, ss, ss2]
+ch: [five, seventeen, f2, f, ss, ss2, seventeen7]
 pos: verb
 inf: velle
 thirdpp: voluī

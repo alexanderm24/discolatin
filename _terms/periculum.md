@@ -1,7 +1,7 @@
 ---
 title: perīculum
 meaning: danger
-ch: [fourteen, f2, f, 7r]
+ch: [fourteen, f2, f, 7r, seventeen7]
 pos: noun
 stem: perīcul
 genend: ī

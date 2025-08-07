@@ -1,7 +1,7 @@
 ---
 title: faciō
 meaning: to make, do
-ch: [two, ten, f1, f, 7r]
+ch: [two, ten, f1, f, 7r, seventeen7]
 pos: verb
 inf: facere
 secondppstem: fac

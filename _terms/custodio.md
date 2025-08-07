@@ -1,7 +1,7 @@
 ---
 title: custōdiō
 meaning: to guard
-ch: [seventeen, f3, f]
+ch: [seventeen, f3, f, seventeen7]
 pos: verb
 inf: custōdīre
 secondppstem: custōd

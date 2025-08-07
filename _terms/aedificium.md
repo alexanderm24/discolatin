@@ -1,7 +1,7 @@
 ---
 title: aedificium
 meaning: building
-ch: [seventeen]
+ch: [seventeen, seventeen7]
 pos: noun
 stem: aedifici
 genend: ī

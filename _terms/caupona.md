@@ -1,7 +1,7 @@
 ---
 title: caupōna
 meaning: inn
-ch: [seventeen, f3, f]
+ch: [seventeen, f3, f, seventeen7]
 pos: noun
 stem: caupon
 genend: ae
