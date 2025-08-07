@@ -15,9 +15,10 @@ interjections: no
 composites: no
 prepphrases: no
 phrases: no
-pdfchl: ch3
-pdfpq: ch3practice
-pdfpq2: ch3practice2
+pdfchl: ndch3
+pdfpq: ndch3practice
+pdfpq2: ndch3practice2
+pdfpq3: ch3practice2
 quizlet: https://quizlet.com/609636724/ch-3-vocabulary-flash-cards/
 ---
 

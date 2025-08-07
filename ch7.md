@@ -15,8 +15,9 @@ interjections: yes
 composites: no
 prepphrases: yes
 phrases: no
-pdfchl: ch7
-pdfpq: ch7practice
-pdfpq2: ch7practice2
+pdfchl: ndch7
+pdfpq: ndch7practice
+pdfpq2: ndch7practice2
+pdfpq3: ch7practice2
 quizlet: https://quizlet.com/512117986/chapter-7-vocabulary-flash-cards/
 ---

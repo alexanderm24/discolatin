@@ -15,9 +15,10 @@ interjections: no
 composites: no
 prepphrases: yes
 phrases: yes
-pdfchl: ch4
-pdfpq: ch4practice
-pdfpq2: ch4practice2
+pdfchl: ndch4
+pdfpq: ndch4practice
+pdfpq2: ndch4practice2
+pdfpq3: ch4practice2
 quizlet: https://quizlet.com/612188819/ch-4-vocabulary-flash-cards/
 ---
 

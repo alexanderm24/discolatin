@@ -15,7 +15,9 @@ interjections: no
 composites: no
 prepphrases: yes
 phrases: yes
-pdfpq: ch6practice
-pdfpq2: ch6practice2
+pdfchl: ndch6
+pdfpq: ndch6practice
+pdfpq2: ndch6practice2
+pdfpq3: ch6practice2
 quizlet: https://quizlet.com/529597637/chapter-6-vocab-list-flash-cards/?x=1jqt
 ---
