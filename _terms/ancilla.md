@@ -10,5 +10,6 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: ancillary
+laudio: ../assets/audio/ancilla-laudio.mp3
 six: y
 ---

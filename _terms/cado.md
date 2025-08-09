@@ -10,6 +10,7 @@ thirdpp: cecidī
 fourthpp: cāsūrus
 conjugation: third
 derivatives: decadent, cadence, cascade
+laudio: ../assets/audio/cado-laudio.mp3
 sixms: C
 six: y
 ---

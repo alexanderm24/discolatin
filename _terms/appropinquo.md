@@ -4,10 +4,11 @@ meaning: to approach
 ch: [five, 7r]
 pos: verb
 inf: appropinquāre
-secondppstem: appropinq
+secondppstem: appropinqu
 infend: āre
 thirdpp: appropinquāvī
 fourthpp: appropinquātus
 conjugation: first
+laudio: ../assets/audio/appropinquo-laudio.mp3
 six: y
 ---

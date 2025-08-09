@@ -8,5 +8,6 @@ secondppstem: aud
 infend: īre
 conjugation: fourth
 derivatives: audition, audience
+laudio: ../assets/audio/audio-laudio.mp3
 six: y
 ---
