@@ -10,5 +10,6 @@ thirdpp: invēnī
 fourthpp: inventus
 conjugation: fourth
 derivative: invention
+laudio: ../assets/audio/invenio-laudio.mp3
 six: y
 ---

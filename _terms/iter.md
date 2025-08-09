@@ -9,5 +9,6 @@ abbgender2: neut.
 gender: neuter
 declension: third
 derivative: itinerary
+laudio: ../assets/audio/iter-laudio.mp3
 six: y
 ---

@@ -10,5 +10,6 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: ire
+laudio: ../assets/audio/ira-laudio.mp3
 six: y
 ---

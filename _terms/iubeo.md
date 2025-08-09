@@ -9,5 +9,6 @@ infend: ēre
 thirdpp: iūssī
 fourthpp: iūssus
 conjugation: second
+laudio: ../assets/audio/iubeo-laudio.mp3
 six: y
 ---

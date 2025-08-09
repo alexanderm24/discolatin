@@ -9,6 +9,7 @@ infend: ēre
 thirdpp: habuī
 fourthpp: habitus
 conjugation: second
+laudio: ../assets/audio/habeo-laudio.mp3
 sixms: H
 six: y
 ---

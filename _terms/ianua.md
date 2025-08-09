@@ -11,5 +11,6 @@ gender: feminine
 declension: first
 derivative: January
 audio: ianua
+laudio: ../assets/audio/ianua-laudio.mp3
 six: y
 ---

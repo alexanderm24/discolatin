@@ -10,6 +10,7 @@ thirdpp: iēcī
 fourthpp: iactus
 conjugation: third
 derivatives: eject, projector
+laudio: ../assets/audio/iacio-laudio.mp3
 sixms: I
 six: y
 ---

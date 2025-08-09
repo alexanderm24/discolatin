@@ -9,5 +9,6 @@ infend: āre
 thirdpp: intrāvī
 fourthpp: intrātus
 conjugation: first
+laudio: ../assets/audio/intro-laudio.mp3
 six: y
 ---

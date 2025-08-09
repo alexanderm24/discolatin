@@ -9,5 +9,6 @@ abbgender2: masc./fem.
 gender: masculine/feminine
 declension: third
 derivative: hospitality
+laudio: ../assets/audio/hospes-laudio.mp3
 six: y
 ---

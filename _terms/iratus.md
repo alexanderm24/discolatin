@@ -8,5 +8,6 @@ femend: a
 neutstem: īrāt
 neutend: um
 derivative: irate
+laudio: ../assets/audio/iratus-laudio.mp3
 six: y
 ---
