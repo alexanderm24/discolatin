@@ -10,6 +10,6 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivatives: epistle, epistolary
-laudio: ../assets/audio/epistla-laudio.mp3
+laudio: ../assets/audio/epistula-laudio.mp3
 six: y
 ---
