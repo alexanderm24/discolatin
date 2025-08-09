@@ -5,5 +5,5 @@ ch: [five, mt, mt5thru7, ss, ss5, 7r]
 pos: adverb
 six: y
 laudio: ../assets/audio/adhuc-laudio.mp3
-haudio: ../assets/audio/adhuc-haudio.mp3
+haudio: ../assets/audio/adhuc-laudio.mp3
 ---
