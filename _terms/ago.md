@@ -8,5 +8,6 @@ secondppstem: ag
 infend: ere
 conjugation: third
 allmeanings: yes
+laudio: ../assets/audio/ago-laudio.mp3
 six: y
 ---

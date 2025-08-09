@@ -10,5 +10,6 @@ abbgender2: fem.
 gender: feminine
 declension: first
 derivative: amicable
+laudio: ../assets/audio/amica-laudio.mp3
 six: y
 ---

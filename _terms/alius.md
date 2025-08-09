@@ -7,5 +7,6 @@ femstem: ali
 femend: a
 neutstem: ali
 neutend: ud
+laudio: ../assets/audio/alius-laudio.mp3
 six: y
 ---

@@ -7,6 +7,7 @@ femstem: alter
 femend: a
 neutstem: alter
 neutend: um
+laudio: ../assets/audio/alter-laudio.mp3
 six: y
 ---
 {%- include notes-accordion/alter.html -%}

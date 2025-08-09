@@ -9,5 +9,6 @@ infend: āre
 thirdpp: amāvī
 fourthpp: amātus
 conjugation: first
+laudio: ../assets/audio/amo-laudio.mp3
 six: y
 ---

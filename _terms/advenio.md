@@ -9,5 +9,6 @@ infend: īre
 thirdpp: advenī
 fourthpp: adventus
 conjugation: fourth
+laudio: ../assets/audio/adsum-laudio.mp3
 six: y
 ---

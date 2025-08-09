@@ -7,4 +7,5 @@ inf: abesse
 conjugation: irregular
 derivative: absent
 six: y
+laudio: ../assets/audio/absum-laudio.mp3
 ---
