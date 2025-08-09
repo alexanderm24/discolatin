@@ -10,5 +10,6 @@ thirdpp: clāmāvī
 fourthpp: clāmātus
 conjugation: first
 derivative: exclamatory
+laudio: ../assets/audio/clamo-laudio.mp3
 six: y
 ---

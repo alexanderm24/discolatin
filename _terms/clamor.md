@@ -8,5 +8,6 @@ abbgender: m.
 abbgender2: masc.
 gender: masculine
 declension: third
+laudio: ../assets/audio/clamor-laudio.mp3
 six: y
 ---

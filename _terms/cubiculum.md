@@ -10,5 +10,6 @@ abbgender2: neut.
 gender: neuter
 declension: second
 derivative: cubicule
+laudio: ../assets/audio/cubiculum-laudio.mp3
 six: y
 ---

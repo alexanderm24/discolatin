@@ -10,5 +10,6 @@ thirdpp: cucurrī
 fourthpp: cursūrus
 conjugation: third
 derivatives: occur, current, course
+laudio: ../assets/audio/curro-laudio.mp3
 six: y
 ---

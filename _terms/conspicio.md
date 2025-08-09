@@ -10,5 +10,6 @@ thirdpp: cōnspexī
 fourthpp: cōnspectus
 conjugation: third
 derivative: conspicuous
+laudio: ../assets/audio/conspicio-laudio.mp3
 six: y
 ---
