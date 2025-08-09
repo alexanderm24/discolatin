@@ -11,6 +11,7 @@ fourthpp: factus
 conjugation: third
 derivatives: manufacture, effect, confection
 allmeanings: yes
+laudio: ../assets/audio/facio-laudio.mp3
 sixms: F
 six: y
 ---

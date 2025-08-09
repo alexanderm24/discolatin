@@ -7,5 +7,6 @@ femstem: dēfess
 femend: a
 neutstem: dēfess
 neutend: um
+laudio: ../assets/audio/defessus-laudio.mp3
 six: y
 ---

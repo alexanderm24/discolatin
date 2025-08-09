@@ -10,5 +10,6 @@ abbgender2: masc.
 gender: masculine
 declension: second
 derivative: dominate
+laudio: ../assets/audio/dominus-laudio.mp3
 six: y
 ---

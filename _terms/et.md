@@ -3,6 +3,7 @@ title: et
 meaning: and
 ch: [one, ss, ss1, 7r]
 pos: conjunction
+laudio: ../assets/audio/et-laudio.mp3
 six: y
 ---
 <div class="accordion caro-accordion" id="accordionExample">

@@ -10,5 +10,6 @@ abbgender2: masc.
 gender: masculine
 declension: second
 derivative: equestrian
+laudio: ../assets/audio/equus-laudio.mp3
 six: y
 ---

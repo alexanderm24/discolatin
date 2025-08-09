@@ -10,5 +10,6 @@ thirdpp: dūxī
 fourthpp: ductus
 conjugation: third
 derivatives: productive, conducive, conductor, induce
+laudio: ../assets/audio/duco-laudio.mp3
 six: y
 ---

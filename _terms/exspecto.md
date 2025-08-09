@@ -9,5 +9,6 @@ infend: āre
 thirdpp: exspectāvī
 fourthpp: exspectātus
 conjugation: first
+laudio: ../assets/audio/exspecto-laudio.mp3
 six: y
 ---

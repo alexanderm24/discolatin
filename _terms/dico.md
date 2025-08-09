@@ -10,5 +10,6 @@ thirdpp: dīxī
 fourthpp: dictus
 conjugation: third
 derivatives: dictator, contradiction
+laudio: ../assets/audio/dico-laudio.mp3
 six: y
 ---

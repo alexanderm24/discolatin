@@ -3,5 +3,7 @@ title: diū
 meaning: for a long time
 ch: [fifteen, f3, f, 7r]
 pos: adverb
+laudio: ../assets/audio/diu-laudio.mp3
+haudio: ../assets/audio/diu-laudio.mp3
 six: y
 ---
