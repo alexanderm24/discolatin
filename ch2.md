@@ -4,7 +4,7 @@ title: Chapter 2
 ch: two
 grade: sixth
 verbs: yes
-conjverbs: no
+conjverbs: yes
 nouns: yes
 pronouns: no
 adjectives: yes
