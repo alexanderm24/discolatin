@@ -4,9 +4,9 @@ meaning: senator
 ch: [7r]
 pos: nounthird
 genitive: senātōris
-abbgender: n.
-abbgender2: meut.
-gender: neuter
+abbgender: m.
+abbgender2: masc.
+gender: masculine
 declension: third
 six: y
 ---
