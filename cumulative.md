@@ -11,7 +11,7 @@ adverbs: yes
 prepositions: yes
 conjunctions: yes
 interjections: yes
-composites: yes
+composites: no
 prepphrases: yes
 phrases: yes
 ---
