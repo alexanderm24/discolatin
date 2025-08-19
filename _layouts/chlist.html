@@ -20,8 +20,10 @@ layout: base
 {%- include grids/oggrid.html -%}
 </div>
 
+{% if page.grade %}
 <h2>Feeling good?</h2> 
 <h3>Take time to review <a href="https://www.discolatin.com/cumulative{{page.grade}}">cumulative vocabulary.</a></h3>
+{% endif %}
 
 <!-- Sparkle Modal -->
 {%- include sparklemodal.html -%}
