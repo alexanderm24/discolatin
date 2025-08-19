@@ -1,0 +1,53 @@
+<div class="container pc">
+    <!--carousel, includes next/prev buttons-->
+    <div id="cw" class="row text-center">
+      <div class="col">
+  
+      <!--carousel-->
+      <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <!--cover card-->
+        <div class="carousel-item active">
+          <div class="scene-bg scene--card-bg">
+            <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+          </div>
+        </div>
+  
+            <!--card list-->
+            {% for terms in site.terms %}
+            {% assign ch = terms.ch %}
+            {% assign pos = terms.pos %}
+            {% assign conj = terms.conjugation %}
+            {% assign declension = terms.declension %}
+      
+            
+            {% if ch contains "7r" or ch contains "seventeen7" %}
+       
+            <div class="carousel-item">
+              <div class="scene-bg scene--card-bg">
+                <div class="card-bg card-full-entry">
+                  {%- include card-bg/card-dif-bg.html -%}
+                </div>
+                <div class="card-bg card-headword" style="display:none;">
+                  {%- include card-bg/card-dib-bg.html -%}
+                </div>
+                <div class="card-bg card-english" style="display:none;">
+                  {%- include card-bg/card-en-bg.html -%}
+                </div>
+              </div>
+              <div class="p-5">
+                {{ terms }}
+              </div>
+            </div>
+  
+  
+            {% endif %}
+            {% endfor %}
+         </div>
+  
+  </div>
+  <!--carousel control-->
+  {%- include carousels/cumctrlcarousel.html -%}
+      </div>    
+  </div>
+  </div>
