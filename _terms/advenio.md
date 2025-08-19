@@ -1,7 +1,7 @@
 ---
 title: adveniō
 meaning: to arrive
-ch: [five, mt, mt5thru7, 7r]
+ch: [mt, mt5thru7, 7r]
 pos: verb
 inf: advenīre
 secondppstem: adven

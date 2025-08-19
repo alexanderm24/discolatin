@@ -1,7 +1,7 @@
 ---
 title: appropinquō
 meaning: to approach
-ch: [five, 7r]
+ch: [7r]
 pos: verb
 inf: appropinquāre
 secondppstem: appropinqu

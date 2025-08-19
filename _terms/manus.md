@@ -2,7 +2,7 @@
 title: manus
 meaning: hand
 pos: noun
-ch: body
+ch: [body, eighteen]
 stem: man
 genend: us
 abbgender: f.

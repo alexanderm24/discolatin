@@ -1,7 +1,6 @@
 ---
 title: silva
 meaning: woods, forest
-ch: five
 pos: noun
 stem: silv
 genend: ae

@@ -1,7 +1,7 @@
 ---
 title: revocō
 meaning: to call back
-ch: seven
+ch: [seven, eighteen]
 pos: verb
 inf: revocāre
 secondppstem: revoc

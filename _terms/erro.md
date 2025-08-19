@@ -1,7 +1,7 @@
 ---
 title: errō
 meaning: to wander
-ch: five
+ch: [five, eighteen]
 pos: verb
 inf: errāre
 secondppstem: err

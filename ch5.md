@@ -15,10 +15,10 @@ interjections: no
 composites: no
 prepphrases: yes
 phrases: no
-pdfchl: ndch5
-pdfpq: ndch5practice
-pdfpq2: ndch5practice2
+pdfchl: up2025ndch5
+pdfpq: up2025ndch5practice
+pdfpq2: up2025ndch5practice2
 pdfpq3: ch5practice2
-quizlet: https://quizlet.com/524708530/chapter-5-vocab-list-flash-cards/?x=1jqt
+quizlet: https://quizlet.com/1066533155/ch-5-vocabulary-flash-cards/?i=2wl7rv&x=1jqt
 ---
 

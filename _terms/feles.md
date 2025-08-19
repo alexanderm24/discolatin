@@ -1,7 +1,7 @@
 ---
 title: felēs
 meaning: cat
-ch: [five, animalia]
+ch: [animalia]
 pos: nounthird
 genitive: felis
 abbgender: m./f.
