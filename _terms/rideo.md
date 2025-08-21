@@ -1,6 +1,6 @@
 ---
 title: rīdeō
-meaning: to smile, laugh
+meaning: to laugh, smile
 ch: [three, mt, mt1thru4, ss, ss1, 7r]
 pos: verb
 inf: rīdēre
