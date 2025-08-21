@@ -1,7 +1,6 @@
 ---
 title: coquō
 meaning: to cook
-ch: six
 pos: verb
 inf: coquere
 secondppstem: coqu
