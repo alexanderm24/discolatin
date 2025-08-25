@@ -1,6 +1,6 @@
 ---
 title: errō
-meaning: to wander
+meaning: to wander, to be mistaken
 ch: [five, eighteen]
 pos: verb
 inf: errāre
