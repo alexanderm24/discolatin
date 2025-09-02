@@ -1,7 +1,7 @@
 ---
 title: iubeō
 meaning: to order
-ch: [ten, f1, f, ss, ss1, 7r]
+ch: [ten, f1, f, ss, ss1, 7r, nineteen]
 pos: verb
 inf: iubēre
 secondppstem: iub
