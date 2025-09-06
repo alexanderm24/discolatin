@@ -9,4 +9,5 @@ infend: are
 thirdpp: laboravi
 fourthpp: laboratus
 conjugation: first
+derivatives: elaborate, laboratory
 ---

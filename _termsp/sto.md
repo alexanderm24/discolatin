@@ -1,7 +1,7 @@
 ---
 title: sto
 ch: [r]
-meaning: to hope
+meaning: to stand
 pos: verb
 inf: stare
 secondppstem: st

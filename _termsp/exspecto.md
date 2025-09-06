@@ -9,5 +9,5 @@ infend: are
 thirdpp: exspectavi
 fourthpp: exspectatus
 conjugation: first
-derivative: exspectation
+derivative: expectation
 ---

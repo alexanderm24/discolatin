@@ -3,10 +3,10 @@ title: oro
 ch: [r]
 meaning: to beg, pray
 pos: verb
-inf: optare
-secondppstem: opt
+inf: orare
+secondppstem: or
 infend: are
-thirdpp: optavi
-fourthpp: optatus
+thirdpp: oravi
+fourthpp: oratus
 conjugation: first
 ---

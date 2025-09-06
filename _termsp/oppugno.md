@@ -1,7 +1,7 @@
 ---
 title: oppugno
 ch: [r]
-meaning: to fight
+meaning: to attack
 pos: verb
 inf: oppugnare
 secondppstem: oppugn

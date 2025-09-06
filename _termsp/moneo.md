@@ -9,5 +9,5 @@ infend: ēre
 thirdpp: monui
 fourthpp: monitus
 conjugation: second
-derivative: admonish, admonition
+derivatives: admonish, admonition
 ---

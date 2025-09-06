@@ -9,4 +9,5 @@ infend: are
 thirdpp: dedi
 fourthpp: datus
 conjugation: third
+derivative: dative
 ---

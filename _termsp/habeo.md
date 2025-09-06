@@ -6,7 +6,7 @@ pos: verb
 inf: habēre
 secondppstem: hab
 infend: ēre
-thirdpp: ---
-fourthpp: ---
+thirdpp: habui
+fourthpp: habitus
 conjugation: second
 ---
