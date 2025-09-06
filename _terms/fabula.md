@@ -1,6 +1,6 @@
 ---
 title: fabula
-meaning: woman
+meaning: story
 ch: [twenty]
 pos: noun
 stem: fabul

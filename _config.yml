@@ -41,6 +41,9 @@ collections:
   animalia:
     output: true
 
+  termsp:
+    output: true
+
 
 
 

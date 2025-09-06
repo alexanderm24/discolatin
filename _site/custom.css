@@ -832,6 +832,8 @@ z-index: 10000;
   justify-content: center;
 }
 
+
+
 .accordion-button, .accordion-header, .accordion-item {
   margin: 0;
   justify-content: center;
@@ -862,6 +864,10 @@ z-index: 10000;
   }
 }
 
+.accordion-item.terms {
+  border: black;
+}
+
 
 .verb-underline, .conjverb-underline {
   text-decoration: underline #ffb01f 3px;
@@ -887,24 +893,31 @@ z-index: 10000;
 }
 .verb, .conjverb {
   background: #ffb01f;
+  --bs-accordion-active-bg: #ffb01f;
 }
 .noun, .exnounsecond, .nounthird, .nounfifth, .pronoun, .pronounthird, .perspronoun, .nouni, .totpronoun {
   background: #ffe433;
+  --bs-accordion-active-bg: #ffe433;
 }
 .preposition, .prepdual, .prep {
   background: #6dd978;
+  --bs-accordion-active-bg: #6dd978;
 }
 .adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj, .iadj {
   background: #6ed1ff;
+  --bs-accordion-active-bg: #6ed1ff;
 }
 .adverb {
   background: #b395da;
+  --bs-accordion-active-bg: #b395da;
 }
 .interjection, .phrase, .composite {
   background: white;
+  --bs-accordion-active-bg: white;
 }
 .conjunction {
   background: #b39680;
+  --bs-accordion-active-bg:#b39680;
 }
 
 
@@ -963,7 +976,7 @@ html {
   line-height: 100px;
   }
 
-  .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before {
+  .breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before {
     color: darkgrey;
   }
   
