@@ -905,7 +905,7 @@ z-index: 10000;
   background: #6dd978;
   --bs-accordion-active-bg: #6dd978;
 }
-.adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj, .iadj {
+.adjective, .totadjective, .thirdadjective, .altadjective, .extotadjective, .adj, .iadj, .thirdadjst {
   background: #6ed1ff;
   --bs-accordion-active-bg: #6ed1ff;
 }
