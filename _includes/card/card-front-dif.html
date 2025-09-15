@@ -86,6 +86,11 @@
 {{ terms.title }}, <span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}
 {% endif %}
 
+<!--3rd adjectives: single termination-->
+{% if pos == "thirdadjst" %}
+{{ terms.title }}, {{ terms.genitive }}
+{% endif %}
+
 <!--adjectives (alt)-->
 {% if pos == "altadjective" %}
 {{ terms.title }}, {{ terms.adjforms }}

@@ -30,7 +30,7 @@ layout: base
       <div class="col">
 
         {% for termsp in site.termsp %}
-        <div class="accordion p-3" id="termsp">
+        <div class="accordion terms p-3" id="termsp">
             
             <div class="accordion-item terms">
             <h2 class="accordion-header">
@@ -55,6 +55,32 @@ layout: base
             </div>
         </div>
         {% endfor %}
+
+
+        {% for termsp in site.termsp %}
+        <ul class="list-group list-group-horizontal">
+          <li class="list-group-item">
+            {{ termsp.title }}
+          </li>
+          <li class="list-group-item"><div class="accordion terms p-3" id="termsp">
+            
+            <div class="accordion-item terms">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed la-text {{ termsp.pos }}" type="button" data-bs-toggle="collapse" data-bs-target="#{{ termsp.title }}" aria-expanded="false" aria-controls="{{ termsp.title }}">
+                2nd Principal Part
+                </button>
+            </h2>
+            <div id="{{ termsp.title }}" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                {{ termsp.inf }}
+                </div>
+            </div>
+            </div>
+        </div></li>
+          <li class="list-group-item">A third item</li>
+        </ul>
+        {% endfor %}
+       
     </div>
     </div>
 </container>

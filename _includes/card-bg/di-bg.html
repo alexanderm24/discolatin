@@ -267,6 +267,24 @@
 {% endif %}
 {% endif %}
 
+<!--3rd adjectives: single termination-->
+{% if pos == "thirdadjst" %}
+{% if terms.diaudio %}
+<div class="card--top--back-bg di-bg {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb-bg"></div>
+<div>{{ terms.genitive }}</div>
+<div class="rightcorner-bg">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back-bg di-bg {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
 <!--adjectives (alt)-->
 {% if pos == "altadjective" %}
 {% if terms.diaudio %}

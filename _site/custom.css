@@ -832,7 +832,9 @@ z-index: 10000;
   justify-content: center;
 }
 
-
+.accordion.terms {
+  max-width: 500px;
+}
 
 .accordion-button, .accordion-header, .accordion-item {
   margin: 0;
