@@ -59,7 +59,7 @@ title: Glossary
       
         {% if sixms %} <h1 class="glossms mt-3" id="{{ terms.sixms }}">{{ terms.sixms }}</h1>{% endif %}
 
-        <div class="accordion accordion-flush" id="{{ terms.name }}">
+    <div class="accordion accordion-flush" id="{{ terms.name }}">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-{{terms.name}}" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -68,10 +68,10 @@ title: Glossary
             {{ terms.title }},  <span class="expdi">{{ terms.secondppstem }}</span>&#8205;{{ terms.infend }}
             {% endif %}
   
-    <!--2nd conj-->
-    {% if pos == "verb" and conj == "second" %}
-    {{ terms.title }},  <span class="expdi">{{ terms.secondppstem }}</span>&#8205;<span class="essm">{{ terms.infend }}</span>
-    {% endif %}
+  <!--2nd conj-->
+  {% if pos == "verb" and conj == "second" %}
+  {{ terms.title }},  <span class="expdi">{{ terms.secondppstem }}</span>&#8205;<span class="essm">{{ terms.infend }}</span>
+  {% endif %}
   
   <!--irregular conj-->
   {% if pos == "verb" and conj == "irregular" %}
@@ -205,3 +205,5 @@ title: Glossary
   
 
   </container>
+
+  
