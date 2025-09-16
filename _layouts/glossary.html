@@ -59,10 +59,8 @@ title: Glossary
       
         {% if sixms %} <h1 class="glossms mt-3" id="{{ terms.sixms }}">{{ terms.sixms }}</h1>{% endif %}
 
-    <div class="accordion accordion-flush" id="{{ terms.name }}">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-{{terms.name}}" aria-expanded="false" aria-controls="flush-collapseOne">
+        <ul class="list-group mt-2">
+          <li class="list-group-item list-group-item-info">
               <!--verbs 1,3,4-->
             <strong>{% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
             {{ terms.title }},  <span class="expdi">{{ terms.secondppstem }}</span>&#8205;{{ terms.infend }}
@@ -187,15 +185,16 @@ title: Glossary
   {% if pos == "phrase" %}
   {{ terms.adjective }}<span class="essm">{{ terms.ablend }}</span> {{ terms.verb }} {{ terms.noun }} {{ terms.noun1 }} {{ terms.verb2 }}
   {% endif %}
+</strong></li>
 
-            </strong></button>
-            </h2>
-            <div id="flush-{{ terms.name }}" class="accordion-collapse collapse" data-bs-parent="#{{ terms.name }}">
-              <div class="accordion-body ms-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5"/>
-              </svg> {{ terms.meaning }} {% if terms.note %}(note: {{ terms.note }}){% endif %}</div>
-            </div>
-          </div>
+
+<li class="list-group-item list-group-item-light"><div class="ms-5"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-return-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 0 1 2v4.8a2.5 2.5 0 0 0 2.5 2.5h9.793l-3.347 3.346a.5.5 0 0 0 .708.708l4.2-4.2a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 8.3H3.5A1.5 1.5 0 0 1 2 6.8V2a.5.5 0 0 0-.5-.5"/>
+</svg> {{ terms.meaning }} {% if terms.note %}(note: {{ terms.note }}){% endif %}</div></li>
+            
+
+
+            </ul>
 
            
   
