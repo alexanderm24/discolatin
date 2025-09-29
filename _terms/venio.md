@@ -1,7 +1,7 @@
 ---
 title: veniō
 meaning: to come
-ch: [seven, mt, mt5thru7, ss, ss4, 7r, nineteen]
+ch: [seven, mt, mt5thru7, ss, ss4, 7r, nineteen, twentythree]
 pos: verb
 inf: venīre
 secondppstem: ven
