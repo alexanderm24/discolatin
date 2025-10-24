@@ -1,7 +1,7 @@
 ---
 title: iter
 meaning: journey
-ch: [thirteen, f2, f, 7r]
+ch: [thirteen, f2, f, 7r, twentyfour]
 pos: nounthird
 genitive: itineris
 abbgender: n.

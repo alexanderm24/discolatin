@@ -1,7 +1,7 @@
 ---
 title: possum
 meaning: to be able
-ch: [seventeen, ss, ss2, 7r, seventeen7]
+ch: [seventeen, ss, ss2, 7r, seventeen7, twentyfour]
 pos: verb
 inf: posse
 thirdpp: potuī
