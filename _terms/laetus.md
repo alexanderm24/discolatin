@@ -1,7 +1,7 @@
 ---
 title: laetus
 meaning: happy
-ch: [one, 7r]
+ch: [one, 7r, 24rv]
 pos: totadjective
 femstem: laet
 femend: a

@@ -1,6 +1,6 @@
 ---
 title: atque
 meaning: and, and also
-ch: [twentyonetwo]
+ch: [twentyonetwo, 24rv]
 pos: conjunction
 ---

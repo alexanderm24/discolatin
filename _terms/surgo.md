@@ -1,7 +1,7 @@
 ---
 title: surgō
 meaning: to get up
-ch: [six, mt, mt5thru7, 7r, twentythree]
+ch: [six, mt, mt5thru7, 7r, twentythree, 24rv]
 pos: verb
 inf: surgere
 secondppstem: surg

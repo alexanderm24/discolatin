@@ -1,6 +1,6 @@
 ---
 title: enim
 meaning: for, in fact
-ch: [twenty]
+ch: [twenty, 24rv]
 pos: conjunction
 ---

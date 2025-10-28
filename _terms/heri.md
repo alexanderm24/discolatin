@@ -1,6 +1,6 @@
 ---
 title: heri
 meaning: yesterday
-ch: [twenty]
+ch: [twenty, 24rv]
 pos: adverb
 ---

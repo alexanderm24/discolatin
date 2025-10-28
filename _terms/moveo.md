@@ -1,7 +1,7 @@
 ---
 title: moveō
 meaning: to move
-ch: [fourteen, f2, f, 7r, twentyfour]
+ch: [fourteen, f2, f, 7r, twentyfour, 24rv]
 pos: verb
 inf: movēre
 secondppstem: mov

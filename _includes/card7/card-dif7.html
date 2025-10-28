@@ -1,0 +1,49 @@
+
+    <!--Front-->
+    <div class="card__face card__face--front {{ pos }} la-text">
+        <div class="card--top--front d-flex justify-content-between">
+        <div class="leftcorner d-flex justify-content-center">
+          {%- include btns/sparkle-btn.html -%}
+        </div>
+        <div class="rightcorner d-flex justify-content-center">
+          {%- include btns/la-btn.html -%}
+        </div>
+      </div>
+      <!--Change term-bg class?-->
+      <div class="term"><div>{%- include card7/card-front-dif7.html -%}</div></div>
+      </div>
+  
+      <!--Back-->
+      <div class="card__face card__face--back">
+        <div class="card--top--back">
+          <div class="rightcorner">
+              {%- include btns/e-btn.html -%}
+          </div>
+        </div>
+  
+        <div class="def-only">
+          <div>{{ terms.meaning }}{% if terms.2meaningch contains page.ch %}, {{ terms.2meaning }} {% endif %}</div>
+        </div>
+  
+        <!--Note-->
+        {% assign note = terms.note %}
+          {% if note %}
+        <div class="def-note-dif">
+          note: {{ terms.note }}
+        </div>
+        {% endif %}
+  
+      
+       
+      <!--Derivative-->
+      {% assign derivative = terms.derivative %}
+      {% assign derivatives = terms.derivatives %}
+      {% if derivative %}
+      <div class="derivative-dif">derivative: {{ terms.derivative }}</div>
+      {% endif %}
+      {% if derivatives %}
+      <div class="derivative-dif">derivatives: {{ terms.derivatives }}</div>
+      {% endif %}
+      </div>
+  
+  

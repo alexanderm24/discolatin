@@ -1,7 +1,7 @@
 ---
 title: īrātus
 meaning: angry
-ch: [three, mt, mt1thru4, 7r]
+ch: [three, mt, mt1thru4, 7r, 24rv]
 pos: totadjective
 femstem: īrāt
 femend: a

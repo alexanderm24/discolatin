@@ -1,7 +1,7 @@
 ---
 title: dum
 meaning: while
-ch: [one, mt, mt1thru4, ss, ss3, 7r]
+ch: [one, mt, mt1thru4, ss, ss3, 7r, 24rv]
 pos: conjunction
 haudio: ../assets/audio/dum-laudio.mp3
 laudio: ../assets/audio/dum-laudio.mp3

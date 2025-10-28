@@ -1,7 +1,7 @@
 ---
 title: malus
 meaning: bad
-ch: [twentyonetwo]
+ch: [twentyonetwo, 24rv]
 pos: totadjective
 femstem: mal
 femend: a

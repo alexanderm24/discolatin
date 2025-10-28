@@ -1,7 +1,7 @@
 ---
 title: ager
 meaning: field
-ch: two
+ch: [two, 24rv]
 pos: exnounsecond
 genitive: agrī
 abbgender: m.

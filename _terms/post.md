@@ -1,7 +1,7 @@
 ---
 title: post
 meaning: after
-ch: [twenty]
+ch: [twenty, 24rv]
 pos: preposition
 di: (takes accusative)
 ---

@@ -1,7 +1,7 @@
 ---
 title: liber
 meaning: book
-ch: [twentyfour]
+ch: [twentyfour, 24rv]
 pos: noun
 stem: libr
 genend: ī

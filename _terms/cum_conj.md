@@ -1,7 +1,7 @@
 ---
 title: cum
 meaning: when
-ch: [twentyonetwo]
+ch: [twentyonetwo, 24rv]
 pos: conjunction
 di: (takes ablative)
 disamb: (conjunction)

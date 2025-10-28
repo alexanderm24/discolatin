@@ -1,7 +1,7 @@
 ---
 title: et
 meaning: and
-ch: [one, ss, ss1, 7r]
+ch: [one, ss, ss1, 7r, 24rv]
 pos: conjunction
 laudio: ../assets/audio/et-laudio.mp3
 six: y

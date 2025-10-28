@@ -1,7 +1,7 @@
 ---
 title: hortus
 meaning: garden
-ch: three
+ch: [three, 24rv]
 pos: noun
 stem: hort
 genend: ī

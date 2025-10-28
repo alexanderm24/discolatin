@@ -1,0 +1,342 @@
+<!--verbs 1,3,4-->
+{% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+<div class="rightcorner">
+{%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--2nd conj-->
+{% if pos == "verb" and conj == "second" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span>, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span>, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--irregular conj-->
+{% if pos == "verb" and conj == "irregular" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.inf }}, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.inf }}, {{ terms.thirdpp }}, {{ terms.fourthpp }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--verbs (conjugated)-->
+{% if pos == "conjverb" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.di }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.di }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--nouns 1&2-->
+{% if pos == "noun" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--exnounsecond (2nd decl. stem exceptions)-->
+{% if pos == "exnounsecond" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--nouns 3-->
+{% if pos == "nounthird" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--nouns 5-->
+{% if pos == "nounfifth" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.stem }}</span>{{ terms.genend }}   {{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--nouns indecl-->
+{% if pos == "nouni" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--pronouns-->
+{% if pos == "pronoun" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>({{ terms.abbgender }})</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>({{ terms.abbgender }})</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--pronoun third (with gender)-->
+{% if pos == "pronounthird" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.genitive }}   {{ terms.abbgender }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--tot pronouns (ille, illa, illud, etc)-->
+{% if pos == "totpronoun" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--adjectives 212-->
+{% if pos == "totadjective" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--adjectives 212: noster ... maybe alter & miser?-->
+{% if pos == "extotadjective" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.femstem }}{{ terms.femend }}, {{ terms.neutstem }}{{ terms.neutend }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--3rd adjectives-->
+{% if pos == "thirdadjective" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi"><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>{{ terms.neutend }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--3rd adjectives: single termination-->
+{% if pos == "thirdadjst" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div>{{ terms.genitive }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div><span class="expdi">{{ terms.femstem }}</span>{{ terms.femend }}, <span class="expdi">{{ terms.neutstem}}</span>{{ terms.neutend }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--adjectives (alt)-->
+{% if pos == "altadjective" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.adjforms }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.adjforms }}</div>
+</div>
+{% endif %}
+{% endif %}
+
+<!--prepositions-->
+{% if pos == "preposition" %}
+{% if terms.diaudio %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ terms.di }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
+  <div>{{ terms.di }}</div>
+</div>
+
+{% endif %}
+{% endif %}
+
+<!--prepositional phrases-->
+{% if pos == "prepphrase" %}
+{% if prepphrase.diaudio %}
+<div class="card--top--back di {{ pos }}-di la-text d-flex justify-content-between">
+<div class="leftcornerb"></div>
+<div><span class="expdi">{{ prepphrase.di }}</div>
+<div class="rightcorner">
+    {%- include btns/di-btn.html -%}
+</div>
+</div>
+
+{% else %}
+<div class="card--top--back di {{ pos }}-di la-text d-flex justify-content-center">
+  <div>{{ prepphrase.di }}</div>
+</div>
+
+{% endif %}
+{% endif %}

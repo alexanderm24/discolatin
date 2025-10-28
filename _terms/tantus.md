@@ -1,7 +1,7 @@
 ---
 title: tantus
 meaning: so great, such a big
-ch: [twentyfour]
+ch: [twentyfour, 24rv]
 pos: totadjective
 femstem: tant
 femend: a

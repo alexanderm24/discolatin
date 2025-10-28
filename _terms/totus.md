@@ -1,7 +1,7 @@
 ---
 title: totus
 meaning: all, the whole
-ch: [twentyonetwo]
+ch: [twentyonetwo, 24rv]
 pos: totadjective
 femstem: tot
 femend: a

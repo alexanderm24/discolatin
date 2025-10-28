@@ -1,7 +1,7 @@
 ---
 title: vir
 meaning: man
-ch: [three, f1, f, ss, ss5, animalia, 7r]
+ch: [three, f1, f, ss, ss5, animalia, 7r, 24rv]
 pos: noun
 stem: vir
 genend: ī
