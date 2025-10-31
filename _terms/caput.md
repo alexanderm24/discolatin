@@ -4,9 +4,9 @@ meaning: head
 ch: [body, twentyfive]
 pos: nounthird
 genitive: capitis
-abbgender: m.
-abbgender2: masc.
-gender: masculine
+abbgender: n.
+abbgender2: neut.
+gender: neuter
 declension: third
 derivative: capital
 ---

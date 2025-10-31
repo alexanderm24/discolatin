@@ -1,6 +1,6 @@
 ---
 title: senatus
-meaning: house, home
+meaning: Senate
 pos: noun
 ch: [twentyfive]
 stem: senat
