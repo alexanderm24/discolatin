@@ -1,7 +1,7 @@
 ---
 title: oculus
 meaning: eye
-ch: body
+ch: [body, twentysix]
 pos: noun
 stem: ocul
 genend: ī
