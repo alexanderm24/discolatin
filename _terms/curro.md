@@ -1,7 +1,7 @@
 ---
 title: currō
 meaning: to run
-ch: [24rv]
+ch: [24rv, 23pp]
 pos: verb
 inf: currere
 secondppstem: curr

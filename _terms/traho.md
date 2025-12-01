@@ -1,7 +1,7 @@
 ---
 title: trahō
 meaning: to drag, pull
-ch: [twelve, f1, f, 7r, 24rv]
+ch: [twelve, f1, f, 7r, 24rv, 20pp]
 pos: verb
 inf: trahere
 secondppstem: trah

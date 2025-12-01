@@ -1,7 +1,7 @@
 ---
 title: dīcō
 meaning: to say
-ch: [ten, f1, f, ss, ss4, 7r, twenty, 24rv]
+ch: [ten, f1, f, ss, ss4, 7r, twenty, 24rv, 212pp]
 pos: verb
 inf: dīcere
 secondppstem: dīc

@@ -1,7 +1,7 @@
 ---
 title: dūcō
 meaning: to lead
-ch: [seven, ten, mt, mt5thru7, f1, f, ss, ss4, 7r, nineteen, 24rv]
+ch: [seven, ten, mt, mt5thru7, f1, f, ss, ss4, 7r, nineteen, 24rv, 20pp]
 pos: verb
 inf: dūcere
 secondppstem: dūc

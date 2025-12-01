@@ -1,7 +1,7 @@
 ---
 title: cadō
 meaning: to fall
-ch: [three, mt, mt1thru4, 7r, twentyfour, 24rv]
+ch: [three, mt, mt1thru4, 7r, twentyfour, 24rv, 24pp]
 pos: verb
 inf: cadere
 secondppstem: cad

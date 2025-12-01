@@ -1,7 +1,7 @@
 ---
 title: sum
 meaning: to be
-ch: [one, two, seventeen, 7r, seventeen7, 24rv]
+ch: [one, two, seventeen, 7r, seventeen7, 24rv, 212pp]
 pos: verb
 inf: esse
 thirdpp: fuī

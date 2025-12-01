@@ -1,7 +1,7 @@
 ---
 title: legō
 meaning: to read
-ch: [one, 7r, twentyfour, 24rv]
+ch: [one, 7r, twentyfour, 24rv, 24pp]
 pos: verb
 inf: legere
 secondppstem: leg

@@ -1,7 +1,7 @@
 ---
 title: videō
 meaning: to see
-ch: [four, mt, mt1thru4, ss, ss3, 7r, 24rv]
+ch: [four, mt, mt1thru4, ss, ss3, 7r, 24rv, 212pp]
 pos: verb
 inf: vidēre
 secondppstem: vid

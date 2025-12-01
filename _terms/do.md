@@ -1,7 +1,7 @@
 ---
 title: dō
 meaning: to give
-ch: [24rv]
+ch: [24rv, 20pp]
 pos: verb
 inf: dāre
 secondppstem: d

@@ -1,7 +1,7 @@
 ---
 title: agō
 meaning: to do, drive, act
-ch: [fourteen, f2, f, 7r, 24rv]
+ch: [fourteen, f2, f, 7r, 24rv, 20pp]
 pos: verb
 inf: agere
 secondppstem: ag
