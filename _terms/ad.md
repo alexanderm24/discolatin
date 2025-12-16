@@ -1,6 +1,6 @@
 ---
 title: ad
-meaning: to, toward
+meaning: to, toward, at
 ch: [two, four, seven, mt, mt8thru9, 7r, 24rv]
 pos: preposition
 di: (takes accusative)
