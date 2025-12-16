@@ -4,7 +4,7 @@ title: Cumulative
 ch: cumulative
 grade: seventh
 verbs: yes
-conjverbs: yes
+conjverbs: no
 nouns: yes
 pronouns: yes
 adjectives: yes
@@ -13,6 +13,6 @@ prepositions: yes
 conjunctions: yes
 interjections: yes
 composites: no
-prepphrases: yes
+prepphrases: no
 phrases: yes
 ---
