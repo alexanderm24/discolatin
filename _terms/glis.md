@@ -3,7 +3,7 @@ title: glis
 meaning: doormouse
 pos: nounthird
 ch: [twentyeight]
-genitive: giris
+genitive: gliris
 abbgender: m.
 abbgender2: masc.
 gender: masculine
