@@ -1,6 +1,6 @@
 ---
 title: glis
-meaning: doormouse
+meaning: dormouse
 pos: nounthird
 ch: [twentyeight]
 genitive: gliris
