@@ -1,6 +1,7 @@
 ---
 title: sella
 meaning: chair, stool
+ch: [twentyeight]
 pos: noun
 stem: sell
 genend: ae
