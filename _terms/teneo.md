@@ -1,7 +1,7 @@
 ---
 title: teneō
 meaning: to hold
-ch: [nine, mt, mt8thru9, ss, ss3, 7r]
+ch: [nine, mt, mt8thru9, ss, ss3, 7r, twentyeight]
 pos: verb
 inf: tenēre
 secondppstem: ten
