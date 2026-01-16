@@ -1,7 +1,7 @@
 ---
 title: mulier
 meaning: woman
-ch: twentyseven
+ch: [twentyseven]
 pos: nounthird
 genitive: mulieris
 abbgender: f.
