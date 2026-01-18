@@ -1,3 +1,4 @@
+{% if page.title == "Review 1-2" %}
 <div class="container pc">
   <!--carousel, includes next/prev buttons-->
   <div id="cw" class="row text-center">
@@ -13,16 +14,17 @@
         </div>
       </div>
 
+
+
+        
           <!--card list-->
           {% for terms in site.terms %}
           {% assign ch = terms.ch %}
           {% assign pos = terms.pos %}
           {% assign conj = terms.conjugation %}
           {% assign declension = terms.declension %}
-    
-          
-          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" %}
-     
+
+          {% if ch contains "one" or ch contains "two" %}
           <div class="carousel-item">
             <div class="scene-bg scene--card-bg">
               <div class="card-bg card-full-entry">
@@ -39,11 +41,16 @@
               {{ terms }}
             </div>
           </div>
-
-
           {% endif %}
           {% endfor %}
+
+          
+
+
+
        </div>
+
+
 
 </div>
 <!--carousel control-->
@@ -51,3 +58,934 @@
     </div>    
 </div>
 </div>
+{% endif %}
+
+{% if page.title == "Review 1-3" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-4" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-5" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-6" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-7" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-8" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-9" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-10" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten"%}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-11" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-12" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-13" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" or ch contains "thirteen" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-14" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" or ch contains "thirteen" or ch contains "fourteen" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-15" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" or ch contains "thirteen" or ch contains "fourteen" or ch contains "fifteen" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-16" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" or ch contains "thirteen" or ch contains "fourteen" or ch contains "fifteen" or ch contains "sixteen" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}
+
+{% if page.title == "Review 1-17" %}
+<div class="container pc">
+  <!--carousel, includes next/prev buttons-->
+  <div id="cw" class="row text-center">
+    <div class="col">
+
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <!--cover card-->
+      <div class="carousel-item active">
+        <div class="scene-bg scene--card-bg">
+          <div class="card__face-bg card__face--front-bg demo">{{ page.title }}</div>
+        </div>
+      </div>
+
+
+
+        
+          <!--card list-->
+          {% for terms in site.terms %}
+          {% assign ch = terms.ch %}
+          {% assign pos = terms.pos %}
+          {% assign conj = terms.conjugation %}
+          {% assign declension = terms.declension %}
+
+          {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" or ch contains "nine" or ch contains "ten" or ch contains "eleven" or ch contains "twelve" or ch contains "thirteen" or ch contains "fourteen" or ch contains "fifteen" or ch contains "sixteen" or ch contains "seventeen" %}
+          <div class="carousel-item">
+            <div class="scene-bg scene--card-bg">
+              <div class="card-bg card-full-entry">
+                {%- include card-bg/card-dif-bg.html -%}
+              </div>
+              <div class="card-bg card-headword" style="display:none;">
+                {%- include card-bg/card-dib-bg.html -%}
+              </div>
+              <div class="card-bg card-english" style="display:none;">
+                {%- include card-bg/card-en-bg.html -%}
+              </div>
+            </div>
+            <div class="p-5">
+              {{ terms }}
+            </div>
+          </div>
+          {% endif %}
+          {% endfor %}
+
+          
+
+
+
+       </div>
+
+
+
+</div>
+<!--carousel control-->
+{%- include carousels/cumctrlcarousel.html -%}
+    </div>    
+</div>
+</div>
+{% endif %}

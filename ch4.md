@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 4
 ch: four
+thru: thru4
 grade: sixth
 verbs: yes
 conjverbs: yes

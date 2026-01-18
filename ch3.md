@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 3
 ch: three
+thru: thru3
 grade: sixth
 verbs: yes
 conjverbs: no

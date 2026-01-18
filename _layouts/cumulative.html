@@ -5,9 +5,8 @@ layout: base
 
 {%- include sidebar.html -%}
 
-  <h3>Total Words Learned: 141</h3>
-  <h3>Comprising Chapters 1-6</h3>
-  <h5>Last Updated: 10/23/2025</h5>
+  <h3>Total Words Learned: {{ page.twl }}</h3>
+  <h3>Comprising Chapters {{ page.thru }}</h3>
 
   {%- include bbuttons.html -%}
   {%- include carousels/cumcarousel.html -%}

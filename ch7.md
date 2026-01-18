@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 7
 ch: seven
+thru: thru7
 grade: sixth
 verbs: yes
 conjverbs: no

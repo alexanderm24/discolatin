@@ -796,12 +796,12 @@ z-index: 10000;
   padding: 0;
   width: 400px;
   left: calc(50% - 200px);
-  top: 760px;
+  top: 720px;
 }
 
 @media only screen and (max-width:600px) {
   .carousel-control-cum {
-    top: 590px
+    top: 575px
   }
 }
 

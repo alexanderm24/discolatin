@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 5
 ch: five
+thru: thru5
 grade: sixth
 verbs: yes
 conjverbs: yes

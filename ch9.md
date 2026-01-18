@@ -2,6 +2,7 @@
 layout: chlist
 title: Chapter 9
 ch: nine
+thru: thru9
 grade: sixth
 verbs: yes
 conjverbs: yes

@@ -1,0 +1,762 @@
+<container id="alph" class="vocabcontainer">
+    <div class="row text-center">
+      <div class="col">
+    {% for terms in site.terms %}
+  
+    {% assign pos = terms.pos %}
+    {% assign ch = terms.ch %}
+    {% assign inactive = terms.inactive %}
+    {% assign derivative = terms.derivative %}
+    {% assign derivatives = terms.derivatives %}
+    {% assign note = terms.note %}
+    {% assign repeat = terms.repeat %}
+    {% assign conj = terms.conjugation %}
+    {% assign declension = terms.declension %}
+  
+
+    {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+    <div class="scene scene--card">
+      <div class="card card-full-entry">
+        {%- include card/card-dif.html -%}
+      </div>
+      <div class="card card-headword" style="display:none;">
+        {%- include card/card-dib.html -%}
+      </div>
+      <div class="card card-english" style="display:none;">
+        {%- include card/card-en.html -%}
+      </div>
+    </div>
+
+
+  {% endif %}
+  
+  
+  {% endfor %}
+  
+  
+  
+      </div>
+    </div>
+</container>
+   
+  <!--Organize by Parts of Speech-->
+  <container id="pos" class="vocabcontainer">
+    <div class="row text-center">
+      <div class="col">
+  
+        
+  
+        
+  
+      {% if page.verbs %}
+        <h2>Verbs
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="A verb shows what a subject is doing or tells what the subject is, was, or will be. Usually, subjects are nouns, but in Latin, verbs don't always have a corresponding noun... Remember: subjects are baked into the verb! Verbs have three qualities: person, number, and tense.">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+        {% assign conj = terms.conjugation %}
+  
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+  
+        {% if pos == "verb" %}
+        <div class="scene scene--card">
+          <div class="card card-full-entry">
+            {%- include card/card-dif.html -%}
+          </div>
+          <div class="card card-headword" style="display:none;">
+            {%- include card/card-dib.html -%}
+          </div>
+          <div class="card card-english" style="display:none;">
+            {%- include card/card-en.html -%}
+          </div>
+        </div>
+        {% endif %}
+
+
+      {% endif %}
+      {% endfor %}
+  
+        {% if page.conjverbs %}
+        <h2>Verbs (Conjugated)
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Verbs" data-bs-content="These verbs are conjugated, which means that their endings have been changed. You would not be able to find these specific forms in an ordinary dictionary.">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+  
+        {% if pos == "conjverb" %}
+        <div class="scene scene--card">
+          <div class="card card-full-entry">
+            {%- include card/card-dif.html -%}
+          </div>
+          <div class="card card-headword" style="display:none;">
+            {%- include card/card-dib.html -%}
+          </div>
+          <div class="card card-english" style="display:none;">
+            {%- include card/card-en.html -%}
+          </div>
+        </div>
+
+        {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+  <!--{% if page.verbs %}
+  <h2>Infinitives 
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Infinitives" data-bs-content="Regular verbs belong to one of four conjugations, or groups. You can tell what conjugation a verb belongs to based on its infinitive, which is the second principal part in a dictionary entry of a verb. While you will not be quizzed on infinitives in isolation, practice these to remember that infinitives are translated as 'to [verb]'.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+    </h2>
+  {% endif %}
+  
+  {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+        {% assign conj = terms.conjugation %}
+  
+  {% if ch contains page.ch %}
+  
+  
+  {% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+    <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--infverb la-text">{{ terms.secondppstem }}{{ terms.infend }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-infconj la-text"> {{ terms.conjugation }} conjugation</div>
+        <div class="def">{{ terms.meaning }}</div>
+      </div>
+    </div>
+    </div>
+  {% endif %}
+  
+  {% if pos == "verb" and conj == "second" %}
+    <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--infverb la-text">{{ terms.secondppstem }}<span class="essm">{{ terms.infend }}</span></div>
+      <div class="card__face card__face--back">
+        <div class="di-infconj la-text"> {{ terms.conjugation }} conjugation</div>
+        <div class="def">{{ terms.meaning }}</div>
+      </div>
+    </div>
+    </div>
+  {% endif %}
+  
+  {% if pos == "verb" and conj == "irregular" %}
+    <div class="scene scene--card">
+    <div class="card">
+      <div class="card__face card__face--front--infverb la-text">{{ terms.inf }}</div>
+      <div class="card__face card__face--back">
+        <div class="di-infconj la-text"> {{ terms.conjugation }} conjugation</div>
+        <div class="def">{{ terms.meaning }}</div>
+      </div>
+    </div>
+    </div>
+  {% endif %}
+  
+  
+  {% endif %}
+  {% endfor %}-->
+  
+  
+        {% if page.nouns %}
+        <h2>Nouns 
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Nouns" data-bs-content="A noun names people, places, things, or ideas. In Latin, nouns have three qualities: gender, case, and number.">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+          </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+        {% assign declension = terms.declension %}
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+  
+  
+  <!--nouns 1&2-->
+  {% if pos == "noun" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--exnounsecond (2nd decl. stem exceptions)-->
+  {% if pos == "exnounsecond" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--nouns 3-->
+  {% if pos == "nounthird" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--nouns 5-->
+  {% if pos == "nounfifth" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--nouns indecl-->
+  {% if pos == "nouni" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+
+  {% endif %}
+  {% endfor %}
+  
+  
+          {% if page.pronouns %}
+        <h2>Pronouns
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Pronouns" data-bs-content="Pronouns take the place of nouns. They refer to people, places, things, or ideas. There are personal, relative, interrogative, demonstrative, intensive, reflexive, and indefinite pronouns.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  <!--pronouns-->
+  {% if pos == "pronoun" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--personal pronoun-->
+  {% if pos == "perspronoun" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--pronoun third (with gender)-->
+  {% if pos == "pronounthird" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  
+  {% endif %}
+  {% endfor %}
+  
+  
+          {% if page.adjectives %}
+        <h2>Adjectives
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adjectives" data-bs-content="Adjectives modify or describe nouns and pronouns.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+        <!--adjectives 212-->
+  {% if pos == "totadjective" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!--adjectives 212: noster ... maybe alter & miser?-->
+  {% if pos == "extotadjective" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+        <!--3rd adjectives-->
+        {% if pos == "thirdadjective" %}
+        <div class="scene scene--card">
+          <div class="card card-full-entry">
+            {%- include card/card-dif.html -%}
+          </div>
+          <div class="card card-headword" style="display:none;">
+            {%- include card/card-dib.html -%}
+          </div>
+          <div class="card card-english" style="display:none;">
+            {%- include card/card-en.html -%}
+          </div>
+        </div>
+        {% endif %}
+  
+  <!--adjectives (alt)-->
+  {% if pos == "altadjective" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+
+  <!--adjectives (indeclinable)-->
+  {% if pos == "iadj" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+      {% if page.adverbs %}
+        <h2>Adverbs
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Adverbs" data-bs-content="Adverbs modify or describe verbs, adjectives, and other adverbs. Adverbs answer questions including (but not limited to) 'why' (cūr?) 'how' (quomodo?), 'when' (ubi, quando?), and 'where' (ubi?).">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+      {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+        {% if pos == "adverb" %}
+        <div class="scene scene--card">
+          <div class="card card-full-entry">
+            {%- include card/card-dif.html -%}
+          </div>
+          <div class="card card-headword" style="display:none;">
+            {%- include card/card-dib.html -%}
+          </div>
+          <div class="card card-english" style="display:none;">
+            {%- include card/card-en.html -%}
+          </div>
+        </div>
+  {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+          {% if page.prepositions %}
+        <h2>Prepositions
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositions" data-bs-content="Prepositions show the position or relationship of one noun to another. In Latin, prepositions take on nouns in the accusative and/or ablative cases. See examples in 'prepositional phrases.' ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+        <!--prepositions-->
+  {% if pos == "preposition" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  
+  {% endif %}
+  {% endfor %}
+  
+  {% if page.prepphrases %}
+  <h2>Prepositional Phrases
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Prepositional Phrases" data-bs-content="Phrases themselves are not parts of speech, but I have categorized them separately here. These are examples of how prepositions can take the ablative and/or accusative noun cases.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  {% endif %}
+  
+  {% for prepphrase in site.prepphrase %}
+  
+  
+        {% assign pos = prepphrase.pos %}
+        {% assign ch = prepphrase.ch %}
+        {% assign inactive = prepphrase.inactive %}
+        {% assign derivative = prepphrase.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = prepphrase.note %}
+        {% assign repeat = prepphrase.repeat %}
+  
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+        {% if pos == "prepphrase" %}
+        <!--make card with separate front and back here.-->
+        {%- include card/card-prepphrase.html -%}
+        {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+  
+  
+  
+          {% if page.conjunctions %}
+        <h2>Conjunctions
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Conjunctions" data-bs-content="Conjunctions join words, phrases, or clauses together. When you come across a conjunction joining two clauses, you should pause and translate the first clause before proceeding.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+       
+  {% if pos == "conjunction" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+          {% if page.interjections %}
+        <h2>Interjections
+          <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Interjections" data-bs-content="Interjections show emotion. They stand alone and are not part of the subject or the predicate.">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+              <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+              <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+            </svg></a>
+        </h2>
+        {% endif %}
+  
+        {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+  
+        <!--interjection-->
+  {% if pos == "interjection" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  {% endif %}
+  {% endfor %}
+  
+  {% if page.composites %}
+  <h2>Composite
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Composite" data-bs-content="This really is a rare category! All that's happening is two words fused together.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+    </h2>
+  </h2>
+  {% endif %}
+  
+  {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+  <!--composite-->
+  {% if pos == "composite" %}
+  <div class="scene scene--card">
+    <div class="card card-full-entry">
+      {%- include card/card-dif.html -%}
+    </div>
+    <div class="card card-headword" style="display:none;">
+      {%- include card/card-dib.html -%}
+    </div>
+    <div class="card card-english" style="display:none;">
+      {%- include card/card-en.html -%}
+    </div>
+  </div>
+  {% endif %}
+  
+  
+  {% endif %}
+  {% endfor %}
+  
+  <!--other phrases-->
+  {% if page.phrases %}
+  <h2>Other Phrases
+    <a tabindex="0" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Other Phrases" data-bs-content="Phrases themselves are not parts of speech, but I have categorized them separately here.">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-info-circle" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+      </svg></a>
+  </h2>
+  {% endif %}
+  
+  {% for terms in site.terms %}
+  
+        {% assign pos = terms.pos %}
+        {% assign ch = terms.ch %}
+        {% assign inactive = terms.inactive %}
+        {% assign derivative = terms.derivative %}
+        {% assign derivatives = terms.derivatives %}
+        {% assign note = terms.note %}
+        {% assign repeat = terms.repeat %}
+  
+        {% if ch contains "one" or ch contains "two" or ch contains "three" or ch contains "four" or ch contains "five" or ch contains "six" or ch contains "seven" or ch contains "eight" %}
+  
+    {% if pos == "phrase" %}
+    <div class="scene scene--card">
+      <div class="card card-full-entry">
+        {%- include card/card-dif.html -%}
+      </div>
+      <div class="card card-headword" style="display:none;">
+        {%- include card/card-dib.html -%}
+      </div>
+      <div class="card card-english" style="display:none;">
+        {%- include card/card-en.html -%}
+      </div>
+    </div>
+    {% endif %}
+    {% endif %}
+  
+  {% endfor %}
+  
+  
+  
+      </div>
+    </div>
+  </container>
