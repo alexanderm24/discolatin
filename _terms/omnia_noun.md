@@ -3,7 +3,7 @@ title: omnia
 meaning: everything
 ch: [six, ss, ss5]
 pos: nouni
-disamb: (noun)
+disamb: (alone/as a noun)
 abbgender: n.
 abbgender2: neut.
 gender: neuter

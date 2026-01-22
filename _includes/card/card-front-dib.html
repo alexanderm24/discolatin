@@ -176,7 +176,18 @@
 
 <!--3rd adjectives-->
 {% if pos == "thirdadjective" %}
-{{ terms.title }}
+<div class="text-start">{{ terms.title }},<br>
+    <div class="d-flex flex-row">
+    <div class="border-black border-bottom border-3">
+        <span style="opacity:0"><span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }}</span>
+    </div>
+    </div>
+    <div class="d-flex flex-row">
+    <div class="border-black border-bottom border-3">
+        <span style="opacity:0"><span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}</span>
+    </div>
+    </div>
+</div>
 {% endif %}
 
 <!--3rd adjectives: single termination-->
