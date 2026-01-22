@@ -1,5 +1,5 @@
     <!--DI cards-->
-    {% unless pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" or pos == "iadj" %}
+    {% unless pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" or pos == "iadj" or pos =="conjverb" or pos =="pronounthird"%}
     {%- include card/di.html -%}
     <div class="card--top--back">
       <div class="leftcornerb"></div>
@@ -36,7 +36,7 @@
     {% endunless %}
     
 
-    {% if pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" or pos == "iadj" %}
+    {% if pos == "adverb" or pos == "interjection" or pos == "conjunction" or pos == "perspronoun" or pos == "prepdual" or pos == "phrase" or pos == "composite" or pos == "iadj" or pos == "conjverb" or pos =="pronounthird" %}
     <div class="card--top--back">
         <div class="rightcorner">
             {%- include btns/di-btn.html -%}
