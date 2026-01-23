@@ -4,5 +4,5 @@ ch: [twentysix]
 pos: totpronoun
 meaning: this
 fem: haec
-neutstem: hoc
+neut: hoc
 ---
