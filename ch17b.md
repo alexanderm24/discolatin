@@ -3,6 +3,7 @@ layout: chlist
 title: Chapter 17
 ch: seventeen7
 grade: seventh
+4pp: no
 verbs: yes
 conjverbs: no
 nouns: yes

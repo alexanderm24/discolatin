@@ -3,7 +3,7 @@
 {% if terms.diaudio %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
 <div class="leftcornerb"></div>
-<div> {{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</u>{% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+<div> {{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</u>{% if page.4pp == "yes" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 <div class="rightcorner">
 {%- include btns/di-btn.html -%}
 </div>
@@ -11,7 +11,7 @@
 
 {% else %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
-  <div> {{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</u>{% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+  <div> {{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span>{{ terms.infend }}</u>{% if page.4pp == "yes" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 </div>
 {% endif %}
 {% endif %}
@@ -21,7 +21,7 @@
 {% if terms.diaudio %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
 <div class="leftcornerb"></div>
-  <div>{{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></u> {% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+  <div>{{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></u> {% if page.4pp == "yes" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 <div class="rightcorner">
     {%- include btns/di-btn.html -%}
 </div>
@@ -29,7 +29,7 @@
 
 {% else %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
-  <div>{{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></u> {% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+  <div>{{ terms.title }}, <u><span class="expdi">{{ terms.secondppstem }}</span><span class="essm">{{ terms.infend }}</span></u> {% if page.4pp == "yes" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 </div>
 {% endif %}
 {% endif %}
@@ -39,7 +39,7 @@
 {% if terms.diaudio %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
 <div class="leftcornerb"></div>
-  <div>{{ terms.title }}, <u>{{ terms.inf }}</u> {% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+  <div>{{ terms.title }}, <u>{{ terms.inf }}</u> {% if page.4pp == "yes"%}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 <div class="rightcorner">
     {%- include btns/di-btn.html -%}
 </div>
@@ -47,7 +47,7 @@
 
 {% else %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-center">
-  <div>{{ terms.title }}, <u>{{ terms.inf }}</u> {% if page.grade == "seventh" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
+  <div>{{ terms.title }}, <u>{{ terms.inf }}</u> {% if page.grade == "seventh" and page.4pp == "yes" %}, <u>{{ terms.thirdpp }}</u>, <u>{{ terms.fourthpp }}</u> {% endif %}</div>
 </div>
 {% endif %}
 {% endif %}
@@ -254,7 +254,7 @@
 {% if terms.diaudio %}
 <div class="card--top--back di {{ pos }} la-text d-flex justify-content-between">
 <div class="leftcornerb"></div>
-  <div>{{ terms.title }}, <u>{{ terms.femend }}</u>, <u>{{ terms.neutend }}</u></div>
+  <div>{{ terms.title }}, <u>-{{ terms.femend }}</u>, <u>-{{ terms.neutend }}</u></div>
 <div class="rightcorner">
     {%- include btns/di-btn.html -%}
 </div>

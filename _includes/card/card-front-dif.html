@@ -1,16 +1,33 @@
 <!--verbs 1,3,4-->
-{% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth" %}
+{% if pos == "verb" and conj == "first" or conj == "third" or conj == "fourth"%}
+{% if page.4pp == "yes" %}
+<div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.secondppstem }}</span>&#8205;{{ terms.infend }},<br> {{ terms.thirdpp }},<br> {{ terms.fourthpp }}</div>
+
+{% else %}
 <div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.secondppstem }}</span>&#8205;{{ terms.infend }}</div>
+
+{% endif %}
 {% endif %}
 
 <!--2nd conj-->
 {% if pos == "verb" and conj == "second" %}
+{% if page.4pp == "yes" %}
+<div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.secondppstem }}</span>&#8205;<span class="essm">{{ terms.infend }}</span>,<br> {{ terms.thirdpp }},<br> {{ terms.fourthpp }}</div>
+{% else %}
 <div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.secondppstem }}</span>&#8205;<span class="essm">{{ terms.infend }}</span></div>
+
+{% endif %}
 {% endif %}
 
 <!--irregular conj-->
 {% if pos == "verb" and conj == "irregular" %}
+{% if page.4pp == "yes" %}
+<div class="text-start">{{ terms.title }},<br> {{ terms.inf }},<br> {{ terms.thirdpp }},<br> {{ terms.fourthpp }}</div>
+
+{% else %}
 <div class="text-start">{{ terms.title }},<br> {{ terms.inf }}</div>
+
+{% endif %}
 {% endif %}
 
 <!--verbs (conjugated)-->
@@ -83,7 +100,7 @@
 
 <!--3rd adjectives-->
 {% if pos == "thirdadjective" %}
-<div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }}, <span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}</div>
+<div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.femstem }}</span>&#8205;{{ terms.femend }},<br> <span class="expdi">{{ terms.neutstem }}</span>&#8205;{{ terms.neutend }}</div>
 {% endif %}
 
 <!--3rd adjectives: single termination-->
