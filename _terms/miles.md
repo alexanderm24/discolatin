@@ -1,7 +1,7 @@
 ---
 title: miles
 meaning: soldier
-ch: [ss, ss3, twenty]
+ch: [ss, ss3, twenty, twentynine]
 pos: nounthird
 genitive: militis
 abbgender: m.

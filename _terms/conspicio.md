@@ -1,7 +1,7 @@
 ---
 title: cōnspiciō
 meaning: to notice
-ch: [four, 7r]
+ch: [four, 7r, twentynine]
 pos: verb
 inf: cōnspicere
 secondppstem: cōnspic

@@ -3,8 +3,6 @@ title: qui
 ch: [twentyeight]
 pos: totpronoun
 meaning: who, who, which/that
-femstem: qu
-femend: ae
-neutstem: qu
-neutend: od
+fem: quae
+neut: quod
 ---

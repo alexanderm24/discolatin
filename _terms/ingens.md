@@ -1,7 +1,7 @@
 ---
 title: ingens
 meaning: huge
-ch: [twentyonetwo]
+ch: [twentyonetwo, twentynine]
 pos: thirdadjst
 genitive: ingentis
 ---

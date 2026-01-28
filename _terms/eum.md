@@ -2,7 +2,7 @@
 title: eum
 meaning: him
 ch: [five, seven, mt, mt5thru7, ss, ss1]
-pos: pronoun
+pos: pronounthird
 abbgender: m.
 abbgender2: masc.
 gender: masculine

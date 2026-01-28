@@ -1,7 +1,7 @@
 ---
 title: ferō
 meaning: to bring
-ch: [ten, twelve, seventeen, f1, f, seventeen7, twentyfive, 25pp]
+ch: [ten, twelve, seventeen, f1, f, seventeen7, twentyfive, 25pp, twentynine]
 pos: verb
 inf: ferre
 thirdpp: tulī
