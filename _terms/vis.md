@@ -1,6 +1,6 @@
 ---
 title: vis
-meaning: force, amounmt; pl. strength
+meaning: force, amount; pl. strength
 ch: [thirty]
 pos: noun
 genitive: acc., vim, abl., vī
