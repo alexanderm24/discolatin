@@ -9,5 +9,5 @@ abbgender: f.
 abbgender2: fem.
 gender: feminine
 declension: first
-derivative: insular
+derivatives: insular, penninsula
 ---
