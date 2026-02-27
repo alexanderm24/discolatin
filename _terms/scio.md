@@ -1,7 +1,7 @@
 ---
 title: sciō
 meaning: to know
-ch: [sixteen, f3, f, ss, ss4, 7r]
+ch: [sixteen, f3, f, ss, ss4, 7r, thirtyone]
 pos: verb
 inf: scīre
 secondppstem: sc

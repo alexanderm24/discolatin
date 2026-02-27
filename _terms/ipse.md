@@ -1,10 +1,9 @@
 ---
 title: ipse
-meaning: himself, herself, itself
+ch: [thirtyone]
 pos: totpronoun
-femstem: ips
-femend: a
-neutstem: ips
-neutend: ud
+meaning: himself, herself, itself
+fem: ipsa
+neut: ipsud
 six: y
 ---
