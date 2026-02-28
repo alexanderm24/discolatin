@@ -1,7 +1,7 @@
 ---
 title: optimus
 meaning: best, very good
-ch: [twenty, thrityone]
+ch: [twenty, thirtyone]
 pos: totadjective
 femstem: optim
 femend: a
