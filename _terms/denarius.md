@@ -1,7 +1,7 @@
 ---
 title: denarius
 meaning: denarius (silver coin)
-ch: [thrityone]
+ch: [thirtyone]
 pos: noun
 stem: denari
 genend: ī

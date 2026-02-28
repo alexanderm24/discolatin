@@ -1,6 +1,6 @@
 ---
 title: autem
 meaning: however, moreover
-ch: [thrityone]
+ch: [thirtyone]
 pos: adverb
 ---

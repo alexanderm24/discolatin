@@ -4,6 +4,6 @@ ch: [thirtyone]
 pos: totpronoun
 meaning: himself, herself, itself
 fem: ipsa
-neut: ipsud
+neut: ipsum
 six: y
 ---
