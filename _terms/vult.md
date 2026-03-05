@@ -3,6 +3,6 @@ title: vult
 meaning: he/she/it wants
 ch: five
 pos: conjverb
-di: (3rd person singular)
+di: (from volō, velle)
 six: y
 ---
