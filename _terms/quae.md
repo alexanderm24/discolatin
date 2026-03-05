@@ -1,6 +1,6 @@
 ---
 title: quae
-meaning: who
+meaning: who, which
 ch: [one, mt, mt1thru4, ss, ss3]
 pos: pronounthird
 abbgender: (f.)

@@ -1,6 +1,6 @@
 ---
 title: qui
-meaning: who
+meaning: who, which
 ch: [three, mt, mt1thru4, ss, ss3]
 pos: pronounthird
 abbgender: (m.)
