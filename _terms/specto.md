@@ -1,6 +1,6 @@
 ---
 title: spectō
-meaning: to watch
+meaning: to watch, look at
 ch: [seven, mt, mt5thru7, ss, ss2, 7r]
 pos: verb
 inf: spectāre
