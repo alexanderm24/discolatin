@@ -7,6 +7,7 @@ inf: timēre
 secondppstem: tim
 infend: ēre
 thirdpp: timuī
+fourthpp: --
 conjugation: second
 six: y
 ---
