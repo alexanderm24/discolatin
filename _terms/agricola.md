@@ -1,7 +1,7 @@
 ---
 title: agricola
 meaning: farmer
-ch: [nle1]
+ch: [nle1, wf]
 pos: noun
 stem: agricol
 genend: ae

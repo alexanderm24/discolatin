@@ -1,7 +1,7 @@
 ---
 title: cīvis
 meaning: citizen
-ch: [thirteen, f2, f, ss, ss2]
+ch: [thirteen, f2, f, ss, ss2, wf]
 pos: nounthird
 genitive: cīvis
 abbgender: m./f.

@@ -1,7 +1,7 @@
 ---
 title: perterritus
 meaning: frightened
-ch: five
+ch: [five, wf]
 pos: totadjective
 femstem: perterrit
 femend: a

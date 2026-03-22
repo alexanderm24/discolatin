@@ -1,7 +1,7 @@
 ---
 title: poeta
 meaning: poet
-ch: [twentyfive]
+ch: [twentyfive, wf]
 pos: noun
 stem: poet
 genend: ae

@@ -1,7 +1,7 @@
 ---
 title: clāmō
 meaning: to shout
-ch: [three, ss, ss1, 7r]
+ch: [three, ss, ss1, 7r, wf]
 pos: verb
 inf: clamāre
 secondppstem: clām

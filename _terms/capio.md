@@ -1,7 +1,7 @@
 ---
 title: capiō
 meaning: to take
-ch: [24rv, 20pp]
+ch: [24rv, 20pp, wf]
 pos: verb
 inf: capere
 secondppstem: cap

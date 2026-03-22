@@ -1,7 +1,7 @@
 ---
 title: verbum
 meaning: word
-ch: [nle1]
+ch: [nle1, wf]
 pos: noun
 stem: verb
 genend: ī

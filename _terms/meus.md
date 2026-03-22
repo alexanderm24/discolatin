@@ -1,7 +1,7 @@
 ---
 title: meus
 meaning: my
-ch: [seven, mt, mt5thru7, 7r]
+ch: [seven, mt, mt5thru7, 7r, wf]
 pos: totadjective
 femstem: me
 femend: a

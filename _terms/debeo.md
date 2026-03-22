@@ -2,7 +2,7 @@
 title: dēbeō
 meaning: ought
 pos: verb
-ch: [twentysix, 26pp]
+ch: [twentysix, 26pp, wf]
 inf: debēre
 secondppstem: deb
 infend: ēre

@@ -1,7 +1,7 @@
 ---
 title: terra
 meaning: earth, ground
-ch: [twentysix]
+ch: [twentysix, wf]
 pos: noun
 stem: terr
 genend: ae

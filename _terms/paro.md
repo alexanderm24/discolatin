@@ -1,7 +1,7 @@
 ---
 title: parō
 meaning: to prepare
-ch: [five, ss, ss1, nineteen]
+ch: [five, ss, ss1, nineteen, wf]
 pos: verb
 inf: parāre
 secondppstem: par

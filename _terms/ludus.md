@@ -1,7 +1,7 @@
 ---
 title: lūdus
 meaning: school
-ch: [twentysix]
+ch: [twentysix, wf]
 pos: noun
 stem: lūd
 genend: ī

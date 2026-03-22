@@ -1,7 +1,7 @@
 ---
 title: navigō
 meaning: to sail
-ch: [nle1]
+ch: [nle1, wf]
 pos: verb
 inf: navigāre
 secondppstem: navig

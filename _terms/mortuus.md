@@ -1,7 +1,7 @@
 ---
 title: mortuus
 meaning: DEAD
-ch: [sixteen, f3, f]
+ch: [sixteen, f3, f, wf]
 pos: totadjective
 femstem: mortu
 femend: a

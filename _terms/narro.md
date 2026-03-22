@@ -1,7 +1,7 @@
 ---
 title: narrō
 meaning: to tell (a story)
-ch: [twenty]
+ch: [twenty, wf]
 pos: verb
 inf: narrāre
 secondppstem: narr

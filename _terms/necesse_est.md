@@ -1,7 +1,7 @@
 ---
 title: necesse est
 meaning: it is necessary
-ch: six
+ch: [six, wf]
 pos: phrase
 adjective: necesse
 verb: est

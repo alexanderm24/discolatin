@@ -1,7 +1,7 @@
 ---
 title: aqua
 meaning: water
-ch: [six, 7r]
+ch: [six, 7r, wf]
 pos: noun
 stem: aqu
 genend: ae

@@ -2,7 +2,7 @@
 title: soror
 meaning: sister
 pos: nounthird
-ch: [f1, f, ss, ss2, familia, 7r]
+ch: [f1, f, ss, ss2, familia, 7r, wf]
 genitive: sororis
 abbgender: f.
 abbgender2: fem.

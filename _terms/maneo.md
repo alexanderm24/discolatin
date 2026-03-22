@@ -1,7 +1,7 @@
 ---
 title: maneō
 meaning: to stay, remain
-ch: [nine, mt, mt8thru9, 7r, 24rv, 212pp]
+ch: [nine, mt, mt8thru9, 7r, 24rv, 212pp, wf]
 pos: verb
 inf: manēre
 secondppstem: man

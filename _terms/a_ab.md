@@ -1,7 +1,7 @@
 ---
 title: ā/ab
 meaning: from, away from
-ch: [nine, thirteen, mt, mt8thru9, 7r, 24rv]
+ch: [nine, thirteen, mt, mt8thru9, 7r, 24rv, wf]
 pos: preposition
 di: (takes ablative)
 laudio: ../assets/audio/a_ab-laudio.mp3

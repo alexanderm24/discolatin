@@ -1,6 +1,7 @@
 ---
 title: Rōma
 meaning: Rome
+ch: [wf]
 pos: noun
 stem: Rōm
 genend: ae

@@ -1,7 +1,7 @@
 ---
 title: necō
 meaning: to kill
-ch: [twenty]
+ch: [twenty, wf]
 pos: verb
 inf: necāre
 secondppstem: nec

@@ -1,7 +1,7 @@
 ---
 title: insula
 meaning: island, apartment building
-ch: [thirty]
+ch: [thirty, wf]
 pos: noun
 stem: insul
 genend: ae

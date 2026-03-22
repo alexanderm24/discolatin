@@ -1,7 +1,7 @@
 ---
 title: sedeō
 meaning: to sit
-ch: [one, mt, mt1thru4, ss, ss1, 7r, twentyeight]
+ch: [one, mt, mt1thru4, ss, ss1, 7r, twentyeight, wf]
 pos: verb
 inf: sedēre
 secondppstem: sed

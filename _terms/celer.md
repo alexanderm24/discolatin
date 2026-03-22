@@ -1,7 +1,7 @@
 ---
 title: celer
 meaning: quick, swift
-ch: [twentynine]
+ch: [twentynine, wf]
 pos: thirdadjective
 femstem: celer
 femend: is

@@ -1,7 +1,7 @@
 ---
 title: pulcher
 meaning: beautiful
-ch: [twentyeight]
+ch: [twentyeight, wf]
 pos: totadjective
 femstem: pulchr
 femend: a

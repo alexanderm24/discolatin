@@ -1,7 +1,7 @@
 ---
 title: omnis
 meaning: every, all
-ch: [eighteen]
+ch: [eighteen, wf]
 pos: thirdadjective
 femstem: omn
 femend: is

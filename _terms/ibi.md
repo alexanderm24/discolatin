@@ -1,7 +1,7 @@
 ---
 title: ibi
 meaning: there
-ch: [five, mt, mt5thru7, 7r]
+ch: [five, mt, mt5thru7, 7r, wf]
 pos: adverb
 laudio: ../assets/audio/ibi-laudio.mp3
 haudio: ../assets/audio/hic-laudio.mp3

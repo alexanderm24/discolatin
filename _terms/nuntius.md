@@ -1,6 +1,7 @@
 ---
 title: nūntius
 meaning: messenger
+ch: [wf]
 pos: noun
 stem: nūnti
 genend: ī

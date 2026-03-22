@@ -1,7 +1,7 @@
 ---
 title: maritus
 meaning: husband
-ch: [familia]
+ch: [familia, wf]
 pos: noun
 stem: marit
 genend: ī

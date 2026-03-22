@@ -1,7 +1,7 @@
 ---
 title: scrībō
 meaning: to write
-ch: [one, 7r, 24rv, 20pp, thirtyone]
+ch: [one, 7r, 24rv, 20pp, thirtyone, wf]
 pos: verb
 inf: scrībere
 secondppstem: scrīb

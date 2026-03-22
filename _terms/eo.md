@@ -1,7 +1,7 @@
 ---
 title: eō
 meaning: to go
-ch: [seven, fourteen, seventeen, f2, f, seventeen7, twentythree, 24rv, 23pp]
+ch: [seven, fourteen, seventeen, f2, f, seventeen7, twentythree, 24rv, 23pp, wf]
 pos: verb
 inf: īre
 thirdpp: iī/īvī

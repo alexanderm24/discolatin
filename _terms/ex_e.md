@@ -1,7 +1,7 @@
 ---
 title: ē/ex
 meaning: out of
-ch: [two, four, mt, mt8thru9, 7r, 24rv]
+ch: [two, four, mt, mt8thru9, 7r, 24rv, wf]
 pos: preposition
 di: (takes ablative)
 laudio: ../assets/audio/e_ex-laudio.mp3

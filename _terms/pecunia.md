@@ -1,7 +1,7 @@
 ---
 title: pecunia
 meaning: money
-ch: [twentyonetwo, twentynine]
+ch: [twentyonetwo, twentynine, wf]
 pos: noun
 stem: pecuni
 genend: ae

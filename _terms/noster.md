@@ -1,7 +1,7 @@
 ---
 title: noster
 meaning: our
-ch: [fourteen, f2, f, 7r]
+ch: [fourteen, f2, f, 7r, wf]
 pos: extotadjective
 femstem: nostr
 femend: a

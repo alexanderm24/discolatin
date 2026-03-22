@@ -1,7 +1,7 @@
 ---
 title: deinde
 meaning: then
-ch: [eight, mt, mt8thru9, ss, ss5, 7r]
+ch: [eight, mt, mt8thru9, ss, ss5, 7r, wf]
 pos: adverb
 laudio: ../assets/audio/deinde-laudio.mp3
 haudio: ../assets/audio/deinde-laudio.mp3

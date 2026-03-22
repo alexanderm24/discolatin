@@ -2,7 +2,7 @@
 title: rex
 meaning: king
 pos: nounthird
-ch: [nle1]
+ch: [nle1, wf]
 genitive: regis
 abbgender: m.
 abbgender2: masc.

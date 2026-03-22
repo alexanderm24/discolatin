@@ -1,6 +1,6 @@
 ---
 title: olim
 meaning: once (upon a time)
-ch: [eighteen]
+ch: [eighteen, wf]
 pos: adverb
 ---

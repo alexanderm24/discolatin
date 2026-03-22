@@ -3,7 +3,7 @@ title: in
 meaning: in
 2meaning: "on"
 ch: [one, nine, cumulative, 7r, 24rv]
-2meaningch:  [five, nine, cumulative, 7r, 24rv]
+2meaningch:  [five, nine, cumulative, 7r, 24rv, wf]
 pos: preposition
 disamb: (with ablative)
 di: (with ablative)

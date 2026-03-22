@@ -1,7 +1,7 @@
 ---
 title: intrō
 meaning: to enter
-ch: [eight, 7r]
+ch: [eight, 7r, wf]
 pos: verb
 inf: intrāre
 secondppstem: intr

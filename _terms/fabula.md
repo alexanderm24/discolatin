@@ -1,7 +1,7 @@
 ---
 title: fabula
 meaning: story
-ch: [twenty]
+ch: [twenty, wf]
 pos: noun
 stem: fabul
 genend: ae

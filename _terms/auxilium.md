@@ -1,7 +1,7 @@
 ---
 title: auxilium
 meaning: help
-ch: [7r]
+ch: [7r, wf]
 pos: noun
 stem: auxili
 genend: ī

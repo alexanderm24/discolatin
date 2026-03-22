@@ -1,7 +1,7 @@
 ---
 title: habitō
 meaning: to live
-ch: [one, mt, mt1thru4]
+ch: [one, mt, mt1thru4, wf]
 pos: verb
 inf: habitāre
 secondppstem: habit

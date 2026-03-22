@@ -1,6 +1,7 @@
 ---
 title: nesciō
 meaning: to not know
+ch: [wf]
 pos: verb
 inf: nescīre
 secondppstem: nesc

@@ -1,7 +1,7 @@
 ---
 title: corpus
 meaning: body
-ch: [body, twentyonetwo]
+ch: [body, twentyonetwo, wf]
 pos: nounthird
 genitive: corporis
 abbgender: n.

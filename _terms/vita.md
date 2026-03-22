@@ -1,7 +1,7 @@
 ---
 title: vita
 meaning: life
-ch: [nle1]
+ch: [nle1, wf]
 pos: noun
 stem: vit
 genend: ae

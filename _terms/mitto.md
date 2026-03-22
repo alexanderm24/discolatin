@@ -1,7 +1,7 @@
 ---
 title: mittō
 meaning: to send
-ch: [nine, mt, mt8thru9, ss, ss4, 7r, twentyfive, 25pp]
+ch: [nine, mt, mt8thru9, ss, ss4, 7r, twentyfive, 25pp, wf]
 pos: verb
 inf: mittere
 secondppstem: mitt

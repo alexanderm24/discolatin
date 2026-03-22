@@ -1,7 +1,7 @@
 ---
 title: fugiō
 meaning: to flee
-ch: [eighteen, twentyfive, 25pp]
+ch: [eighteen, twentyfive, 25pp, wf]
 pos: verb
 inf: fugere
 secondppstem: fug

@@ -1,7 +1,7 @@
 ---
 title: homō
 meaning: person
-ch: [fifteen, f3, f, ss, ss2, eighteen, 24rv]
+ch: [fifteen, f3, f, ss, ss2, eighteen, 24rv, wf]
 pos: nounthird
 genitive: hominis
 abbgender: m.
