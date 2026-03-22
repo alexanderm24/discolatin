@@ -6,6 +6,8 @@ pos: verb
 inf: parāre
 secondppstem: par
 infend: āre
+thirdpp: parāvī
+fourthpp: parātus
 conjugation: first
 derivative: preparatory
 six: y
