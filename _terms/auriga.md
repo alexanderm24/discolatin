@@ -1,13 +1,13 @@
 ---
 title: aurīga
-meaning: charioteer
+meaning: charioteer, driver
 ch: [fourteen]
 pos: noun
 stem: aurīg
 genend: ae
-abbgender: f.
-abbgender2: fem.
-gender: feminine
+abbgender: m.
+abbgender2: masc.
+gender: masculine
 declension: first
 six: y
 ---
