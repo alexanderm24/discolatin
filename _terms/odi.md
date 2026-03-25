@@ -6,6 +6,7 @@ pos: verb
 inf: odisse
 secondppstem: od
 infend: isse
-thirdpp: --
+thirdpp: osus
 fourthpp: ---
+conjugation: third
 ---
