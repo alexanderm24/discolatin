@@ -1,7 +1,7 @@
 ---
 title: cena
 meaning: dinner
-ch: [nineteen]
+ch: [nineteen, thirtytwo]
 pos: noun
 stem: cen
 genend: ae
