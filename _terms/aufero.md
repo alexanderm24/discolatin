@@ -7,6 +7,5 @@ inf: auferre
 thirdpp: abtulī
 fourthpp: ablātus
 conjugation: irregular
-derivative: reference
 note: (ab + fero)
 ---
