@@ -1,6 +1,6 @@
 ---
 layout: chlist
-title: Stillpoint 2012
+title: Waterford Demo
 ch: wf
 grade: seventh
 4pp: "yes"
