@@ -7,4 +7,5 @@ femstem: optim
 femend: a
 neutstem: optim
 neutend: um
+allmeanings: yes
 ---
