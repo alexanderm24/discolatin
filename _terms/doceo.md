@@ -1,7 +1,7 @@
 ---
 title: doceō
 meaning: to teach
-ch: [six, mt, mt5thru7, ss, ss1, 7r]
+ch: [six, mt, mt5thru7, ss, ss1, 7r, thirtythree]
 pos: verb
 inf: docēre
 secondppstem: doc

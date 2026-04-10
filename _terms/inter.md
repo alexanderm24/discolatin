@@ -1,7 +1,7 @@
 ---
 title: inter
 meaning: between
-ch: [wf]
+ch: [thirtythree, wf]
 pos: preposition
 di: (takes accusative)
 ---
