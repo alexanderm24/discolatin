@@ -1,6 +1,6 @@
 ---
 title: praetereō
-meaning: to go past
+meaning: to go past, to pass
 ch: fifteen
 pos: verb
 inf: praeterīre
