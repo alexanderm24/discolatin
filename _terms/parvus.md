@@ -1,7 +1,7 @@
 ---
 title: parvus
 meaning: small
-ch: [thirty]
+ch: [thirty, thirtyfour]
 pos: totadjective
 femstem: parv
 femend: a

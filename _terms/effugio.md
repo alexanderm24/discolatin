@@ -7,6 +7,7 @@ inf: effugere
 secondppstem: effug
 infend: ere
 thirdpp: effūgī
+fourthpp: effugitus
 conjugation: third
 six: y
 ---

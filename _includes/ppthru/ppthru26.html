@@ -1,0 +1,30 @@
+<div class="container-fluid d-flex justify-content-center mt-5">
+    <div class="text-white">
+        <table class="table table-dark table-striped table-bordered table-bordered-light">
+            <thead>
+                <tr>
+                  <th scope="col">First</th>
+                  <th scope="col">Second</th>
+                  <th scope="col">Third</th>
+                  <th scope="col">Fourth</th>
+                  <th scope="col">Meaning</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for terms in site.terms %}
+                {% assign ch = terms.ch %}
+                {% if ch contains "20pp" or ch contains "212pp" or ch contains "23pp" or ch contains "24pp" or ch contains "25pp" or ch contains "26pp" %}
+                {% if terms.pos == "verb" %}
+                <tr>
+                  <td>{{ terms.title }}</td>
+                  <td class="parent-element"><div class="hidden-element">{{ terms.inf }}</div></td>
+                  <td class="parent-element"><div class="hidden-element">{{ terms.thirdpp }}</div></td>
+                  <td class="parent-element"><div class="hidden-element">{{ terms.fourthpp }}</div></td>
+                  <td class="parent-element"><div class="hidden-element">{{ terms.meaning }}</div></td>
+                </tr>
+                {% endif %}
+                {% endif %}
+            {% endfor %}
+              </tbody>
+        </table>
+    </div>

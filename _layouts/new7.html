@@ -1,0 +1,77 @@
+---
+layout: base
+---
+
+{%- include navs/ns-nav.html -%}
+
+
+<!--<h1 class="justify-content-center">Principal Parts Review</h1>
+<div class="container-fluid d-flex justify-content-center mt-5">
+<div class="text-white">
+    {% for terms in site.terms %}
+    {% if terms.pos == "verb" %}
+<div class="row">
+    <div class="col">
+        {{ terms.title }}
+    </div>
+    <div class="col">
+        {{ terms.inf }}
+    </div>
+    <div class="col">
+        {{ terms.thirdpp }}
+    </div>
+    <div class="col">
+        {{ terms.fourthpp }}
+    </div>
+</div>
+    {% endif %}
+    {% endfor %}
+</div>
+</div>-->
+
+
+<h1 class="justify-content-center">{{ page.title }}</h1>
+<div class="container-fluid d-flex justify-content-center mt-5 mb-5">
+<div class="text-white">
+    <table class="table table-dark table-striped table-bordered table-bordered-light">
+        <thead>
+            <tr>
+              <th scope="col">First</th>
+              <th scope="col">Second</th>
+              <th scope="col">Third</th>
+              <th scope="col">Fourth</th>
+              <th scope="col">Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for terms in site.terms %}
+            {% assign ch = terms.ch %}
+            {% if ch contains page.ch %}
+            {% if terms.pos == "verb" %}
+            <tr>
+              <td>{{ terms.title }}</td>
+              <td class="parent-element"><div class="hidden-element">{{ terms.inf }}</div></td>
+              <td class="parent-element"><div class="hidden-element">{{ terms.thirdpp }}</div></td>
+              <td class="parent-element"><div class="hidden-element">{{ terms.fourthpp }}</div></td>
+              <td class="parent-element"><div class="hidden-element">{{ terms.meaning }}</div></td>
+            </tr>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+          </tbody>
+    </table>
+</div>
+
+</div>
+
+
+
+{% if page.ppthru %}
+<h1 class="justify-content-center">Review</h1>
+{%- include ppthru/ppthru.html -%}
+{% endif %}
+
+
+
+<!-- Sparkle Modal -->
+{%- include sparklemodal.html -%}

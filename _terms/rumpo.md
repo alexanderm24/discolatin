@@ -1,7 +1,7 @@
 ---
 title: rumpō
 meaning: to burst
-ch: [twentynine]
+ch: [twentynine, 29pp]
 pos: verb
 inf: rumpere
 secondppstem: rump

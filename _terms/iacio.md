@@ -1,7 +1,7 @@
 ---
 title: iaciō
 meaning: to throw
-ch: [ten, f1, f, 7r, thirty]
+ch: [ten, f1, f, 7r, thirty, 30pp]
 pos: verb
 inf: iacere
 secondppstem: iac

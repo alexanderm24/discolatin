@@ -1,7 +1,7 @@
 ---
 title: edō
 meaning: to eat
-ch: [thirtythree]
+ch: [thirtythree, 33pp]
 pos: verb
 inf: ēsse
 thirdpp: ēdī

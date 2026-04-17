@@ -1,7 +1,7 @@
 ---
 title: quaerō
 meaning: to seek, look for, ask
-ch: [thirty]
+ch: [thirty, 30pp]
 pos: verb
 inf: quaerere
 secondppstem: quaer

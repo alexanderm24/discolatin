@@ -1,7 +1,7 @@
 ---
 title: inveniō
 meaning: to find
-ch: [twelve, f1, f, 7r, nineteen, wf, thirtythree]
+ch: [twelve, f1, f, 7r, nineteen, wf, thirtythree, 33pp]
 pos: verb
 inf: invenīre
 secondppstem: inven

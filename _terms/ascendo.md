@@ -6,7 +6,7 @@ pos: verb
 inf: ascendere
 secondppstem: ascend
 infend: ere
-thirdpp: ascdendī
+thirdpp: ascedendī
 fourthpp: ascēnsus
 conjugation: third
 derivative: ascension

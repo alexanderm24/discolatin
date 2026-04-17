@@ -4,6 +4,8 @@ meaning: to be away
 ch: [eleven, f1, f, 7r]
 pos: verb
 inf: abesse
+thirdpp: abfuī
+fourthpp: abfutūrus
 conjugation: irregular
 derivative: absent
 six: y

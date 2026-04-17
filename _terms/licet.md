@@ -7,7 +7,7 @@ inf: licēre
 secondppstem: lic
 infend: ēre
 thirdpp: licuit
-fourthpp: ---
+fourthpp: —
 conjugation: second
 note: takes dative and infinitive
 ---

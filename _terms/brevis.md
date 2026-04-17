@@ -1,7 +1,7 @@
 ---
 title: brevis
 meaning: short
-ch: [eighteen]
+ch: [eighteen, thirtyfour]
 pos: thirdadjective
 femstem: brev
 femend: is

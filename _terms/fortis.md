@@ -1,7 +1,7 @@
 ---
 title: fortis
 meaning: brave, strong
-ch: [eighteen, wf]
+ch: [eighteen, wf, thirtyfour]
 pos: thirdadjective
 femstem: fort
 femend: is

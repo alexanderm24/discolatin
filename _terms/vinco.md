@@ -1,7 +1,7 @@
 ---
 title: vinco
 meaning: to conquer, win
-ch: [twentyseven, wf]
+ch: [twentyseven, wf, 27pp]
 pos: verb
 inf: vincere
 secondppstem: vinc

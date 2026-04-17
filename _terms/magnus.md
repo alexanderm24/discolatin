@@ -1,7 +1,7 @@
 ---
 title: magnus
 meaning: big, loud, great
-ch: [four, 7r, wf]
+ch: [four, 7r, wf, thirtyfour]
 pos: totadjective
 femstem: magn
 femend: a

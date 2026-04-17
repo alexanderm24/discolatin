@@ -6,6 +6,8 @@ pos: verb
 inf: ferīre
 secondppstem: fer
 infend: īre
+thirdpp: —
+fourthpp: —
 conjugation: fourth
 six: y
 ---

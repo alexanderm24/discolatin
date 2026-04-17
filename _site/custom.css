@@ -981,4 +981,16 @@ html {
   .breadcrumb-item, .breadcrumb-item.active, .breadcrumb-item+.breadcrumb-item::before {
     color: darkgrey;
   }
+
+  .hidden-element {
+    visibility: hidden;
+    opacity: 0;
+    transition: 
+      visibility 0s, opacity 0.5s ease;
+}
+.parent-element:hover 
+        .hidden-element {
+            visibility: visible;
+            opacity: 1;
+        }
   

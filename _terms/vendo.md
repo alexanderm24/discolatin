@@ -1,7 +1,7 @@
 ---
 title: vendo
 meaning: to sell
-ch: [twentyeight]
+ch: [twentyeight, 28pp]
 pos: verb
 inf: vendere
 secondppstem: vend

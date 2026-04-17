@@ -6,6 +6,7 @@ inf: concidere
 secondppstem: concid
 infend: ere
 thirdpp: concidī
+fourthpp: concisus
 conjugation: third
 six: y
 ---

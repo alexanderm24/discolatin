@@ -7,6 +7,6 @@ inf: odisse
 secondppstem: od
 infend: isse
 thirdpp: osus
-fourthpp: ---
+fourthpp: —
 conjugation: third
 ---

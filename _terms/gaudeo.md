@@ -6,6 +6,8 @@ pos: verb
 inf: gaudēre
 secondppstem: gaud
 infend: ēre
+thirdpp: gavisus sum
+fourthpp: —
 conjugation: second
 sixms: G
 six: y
