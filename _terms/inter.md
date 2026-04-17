@@ -1,6 +1,6 @@
 ---
 title: inter
-meaning: between
+meaning: between, among
 ch: [thirtythree, wf]
 pos: preposition
 di: (takes accusative)
