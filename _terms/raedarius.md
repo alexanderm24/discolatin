@@ -1,8 +1,8 @@
 ---
-title: raedārarius
+title: raedārius
 meaning: coachman, driver
 pos: noun
-stem: raedārari
+stem: raedāri
 genend: ī
 abbgender: m.
 abbgender2: masc.
