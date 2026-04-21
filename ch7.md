@@ -12,7 +12,7 @@ adjectives: yes
 adverbs: no
 prepositions: yes
 conjunctions: no
-interjections: yes
+interjections: no
 composites: no
 prepphrases: yes
 phrases: no
