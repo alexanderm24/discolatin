@@ -39,6 +39,7 @@
 <!--nouns 1&2-->
 {% if pos == "noun" %}
 <div class="text-start">{{ terms.title }},<br> <span class="expdi">{{ terms.stem }}</span>&#8205;{{ terms.genend }}&nbsp;{{ terms.abbgender }}</div>
+<div class="disamb-note">{{ terms.disamb }}</div>
 {% endif %}
 
 <!--exnounsecond (2nd decl. stem exceptions)-->
