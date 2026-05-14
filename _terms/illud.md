@@ -1,7 +1,7 @@
 ---
 title: illud
 meaning: that
-ch: [fifteen, f3, f]
+ch: [fifteen]
 pos: pronounthird
 abbgender: (n.)
 abbgender2: neut.

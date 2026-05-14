@@ -1,7 +1,7 @@
 ---
 title: ignāvus
 meaning: cowardly, lazy
-ch: five
+ch: [five]
 pos: totadjective
 femstem: ignāv
 femend: a

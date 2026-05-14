@@ -1,7 +1,7 @@
 ---
 title: fragor
 meaning: crash
-ch: four
+ch: [four]
 pos: nounthird
 genitive: fragōris
 abbgender: m.

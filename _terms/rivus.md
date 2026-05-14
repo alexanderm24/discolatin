@@ -1,7 +1,7 @@
 ---
 title: rivus
 meaning: stream
-ch: five
+ch: [five]
 pos: noun
 stem: riv
 genend: ī

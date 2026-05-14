@@ -1,7 +1,7 @@
 ---
 title: rāmus
 meaning: branch
-ch: four
+ch: [four]
 pos: noun
 stem: rām
 genend: ī

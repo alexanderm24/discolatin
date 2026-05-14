@@ -1,6 +1,6 @@
 ---
 title: ille
-ch: [twentysix]
+ch: [twentysix, f3, f]
 pos: totpronoun
 meaning: that, he/she/it
 fem: illa

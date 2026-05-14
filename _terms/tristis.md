@@ -1,7 +1,7 @@
 ---
 title: tristis
 meaning: sad
-ch: wf
+ch: [wf]
 pos: thirdadjective
 femstem: trist
 femend: is

@@ -1,7 +1,7 @@
 ---
 title: molestus
 meaning: annoying
-ch: four
+ch: [four]
 pos: totadjective
 femstem: molest
 femend: a

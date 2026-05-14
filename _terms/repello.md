@@ -1,7 +1,7 @@
 ---
 title: repellō
 meaning: to drive away
-ch: five
+ch: [five]
 pos: verb
 inf: repellere
 secondppstem: repell

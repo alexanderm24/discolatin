@@ -1,7 +1,7 @@
 ---
 title: ascendō
 meaning: to go up, climb up
-ch: four
+ch: [four]
 pos: verb
 inf: ascendere
 secondppstem: ascend

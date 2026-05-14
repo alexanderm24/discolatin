@@ -1,7 +1,7 @@
 ---
 title: temerārius
 meaning: reckless
-ch: five
+ch: [five]
 pos: totadjective
 femstem: temerāri
 femend: a
